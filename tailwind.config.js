@@ -18,6 +18,10 @@ module.exports = {
           bg: "#BAB8AF",
         },
       },
+      backgroundImage: {
+        "page-left": "url('/bg-left.png')",
+        "page-right": "url('/bg-right.png')",
+      },
     },
   },
   plugins: [],
