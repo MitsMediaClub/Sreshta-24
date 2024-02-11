@@ -37,7 +37,7 @@ export default function Book(props) {
                 >
                   <Image
                     src={page.bg}
-                    alt="Picture of the author"
+                    alt="Picture of the event"
                     width={500}
                     height={700}
                     className="w-[90%] h-[95%]"
@@ -56,9 +56,13 @@ export default function Book(props) {
                 key={index}
                 className="bg-page-left text-[#375E5E] text-3xl p-20 w-full h-full"
               >
-                <h1 className="text-7xl font-bold w-2/3">{page.content}</h1>
-                <h1 className="mt-5 font-medium text-2xl">{page.date}</h1>
-                <p className="text-sm font-medium mt-5">{page.desc}</p>
+                <h1 className="text-8xl font-bold w-2/3 bangers">
+                  {page.content}
+                </h1>
+                <h1 className="mt-5 font-medium text-2xl bangers">
+                  {page.date}
+                </h1>
+                <p className="text-2xl font-medium mt-5 dog">{page.desc}</p>
               </div>
             );
           })}

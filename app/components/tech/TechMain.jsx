@@ -1,49 +1,27 @@
-import Book from "../events/Book";
+import Image from "next/image";
+import AllEvents from "../events/AllEvents";
 
 const TechMain = () => {
-  const pages = [
-    {
-      content: "Motor Sports",
-      date: "2 Mar 2023",
-      desc: `
-      The tech fest has always been a wonderful event to be through.
-      It's mesmerising, traumatising and a beautiful experience to go
-      through. The team behind the website has worked tirelessly to
-      ensure you get access to everything you wish for. This text is
-      a placeholder, for god sake do not use this. Dhanyawadh
-      Instead of copy-pasting the above, I'm writing this so that
-      the uniqueness of each text makes it seem like something
-      serious is going on here. Most people skim over, but if you
-      did read, you will understand that nothing's going on here.
-      Happy to waste your time.
-    `,
-    },
-    {
-      bg: "/comic.png",
-    },
-    {
-      content: "Motor Sport",
-      date: "2 Mar 2024",
-      desc: `
-      The tech fest has always been a wonderful event to be through.
-      It's mesmerising, traumatising and a beautiful experience to go
-      through. The team behind the website has worked tirelessly to
-      ensure you get access to everything you wish for. This text is
-      a placeholder, for god sake do not use this. Dhanyawadh
-      Instead of copy-pasting the above, I'm writing this so that
-      the uniqueness of each text makes it seem like something
-      serious is going on here. Most people skim over, but if you
-      did read, you will understand that nothing's going on here.
-      Happy to waste your time.
-    `,
-    },
-    {
-      bg: "/comic.png",
-    },
-  ];
   return (
-    <div className="min-h-screen bg-tech-bg flex justify-center items-center">
-      <Book width={500} height={700} portrait={false} pages={pages} />
+    <div className="flex justify-around items-center gap-10 p-20">
+      <Image
+        width={500}
+        height={500}
+        src="/eventsBanner.png"
+        alt="Meh"
+        className="w-44"
+      />
+      <h1 className="dog text-3xl text-tech-primary">
+        More than 100 <br /> events to conquer
+      </h1>
+      <hr className="w-1/2 h-1 bg-tech-primary" />
+      <Image
+        width={500}
+        height={500}
+        src="/number01.png"
+        alt="Meh"
+        className="w-32"
+      />
     </div>
   );
 };
