@@ -1,75 +1,86 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
+  const cursor = useRef();
+
+  const cursorset = (e) => {
+    cursor.current.style.top = e.pageY + "px";
+    cursor.current.style.left = e.pageX + "px";
+  };
+  window.addEventListener("mousemove", cursorset);
 
   return (
-    <div className="text-[#E9F8E8] ">
+    <div className="text-[#E9F8E8] cursor-none overflow-x-hidden  ">
+      <div className="absolute h-screen w-screen top-0 left-0 right-0 z-20 MAIN"></div>
+
+      {/* cursor */}
+      <div
+        ref={cursor}
+        className="customcursor w-[300px] h-[300px] 
+      border-solid border-3 border-black 
+      absolute translate-x-[-50%] 
+      translate-y-[-50%] z-50 rounded-full bg-transparent"
+      ></div>
       <div className="Wrapper ">
         {/* Hero Image  */}
-        <div className="  grid grid-cols-5 grid-rows-2 gap-8  max-h-screen">
-          <div className="col-start-1 col-span-3">
-            <Image
-              className="w-[100%] h-[100%] grayscale hover:grayscale-0"
-              src={"/filler.jpeg"}
-              width={500}
-              height={1000}
-            ></Image>
-          </div>
-          <div className="col-start-4 col-span-2">
-            <Image
-              className="w-[100%] h-[100%] opacity-80"
-              src={"/filler.jpeg"}
-              width={1000}
-              height={1000}
-            ></Image>
-          </div>
-          <div className="col-start-1 col-span-2">
-            <Image
-              className="w-[100%] h-[100%] opacity-80"
-              src={"/filler.jpeg"}
-              width={1000}
-              height={1000}
-            ></Image>
-          </div>
-
-          <div className="col-start-3 col-span-2">
-            <Image
-              className="w-[100%] h-[100%] opacity-80"
-              src={"/filler.jpeg"}
-              width={1000}
-              height={1000}
-            ></Image>
-          </div>
-          <div className="col-start-5 col-span-1">
-            <Image
-              className="w-[100%] h-[100%] opacity-80"
-              src={"/filler.jpeg"}
-              width={1000}
-              height={1000}
-            ></Image>
+        <div className=" h-screen">
+          <div className="flex flex-col gap-5 h-full">
+            <div className="flex gap-5 h-full">
+              <Image
+                width={1000}
+                height={1000}
+                src="/filler.jpeg"
+                alt="Meh"
+                className="w-1/2"
+              />
+              <Image
+                width={1000}
+                height={1000}
+                src="/filler.jpeg"
+                alt="Meh"
+                className="w-1/2"
+              />
+            </div>
+            <div className="flex gap-5 h-full">
+              <Image
+                width={1000}
+                height={1000}
+                src="/filler.jpeg"
+                alt="Meh"
+                className="w-[40%]"
+              />
+              <Image
+                width={1000}
+                height={1000}
+                src="/filler.jpeg"
+                alt="Meh"
+                className="w-[40%]"
+              />
+              <Image
+                width={1000}
+                height={1000}
+                src="/filler.jpeg"
+                alt="Meh"
+                className="w-[20%]"
+              />
+            </div>
           </div>
         </div>
 
         {/* Hero Text  */}
 
-        <div className="HeroText min-h-screen absolute z-10 top-0 left-1/2 right-1/2 bg-no-repeat bg-cover bg-center   flex flex-col justify-center items-center">
-          <div className="opacity-100">
-            <h1 className="HeroTextMain text-[#435856] text-[18rem] font-extrabold uppercase stroke-slate-50 li ">
-              Shreshta
-            </h1>
-            <div className="flex justify-between">
-              <h1 className="HeroTextMain text-[#435856] text-[18rem] font-extrabold uppercase stroke-slate-50 leading-6 ">
-                2024
-              </h1>
-              <h3 className="font-mono uppercase text-[4rem] mr-5 text-right leading-5">
-                An initiative by <br /> <br />
-                <br /> <p className="">Muthoot Institute</p>
-              </h3>
-            </div>
+        <div className="HeroText min-h-screen w-screen absolute z-10 top-0 bg-no-repeat   flex flex-col justify-center items-center">
+          <div className="opacity-100 flex justify-center items-center">
+            <Image
+              className=" "
+              src={"/tech/Titles.png"}
+              width={1000}
+              height={1000}
+            ></Image>
           </div>
         </div>
 

@@ -10,3 +10,11 @@
     -2px -2px 0 #E9F8E8,
     2px -2px 0 #E9F8E8;
 }
+
+.customcursor{
+    backdrop-filter: grayscale();
+}
+.MAIN{
+    /* backdrop-filter: grayscale(); */
+    
+}
