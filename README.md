@@ -50,7 +50,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Contributing
 
 To start contributing to the website, create a branch or a fork of this repository and pull request once the changes have been made, make sure to have proper descriptions for the pull requests and commits.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
