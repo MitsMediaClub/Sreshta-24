@@ -1,15 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export const Landing = () => {
+  const [techOrArts, settechOrArts] = useState(0);
+
   return (
     <div className="text-[#E9F8E8] ">
       <div className="Wrapper ">
         {/* Hero Image  */}
-        <div className="  grid grid-cols-5 grid-rows-2 gap-8  h-screen">
+        <div className="  grid grid-cols-5 grid-rows-2 gap-8  max-h-screen">
           <div className="col-start-1 col-span-3">
             <Image
-              className="w-[100%] h-[100%] opacity-80"
+              className="w-[100%] h-[100%] grayscale hover:grayscale-0"
               src={"/filler.jpeg"}
               width={500}
               height={1000}
@@ -68,15 +72,26 @@ export const Landing = () => {
             </div>
           </div>
         </div>
+
         {/* flowing button */}
         <div className="flex justify-center">
-          <div className="w-[683px] h-[114px] rounded-full z-10 backdrop-blur-md bg-white/40  absolute bottom-2">
-            <div className="w-[100%] h-[100%] px-5 text-4xl font-semibold flex justify-between items-center">
-              <div className=" w-[310px] h-[81px] bg-[#435856] rounded-full flex justify-center items-center font-mono uppercase">
+          <div className="w-96 h-20 rounded-full z-10 backdrop-blur-md bg-white/40  absolute bottom-2">
+            <div className="w-[100%] h-[100%] px-5 text-2xl font-semibold flex justify-between items-center">
+              <div
+                className={` w-[50%] h-[70%] ${
+                  techOrArts == 0 ? "bg-[#435856] text-white" : "text-black"
+                }     rounded-full flex justify-center items-center font-mono uppercase cursor-pointer transition-all`}
+                onClick={() => settechOrArts(0)}
+              >
                 Tech fest
               </div>
-              <div className=" w-[310px] h-[81px] text-black  rounded-full flex justify-center items-center font-mono uppercase">
-                ART fest
+              <div
+                className={` w-[50%] h-[70%] ${
+                  techOrArts == 1 ? "bg-[#435856] text-white" : "text-black"
+                }     rounded-full flex justify-center items-center font-mono uppercase cursor-pointer transition-all`}
+                onClick={() => settechOrArts(1)}
+              >
+                art fest
               </div>
             </div>
           </div>
