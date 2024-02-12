@@ -1,5 +1,4 @@
 import Image from "next/image";
-import AllEvents from "../events/AllEvents";
 
 const TechMain = () => {
   return (
@@ -7,7 +6,7 @@ const TechMain = () => {
       <Image
         width={500}
         height={500}
-        src="/eventsBanner.png"
+        src="/landing/eventsBanner.png"
         alt="Meh"
         className="w-44"
       />
@@ -18,7 +17,7 @@ const TechMain = () => {
       <Image
         width={500}
         height={500}
-        src="/number01.png"
+        src="/landing/number01.png"
         alt="Meh"
         className="w-32"
       />

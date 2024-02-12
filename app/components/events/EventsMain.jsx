@@ -1,7 +1,9 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Book from "./Book";
+import EventCards from "./EventCards";
 
-const AllEvents = () => {
+const EventsMain = () => {
   const pages = [
     {
       content: "Motor Sports",
@@ -20,7 +22,7 @@ const AllEvents = () => {
         `,
     },
     {
-      bg: "/comic.png",
+      bg: "/events/comic.png",
     },
     {
       content: "Motor Sport",
@@ -39,17 +41,26 @@ const AllEvents = () => {
         `,
     },
     {
-      bg: "/comic.png",
+      bg: "/events/comic.png",
     },
   ];
   return (
-    <div
-      className="p-20 pt-0 flex justify-center"
-      style={{ backgroundImage: "url('/bgDots.png')" }}
-    >
-      <Book width={600} height={800} portrait={false} pages={pages} />
+    <div className="pt-0">
+      <div
+        className="hidden md:flex justify-center p-20 pb-72 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/common/bgDots.png')" }}
+      >
+        <Book width={600} height={800} portrait={false} pages={pages} />
+      </div>
+      <div
+        className="md:hidden flex justify-center pb-44 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/common/bgDots.png')" }}
+      >
+        <Book width={500} height={700} portrait={true} pages={pages} />
+      </div>
+      <EventCards />
     </div>
   );
 };
 
-export default AllEvents;
+export default EventsMain;

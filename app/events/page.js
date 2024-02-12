@@ -1,9 +1,9 @@
-import AllEvents from "../components/events/AllEvents";
+import EventsMain from "../components/events/EventsMain";
 
 export default function Events() {
   return (
     <main className="">
-      <AllEvents />
+      <EventsMain />
     </main>
   );
 }

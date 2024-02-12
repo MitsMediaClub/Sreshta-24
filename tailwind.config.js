@@ -19,8 +19,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "page-left": "url('/bg-left.png')",
-        "page-right": "url('/bg-right.png')",
+        "page-left": "url('/events/bg-left.png')",
+        "page-right": "url('/events/bg-right.png')",
       },
     },
   },
