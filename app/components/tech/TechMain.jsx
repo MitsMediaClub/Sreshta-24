@@ -1,28 +1,10 @@
-import Image from "next/image";
+import FloatButton from "./FloatButton";
+import { Landing } from "./landing/Landing";
 
 const TechMain = () => {
   return (
-    <div className="flex justify-around items-center gap-10 p-20">
-      <Image
-        width={500}
-        height={500}
-        src="/eventsBanner.png"
-        alt="Meh"
-        className="w-44"
-      />
-      <h1 className="dog text-3xl text-tech-primary">
-        More than 100 <br /> events to conquer
-      </h1>
-      <hr className="w-1/2 h-1 bg-tech-primary" />
-      <Image
-        width={500}
-        height={500}
-        src="/number01.png"
-        alt="Meh"
-        className="w-32"
-      />
+    <div className="min-h-screen bg-tech-bg">
+      <Landing />
+      <FloatButton />
     </div>
-  );
-};
-
 export default TechMain;
