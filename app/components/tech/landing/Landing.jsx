@@ -17,16 +17,6 @@ export const Landing = () => {
 
   return (
     <div className="text-[#E9F8E8] cursor-none  overflow-x-hidden  ">
-      {/* <div className="absolute h-screen w-screen top-0 left-0 right-0 z-20 MAIN"></div> */}
-
-      {/* cursor */}
-      {/* <div
-        ref={cursor}
-        className="customcursor w-[300px] h-[300px] 
-      border-solid border-3 border-black 
-      absolute translate-x-[-50%] 
-      translate-y-[-50%] z-50 rounded-full bg-transparent"
-      ></div> */}
       <div className="Wrapper z-20 grayscale">
         {/* Hero Image  */}
         <div className=" h-screen">

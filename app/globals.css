@@ -22,11 +22,12 @@
 .mask {
     position: absolute;
     mask-image: url('/tech/circle.svg');
-    background-color: rgb(202, 91, 91);
+    background-color: rgba(202, 91, 91, 0);
     mask-repeat: no-repeat;
     mask-size:35rem;
     /* -webkit-mask-image: radial-gradient(circle, black 50%, transparent ); */
     /* mask-image: radial-gradient(circle, black , transparent); */
+    
   }
     
     
