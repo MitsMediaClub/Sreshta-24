@@ -6,7 +6,7 @@ const TechMain = () => {
       <Image
         width={500}
         height={500}
-        src="/landing/eventsBanner.png"
+        src="/eventsBanner.png"
         alt="Meh"
         className="w-44"
       />
@@ -17,7 +17,7 @@ const TechMain = () => {
       <Image
         width={500}
         height={500}
-        src="/landing/number01.png"
+        src="/number01.png"
         alt="Meh"
         className="w-32"
       />
