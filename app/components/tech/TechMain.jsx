@@ -7,4 +7,7 @@ const TechMain = () => {
       <Landing />
       <FloatButton />
     </div>
+  );
+};
+
 export default TechMain;
