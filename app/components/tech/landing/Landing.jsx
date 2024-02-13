@@ -7,19 +7,37 @@ export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
 
   const cursor = useRef();
+  const landingRef = useRef(null);
+  useEffect(() => {
+    const cursorset = (e) => {
+      const rect = landingRef.current.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      cursor.current.style.webkitMaskPosition = `${x}px ${y}px`;
+    };
 
-  const cursorset = (e) => {
-    // cursor.current.style.top = e.pageY + "px";
-    // cursor.current.style.left = e.pageX + "px";
-    cursor.current.style.webkitMaskPosition = `${e.pageX}px ${e.pageY}px`;
-  };
-  window.addEventListener("mousemove", cursorset);
+    const handleMouseEnter = (e) => {
+      landingRef.current.addEventListener("mousemove", cursorset);
+    };
+
+    const handleMouseLeave = () => {
+      landingRef.current.removeEventListener("mousemove", cursorset);
+    };
+
+    landingRef.current.addEventListener("mouseenter", handleMouseEnter);
+    landingRef.current.addEventListener("mouseleave", handleMouseLeave);
+
+    // Clean up the event listeners when the component unmounts
+  }, []);
 
   return (
-    <div className="text-[#E9F8E8] cursor-none  overflow-x-hidden  ">
-      <div className="Wrapper z-20 grayscale">
+    <div
+      className="text-[#E9F8E8] overflow-x-hidden cursor-none relative w-full min-h-screem"
+      ref={landingRef}
+    >
+      <div className="grayscale Wrapper1  overflow-hidden">
         {/* Hero Image  */}
-        <div className=" h-screen">
+        <div className=" h-screen relative">
           <div className="flex flex-col gap-5 h-full">
             <div className="flex gap-5 h-1/2">
               <Image
@@ -27,14 +45,14 @@ export const Landing = () => {
                 height={1000}
                 src="/tech/img1.png"
                 alt="Meh"
-                className="w-1/2 object-cover object-left-top"
+                className=""
               />
               <Image
                 width={1000}
                 height={1000}
                 src="/tech/img2.png"
                 alt="Meh"
-                className="w-1/2 object-cover object-top"
+                className=""
               />
             </div>
             <div className="flex gap-5 h-1/2">
@@ -43,30 +61,28 @@ export const Landing = () => {
                 height={1000}
                 src="/tech/img3.png"
                 alt="Meh"
-                className="w-[40%] object-cover object-left-top"
+                className=""
               />
               <Image
                 width={1000}
                 height={1000}
                 src="/tech/img4.png"
                 alt="Meh"
-                className="w-[40%] object-cover object-top"
+                className=""
               />
               <Image
                 width={1000}
                 height={1000}
                 src="/tech/img5.png"
                 alt="Meh"
-                className="w-[20%] object-cover "
+                className=" "
               />
             </div>
           </div>
-        </div>
 
-        {/* Hero Text  */}
+          {/* Hero Text  */}
 
-        <div className="HeroText min-h-screen w-screen absolute z-10 top-0 bg-no-repeat   flex flex-col justify-center items-center">
-          <div className="opacity-100 flex justify-center items-center">
+          <div className="HeroText absolute z-10 top-0 left-0 bg-no-repeat h-full w-full flex flex-col justify-center items-center">
             <Image
               className=" "
               src={"/tech/Titles.png"}
@@ -75,40 +91,16 @@ export const Landing = () => {
             ></Image>
           </div>
         </div>
-
-        {/* flowing button */}
-        {/* <div className="flex justify-center grayscale-0">
-          <div className="w-96 h-20 rounded-full z-10 backdrop-blur-md bg-white/40  absolute bottom-2">
-            <div className="w-[100%] h-[100%] px-5 text-2xl font-semibold flex justify-between items-center">
-              <div
-                className={` w-[50%] h-[70%] ${
-                  techOrArts == 0 ? "bg-[#435856] text-white" : "text-black"
-                }     rounded-full flex justify-center items-center font-mono uppercase cursor-pointer transition-all`}
-                onClick={() => settechOrArts(0)}
-              >
-                Tech fest
-              </div>
-              <div
-                className={` w-[50%] h-[70%] ${
-                  techOrArts == 1 ? "bg-[#435856] text-white" : "text-black"
-                }     rounded-full flex justify-center items-center font-mono uppercase cursor-pointer transition-all`}
-                onClick={() => settechOrArts(1)}
-              >
-                art fest
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
 
       {/* Gray Scaled Wrapper */}
       {/* ------------------------------------------------------------ */}
       <div
         ref={cursor}
-        className="Wrapper absolute top-0  left-0 right-0 bottom-0  z-0 mask"
+        className="Wrapper2 absolute top-0  left-0  z-0 mask h-full w-full overflow-hidden"
       >
         {/* Hero Image  */}
-        <div className=" h-screen">
+        <div className="h-full relative">
           <div className="flex flex-col gap-5 h-full">
             <div className="flex gap-5 h-1/2">
               <Image
@@ -116,14 +108,14 @@ export const Landing = () => {
                 height={1000}
                 src="/tech/img1.png"
                 alt="Meh"
-                className="w-1/2 object-cover object-left-top"
+                className=""
               />
               <Image
                 width={1000}
                 height={1000}
                 src="/tech/img2.png"
                 alt="Meh"
-                className="w-1/2 object-cover object-top"
+                className=" "
               />
             </div>
             <div className="flex gap-5 h-1/2">
@@ -132,59 +124,36 @@ export const Landing = () => {
                 height={1000}
                 src="/tech/img3.png"
                 alt="Meh"
-                className="w-[40%] object-cover object-left-top"
+                className=""
               />
               <Image
                 width={1000}
                 height={1000}
                 src="/tech/img4.png"
                 alt="Meh"
-                className="w-[40%] object-cover object-top"
+                className=""
               />
               <Image
                 width={1000}
                 height={1000}
                 src="/tech/img5.png"
                 alt="Meh"
-                className="w-[20%] object-cover "
+                className=" "
               />
             </div>
           </div>
-        </div>
-        Hero Text
-        <div className="HeroText min-h-screen w-screen absolute z-10 top-0  bg-no-repeat   flex flex-col justify-center items-center">
-          <div className="opacity-100 flex justify-center items-center">
-            <Image
-              className=" "
-              src={"/tech/Titles.png"}
-              width={1000}
-              height={1000}
-            ></Image>
-          </div>
-        </div>
-        {/* flowing button */}
-        {/* <div className="flex justify-center">
-          <div className="w-96 h-20 rounded-full z-10 backdrop-blur-md bg-white/40  absolute bottom-2">
-            <div className="w-[100%] h-[100%] px-5 text-2xl font-semibold flex justify-between items-center">
-              <div
-                className={` w-[50%] h-[70%] ${
-                  techOrArts == 0 ? "bg-[#435856] text-white" : "text-black"
-                }     rounded-full flex justify-center items-center font-mono uppercase cursor-pointer transition-all`}
-                onClick={() => settechOrArts(0)}
-              >
-                Tech fest
-              </div>
-              <div
-                className={` w-[50%] h-[70%] ${
-                  techOrArts == 1 ? "bg-[#435856] text-white" : "text-black"
-                }     rounded-full flex justify-center items-center font-mono uppercase cursor-pointer transition-all`}
-                onClick={() => settechOrArts(1)}
-              >
-                art fest
-              </div>
+
+          <div className="HeroText h-full w-full absolute z-10 top-0 left-0  bg-no-repeat   flex flex-col justify-center items-center">
+            <div className="opacity-100 flex justify-center items-center">
+              <Image
+                className=" "
+                src={"/tech/Titles.png"}
+                width={1000}
+                height={1000}
+              ></Image>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
