@@ -12,8 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} pt-24 min-h-screen bg-tech-bg`}>
-        <Navbar />
+      <body className={`${inter.className} p-8 min-h-screen bg-tech-bg`}>
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>
