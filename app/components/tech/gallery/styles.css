@@ -1,7 +1,7 @@
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .swiper-slide {
@@ -32,5 +32,8 @@
 }
 
 /* .mainImage{
-  animation: fade-in 0.5s ease-in-out both;
+  border: 12px solid transparent;
+  border-image-source:url(./border.png);
+  border-image-slice: 20; 
+  border-image-repeat: round;
 } */

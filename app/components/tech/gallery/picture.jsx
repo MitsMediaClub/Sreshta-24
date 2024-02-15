@@ -60,8 +60,11 @@ function Picture() {
 
     const detect = (e)=>{
         // console.log("slide changed",Swiper.activeIndex)
-        console.log("slide changed",e)
-        bigImg.current.src = custom_data[e].slide_img
+        if(undefined!=custom_data[e]){
+            console.log("slide changed",e)
+            console.log(custom_data[e].slide_img)
+            bigImg.current.src = custom_data[e].slide_img
+        }
     }
 
     const cardClick = (e)=>{
@@ -126,23 +129,31 @@ function Picture() {
     // },[])
 
 
+    const borderedImageStyle = {
+        // border: '20px solid transparent',
+        // borderImageSource: `url(/border.png)`,
+        // borderImageSlice: 30,
+        // borderImageRepeat: 'round',
+      };
 
     return ( 
         <>
-        <div  ref={maincontainer} className="h-[110vh] overflow-hidden peat-round pt-20 relative flex justify-center">
-            <div className="relative h-[90vh] w-[90%] flex justify-center">
+        <div  ref={maincontainer} className="h-[110vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center">
+            <div className="relative h-[94vh] w-full flex justify-center bg-red-">
+                <div className="bg-[./border.png] p-2 relative h-[100%] w-[70%] -z-0 flex justify-center">
 
-                <img className="absolute -top-28 left-0 z-10" src="./19.png" alt="" />
-                <img className="absolute -bottom-28 right-0 z-10" src="./19.png" alt="" />
-                <img className="absolute mix-blend-multiply opacity-50 top-0 w-[85%] h-[90vh]" src="./670 1.png" alt="img" />
-                <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" />
-                <img ref={bigImg} className="absolute transition-all mix-blend-multiply top-0 w-[85%] h-[92vh] mainImage" src={custom_data[0].slide_img} alt="" />
-                <div className="absolute bottom-32 left-40 text-white">
-                    <div className="font-['kivi']  tracking-tighter leading-none pl-10">2 Mar 2023</div>
-                    <div className="text-9xl tracking-tighter leading-none">Motor Show</div>
-                    <div className="text-6x tracking-tighter leading-nonel pl-32">The classics and the vintage, all in one garage.</div>
+                    {/* <img className="absolute mix-blend-multiply top-0 w-[70%] h-[100%]" src="./670 1.png" alt="img" /> */}
+                    {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
+                    <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" />
+                    <img ref={bigImg} style={borderedImageStyle} className="transition-all z-10 mix-blend-multiply object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].slide_img} alt="" />
+                    <img className="absolute mix-blend-multiply object-cover top-0 w-[100%] h-[100%] z-20" src="./Vector.png" alt="image" />
                 </div>
-            <div className="z-20 text-white w-full absolute -bottom-8 h-[20vh]">
+                <div className="absolute bottom-52 left-72 text-white">
+                    <div className="font-['kivi']  tracking-tighter leading-none pl-10">2 Mar 2023</div>
+                    <div className="text-[4vw] tracking-tighter leading-none">Motor Show</div>
+                    <div className="text-[1.2vw] tracking-tighter leading-nonel pl-32">The classics and the vintage, all in one garage.</div>
+                </div>
+            <div className="z-20 text-white w-full absolute -bottom-16 h-[25vh]">
                 {/* <div ref={container} className="flex gap-2">
                     <img className=" slider" src="./pexels-molnár-tamás-photography™-16061900 2.png" alt="" />
                     <img className=" slider" src="./pexels-molnár-tamás-photography™-16061900 2.png" alt="" />
@@ -158,14 +169,14 @@ function Picture() {
                     onRealIndexChange={e=>console.log(`index${e.activeIndex}`,detect(e.activeIndex))}
                     spaceBetween={0}
                     centeredSlides={true}
-                    slidesPerView={4}
+                    slidesPerView={5}
                     // loop={true}
                     freeMode={true}
                     speed={8000}
-                    autoplay={{
-                    delay: 1,
-                    disableOnInteraction: false,
-                    }}
+                    // autoplay={{
+                    // delay: 1,
+                    // disableOnInteraction: false,
+                    // }}
                     // pagination={{
                     // clickable: true,
                     // }}
@@ -174,10 +185,7 @@ function Picture() {
                     className="mySwiper"
                 >
                     <div className="swiper-wrapper">
-                    <SwiperSlide onClick={()=>cardClick(e)}>
-                        <div></div>
-                    </SwiperSlide>
-                    <SwiperSlide onClick={()=>cardClick(e)}>
+                    <SwiperSlide>
                         <div></div>
                     </SwiperSlide>
                         {
