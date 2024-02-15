@@ -140,13 +140,13 @@ function Picture() {
         <>
         <div  ref={maincontainer} className="h-[110vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center">
             <div className="relative h-[94vh] w-full flex justify-center bg-red-">
-                <div className="bg-[./border.png] p-2 relative h-[100%] w-[70%] -z-0 flex justify-center">
+                <div className="bg-[] p-2 relative h-[100%] w-[74%] -z-0 flex justify-center">
 
-                    {/* <img className="absolute mix-blend-multiply top-0 w-[70%] h-[100%]" src="./670 1.png" alt="img" /> */}
                     {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
-                    <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" />
-                    <img ref={bigImg} style={borderedImageStyle} className="transition-all z-10 mix-blend-multiply object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].slide_img} alt="" />
-                    <img className="absolute mix-blend-multiply object-cover top-0 w-[100%] h-[100%] z-20" src="./Vector.png" alt="image" />
+                    {/* <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" /> */}
+                    <img className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20" src="./670 1.png" alt="img" />
+                    <img ref={bigImg} style={borderedImageStyle} className="transition-all z-10  object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].slide_img} alt="" />
+                    <img className="absolute object-cover top-0 w-[100%] h-[100%] z-30" src="./Vector.png" alt="image" />
                 </div>
                 <div className="absolute bottom-52 left-72 text-white">
                     <div className="font-['kivi']  tracking-tighter leading-none pl-10">2 Mar 2023</div>
