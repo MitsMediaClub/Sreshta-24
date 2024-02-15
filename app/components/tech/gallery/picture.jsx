@@ -67,11 +67,12 @@ function Picture() {
         }
     }
 
-    const cardClick = (e)=>{
-        console.log("card clicked",e)
+    const cardClick = (e,i)=>{
+        console.log("card clicked",e,i)
         // setManinData(e)
-        bigImg.current.src = e.slide_img
+        // bigImg.current.src = e.slide_imgs
         // console.log('index',swiperRef.current.activeIndex = 1)
+        swiperRef.current.swiper.slideTo(i,400,false)
     }
 
 
@@ -140,12 +141,18 @@ function Picture() {
         <>
         <div  ref={maincontainer} className="h-[110vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center">
             <div className="relative h-[94vh] w-full flex justify-center bg-red-">
+                <div className="vertical absolute gap-1 justify-between w-[5%] h-3/6 flex items-center flex-col bg-green-300 top-[25%] right-10">
+                    <div>1</div>
+                    <div className="bg-blue-500 grow">bar</div>
+                    <div>5</div>
+                    </div>
                 <div className="bg-[] p-2 relative h-[100%] w-[74%] -z-0 flex justify-center">
 
                     {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
                     {/* <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" /> */}
                     <img className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20" src="./670 1.png" alt="img" />
-                    <img ref={bigImg} style={borderedImageStyle} className="transition-all z-10  object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].slide_img} alt="" />
+                    <img ref={bigImg} 
+                    style={borderedImageStyle} className="transition-all z-10  object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].slide_img} alt="" />
                     <img className="absolute object-cover top-0 w-[100%] h-[100%] z-30" src="./Vector.png" alt="image" />
                 </div>
                 <div className="absolute bottom-52 left-72 text-white">
@@ -154,19 +161,12 @@ function Picture() {
                     <div className="text-[1.2vw] tracking-tighter leading-nonel pl-32">The classics and the vintage, all in one garage.</div>
                 </div>
             <div className="z-20 text-white w-full absolute -bottom-16 h-[25vh]">
-                {/* <div ref={container} className="flex gap-2">
-                    <img className=" slider" src="./pexels-molnár-tamás-photography™-16061900 2.png" alt="" />
-                    <img className=" slider" src="./pexels-molnár-tamás-photography™-16061900 2.png" alt="" />
-                    <img className=" slider" src="./pexels-molnár-tamás-photography™-16061900 2.png" alt="" />
-                    <img className=" slider" src="./pexels-molnár-tamás-photography™-16061900 2.png" alt="" />
-                    <img className=" slider" src="./pexels-molnár-tamás-photography™-16061900 2.png" alt="" />
-                    <img className=" slider" src="./pexels-molnár-tamás-photography™-16061900 2.png" alt="" />
-                </div> */}
                 <Swiper
                 // onActiveIndexChange={detect}
                     // onSlideChange={detect}
-                    initialSlide={1}
-                    onRealIndexChange={e=>console.log(`index${e.activeIndex}`,detect(e.activeIndex))}
+                    ref={swiperRef}
+                    initialSlide={0}
+                    onRealIndexChange={e=>console.log(swiperRef.current,detect(e.activeIndex))}
                     spaceBetween={0}
                     centeredSlides={true}
                     slidesPerView={5}
@@ -185,13 +185,10 @@ function Picture() {
                     className="mySwiper"
                 >
                     <div className="swiper-wrapper">
-                    <SwiperSlide>
-                        <div></div>
-                    </SwiperSlide>
                         {
                             custom_data.map((e,i)=>{
                                 return (
-                                        <SwiperSlide key={i} onClick={()=>cardClick(e)}>
+                                        <SwiperSlide key={i} onClick={()=>cardClick(e,i)}>
                                             <img src={e.slide_img} alt="" />
                                         </SwiperSlide>
                                     )
