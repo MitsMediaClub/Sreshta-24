@@ -1,7 +1,10 @@
+import FloatButton from "./FloatButton";
+import { Landing } from "./landing/Landing";
+
 const TechMain = () => {
   return (
     <div className="min-h-screen bg-tech-bg">
-      <h2>Tech</h2>
+      <Landing />
     </div>
   );
 };
