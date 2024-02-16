@@ -11,12 +11,16 @@ module.exports = {
         offWhite: "#E9F8E8",
         tech: {
           primary: "#435856",
-          bg: "#B0BAAF",
+          bg: "#DAEBEC",
         },
         arts: {
           primary: "#585343",
           bg: "#BAB8AF",
         },
+      },
+      backgroundImage: {
+        "page-left": "url('/events/bg-left.png')",
+        "page-right": "url('/events/bg-right.png')",
       },
     },
   },
