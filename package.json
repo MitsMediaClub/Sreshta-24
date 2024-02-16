@@ -13,7 +13,8 @@
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "swiper": "^11.0.6"
+    "swiper": "^11.0.6",
+    "react-pageflip": "2.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
