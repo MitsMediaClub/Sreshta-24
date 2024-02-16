@@ -25,7 +25,7 @@ export const Landing = () => {
     const handleMouseLeave = () => {
       landingRef.current.removeEventListener("mousemove", cursorset);
     };
-
+    landingRef.current.addEventListener("mousemove", cursorset);
     landingRef.current.addEventListener("mouseenter", handleMouseEnter);
     landingRef.current.addEventListener("mouseleave", handleMouseLeave);
 
@@ -34,63 +34,30 @@ export const Landing = () => {
 
   return (
     <div
-      className="text-[#E9F8E8] overflow-x-hidden  relative w-full min-h-screem"
+      className="text-[#E9F8E8] overflow-x-hidden cursor-none relative w-full min-h-screen"
       ref={landingRef}
     >
-      <div className="grayscale Wrapper1  overflow-hidden">
-        {/* Hero Image  */}
-        <div className=" h-screen relative">
-          <div className="flex flex-col gap-5 h-full">
-            <div className="flex gap-5 h-1/2">
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img1.png"
-                alt="Meh"
-                className=""
-              />
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img2.png"
-                alt="Meh"
-                className=""
-              />
-            </div>
-            <div className="flex gap-5 h-1/2">
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img3.png"
-                alt="Meh"
-                className=""
-              />
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img4.png"
-                alt="Meh"
-                className=""
-              />
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img5.png"
-                alt="Meh"
-                className=" "
-              />
-            </div>
-          </div>
-
-          {/* Hero Text  */}
-
-          <div className="HeroText absolute z-10 top-0 left-0 bg-no-repeat h-full w-full flex flex-col justify-center items-center">
+      <div className="relative">
+        <div className="HeroText absolute z-10 top-0 left-0 bg-no-repeat h-full w-full flex flex-col justify-center items-center">
+          <Image
+            className=" "
+            src={"/tech/Titles.png"}
+            width={800}
+            height={800}
+          ></Image>
+        </div>
+        <div className="grayscale Wrapper1">
+          {/* Hero Image  */}
+          <div className="relative">
             <Image
-              className=" "
-              src={"/tech/Titles.png"}
-              width={1000}
-              height={1000}
-            ></Image>
+              width={10000}
+              height={10000}
+              src="/landing/landingImage.png"
+              alt="Meh"
+              className="w-screen"
+            />
+
+            {/* Hero Text  */}
           </div>
         </div>
       </div>
@@ -103,55 +70,21 @@ export const Landing = () => {
       >
         {/* Hero Image  */}
         <div className="h-full relative">
-          <div className="flex flex-col gap-5 h-full">
-            <div className="flex gap-5 h-1/2">
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img1.png"
-                alt="Meh"
-                className=""
-              />
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img2.png"
-                alt="Meh"
-                className=" "
-              />
-            </div>
-            <div className="flex gap-5 h-1/2">
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img3.png"
-                alt="Meh"
-                className=""
-              />
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img4.png"
-                alt="Meh"
-                className=""
-              />
-              <Image
-                width={1000}
-                height={1000}
-                src="/tech/img5.png"
-                alt="Meh"
-                className=" "
-              />
-            </div>
-          </div>
+          <Image
+            width={10000}
+            height={10000}
+            src="/landing/landingImage.png"
+            alt="Meh"
+            className="w-screen"
+          />
 
           <div className="HeroText h-full w-full absolute z-10 top-0 left-0  bg-no-repeat   flex flex-col justify-center items-center">
             <div className="opacity-100 flex justify-center items-center">
               <Image
                 className=" "
                 src={"/tech/Titles.png"}
-                width={1000}
-                height={1000}
+                width={800}
+                height={800}
               ></Image>
             </div>
           </div>
