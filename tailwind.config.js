@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.02)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 3s ease-in-out infinite",
+      },
       colors: {
         offWhite: "#E9F8E8",
         tech: {

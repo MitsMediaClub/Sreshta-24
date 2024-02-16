@@ -3,12 +3,12 @@ import React from "react";
 
 const LandingMobile = () => {
   return (
-    <div className="lg:hidden md:hidden sm:block text-black">
+    <div className="lg:hidden md:hidden sm:block text-black px-1">
       <div className="text-[#E9F8E8] overflow-x-hidden  relative w-full min-h-screen">
         <div className="relative">
           <div className="HeroText px-10 absolute z-10 top-0 left-0 bg-no-repeat h-full w-full flex flex-col justify-center items-center">
             <Image
-              className=" "
+              className=" animate-wiggle"
               src={"/tech/Titles.png"}
               width={800}
               height={800}
