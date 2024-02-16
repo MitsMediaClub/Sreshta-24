@@ -6,7 +6,7 @@ import FloatButton from "../FloatButton";
 
 export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
-  const size = 400;
+  const size = 1200;
   const cursor = useRef();
   const landingRef = useRef(null);
   useEffect(() => {
