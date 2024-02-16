@@ -8,7 +8,7 @@ function Main() {
             <div className="flex">
               <div className="img">
                 <img
-                  className="rounded-full w-[10rem] h-[10rem]"
+                  className="rounded-full w-[10vw] h-[21vh] object-fill"
                   src="./image 1.png"
                   alt="imh"
                 />
@@ -17,20 +17,20 @@ function Main() {
                 <div className="flex justify-center items-center  rounded-full -translate-x-10 border-[0.5px] border-black bg-[rgba(0,0,0,0.3)]
                 backdrop-blur-sm
                 ">
-                  <h1 className="capitalize h-[10rem] w-[10rem] flex justify-center items-center">
+                  <h1 className="capitalize w-[10vw] h-[21vh] flex justify-center items-center">
                     gallery
                   </h1>
                 </div>
               </div>
             </div>
-              <div className="text-6xl">
+              <div className="text-[4.3vw] tracking-tighter leading-none">
                 <p>More than 100</p>
                 <p>events to conquer</p>
               </div>
-              <div className="bg-[rgba(67,88,86,1)] w-[25%] h-1"></div>
-              <div className="h-[10vh] w-[10%] bg-red-500 relative">
+              <div className="bg-[#375E5E] w-[25%] h-1"></div>
+              <div className="h-[10vh] w-[10%] relative">
                 <img className="" src="./Group 39.png" alt="" />
-                  <div className="absolute top-[50%] left-[50%] -translate-x-[50%] text-6xl">
+                  <div className="absolute top-[50%] left-[50%] -translate-x-[50%] leading-none text-[4vw]">
                 02
                 </div>
               </div>
