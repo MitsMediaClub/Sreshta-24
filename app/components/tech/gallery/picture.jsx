@@ -1,6 +1,6 @@
 'use client'
 import { gsap } from "gsap";
-import { useRef,useLayoutEffect,useState } from "react";
+import { useRef,useLayoutEffect,useState, useEffect } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -15,39 +15,18 @@ function Picture() {
 
     let custom_data = [
         {
-            "slide_img":"./pexels-jeremy-alford-13172446 1.png",
+            "slide_img":"./s1.png",
+            'main_img':"./pexels-jeremy-alford-13172446 1.png",
             "text":["text1","text1","text1"],
         },
         {
             "slide_img":"./pexels-molnár-tamás-photography™-16061900 2.png",
+            'main_img':"./m2.png",
             "text":["text1","text1","text1"],
         },
         {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 3.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-jeremy-alford-13172446 1.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 2.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 2.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-jeremy-alford-13172446 1.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 3.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 3.png",
+            "slide_img":"./s3.png",
+            'main_img':"./m3.png",
             "text":["text1","text1","text1"],
         },
         
@@ -58,12 +37,19 @@ function Picture() {
     const maincontainer = useRef(null)
     const swiperRef = useRef(null);
 
+
+    useEffect(()=>{
+        if(swiperRef.current.swiper){
+            console.log("swiper init")
+        }
+    })
+
     const detect = (e)=>{
         // console.log("slide changed",Swiper.activeIndex)
         if(undefined!=custom_data[e]){
             console.log("slide changed",e)
             console.log(custom_data[e].slide_img)
-            bigImg.current.src = custom_data[e].slide_img
+            bigImg.current.src = custom_data[e].main_img
         }
     }
 
@@ -141,26 +127,31 @@ function Picture() {
         <>
         <div  ref={maincontainer} className="h-[110vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center">
             <div className="relative h-[94vh] w-full flex justify-center bg-red-">
-                <div className="vertical absolute gap-1 justify-between w-[5%] h-3/6 flex items-center flex-col bg-green-300 top-[25%] right-10">
-                    <div>1</div>
-                    <div className="bg-blue-500 grow">bar</div>
-                    <div>5</div>
+                <div className="vertical absolute z-40 gap-0 justify-between w-[5%] h-3/6 flex items-center flex-col bg-green- top-[25%] right-10">
+                    <div className="py-4 text-4xl font-mono">01</div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                    <div className="py-4 text-4xl font-mono">05</div>
                     </div>
-                <div className="bg-[] p-2 relative h-[100%] w-[74%] -z-0 flex justify-center">
+                <div className="bg-[] p-2 relative h-[100%] w-[85%] -z-0 flex justify-center">
 
                     {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
                     {/* <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" /> */}
                     <img className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20" src="./670 1.png" alt="img" />
                     <img ref={bigImg} 
-                    style={borderedImageStyle} className="transition-all z-10  object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].slide_img} alt="" />
-                    <img className="absolute object-cover top-0 w-[100%] h-[100%] z-30" src="./Vector.png" alt="image" />
+                    style={borderedImageStyle} className="transition-all z-10 object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].main_img} alt="" />
+                    <img className="absolute object-cover bottom-0 w-[100%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[70%] z-30" src="./Vector.png" alt="image" />
                 </div>
-                <div className="absolute bottom-52 left-72 text-white">
-                    <div className="font-['kivi']  tracking-tighter leading-none pl-10">2 Mar 2023</div>
-                    <div className="text-[4vw] tracking-tighter leading-none">Motor Show</div>
-                    <div className="text-[1.2vw] tracking-tighter leading-nonel pl-32">The classics and the vintage, all in one garage.</div>
+                <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8]">
+                    <div className="font-['kivi']  tracking-tighter leading-none Banger text-4xl pl-10">2 Mar 2023</div>
+                    <div className="text-9xl tracking-tighter leading-none Banger">Motor Show</div>
+                    <div className="text-[1.2vw] tracking-tighter leading-nonel dg-text text-6xl">The classics and the vintage, all in one garage.</div>
                 </div>
-            <div className="z-20 text-white w-full absolute -bottom-16 h-[25vh]">
+            <div className="z-20 text-white w-full absolute -bottom-[10%] h-[25vh]">
                 <Swiper
                 // onActiveIndexChange={detect}
                     // onSlideChange={detect}

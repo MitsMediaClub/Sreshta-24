@@ -5,6 +5,7 @@
 }
 
 .swiper-slide {
+  width: 100%;
   text-align: center;
   font-size: 18px;
   color: black;
@@ -37,3 +38,22 @@
   border-image-slice: 20; 
   border-image-repeat: round;
 } */
+
+@font-face {
+  font-family: doggy;
+  src: url(./GOODDP__.TTF);
+}
+
+@font-face {
+  font-family: banger;
+  src: url(./Bangers.ttf);
+}
+
+.dg-text{
+  font-family: doggy;
+  /* color: #375E5E; */
+}
+
+.Banger{
+  font-family: banger;
+}
