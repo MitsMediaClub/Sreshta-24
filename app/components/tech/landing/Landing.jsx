@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import FloatButton from "../FloatButton";
 
 export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
@@ -34,7 +35,7 @@ export const Landing = () => {
 
   return (
     <div
-      className="text-[#E9F8E8] overflow-x-hidden cursor-none relative w-full min-h-screen"
+      className="text-[#E9F8E8] overflow-x-hidden  relative w-full min-h-screen"
       ref={landingRef}
     >
       <div className="relative">
@@ -75,21 +76,22 @@ export const Landing = () => {
             height={10000}
             src="/landing/landingImage.png"
             alt="Meh"
-            className="w-screen"
+            className="w-screen "
           />
 
-          <div className="HeroText h-full w-full absolute z-10 top-0 left-0  bg-no-repeat   flex flex-col justify-center items-center">
+          <div className="HeroText h-full w-full absolute z-10 top-0 left-0  bg-no-repeat   flex flex-col justify-center items-center ">
             <div className="opacity-100 flex justify-center items-center">
-              <Image
+              {/* <Image
                 className=" "
                 src={"/tech/Titles.png"}
                 width={800}
                 height={800}
-              ></Image>
+              ></Image> */}
             </div>
           </div>
         </div>
       </div>
+      {/* <FloatButton></FloatButton> */}
     </div>
   );
 };
