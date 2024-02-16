@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
-
+  const size = 400;
   const cursor = useRef();
   const landingRef = useRef(null);
   useEffect(() => {
@@ -13,7 +13,9 @@ export const Landing = () => {
       const rect = landingRef.current.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      cursor.current.style.webkitMaskPosition = `${x}px ${y}px`;
+      cursor.current.style.webkitMaskPosition = `${x - size / 2}px ${
+        y - size / 2
+      }px`;
     };
 
     const handleMouseEnter = (e) => {
@@ -32,7 +34,7 @@ export const Landing = () => {
 
   return (
     <div
-      className="text-[#E9F8E8] overflow-x-hidden cursor-none relative w-full min-h-screem"
+      className="text-[#E9F8E8] overflow-x-hidden  relative w-full min-h-screem"
       ref={landingRef}
     >
       <div className="grayscale Wrapper1  overflow-hidden">
@@ -97,7 +99,7 @@ export const Landing = () => {
       {/* ------------------------------------------------------------ */}
       <div
         ref={cursor}
-        className="Wrapper2 absolute top-0  left-0  z-0 mask h-full w-full overflow-hidden"
+        className="Wrapper2 ease-out duration-75 absolute top-0  left-0  z-0 mask h-full w-full overflow-hidden"
       >
         {/* Hero Image  */}
         <div className="h-full relative">
