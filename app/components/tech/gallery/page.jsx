@@ -3,8 +3,8 @@ import './styles.css'
 function Main() {
   return (
     <>
-      <div className=" border-2 border-black min-h-screen">
-        <div className="px-20 border-black">
+      <div className="min-h-screen">
+        <div className="px-32 border-black">
           <div className="top flex items-center justify-between">
             <div className="flex">
               <div className="img">

@@ -17,16 +17,19 @@ function Picture() {
         {
             "slide_img":"./s1.png",
             'main_img':"./pexels-jeremy-alford-13172446 1.png",
+            'card_name':"Motor show",
             "text":["text1","text1","text1"],
         },
         {
             "slide_img":"./pexels-molnár-tamás-photography™-16061900 2.png",
             'main_img':"./m2.png",
+            'card_name':"bharati nattitam",
             "text":["text1","text1","text1"],
         },
         {
             "slide_img":"./s3.png",
             'main_img':"./m3.png",
+            'card_name':"mind games",
             "text":["text1","text1","text1"],
         },
         
@@ -134,7 +137,6 @@ function Picture() {
                         <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
                         <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
                         <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
-                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
                     <div className="py-4 text-4xl font-mono">05</div>
                     </div>
                 <div className="bg-[] p-2 relative h-[100%] w-[85%] -z-0 flex justify-center">
@@ -144,14 +146,14 @@ function Picture() {
                     <img className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20" src="./670 1.png" alt="img" />
                     <img ref={bigImg} 
                     style={borderedImageStyle} className="transition-all z-10 object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].main_img} alt="" />
-                    <img className="absolute object-cover bottom-0 w-[100%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[70%] z-30" src="./Vector.png" alt="image" />
+                    <img className="absolute object-cover bottom-0 w-[100%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30" src="./Vector.png" alt="image" />
                 </div>
                 <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8]">
                     <div className="font-['kivi']  tracking-tighter leading-none Banger text-4xl pl-10">2 Mar 2023</div>
                     <div className="text-9xl tracking-tighter leading-none Banger">Motor Show</div>
-                    <div className="text-[1.2vw] tracking-tighter leading-nonel dg-text text-6xl">The classics and the vintage, all in one garage.</div>
+                    <div className="tracking-tighter leading-nonel dg-text text-6xl">The classics and the vintage, all in one garage.</div>
                 </div>
-            <div className="z-20 text-white w-full absolute -bottom-[10%] h-[25vh]">
+            <div className="z-20 text-white w-full absolute -bottom-[10%] h-[25vh] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
                 <Swiper
                 // onActiveIndexChange={detect}
                     // onSlideChange={detect}
@@ -179,7 +181,15 @@ function Picture() {
                         {
                             custom_data.map((e,i)=>{
                                 return (
-                                        <SwiperSlide key={i} onClick={()=>cardClick(e,i)}>
+                                        <SwiperSlide key={i} onClick={()=>cardClick(e,i)} className="relative">
+                                            <div className="text-3xl text-[rgba(255,255,255,1)] text-left font-semibold left-7 bottom-7 absolute z-50 text-white Banger tracking-widest">
+                                                <div>
+                                                    {`0${i+1}`}
+                                                </div>
+                                                <div>
+                                                    {e.card_name}
+                                                </div>
+                                            </div>
                                             <img src={e.slide_img} alt="" />
                                         </SwiperSlide>
                                     )
