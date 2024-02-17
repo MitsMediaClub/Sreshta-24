@@ -1,0 +1,18 @@
+{
+    "Leads":[{
+            "name":"name1",
+            "designation":"UI/UX",
+            "image":"/studentcouncil/image1.png"
+        },
+        {
+            "name":"name2",
+            "designation":"UI/UX",
+            "image":"/studentcouncil/image1.png"
+        },
+        {
+            "name":"name3",
+            "designation":"UI/UX",
+            "image":"/studentcouncil/image1.png"
+        }
+    ]
+}
