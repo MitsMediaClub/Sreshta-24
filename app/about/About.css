@@ -59,7 +59,7 @@ color: #000000;
   /* Background Image */
   width: 100vw;
   height: 130vh;
-  background-image: url('/about-people-2.png');
+  background-image: url('/about/about-people-2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -87,7 +87,7 @@ height: 10vh;
 font-family: 'Bangers';
 font-style: normal;
 font-weight: 400;
-font-size: 96px;
+font-size: 6em;
 align-self: center;
 text-align: center;
 /* identical to box height, or 99px */
@@ -129,7 +129,7 @@ color: #285F5F;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/FrameMain.png");
+  background-image: url("/about/FrameMain.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -194,7 +194,7 @@ color: #285F5F;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/FrameMain.png");
+  background-image: url("/about/FrameMain.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -270,7 +270,7 @@ color: #285F5F;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/FrameMain.png");
+  background-image: url("/about/FrameMain.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
