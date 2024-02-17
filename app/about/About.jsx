@@ -3,6 +3,7 @@ import Image from 'next/image';
 import "./About.css"
 //import the json file
 import data from './StudentCouncil.json';
+import mediaclub from './MediaClub.json';
 
 
 export default function AboutPage() {
@@ -16,6 +17,17 @@ export default function AboutPage() {
       <p className='our-team-subtext'>The Heroes, the Legends, the Myths</p>
       <div className='background-image gradient-overlay'></div>
       <StudentCouncil data={data}/>
+
+      <div className='team-container'>
+      <p className='subsection-title'>Media Club</p>
+        <MediaClub data={mediaclub}/>
+      </div>
+
+      <div className='team-container'>
+      <p className='subsection-title'>Web Dev</p>
+        <MediaClub data={mediaclub}/>
+      </div>
+      
     </div>
   );
 };
@@ -33,7 +45,7 @@ function StudentCouncil({data}){
         {data.Leads.map((lead,index) => {
           return (
             <div className='student-council-leads' key={index}>
-              <img className='lead-image' src={lead.image} alt={lead.name} />
+              <Image src={lead.image} height={300} width={300} className='lead-image'></Image>
               <div className='lead-details'>
                 <p className='lead-name'>{lead.name}</p>
                 <p className='lead-designation'>{lead.designation}</p>
@@ -46,7 +58,7 @@ function StudentCouncil({data}){
         {data.Members.map((member,index) => {
           return (
             <div className='student-council-members' key={index}>
-              <img className='member-image' src={member.image} alt={member.name} />
+              <Image src={member.image} height={200} width={200} layout="fixed" className='member-image'></Image>
               <div className='member-details'>
                 <p className='member-name'>{member.name}</p>
                 <p className='member-designation'>{member.designation}</p>
@@ -58,7 +70,25 @@ function StudentCouncil({data}){
     </div>
   );
 
-
 }
 
-function MediaClub(){}
+function MediaClub({data}){
+  data.Members.map((member) => {
+    console.log(member)
+  })
+  return (
+      <div className='team-members-container'>
+        {data.Members.map((member,index) => {
+          return (
+            <div className='team-members' key={index}>
+              <Image src={member.image} height={200} width={200} layout="fixed" className='member-image'></Image>
+              <div className='member-details'>
+                <p className='member-name'>{member.name}</p>
+                <p className='member-designation'>{member.designation}</p>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+  );
+}

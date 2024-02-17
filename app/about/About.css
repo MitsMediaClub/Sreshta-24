@@ -4,14 +4,14 @@
 
 .about-container{
   /* About */
-
   position: absolute;
   width: 100vw;
-  height: 600vh;
+  height: 950vh;
   display: flex;
   flex-direction: column;
   background: #D6ECEC;
   background: color(display-p3 0.855 0.922 0.925);
+  gap:200px
 
 }
 
@@ -46,7 +46,7 @@ padding: auto;
 font-family: 'GoodDog';
 font-style: normal;
 font-weight: 400;
-font-size: 2em ;
+font-size: 4em ;
 /* or 49px */
 align-self: center;
 text-align: center;
@@ -58,7 +58,7 @@ color: #000000;
 .background-image {
   /* Background Image */
   width: 100vw;
-  height: 135vh;
+  height: 1500px;
   background-image: url('/about-people-2.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,18 +99,18 @@ color: #285F5F;
 .student-council-container{
   /* Members Container */
   width: 100vw;
-  height: 100vh;
+  height: 230vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10%;
+  gap: 40px;
 }
 
 .student-council-leads-container {
   /* Leads */
   top: 10%;
   justify-content: center ;
-  gap:5%;
+  gap:2%;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -120,8 +120,8 @@ color: #285F5F;
 
 .student-council-leads {
   /* Leads */
-  width: 20%;
-  height: 100%;
+  width: 300px;
+  height: 400px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -135,7 +135,8 @@ color: #285F5F;
 .student-council-leads .lead-image {
   /* Leads */
   width: 100%;
-  height: max-content;
+  object-fit: fill;
+  height: fit-content;
   position: relative;
   top: 0;
   left: 0;
@@ -174,7 +175,6 @@ color: #285F5F;
 .student-council-members-container {
   /* Members */
   justify-content: center ;
-  height: fit-content;
   gap:2%;
   width: 90%;
   height: fit-content;
@@ -186,8 +186,8 @@ color: #285F5F;
 
 .student-council-members-container .student-council-members {
   /* Members */
-  width: 15%;
-  height: fit-content;
+  width: 300px;
+  height: 350px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -203,6 +203,7 @@ color: #285F5F;
   width: 100%;
   height: max-content;
   position: relative;
+  object-fit: fill;
   top: 0;
   left: 0;
 }
@@ -228,6 +229,80 @@ color: #285F5F;
 }
 
 .student-council-members-container .student-council-members .member-details .member-designation{
+  font-size: 20px;
+  font-family: "GoodDog";
+  color:white;
+
+}
+
+
+.team-container{
+  /* Members Container */
+  width: 100vw;
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.team-container .team-members-container {
+  /* Members */
+  justify-content: center ;
+  gap:2%;
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #D6ECEC;
+}
+
+.team-container .team-members-container .team-members {
+  /* Members */
+  width: 300px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/FrameMain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.team-container .team-members-container .team-members .member-image {
+  /* Members */
+  width: 100%;
+  height: max-content;
+  position: relative;
+  object-fit: fill;
+  top: 0;
+  left: 0;
+}
+
+.team-container .team-members-container .team-members .member-details{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bangers";
+  font-size: 20px;
+  color:white;
+  position: absolute;
+  bottom: -70%;
+  left: 0;
+}
+
+.team-container .team-members-container .team-members .member-details .member-name{
+  font-size: 30px;
+  color:white;
+
+}
+
+.team-container .team-members-container .team-members .member-details .member-designation{
   font-size: 20px;
   font-family: "GoodDog";
   color:white;
