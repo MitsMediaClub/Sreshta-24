@@ -41,12 +41,12 @@
 
 @font-face {
   font-family: doggy;
-  src: url(./GOODDP__.TTF);
+  src: url(../../../../public/gallery_fonts/GOODDP__.TTF);
 }
 
 @font-face {
   font-family: banger;
-  src: url(./Bangers.ttf);
+  src: url(../../../../public/gallery_fonts/Bangers.ttf);
 }
 
 .dg-text{

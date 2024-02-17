@@ -128,9 +128,12 @@ function Picture() {
 
     return ( 
         <>
-        <div  ref={maincontainer} className="h-[110vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center">
-            <div className="relative h-[94vh] w-full flex justify-center bg-red-">
-                <div className="vertical absolute z-40 gap-0 justify-between w-[5%] h-3/6 flex items-center flex-col bg-green- top-[25%] right-10">
+        <div  ref={maincontainer} className="h-[110vh] mh:pt-8 mobile:h-[80vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center">
+            <div className="relative h-[94vh] w-full flex justify-center bg-red- mobile:h-[60vh] tw:bg-orange-
+            mh:h-[97vh] mobile:bg-green-">
+                <div className="vertical absolute z-40 gap-0 justify-between w-[5%] h-3/6 flex items-center flex-col bg-green- top-[25%] right-5
+                mobile:opacity-0 mh:opacity-0 tw:opacity-0
+                ">
                     <div className="py-4 text-4xl font-mono">01</div>
                         <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
                         <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
@@ -139,21 +142,21 @@ function Picture() {
                         <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
                     <div className="py-4 text-4xl font-mono">05</div>
                     </div>
-                <div className="bg-[] p-2 relative h-[100%] w-[85%] -z-0 flex justify-center">
+                <div className="bg-[] p-2 relative h-[100%] w-[85%] mobile:w-[97%] tw:w-[90%] mobile:p-1 -z-0 flex justify-center mh:w-[75%]">
 
                     {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
                     {/* <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" /> */}
                     <img className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20" src="./670 1.png" alt="img" />
                     <img ref={bigImg} 
-                    style={borderedImageStyle} className="transition-all z-10 object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].main_img} alt="" />
+                    style={borderedImageStyle} className="transition-all z-10 object-cover tw:object-fill mh:object-fill mobile:object-fill top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].main_img} alt="" />
                     <img className="absolute object-cover bottom-0 w-[100%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30" src="./Vector.png" alt="image" />
                 </div>
-                <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8]">
-                    <div className="font-['kivi']  tracking-tighter leading-none Banger text-4xl pl-10">2 Mar 2023</div>
-                    <div className="text-9xl tracking-tighter leading-none Banger">Motor Show</div>
-                    <div className="tracking-tighter leading-nonel dg-text text-6xl">The classics and the vintage, all in one garage.</div>
+                <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] mh:bottom-[19%]">
+                    <div className="font-['kivi']  tracking-tighter leading-none Banger text-4xl pl-10 mobile:text-sm mh:text-sm mobile:pl-2 mh:pl-2">2 Mar 2023</div>
+                    <div className="text-9xl tracking-tighter leading-none Banger mobile:text-5xl mh:text-5xl">Motor Show</div>
+                    <div className="tracking-tighter leading-nonel dg-text text-6xl mobile:text-3xl mh:text-3xl">The classics and the vintage, all in one garage.</div>
                 </div>
-            <div className="z-20 text-white w-full absolute -bottom-[10%] h-[25vh] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
+            <div className="z-20 text-white w-full absolute -bottom-[10%] h-[25vh] mobile:h-[14vh] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
                 <Swiper
                 // onActiveIndexChange={detect}
                     // onSlideChange={detect}
@@ -182,7 +185,8 @@ function Picture() {
                             custom_data.map((e,i)=>{
                                 return (
                                         <SwiperSlide key={i} onClick={()=>cardClick(e,i)} className="relative">
-                                            <div className="text-3xl text-[rgba(255,255,255,1)] text-left font-semibold left-7 bottom-7 absolute z-50 text-white Banger tracking-widest">
+                                            <div className="text-3xl mobile:text-xs mh:text-xs mobile:tracking-tighter mobile:left-1 mobile:bottom-1 mh:left-1 mh:bottom-4
+                                             text-[rgba(255,255,255,1)] text-left font-semibold left-7 bottom-7 absolute z-50 text-white Banger tracking-widest">
                                                 <div>
                                                     {`0${i+1}`}
                                                 </div>
@@ -190,7 +194,7 @@ function Picture() {
                                                     {e.card_name}
                                                 </div>
                                             </div>
-                                            <img src={e.slide_img} alt="" />
+                                            <img className="mobile:object-contain" src={e.slide_img} alt="" />
                                         </SwiperSlide>
                                     )
                                 })
