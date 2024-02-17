@@ -17,23 +17,108 @@
         {
             "name":"Balakrishnan K S",
             "designation":"General Secretary",
-            "image":"/studentcouncil/image1.png" 
+            "image":"/studentcouncil/balu.png" 
+        },
+        {
+            "name":"Tomin V J",
+            "designation":"Arts Secretary",
+            "image":"/studentcouncil/tomin.png" 
+        },
+        {
+            "name":"Salman Rawther P M",
+            "designation":"Sports Secretary",
+            "image":"/studentcouncil/salman.png" 
         }
     ],
     "Members":[{
-            "name":"name1",
-            "designation":"UI/UX",
-            "image":"/studentcouncil/image1.png"
+            "name":"Swathy S Krishna",
+            "designation":"Magazine Editor",
+            "image":"/studentcouncil/swathy.png"
         },
         {
-            "name":"name2",
-            "designation":"UI/UX",
-            "image":"/studentcouncil/image1.png"
+            "name":"R Krishna Priya",
+            "designation":"Lady Rep 1",
+            "image":"/studentcouncil/krishnapriya.png"
         },
         {
-            "name":"name3",
-            "designation":"UI/UX",
-            "image":"/studentcouncil/image1.png"
+            "name":"Meenakshi Biju",
+            "designation":"Lady Rep 2",
+            "image":"/studentcouncil/meenakshi.png"
+        },
+        {
+            "name":"Nandana P M",
+            "designation":"UUC 1",
+            "image":"/studentcouncil/nandana.png"
+        },
+        {
+            "name":"Anagha Ravikumar",
+            "designation":"UUC 2",
+            "image":"/studentcouncil/anagha.png"
+        },
+        {
+            "name":"Arshitha Mohanan",
+            "designation":"Special Representative",
+            "image":"/studentcouncil/arshitha.png"
+        },
+        {
+            "name":"Gayathri M R",
+            "designation":"First Year Rep 1",
+            "image":"/studentcouncil/gayathri.png"
+        },
+        {
+            "name":"Goutham Ajay Nair",
+            "designation":"First Year Rep 2",
+            "image":"/studentcouncil/goutham.png"
+        },
+        {
+            "name":"Abhinav MP",
+            "designation":"Program Rep-CE",
+            "image":"/studentcouncil/abhinav.png"
+        },
+        {
+            "name":"Varun Raj T R",
+            "designation":"Program Rep-ME",
+            "image":"/studentcouncil/varunraj.png"
+        },
+        {
+            "name":"Amal K M",
+            "designation":"Program Rep-EEE",
+            "image":"/studentcouncil/amal.png"
+        },
+        {
+            "name":"Sibin Saji",
+            "designation":"Program Rep-ECE",
+            "image":"/studentcouncil/sibin.png"
+        },
+        {
+            "name":"Chinmai S Nath",
+            "designation":"Program Rep-CSE",
+            "image":"/studentcouncil/chinmai.png"
+        },
+        {
+            "name":"Amy M Elamblasserial",
+            "designation":"Program Rep-CSE AI",
+            "image":"/studentcouncil/amy.png"
+        },
+        {
+            "name":"Bala Murali Gautham",
+            "designation":"Program Rep-AI&DS",
+            "image":"/studentcouncil/bala.png"
+        },
+        {
+            "name":"Andrew C Anil",
+            "designation":"Program Rep-CSE CY",
+            "image":"/studentcouncil/andrew.png"
+        },
+        {
+            "name":"Ragesh K",
+            "designation":"Program Rep-PG",
+            "image":"/studentcouncil/ragesh.png"
+        },
+        {
+            "name":"D Yadukrishnan",
+            "designation":"Program Rep-MCA",
+            "image":"/studentcouncil/yadukrishnan.png"
         }
     ]
 }
