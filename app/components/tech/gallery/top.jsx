@@ -1,56 +1,30 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Top = () => {
   return (
     // <div>Top</div>
     <>
-        <div className="px-32 bg-red-">
+        <div className="px-20 bg-red- mh:px-10 mobile:px-4">
           <div className="flex items-center justify-between">
-            <div className="flex">
-              {/* <div className="img">
-                <img
-                  className="rounded-full w-[11vw] h-[100%] object-cover"
-                  src="./image 1.png"
-                  alt="imh"
-                />
+              <div className=' w-[15%] h-[25%] flex items-center relative mr-4'>
+                <Image height={1000} width={1000} src='/image 1.png' className='rounded-full h-full object-cover'></Image>
+                <div className='bg-[rgba(55,94,94,0.21)] mobile:text-[0.5rem] border-[1px] border-[#4e4e4e] rounded-full h-full w-full absolute translate-x-[50%]
+                 backdrop-blur-sm flex justify-center items-center text-5xl tw:text-xl'>gallery</div>
               </div>
-              <div className="img">
-                <div className="flex w-[8vw] h-[100%] justify-center items-center  rounded-full -translate-x-10 border-[0.5px] border-black bg-[rgba(0,0,0,0.3)]
-                backdrop-blur-sm
-                ">
-                  <h1 className="capitalize flex justify-center items-center">
-                    gallery
-                  </h1>
-                </div>
-              </div> */}
-              <img
-                  className=" object-contain"
-                  src="./image 1.png"
-                  alt="imh"
-                />
-            </div>
-              <div className="text-[10ch] dg-text text-[#375E5E] tracking-tighter leading-none">
-                <p>More than 100</p>
-                <p>events to conquer</p>
+              <div className="text-[300%] mobile:text-[100%] tw:text-[180%] dg-text text-[#375E5E] tracking-tighter leading-none">
+                <p>Is past isn’t proof, </p>
+                <p>what else could be?</p>
               </div>
               <div className="bg-[#375E5E] w-[25%] h-1"></div>
-              <div className="h-[10vh] w-[10%] relative">
-                <img className="" src="./Group 39.png" alt="" />
-                  <div className="absolute top-[50%] text-[rgba(55,94,94,1)] left-[50%] -translate-x-[50%] leading-none font-mono text-[4vw]">
+              <div className="h-[12%] w-[15%] relative">
+                <Image height={1000} width={1000} className="h-[100%] w-full" src="/Group 39.png" alt="" />
+                  <div className="absolute top-[50%] -translate-y-[50%] text-[rgba(55,94,94,1)] left-[50%] -translate-x-[50%] leading-none font-mono text-[8vw]">
                 02
                 </div>
               </div>
           </div>
         </div>
-
-        {/* <div className='px-32 flex justify-between w-full'>
-            <div>pic</div>
-            <div>
-                <p>More than 100</p>
-                <p>events to conquer</p>
-            </div>
-            <div>page number</div>
-        </div> */}
     </>
   )
 }

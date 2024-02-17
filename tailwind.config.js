@@ -13,7 +13,8 @@ module.exports = {
           // max:'780px'
         },
         'mh':{'raw':'(max-height:680px)'},
-        'tw':{max:'1300px',min:'779px'}
+        'tw':{max:'1300px',min:'779px'},
+        'ip':{'raw':'(min-height:1060px)'}
       },
       colors: {
         offWhite: "#E9F8E8",
