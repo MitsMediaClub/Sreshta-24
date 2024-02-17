@@ -13,8 +13,9 @@
             "name":"Akash Ajith",
             "designation":"Tech Fest Coordinator",
             "image":"/studentcouncil/akash.png"
-        },
-        {
+        }
+    ],
+    "Members":[{
             "name":"Balakrishnan K S",
             "designation":"General Secretary",
             "image":"/studentcouncil/balu.png" 
@@ -28,9 +29,8 @@
             "name":"Salman Rawther P M",
             "designation":"Sports Secretary",
             "image":"/studentcouncil/salman.png" 
-        }
-    ],
-    "Members":[{
+        },
+        {
             "name":"Swathy S Krishna",
             "designation":"Magazine Editor",
             "image":"/studentcouncil/swathy.png"
