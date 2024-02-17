@@ -11,7 +11,7 @@
   flex-direction: column;
   background: #D6ECEC;
   background: color(display-p3 0.855 0.922 0.925);
-  gap:200px
+  gap:20px
 
 }
 
@@ -239,7 +239,8 @@ color: #285F5F;
 .team-container{
   /* Members Container */
   width: 100vw;
-  height: 250vh;
+  min-height: 200vh;
+  max-height: 250vh;
   display: flex;
   flex-direction: column;
   align-items: center;
