@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+
+.about-container{
+  /* About */
+
+  position: absolute;
+  width: 100vw;
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+  background: #D6ECEC;
+  background: color(display-p3 0.855 0.922 0.925);
+
+}
+
+.our-team-main-text {
+  /* OUR TEAM */
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+  padding: auto;
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 250.027px;
+  line-height: 103%;
+  /* identical to box height, or 258px */
+  align-self: center;
+
+  color: #FFFFFF;
+  color: color(display-p3 1.000 1.000 1.000);
+
+  text-shadow: -14px 17px 0px #00A478;
+  text-shadow: -14px 17px 0px color(display-p3 0.004 0.631 0.482);
+
+}
+
+.our-team-subtext {
+  /* The Heroes, the Legends, the Myths */
+width: 40%;
+height: 10vh;
+padding: auto;
+
+font-family: 'Comic Sans MS';
+font-style: normal;
+font-weight: 400;
+font-size: 2em ;
+/* or 49px */
+align-self: center;
+text-align: center;
+color: #000000;
+
+
+}
+
+.background-image {
+  /* Background Image */
+  width: 100vw;
+  height: 135vh;
+  background-image: url('https://s3-alpha-sig.figma.com/img/ada4/9c88/db41076e4b0e48e0875adcbf08e5c4f6?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T~kxLFdS62~BScngaqMJbyDYu0SVU1C52l9Nuaz9JeQaNJA-hPPtGa2xrDiD359Y6wFRpJAtgcm3Oxl8eaHq4btgyfqaL~rDtVR67NnwuM3Kw4ufbJ~lfF8WYGqh9DMGvCrAK4zFjnpR5P88Olv-BFXzInTovpJNLDaailWSfcakOLui2YQjku56YihkZ5blzUEM2dytIYNrNiFAe7B0GMtSpaWLLRcCdGkpOm7m1ObnOG2q2ohKL4iqYHjGkXt~Xxhzhkta-QTUJ5SYo-Ak50Yp2q747Eq-OeeRoRYI2yVfgou34sk4BFm9iQ54w-gGunhuHG4~4ZdBkOju0kE-Ew__');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: relative;
+
+
+}
+
+.background-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;/* Adjust this value to change the height of the gradient */
+  background: linear-gradient(to top, rgba(214, 236, 236,1), rgba(255, 255, 255, 0));
+}
+
