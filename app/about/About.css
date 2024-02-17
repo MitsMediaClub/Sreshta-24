@@ -7,7 +7,7 @@
 
   position: absolute;
   width: 100vw;
-  height: 400vh;
+  height: 600vh;
   display: flex;
   flex-direction: column;
   background: #D6ECEC;
@@ -96,18 +96,19 @@ color: #285F5F;
 
 }
 
-.members-container{
+.student-council-container{
   /* Members Container */
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20%;
+  gap: 10%;
 }
 
 .student-council-leads-container {
   /* Leads */
+  top: 10%;
   justify-content: center ;
   gap:5%;
   width: 100%;
@@ -163,6 +164,70 @@ color: #285F5F;
 }
 
 .student-council-leads .lead-details .lead-designation{
+  font-size: 20px;
+  font-family: "GoodDog";
+  color:white;
+
+}
+
+
+.student-council-members-container {
+  /* Members */
+  justify-content: center ;
+  height: fit-content;
+  gap:2%;
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #D6ECEC;
+}
+
+.student-council-members-container .student-council-members {
+  /* Members */
+  width: 15%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/FrameMain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.student-council-members-container .student-council-members .member-image {
+  /* Members */
+  width: 100%;
+  height: max-content;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.student-council-members-container .student-council-members .member-details{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bangers";
+  font-size: 20px;
+  color:white;
+  position: absolute;
+  bottom: -70%;
+  left: 0;
+}
+
+.student-council-members-container .student-council-members .member-details .member-name{
+  font-size: 30px;
+  color:white;
+
+}
+
+.student-council-members-container .student-council-members .member-details .member-designation{
   font-size: 20px;
   font-family: "GoodDog";
   color:white;
