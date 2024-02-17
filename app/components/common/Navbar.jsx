@@ -10,7 +10,7 @@ const Navbar = () => {
     document.getElementById("nav-part1").style.height = "10vh";
     document.getElementById("nav-items-main").style.width = "100vw";
     document.getElementById("nav-items-main").style.height = "90vh";
-    document.getElementById("nav-items-main").style.animationName = "nav";
+    document.getElementById("nav-items-main").style.animationName = "nav-open";
     document.getElementById("nav-items-main").style.animationDuration = "3s";
     document.getElementById("nav-items-main").style.backgroundColor = "#DAEBEC";
     document.getElementById("nav-burger").style.display = "none";
@@ -20,8 +20,10 @@ const Navbar = () => {
   }
   const navClose = () => {
     document.getElementById("nav-cross").style.display = "none";
-    document.getElementById("nav-items-main").style.display = "none";
     document.getElementById("nav-burger").style.display = "flex";
+    document.getElementById("nav-items-main").style.animationName = "nav-close";
+    document.getElementById("nav-items-main").style.animationDuration = "3s";
+    document.getElementById("nav-items-main").style.animationFillMode = "forwards";
   }
 
   return (
