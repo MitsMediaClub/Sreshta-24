@@ -27,7 +27,7 @@ function StudentCouncil({data}){
     console.log(lead)
   })
   return (
-    <div className='members-container'>
+    <div className='student-council-container'>
       <p className='subsection-title'>STUDENT COUNCIL</p>
       <div className='student-council-leads-container'>
         {data.Leads.map((lead,index) => {
@@ -38,7 +38,19 @@ function StudentCouncil({data}){
                 <p className='lead-name'>{lead.name}</p>
                 <p className='lead-designation'>{lead.designation}</p>
               </div>
-              
+            </div>
+          )
+        })}
+      </div>
+      <div className='student-council-members-container'>
+        {data.Members.map((member,index) => {
+          return (
+            <div className='student-council-members' key={index}>
+              <img className='member-image' src={member.image} alt={member.name} />
+              <div className='member-details'>
+                <p className='member-name'>{member.name}</p>
+                <p className='member-designation'>{member.designation}</p>
+              </div>
             </div>
           )
         })}
