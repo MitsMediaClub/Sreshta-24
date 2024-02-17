@@ -81,7 +81,7 @@ function MediaClub({data}){
         {data.Members.map((member,index) => {
           return (
             <div className='team-members' key={index}>
-              <Image src={member.image} height={200} width={200} layout="fixed" className='member-image'></Image>
+              <Image src={member.image} height={200} width={150} layout="fixed" className='member-image'></Image>
               <div className='member-details'>
                 <p className='member-name'>{member.name}</p>
                 <p className='member-designation'>{member.designation}</p>

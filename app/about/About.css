@@ -6,7 +6,7 @@
   /* About */
   position: absolute;
   width: 100vw;
-  height: 950vh;
+  height: 1250vh;
   display: flex;
   flex-direction: column;
   background: #D6ECEC;
@@ -99,11 +99,11 @@ color: #285F5F;
 .student-council-container{
   /* Members Container */
   width: 100vw;
-  height: 230vh;
+  height: 250vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 100px;
 }
 
 .student-council-leads-container {
@@ -186,8 +186,8 @@ color: #285F5F;
 
 .student-council-members-container .student-council-members {
   /* Members */
-  width: 300px;
-  height: 350px;
+  width: 200px;
+  height: 250px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -239,8 +239,8 @@ color: #285F5F;
 .team-container{
   /* Members Container */
   width: 100vw;
-  min-height: 200vh;
-  max-height: 250vh;
+  min-height: 220vh;
+  max-height: 300vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,8 +261,8 @@ color: #285F5F;
 
 .team-container .team-members-container .team-members {
   /* Members */
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 350px;
   position: relative;
   display: flex;
   flex-direction: column;
