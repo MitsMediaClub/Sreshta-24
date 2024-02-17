@@ -1,10 +1,9 @@
-import FloatButton from "./FloatButton";
-import { Landing } from "./landing/Landing";
-
+import Main from "./gallery/page";
 const TechMain = () => {
   return (
-    <div className="min-h-screen bg-tech-bg">
-      <Landing />
+    <div className="min-h-screen bg-[#DAEBEC]">
+      {/* <h2>Tech</h2> */}
+      <Main />
     </div>
   );
 };
