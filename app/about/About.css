@@ -6,7 +6,7 @@
   /* About */
   position: absolute;
   width: 100vw;
-  min-height: 1000vh;
+  min-height: 900vh;
   max-height: 1250vh;
   display: flex;
   flex-direction: column;
@@ -100,7 +100,8 @@ color: #285F5F;
 .student-council-container{
   /* Members Container */
   width: 100vw;
-  height: 250vh;
+  min-height: 200vh;
+  max-height: 250vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,7 +178,7 @@ color: #285F5F;
   justify-content: center ;
   gap:2%;
   width: 90%;
-  height: fit-content;
+  height: 150vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -237,8 +238,9 @@ color: #285F5F;
 
 .team-container{
   /* Members Container */
+  margin-top:0;
   width: 100vw;
-  min-height: 220vh;
+  min-height: 200vh;
   max-height: 300vh;
   display: flex;
   flex-direction: column;
@@ -251,7 +253,7 @@ color: #285F5F;
   justify-content: center ;
   gap:2%;
   width: 90%;
-  height: fit-content;
+  height: 180vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -260,6 +262,7 @@ color: #285F5F;
 
 .team-container .team-members-container .team-members {
   /* Members */
+
   width: 250px;
   height: 335px;
   position: relative;
