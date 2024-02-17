@@ -13,13 +13,14 @@
             "name":"Akash Ajith",
             "designation":"Tech Fest Coordinator",
             "image":"/studentcouncil/akash.png"
-        }
-    ],
-    "Members":[{
+        },
+        {
             "name":"Balakrishnan K S",
             "designation":"General Secretary",
             "image":"/studentcouncil/balu.png" 
-        },
+        }
+    ],
+    "Members":[
         {
             "name":"Tomin V J",
             "designation":"Arts Secretary",
