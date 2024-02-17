@@ -1,11 +1,56 @@
 {
     "Members":[{
-        "name":"name1",
-        "designation":"UI/UX",
-        "image":"/studentcouncil/image1.png"
+        "name":"Aravind Vinu",
+        "designation":"Club Lead",
+        "image":"/meadiaclub/Aravind.png"
     },
     {
-        "name":"name2",
+        "name":"Aleena Anna Robin",
+        "designation":"Club Lead",
+        "image":"/meadiaclub/Aleena.png"
+    },
+    {
+        "name":"Aasher Paul",
+        "designation":"Club Co-Lead",
+        "image":"/meadiaclub/Aasher.png"
+    },
+    {
+        "name":"Advaith Narayanan",
+        "designation":"Club Co-Lead",
+        "image":"/meadiaclub/Advaith.png"
+    },
+    {
+        "name":"Harisankar A",
+        "designation":"Creative Lead",
+        "image":"/meadiaclub/Harisankar.png"
+    },
+    {
+        "name":"Elvin Jacob Saji",
+        "designation":"Creative Lead",
+        "image":"/meadiaclub/Elvin.png"
+    },
+    {
+        "name":"Sharun Raj",
+        "designation":"Tech Lead",
+        "image":"/meadiaclub/Sharun.png"
+    },
+    {
+        "name":"Adrin Jose",
+        "designation":"Tech Co-Lead",
+        "image":"/meadiaclub/Adrin.png"
+    },
+    {
+        "name":"Amal Babu",
+        "designation":"Design Lead",
+        "image":"/meadiaclub/Amal.png"
+    },
+    {
+        "name":"Amalendu P",
+        "designation":"Content/Marketing Lead",
+        "image":"/meadiaclub/Amalendu.png"
+    },
+    {
+        "name":"name3",
         "designation":"UI/UX",
         "image":"/studentcouncil/image1.png"
     },
@@ -13,5 +58,26 @@
         "name":"name3",
         "designation":"UI/UX",
         "image":"/studentcouncil/image1.png"
-    }]
+    },
+    {
+        "name":"name3",
+        "designation":"UI/UX",
+        "image":"/studentcouncil/image1.png"
+    },
+    {
+        "name":"name3",
+        "designation":"UI/UX",
+        "image":"/studentcouncil/image1.png"
+    },
+    {
+        "name":"name3",
+        "designation":"UI/UX",
+        "image":"/studentcouncil/image1.png"
+    },
+    {
+        "name":"name3",
+        "designation":"UI/UX",
+        "image":"/studentcouncil/image1.png"
+    }
+    ]
 }
