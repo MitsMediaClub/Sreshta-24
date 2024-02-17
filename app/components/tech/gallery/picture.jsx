@@ -4,7 +4,7 @@ import { useRef,useLayoutEffect,useState, useEffect } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from "next/image";
-
+import backgroundImage from '../../../../public/gallery/border.png'
 import 'swiper/css';
 import './styles.css'
 
@@ -16,20 +16,20 @@ function Picture() {
 
     let custom_data = [
         {
-            "slide_img":"/s1.png",
-            'main_img':"/pexels-jeremy-alford-13172446 1.png",
+            "slide_img":"/gallery/s1.png",
+            'main_img':"/gallery/m1.png",
             'card_name':"Motor show",
             "text":["text1","text1","text1"],
         },
         {
-            "slide_img":"/pexels-molnár-tamás-photography™-16061900 2.png",
-            'main_img':"/m2.png",
+            "slide_img":"/gallery/pexels-molnár-tamás-photography™-16061900 2.png",
+            'main_img':"/gallery/m2.png",
             'card_name':"bharati nattitam",
             "text":["text1","text1","text1"],
         },
         {
-            "slide_img":"/s3.png",
-            'main_img':"/m3.png",
+            "slide_img":"/gallery/s3.png",
+            'main_img':"/gallery/m3.png",
             'card_name':"mind games",
             "text":["text1","text1","text1"],
         },
@@ -135,15 +135,18 @@ function Picture() {
                         <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
                     <div className="py-4 text-4xl font-mono">05</div>
                     </div>
-                <div className="bg-[] p-2 relative h-[100%] w-[85%] mobile:w-[97%] tw:w-[90%] mobile:p-1 -z-0 flex justify-center mh:w-[75%]">
+                    <div className="p-2 bg-cover h-[100%] w-[85%] mobile:w-[97%] mh:w-[75%] tw:w-[90%] mobile:p-1 -z-0" style={{
+                        backgroundImage:`url(${backgroundImage.src})`
+                    }}>
+                        <div className=" bg-contain bg-no-repeat bg-center relative h-[100%] flex justify-center ">
 
-                    {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
-                    {/* <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" /> */}
-                    <Image height={1000} width={1000} className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20" src="/670 1.png" alt="img" />
-                    <img height={1000} width={1000} ref={bigImg} 
-                     className="transition-all z-10 object-cover tw:object-fill mh:object-fill mobile:object-fill top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].main_img} alt="" />
-                    <Image height={1000} width={1000} className="absolute object-cover bottom-0 w-[100%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30" src="/Vector.png" alt="image" />
-                </div>
+                            {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
+                            {/* <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" /> */}
+                            <Image height={1000} width={1000} className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20" src="/670 1.png" alt="img" />
+                            <img ref={bigImg} className="transition-all z-10 object-cover tw:object-cover mh:object-cover mobile:object-fill top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].main_img} alt="" />
+                            <Image height={1000} width={1000} className="absolute object-cover bottom-0 w-[100%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30" src="/gallery/Vector.png" alt="image" />
+                        </div>
+                    </div>
                 <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] mh:bottom-[19%]">
                     <div className="font-['kivi']  tracking-tighter leading-none Banger text-4xl pl-10 mobile:text-sm mh:text-sm mobile:pl-2 mh:pl-2">2 Mar 2023</div>
                     <div className="text-9xl tracking-tighter leading-none Banger mobile:text-5xl mh:text-5xl">Motor Show</div>
