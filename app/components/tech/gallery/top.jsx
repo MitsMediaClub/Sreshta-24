@@ -32,7 +32,7 @@ const Top = () => {
       </div> */}
 
 
-      <div className="flex justify-around items-center gap-10 p-20">
+      <div className="flex justify-between items-center gap-10 mobile:gap-4 p-20 mobile:p-5">
             <Image
               width={500}
               height={500}

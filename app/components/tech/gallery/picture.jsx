@@ -4,7 +4,8 @@ import { useRef, useLayoutEffect, useState, useEffect } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import backgroundImage from "../../../../public/gallery/border.png";
+import backgroundImage from "../../../../public/gallery/m1.png";
+import border from "../../../../public/gallery/border.png";
 import "swiper/css";
 import styles from "./styles.module.css";
 
@@ -118,11 +119,11 @@ function Picture() {
     <>
       <div
         ref={maincontainer}
-        className="h-[110vh] mh:pt-8 mobile:h-[80vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center"
+        className="h-[110vh] bg-red- mh:pt-6 mobile:h-[80vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center"
       >
         <div
           className="relative h-[94vh] w-full flex justify-center bg-red- mobile:h-[60vh] ip:bg-orange
-            mh:h-[97vh] mobile:bg-green-"
+            mh:h-[97vh]"
         >
           <div
             className="vertical absolute z-40 gap-0 justify-between w-[5%] h-3/6 flex items-center flex-col bg-green- top-[25%] right-5
@@ -138,12 +139,18 @@ function Picture() {
             <div className="py-4 text-4xl font-mono">05</div>
           </div>
           <div
-            className="p-2 bg-cover h-[100%] w-[85%] mobile:w-[97%] mh:w-[75%] tw:w-[90%] mobile:p-1 -z-0"
+            className="bg-cover bg-center bg-no-repeat h-[100%] w-[85%] mobile:w-[97%] mh:w-[75%] tw:w-[90%] -z-0"
             style={{
               backgroundImage: `url(${backgroundImage.src})`,
             }}
           >
-            <div className=" bg-contain bg-no-repeat bg-center relative h-[100%] flex justify-center ">
+            <div
+            style={
+              {
+                backgroundImage:`url(${border.src})`
+              }
+            }
+            className="mobile:p-1 p-3 bg-cover bg-no-repeat bg-center relative h-[100%] flex justify-center ">
               <Image
                 height={1000}
                 width={1000}
@@ -177,7 +184,7 @@ function Picture() {
               The classics and the vintage, all in one garage.
             </div>
           </div>
-          <div className="z-20 text-white w-full absolute -bottom-[10%] h-[25vh] mobile:h-[14vh] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
+          <div className="z-20 text-white w-full absolute -bottom-[10%] mobile:-bottom-[20%] h-[25vh] mobile:h-[15vh] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
             <Swiper
               // onActiveIndexChange={detect}
               // onSlideChange={detect}
