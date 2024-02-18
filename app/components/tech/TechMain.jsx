@@ -1,7 +1,7 @@
 import FloatButton from "./FloatButton";
 import { Landing } from "./landing/Landing";
 import LandingMobile from "./landing/LandingMobile";
-
+import Main from "./gallery/page";
 const TechMain = () => {
   return (
     <>
@@ -11,6 +11,7 @@ const TechMain = () => {
       <div className=" bg-tech-bg">
         <LandingMobile />
       </div>
+      <Main />
     </>
   );
 };

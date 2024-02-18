@@ -16,6 +16,15 @@ module.exports = {
       animation: {
         wiggle: "wiggle 3s ease-in-out infinite",
       },
+      screens: {
+        'mobile': {
+         'raw':'(max-width:780px)' 
+          // max:'780px'
+        },
+        'mh':{'raw':'(max-height:680px)'},
+        'tw':{max:'1300px',min:'779px'},
+        'ip':{'raw':'(min-height:1060px)'}
+      },
       colors: {
         offWhite: "#E9F8E8",
         tech: {
