@@ -28,7 +28,9 @@ function Picture() {
       text: ["text1", "text1", "text1"],
     },
     {
-      slide_img: "/gallery/s3.png",
+      // slide_img: "/gallery/s3.png",
+      slide_img: "/gallery/s2.png",
+
       main_img: "/gallery/m3.png",
       card_name: "mind games",
       text: ["text1", "text1", "text1"],
@@ -150,7 +152,7 @@ function Picture() {
                 backgroundImage:`url(${border.src})`
               }
             }
-            className="mobile:p-1 p-3 bg-cover bg-no-repeat bg-center relative h-[100%] flex justify-center ">
+            className="mobile:p-1 p-2 bg-cover bg-no-repeat bg-center relative h-[100%] flex justify-center ">
               <Image
                 height={1000}
                 width={1000}
@@ -167,7 +169,7 @@ function Picture() {
               <Image
                 height={1000}
                 width={1000}
-                className="absolute object-cover bottom-0 w-[100%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
+                className="absolute object-cover bottom-2 w-[99%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
                 src="/gallery/Vector.png"
                 alt="image"
               />
