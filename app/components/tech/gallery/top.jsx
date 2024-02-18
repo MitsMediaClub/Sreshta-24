@@ -5,13 +5,8 @@ const Top = () => {
   return (
     // <div>Top</div>
     <>
-      <div className="px-20 bg-red- mh:px-10 mobile:px-4">
+      {/* <div className="px-20 bg-red- mh:px-10 mobile:px-4">
         <div className="flex items-center justify-between">
-          {/* <div className=' w-[15%] h-[25%] flex items-center relative mr-4'>
-                <Image height={1000} width={1000} src='/gallery/image 1.png' className='rounded-full h-full object-cover'></Image>
-                <div className='bg-[rgba(55,94,94,0.21)] mobile:text-[0.5rem] border-[1px] border-[#4e4e4e] rounded-full h-full w-full absolute translate-x-[50%]
-                 backdrop-blur-sm flex justify-center items-center text-5xl tw:text-xl'>gallery</div>
-              </div> */}
           <Image
             width={1000}
             height={1000}
@@ -34,6 +29,28 @@ const Top = () => {
             />
           </div>
         </div>
+      </div> */}
+
+
+      <div className="flex justify-between items-center gap-10 mobile:gap-4 p-20 mobile:p-5">
+            <Image
+              width={500}
+              height={500}
+              src="/gallery/topL.png"
+              alt="Meh"
+              className="w-44"
+            />
+            <h1 className="dog text-5xl mobile:text-xs text-tech-primary">
+              More than 100 <br /> events to conquer
+            </h1>
+            <hr className="w-1/2 h-1 bg-tech-primary" />
+            <Image
+              width={500}
+              height={500}
+              src="/gallery/topR.png"
+              alt="Meh"
+              className="w-32"
+            />
       </div>
     </>
   );

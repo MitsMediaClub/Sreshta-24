@@ -1,6 +1,6 @@
 import Picture from "./picture";
 import Top from "./top";
-import "./styles.css";
+import "./styles.module.css";
 function Main() {
   return (
     <>
