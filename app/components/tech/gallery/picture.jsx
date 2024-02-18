@@ -1,9 +1,10 @@
 'use client'
 import { gsap } from "gsap";
-import { useRef,useLayoutEffect,useState } from "react";
+import { useRef,useLayoutEffect,useState, useEffect } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Image from "next/image";
+import backgroundImage from '../../../../public/gallery/border.png'
 import 'swiper/css';
 import './styles.css'
 
@@ -15,39 +16,21 @@ function Picture() {
 
     let custom_data = [
         {
-            "slide_img":"./pexels-jeremy-alford-13172446 1.png",
+            "slide_img":"/gallery/s1.png",
+            'main_img':"/gallery/m1.png",
+            'card_name':"Motor show",
             "text":["text1","text1","text1"],
         },
         {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 2.png",
+            "slide_img":"/gallery/pexels-molnár-tamás-photography™-16061900 2.png",
+            'main_img':"/gallery/m2.png",
+            'card_name':"bharati nattitam",
             "text":["text1","text1","text1"],
         },
         {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 3.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-jeremy-alford-13172446 1.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 2.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 2.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-jeremy-alford-13172446 1.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 3.png",
-            "text":["text1","text1","text1"],
-        },
-        {
-            "slide_img":"./pexels-molnár-tamás-photography™-16061900 3.png",
+            "slide_img":"/gallery/s3.png",
+            'main_img':"/gallery/m3.png",
+            'card_name':"mind games",
             "text":["text1","text1","text1"],
         },
         
@@ -58,12 +41,19 @@ function Picture() {
     const maincontainer = useRef(null)
     const swiperRef = useRef(null);
 
+
+    useEffect(()=>{
+        if(swiperRef.current.swiper){
+            console.log("swiper init")
+        }
+    })
+
     const detect = (e)=>{
         // console.log("slide changed",Swiper.activeIndex)
         if(undefined!=custom_data[e]){
             console.log("slide changed",e)
             console.log(custom_data[e].slide_img)
-            bigImg.current.src = custom_data[e].slide_img
+            bigImg.current.src = custom_data[e].main_img
         }
     }
 
@@ -129,38 +119,40 @@ function Picture() {
 
     // },[])
 
-
-    const borderedImageStyle = {
-        // border: '20px solid transparent',
-        // borderImageSource: `url(/border.png)`,
-        // borderImageSlice: 30,
-        // borderImageRepeat: 'round',
-      };
-
     return ( 
         <>
-        <div  ref={maincontainer} className="h-[110vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center">
-            <div className="relative h-[94vh] w-full flex justify-center bg-red-">
-                <div className="vertical absolute gap-1 justify-between w-[5%] h-3/6 flex items-center flex-col bg-green-300 top-[25%] right-10">
-                    <div>1</div>
-                    <div className="bg-blue-500 grow">bar</div>
-                    <div>5</div>
+        <div  ref={maincontainer} className="h-[110vh] mh:pt-8 mobile:h-[80vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center">
+            <div className="relative h-[94vh] w-full flex justify-center bg-red- mobile:h-[60vh] ip:bg-orange
+            mh:h-[97vh] mobile:bg-green-">
+                <div className="vertical absolute z-40 gap-0 justify-between w-[5%] h-3/6 flex items-center flex-col bg-green- top-[25%] right-5
+                mobile:opacity-0 mh:opacity-0 tw:opacity-0
+                ">
+                    <div className="py-4 text-4xl font-mono">01</div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                        <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
+                    <div className="py-4 text-4xl font-mono">05</div>
                     </div>
-                <div className="bg-[] p-2 relative h-[100%] w-[74%] -z-0 flex justify-center">
+                    <div className="p-2 bg-cover h-[100%] w-[85%] mobile:w-[97%] mh:w-[75%] tw:w-[90%] mobile:p-1 -z-0" style={{
+                        backgroundImage:`url(${backgroundImage.src})`
+                    }}>
+                        <div className=" bg-contain bg-no-repeat bg-center relative h-[100%] flex justify-center ">
 
-                    {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
-                    {/* <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" /> */}
-                    <img className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20" src="./670 1.png" alt="img" />
-                    <img ref={bigImg} 
-                    style={borderedImageStyle} className="transition-all z-10  object-cover top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].slide_img} alt="" />
-                    <img className="absolute object-cover top-0 w-[100%] h-[100%] z-30" src="./Vector.png" alt="image" />
+                            {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
+                            {/* <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" /> */}
+                            <Image height={1000} width={1000} className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20" src="/670 1.png" alt="img" />
+                            <img ref={bigImg} className="transition-all z-10 object-cover tw:object-cover mh:object-cover mobile:object-fill top-0 w-[100%] h-[100%] mainImage" src={custom_data[0].main_img} alt="" />
+                            <Image height={1000} width={1000} className="absolute object-cover bottom-0 w-[100%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30" src="/gallery/Vector.png" alt="image" />
+                        </div>
+                    </div>
+                <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] mh:bottom-[19%]">
+                    <div className="font-['kivi']  tracking-tighter leading-none Banger text-4xl pl-10 mobile:text-sm mh:text-sm mobile:pl-2 mh:pl-2">2 Mar 2023</div>
+                    <div className="text-9xl tracking-tighter leading-none Banger mobile:text-5xl mh:text-5xl">Motor Show</div>
+                    <div className="tracking-tighter leading-nonel dg-text text-6xl mobile:text-3xl mh:text-3xl">The classics and the vintage, all in one garage.</div>
                 </div>
-                <div className="absolute bottom-52 left-72 text-white">
-                    <div className="font-['kivi']  tracking-tighter leading-none pl-10">2 Mar 2023</div>
-                    <div className="text-[4vw] tracking-tighter leading-none">Motor Show</div>
-                    <div className="text-[1.2vw] tracking-tighter leading-nonel pl-32">The classics and the vintage, all in one garage.</div>
-                </div>
-            <div className="z-20 text-white w-full absolute -bottom-16 h-[25vh]">
+            <div className="z-20 text-white w-full absolute -bottom-[10%] h-[25vh] mobile:h-[14vh] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
                 <Swiper
                 // onActiveIndexChange={detect}
                     // onSlideChange={detect}
@@ -170,17 +162,11 @@ function Picture() {
                     spaceBetween={0}
                     centeredSlides={true}
                     slidesPerView={5}
-                    // loop={true}
                     freeMode={true}
                     speed={8000}
                     // autoplay={{
                     // delay: 1,
                     // disableOnInteraction: false,
-                    // }}
-                    // pagination={{
-                    // clickable: true,
-                    // }}
-                    // navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                 >
@@ -188,8 +174,17 @@ function Picture() {
                         {
                             custom_data.map((e,i)=>{
                                 return (
-                                        <SwiperSlide key={i} onClick={()=>cardClick(e,i)}>
-                                            <img src={e.slide_img} alt="" />
+                                        <SwiperSlide key={i} onClick={()=>cardClick(e,i)} className="relative">
+                                            <div className="text-3xl mobile:text-xs mh:text-xs mobile:tracking-tighter mobile:left-1 mobile:bottom-1 mh:left-1 mh:bottom-4
+                                             text-[rgba(255,255,255,1)] text-left font-semibold left-7 bottom-7 absolute z-50 text-white Banger tracking-widest">
+                                                <div>
+                                                    {`0${i+1}`}
+                                                </div>
+                                                <div>
+                                                    {e.card_name}
+                                                </div>
+                                            </div>
+                                            <Image height={1000} width={1000} className="mobile:object-contain" src={e.slide_img} alt="" />
                                         </SwiperSlide>
                                     )
                                 })

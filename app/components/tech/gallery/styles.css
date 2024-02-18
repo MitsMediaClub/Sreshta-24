@@ -5,6 +5,7 @@
 }
 
 .swiper-slide {
+  width: 100%;
   text-align: center;
   font-size: 18px;
   color: black;
@@ -26,6 +27,10 @@
   transition-timing-function : linear;
 }
 
+.brd{
+  background-image: url(/public/m2.png);
+}
+
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -37,3 +42,22 @@
   border-image-slice: 20; 
   border-image-repeat: round;
 } */
+
+@font-face {
+  font-family: doggy;
+  src: url(../../../../public/gallery_fonts/GOODDP__.TTF);
+}
+
+@font-face {
+  font-family: banger;
+  src: url(../../../../public/gallery_fonts/Bangers.ttf);
+}
+
+.dg-text{
+  font-family: doggy;
+  /* color: #375E5E; */
+}
+
+.Banger{
+  font-family: banger;
+}
