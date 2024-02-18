@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import backgroundImage from "../../../../public/gallery/border.png";
 import "swiper/css";
-import "./styles.css";
+import styles from "./styles.module.css";
 
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 
@@ -21,7 +21,7 @@ function Picture() {
       text: ["text1", "text1", "text1"],
     },
     {
-      slide_img: "/gallery/pexels-molnár-tamás-photography™-16061900 2.png",
+      slide_img: "/gallery/s2.png",
       main_img: "/gallery/m2.png",
       card_name: "bharati nattitam",
       text: ["text1", "text1", "text1"],
@@ -144,13 +144,11 @@ function Picture() {
             }}
           >
             <div className=" bg-contain bg-no-repeat bg-center relative h-[100%] flex justify-center ">
-              {/* <img className="absolute mix-blend-multiply opacity-30 top-0 w-[85%] h-[90vh]" src="./pexels-jeremy-alford-13172446 2.png" alt="" /> */}
-              {/* <img className="absolute object-cover top-0 w-[100%] h-[100%] z-10" src="./border.png" alt="image" /> */}
               <Image
                 height={1000}
                 width={1000}
                 className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20"
-                src="/670 1.png"
+                src="/gallery/filter1.png"
                 alt="img"
               />
               <img
@@ -169,13 +167,13 @@ function Picture() {
             </div>
           </div>
           <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] mh:bottom-[19%]">
-            <div className="font-['kivi']  tracking-tighter leading-none Banger text-4xl pl-10 mobile:text-sm mh:text-sm mobile:pl-2 mh:pl-2">
+            <div className={`font-['kivi']  tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm mh:text-sm mobile:pl-2 mh:pl-2`}>
               2 Mar 2023
             </div>
-            <div className="text-9xl tracking-tighter leading-none Banger mobile:text-5xl mh:text-5xl">
+            <div className={`text-9xl tracking-tighter leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl`}>
               Motor Show
             </div>
-            <div className="tracking-tighter leading-nonel dg-text text-6xl mobile:text-3xl mh:text-3xl">
+            <div className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl`}>
               The classics and the vintage, all in one garage.
             </div>
           </div>
@@ -208,8 +206,8 @@ function Picture() {
                       className="relative"
                     >
                       <div
-                        className="text-3xl mobile:text-xs mh:text-xs mobile:tracking-tighter mobile:left-1 mobile:bottom-1 mh:left-1 mh:bottom-4
-                                             text-[rgba(255,255,255,1)] text-left font-semibold left-7 bottom-7 absolute z-50 text-white Banger tracking-widest"
+                        className={`text-3xl mobile:text-xs mh:text-xs mobile:tracking-tighter mobile:left-1 mobile:bottom-1 mh:left-1 mh:bottom-4
+                                             text-[rgba(255,255,255,1)] text-left font-semibold left-7 bottom-7 absolute z-50 text-white  ${styles.Banger} tracking-widest`}
                       >
                         <div>{`0${i + 1}`}</div>
                         <div>{e.card_name}</div>
