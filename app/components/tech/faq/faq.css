@@ -1,0 +1,64 @@
+ body{
+  background:  #DAEBEC ;
+ }
+ .faq{
+  width: 80%;
+  margin: 5% 10%;
+  border-radius: 20px;
+
+    .question {
+      /* Styles for the question elements */
+      cursor: pointer;
+    }
+    
+    .answer {
+      /* Styles for the answer elements */
+      display: none;
+      transition: all 3s ease-in-out;
+    }
+    
+    
+    .answer.active {
+      /* Styles for the answer elements when active */
+      display: block;
+    }
+     .section {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    
+     .section-title {
+      color: #000;
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    
+     .section-content {
+      font-size: 17px;
+      color: #181818;
+      line-height: 2;
+    }
+    
+     .section-content :last-child{
+      margin-bottom: 20px;
+    }
+    
+    
+    
+     .location iframe {
+      width: 100%;
+      height: 700px;
+      margin-top: 5%;
+      border-radius: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+         /* Animation for the map */
+         @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+
+  }
+
+ 
