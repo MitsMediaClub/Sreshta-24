@@ -18,19 +18,7 @@ export const Landing = () => {
         y - size / 2
       }px`;
     };
-
-    const handleMouseEnter = (e) => {
-      landingRef.current.addEventListener("mousemove", cursorset);
-    };
-
-    const handleMouseLeave = () => {
-      landingRef.current.removeEventListener("mousemove", cursorset);
-    };
     landingRef.current.addEventListener("mousemove", cursorset);
-    landingRef.current.addEventListener("mouseenter", handleMouseEnter);
-    landingRef.current.addEventListener("mouseleave", handleMouseLeave);
-
-    // Clean up the event listeners when the component unmounts
   }, []);
 
   return (
@@ -67,7 +55,7 @@ export const Landing = () => {
       {/* ------------------------------------------------------------ */}
       <div
         ref={cursor}
-        className="Wrapper2 ease-out duration-75 absolute top-0  left-0  z-0 mask h-full w-full overflow-hidden"
+        className="Wrapper2 absolute top-0  left-0  z-0 mask h-full w-full overflow-hidden"
       >
         {/* Hero Image  */}
         <div className="h-full relative">
