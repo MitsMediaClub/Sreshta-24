@@ -4,7 +4,9 @@ import { useRef, useLayoutEffect, useState, useEffect } from "react";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import backgroundImage from "../../../../public/gallery/m1.png";
+import backgroundImage1 from "../../../../public/gallery/m1.png";
+import backgroundImage2 from "../../../../public/gallery/m2.png";
+import backgroundImage3 from "../../../../public/gallery/m3.png";
 import border from "../../../../public/gallery/border.png";
 import "swiper/css";
 import styles from "./styles.module.css";
@@ -12,7 +14,7 @@ import styles from "./styles.module.css";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 
 function Picture() {
-  const [ManinData, setManinData] = useState("");
+  const [cbg, setcbg] = useState(backgroundImage1.src);
 
   let custom_data = [
     {
@@ -20,12 +22,14 @@ function Picture() {
       main_img: "/gallery/m1.png",
       card_name: "Motor show",
       text: ["text1", "text1", "text1"],
+      bg:backgroundImage1.src,
     },
     {
       slide_img: "/gallery/s2.png",
       main_img: "/gallery/m2.png",
       card_name: "bharati nattitam",
       text: ["text1", "text1", "text1"],
+      bg:backgroundImage2.src,
     },
     {
       // slide_img: "/gallery/s3.png",
@@ -34,6 +38,7 @@ function Picture() {
       main_img: "/gallery/m3.png",
       card_name: "mind games",
       text: ["text1", "text1", "text1"],
+      bg:backgroundImage3.src,
     },
   ];
 
@@ -54,6 +59,7 @@ function Picture() {
       console.log("slide changed", e);
       console.log(custom_data[e].slide_img);
       bigImg.current.src = custom_data[e].main_img;
+      setcbg(custom_data[e].bg)
     }
   };
 
@@ -124,7 +130,7 @@ function Picture() {
         className="h-[110vh] bg-red- mh:pt-6 mobile:h-[80vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center"
       >
         <div
-          className="relative h-[94vh] w-full flex justify-center bg-red- mobile:h-[60vh] ip:bg-orange
+          className="relative h-[94vh] w-full flex justify-center bg-red- mobile:h-[60vh] tw:bg-orange-400
             mh:h-[97vh]"
         >
           <div
@@ -143,7 +149,7 @@ function Picture() {
           <div
             className="bg-cover bg-center bg-no-repeat h-[100%] w-[85%] mobile:w-[97%] mh:w-[75%] tw:w-[90%] -z-0"
             style={{
-              backgroundImage: `url(${backgroundImage.src})`,
+              backgroundImage: `url(${cbg})`,
             }}
           >
             <div
@@ -169,24 +175,25 @@ function Picture() {
               <Image
                 height={1000}
                 width={1000}
-                className="absolute object-cover bottom-2 w-[99%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
+                className="absolute object-cover bottom-2 mobile:bottom-1 w-[99%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
                 src="/gallery/Vector.png"
                 alt="image"
               />
             </div>
           </div>
-          <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] mh:bottom-[19%]">
-            <div className={`font-['kivi']  tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm mh:text-sm mobile:pl-2 mh:pl-2`}>
+          <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] tw:left-[7%] mh:bottom-[19%]">
+            <div className={`font-['kivi']  tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}>
               2 Mar 2023
             </div>
-            <div className={`text-9xl tracking-tighter leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl`}>
+            <div className={`text-9xl tracking-tighter leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}>
               Motor Show
             </div>
-            <div className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl`}>
+            <div className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}>
               The classics and the vintage, all in one garage.
             </div>
           </div>
-          <div className="z-20 text-white w-full absolute -bottom-[10%] mobile:-bottom-[20%] h-[25vh] mobile:h-[15vh] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
+          <div className="z-20 text-white w-full absolute -bottom-[10%] mobile:-bottom-[20%] h-[25vh] mobile:h-[15vh]
+          tw:h-[17vh] tw:-bottom-[15%] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
             <Swiper
               // onActiveIndexChange={detect}
               // onSlideChange={detect}
@@ -215,7 +222,7 @@ function Picture() {
                       className="relative"
                     >
                       <div
-                        className={`text-3xl mobile:text-xs mh:text-xs mobile:tracking-tighter mobile:left-1 mobile:bottom-1 mh:left-1 mh:bottom-4
+                        className={`text-3xl mobile:text-xs mh:text-xs tw:text-sm mobile:tracking-tighter mobile:left-1 mobile:bottom-1 mh:left-1 mh:bottom-4  tw:left-2 tw:bottom-4
                                              text-[rgba(255,255,255,1)] text-left font-semibold left-7 bottom-7 absolute z-50 text-white  ${styles.Banger} tracking-widest`}
                       >
                         <div>{`0${i + 1}`}</div>
