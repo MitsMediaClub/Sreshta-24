@@ -1,12 +1,12 @@
 import Picture from "./picture";
 import Top from "./top";
-import './styles.css'
+import "./styles.css";
 function Main() {
   return (
     <>
       <div className="min-h-screen">
-      <Top />
-      <Picture />   
+        <Top />
+        <Picture />
       </div>
     </>
   );
