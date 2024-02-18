@@ -6,7 +6,7 @@ import FloatButton from "../FloatButton";
 
 export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
-  const size = 1200;
+  const size = 1400;
   const cursor = useRef();
   const landingRef = useRef(null);
   useEffect(() => {
@@ -41,7 +41,7 @@ export const Landing = () => {
       <div className="relative">
         <div className="HeroText absolute z-10 top-0 left-0 bg-no-repeat h-full w-full flex flex-col justify-center items-center">
           <Image
-            className=" animate-wiggle"
+            className=" animate-wiggle xl:w-auto xl:h-auto w-[50vw] h-auto"
             src={"/tech/Titles.png"}
             width={800}
             height={800}
