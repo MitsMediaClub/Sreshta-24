@@ -2,124 +2,32 @@
     "Leads":[{
             "name":"Andron Ajai",
             "designation":"Chairperson",
-            "image":"/about/studentcouncil/andron.png"
+            "image":"/about/studentcouncil/Andron.png"
         },
         {
             "name":"Chandralekha M R",
             "designation":"Vice Chairperson",
-            "image":"/about/studentcouncil/chandralekha.png"
+            "image":"/about/studentcouncil/Chandralekha.png"
         },
         {
             "name":"Akash Ajith",
             "designation":"Tech Fest Coordinator",
-            "image":"/about/studentcouncil/akash.png"
+            "image":"/about/studentcouncil/Aakash.png"
         },
         {
             "name":"Balakrishnan K S",
             "designation":"General Secretary",
-            "image":"/about/studentcouncil/balu.png" 
-        }
-    ],
-    "Members":[
+            "image":"/about/studentcouncil/Balan.png" 
+        },
         {
             "name":"Tomin V J",
             "designation":"Arts Secretary",
-            "image":"/about/studentcouncil/tomin.png" 
+            "image":"/about/studentcouncil/Tomin.png" 
         },
         {
             "name":"Salman Rawther P M",
             "designation":"Sports Secretary",
-            "image":"/about/studentcouncil/salman.png" 
-        },
-        {
-            "name":"Swathy S Krishna",
-            "designation":"Magazine Editor",
-            "image":"/about/studentcouncil/swathy.png"
-        },
-        {
-            "name":"R Krishna Priya",
-            "designation":"Lady Rep 1",
-            "image":"/about/studentcouncil/krishnapriya.png"
-        },
-        {
-            "name":"Meenakshi Biju",
-            "designation":"Lady Rep 2",
-            "image":"/about/studentcouncil/meenakshi.png"
-        },
-        {
-            "name":"Nandana P M",
-            "designation":"UUC 1",
-            "image":"/about/studentcouncil/nandana.png"
-        },
-        {
-            "name":"Anagha Ravikumar",
-            "designation":"UUC 2",
-            "image":"/about/studentcouncil/anagha.png"
-        },
-        {
-            "name":"Arshitha Mohanan",
-            "designation":"Special Representative",
-            "image":"/about/studentcouncil/arshitha.png"
-        },
-        {
-            "name":"Gayathri M R",
-            "designation":"First Year Rep 1",
-            "image":"/about/studentcouncil/gayathri.png"
-        },
-        {
-            "name":"Goutham Ajay Nair",
-            "designation":"First Year Rep 2",
-            "image":"/about/studentcouncil/goutham.png"
-        },
-        {
-            "name":"Abhinav MP",
-            "designation":"Program Rep-CE",
-            "image":"/about/studentcouncil/abhinav.png"
-        },
-        {
-            "name":"Varun Raj T R",
-            "designation":"Program Rep-ME",
-            "image":"/about/studentcouncil/varunraj.png"
-        },
-        {
-            "name":"Amal K M",
-            "designation":"Program Rep-EEE",
-            "image":"/about/studentcouncil/amal.png"
-        },
-        {
-            "name":"Sibin Saji",
-            "designation":"Program Rep-ECE",
-            "image":"/about/studentcouncil/sibin.png"
-        },
-        {
-            "name":"Chinmai S Nath",
-            "designation":"Program Rep-CSE",
-            "image":"/about/studentcouncil/chinmai.png"
-        },
-        {
-            "name":"Amy M Elamblasserial",
-            "designation":"Program Rep-CSE AI",
-            "image":"/about/studentcouncil/amy.png"
-        },
-        {
-            "name":"Bala Murali Gautham",
-            "designation":"Program Rep-AI&DS",
-            "image":"/about/studentcouncil/bala.png"
-        },
-        {
-            "name":"Andrew C Anil",
-            "designation":"Program Rep-CSE CY",
-            "image":"/about/studentcouncil/andrew.png"
-        },
-        {
-            "name":"Ragesh K",
-            "designation":"Program Rep-PG",
-            "image":"/about/studentcouncil/ragesh.png"
-        },
-        {
-            "name":"D Yadukrishnan",
-            "designation":"Program Rep-MCA",
-            "image":"/about/studentcouncil/yadukrishnan.png"
+            "image":"/about/studentcouncil/Salman.png" 
         }
     ]
 }
