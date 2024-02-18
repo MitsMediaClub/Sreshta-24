@@ -54,6 +54,8 @@ function StudentCouncil({data}){
           )
         })}
       </div>
+
+      {/*
       <div className='student-council-members-container'>
         {data.Members.map((member,index) => {
           return (
@@ -67,6 +69,7 @@ function StudentCouncil({data}){
           )
         })}
       </div>
+      */}
     </div>
   );
 

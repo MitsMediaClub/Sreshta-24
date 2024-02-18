@@ -6,7 +6,7 @@
   /* About */
   position: absolute;
   width: 100vw;
-  min-height: 900vh;
+  min-height: 850vh;
   max-height: 1250vh;
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@ color: #285F5F;
   /* Members Container */
   margin-top:-5vh;
   width: 100vw;
-  min-height: 200vh;
+  min-height: fit-content;
   max-height: 250vh;
   display: flex;
   flex-direction: column;
@@ -112,26 +112,29 @@ color: #285F5F;
   /* Leads */
   top: 10%;
   justify-content: center ;
-  gap:2%;
+  gap:5%;
+
   width: 100%;
   height: fit-content;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   background: #D6ECEC;
 }
 
 .student-council-leads {
   /* Leads */
-  width: 300px;
-  height: 400px;
+  margin-top: 1vh;
+  width: 250px;
+  height: 300px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/about/FrameMain.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-image: url("/about/FrameMain.png");
+  */
+
 }
 
 .student-council-leads .lead-image {
@@ -352,7 +355,7 @@ color: #285F5F;
     font-size: 0.65em;
   }
   .student-council-container {
-    height: 200vh;
+    height: 100vh;
     gap: 10vh;
   }
   .student-council-leads-container {
@@ -367,16 +370,6 @@ color: #285F5F;
     font-size: 0.75em;
   }
   .student-council-leads .lead-details .lead-designation {
-    font-size: 0.65em;
-  }
-  .student-council-members-container .student-council-members {
-    width: 100px;
-    height: 125px;
-  }
-  .student-council-members-container .student-council-members .member-details .member-name {
-    font-size: 0.75em;
-  }
-  .student-council-members-container .student-council-members .member-details .member-designation {
     font-size: 0.65em;
   }
 }
@@ -417,7 +410,7 @@ color: #285F5F;
     font-size: 0.6em;
   }
   .student-council-container {
-    height: 50vh;
+    height: 30vh;
     gap: 2em;
   }
   .student-council-leads {
@@ -430,14 +423,5 @@ color: #285F5F;
   .student-council-leads .lead-details .lead-designation {
     font-size: 0.6em;
   }
-  .student-council-members-container .student-council-members {
-    width: 5em;
-    height: 6.25em;
-  }
-  .student-council-members-container .student-council-members .member-details .member-name {
-    font-size: 0.7em;
-  }
-  .student-council-members-container .student-council-members .member-details .member-designation {
-    font-size: 0.6em;
-  }
+
 }
