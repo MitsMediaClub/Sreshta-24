@@ -33,6 +33,7 @@ export const Landing = () => {
             src={"/tech/Titles.png"}
             width={800}
             height={800}
+            alt="Main Comic"
           ></Image>
         </div>
         <div className="grayscale Wrapper1">
