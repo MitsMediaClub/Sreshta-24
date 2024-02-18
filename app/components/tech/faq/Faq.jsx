@@ -19,40 +19,29 @@ export default function Faq() {
     Shrestha'24 is a 24-hour hackathon organized by Muthoot College of Engineering and Technology.
     </div>
 
-      < div className="faq">
       <div className="question" onClick={toggleAnswer}>
         when and where will be tech fest take place? 
       </div>
       <div className="answer">
         lorem
       </div>
-      </div>
-
-      < div className="faq">
       <div className="question" onClick={toggleAnswer}>
        Who can all paricipate in Shrestha'24?
       </div>
       <div className="answer">
       lorem
       </div>
-      </div>
-
-      <div className="faq">
       <div className="question" onClick={toggleAnswer}>
       What are the main events or cometation in Shrestha'24?
             </div>
       <div className="answer">
       lorem
       </div>
-      </div>
-
-      <div className="faq">
       <div className="question" onClick={toggleAnswer}>
        How can i register For Shrestha'24?
              </div>
       <div className="answer">
       lorem
-      </div>
       </div>
 
 
