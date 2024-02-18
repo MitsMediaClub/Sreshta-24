@@ -2,12 +2,12 @@
     "Leads":[{
             "name":"Andron Ajai",
             "designation":"Chairperson",
-            "image":"/about/studentcouncil/Andron.png"
+            "image":"/about/studentcouncil/andron.png"
         },
         {
             "name":"Chandralekha M R",
             "designation":"Vice Chairperson",
-            "image":"/about/studentcouncil/Chandralekha.png"
+            "image":"/about/studentcouncil/chandralekha.png"
         },
         {
             "name":"Akash Ajith",
@@ -22,12 +22,12 @@
         {
             "name":"Tomin V J",
             "designation":"Arts Secretary",
-            "image":"/about/studentcouncil/Tomin.png" 
+            "image":"/about/studentcouncil/tomin.png" 
         },
         {
             "name":"Salman Rawther P M",
             "designation":"Sports Secretary",
-            "image":"/about/studentcouncil/Salman.png" 
+            "image":"/about/studentcouncil/salman.png" 
         }
     ]
 }
