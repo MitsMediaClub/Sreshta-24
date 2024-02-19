@@ -162,12 +162,11 @@ function Picture() {
             }}
           >
             <div
-            style={
-              {
-                backgroundImage:`url(${border.src})`
-              }
-            }
-            className="mobile:p-1 p-2 bg-cover bg-no-repeat bg-center relative h-[100%] flex justify-center ">
+              style={{
+                backgroundImage: `url(${border.src})`,
+              }}
+              className="mobile:p-1 p-2 bg-cover bg-no-repeat bg-center relative h-[100%] flex justify-center "
+            >
               <Image
                 height={1000}
                 width={1000}
@@ -198,6 +197,7 @@ function Picture() {
               Motor Show
             </div>
             <div className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}>
+
               The classics and the vintage, all in one garage.
             </div>
           </div>
@@ -242,7 +242,7 @@ function Picture() {
                         width={1000}
                         className="mobile:object-cover h-full"
                         src={e.slide_img}
-                        alt=""
+                        alt="Main Comic"
                       />
                     </SwiperSlide>
                   );
