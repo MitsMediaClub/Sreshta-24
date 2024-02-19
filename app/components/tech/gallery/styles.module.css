@@ -1,4 +1,3 @@
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -23,11 +22,11 @@
   object-fit: cover;
 }
 
-.swiper-wrapper{
-  transition-timing-function : linear;
+.swiper-wrapper {
+  transition-timing-function: linear;
 }
 
-.brd{
+.brd {
   background-image: url(/public/m2.png);
 }
 

@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} lg:p-8 md:p-8 min-h-screen bg-tech-bg`}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
       </body>
     </html>
