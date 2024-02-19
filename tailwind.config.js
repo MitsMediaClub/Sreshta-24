@@ -21,7 +21,7 @@ module.exports = {
          'raw':'(max-width:780px)' 
           // max:'780px'
         },
-        'mh':{'raw':'(max-height:680px)'},
+        'mh':{'raw':'(max-height:720px)'},
         'tw':{max:'1300px',min:'779px'},
         'ip':{'raw':'(min-height:1060px)'}
       },

@@ -1,6 +1,6 @@
 .swiper {
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -16,7 +16,7 @@
 }
 
 .swiper-slide img {
-  display: block;
+  /* display: block; */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -31,10 +31,40 @@
 }
 
 @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* .mainImage{
+  border: 12px solid transparent;
+  border-image-source:url(./border.png);
+  border-image-slice: 20; 
+  border-image-repeat: round;
+} */
+
+@font-face {
+  font-family: doggy;
+  src: url(../../../../public/gallery_fonts/GOODDP__.TTF);
+}
+
+@font-face {
+  font-family: banger;
+  src: url(../../../../public/gallery_fonts/Bangers.ttf);
+}
+@font-face {
+  font-family: kivi;
+  src: url(../../../../public/gallery_fonts/KyivTypeTitling-VarGX.ttf);
+}
+
+.dg_text{
+  font-family: doggy;
+  /* color: #375E5E; */
+}
+
+.Banger{
+  font-family: banger;
+}
+
+.kivi_t{
+  font-family: kivi;
 }
