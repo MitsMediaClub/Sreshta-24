@@ -78,7 +78,7 @@ function Picture() {
     const intervalId = setInterval(() => {
       console.log(currentImageIndex)
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageList.length);
-    }, 1000);
+    }, 5000);
 
     return () => clearInterval(intervalId);
   },[]);
@@ -171,7 +171,9 @@ function Picture() {
                 mobile:opacity-0 mh:opacity-0 tw:opacity-0 ${styles.kivi_t}
                 `}
           >
-            <div className={`py-4 text-4xl`}>01</div>
+            <div className={`py-4 text-4xl`}>
+              0{currentImageIndex+1}
+              </div>
             {
               imageList.map((e,i)=>{
                 return(
@@ -185,11 +187,7 @@ function Picture() {
                 )
               })
             }
-            {/* <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
-            <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
-            <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div>
-            <div className="bg-[rgba(17,22,21,0.5)] grow p-[0.1rem] hover:p-[0.2rem] hover:bg-black"></div> */}
-            <div className="py-4 text-4xl">05</div>
+            <div className="py-4 text-4xl">0{imageList.length}</div>
           </div>
           <div
             className="bg-cover bg-center bg-no-repeat h-[100%] w-[85%] mobile:w-[97%] mh:w-[80%] tw:w-[90%] -z-0"
