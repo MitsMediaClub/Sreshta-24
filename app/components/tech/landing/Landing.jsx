@@ -28,7 +28,7 @@ export const Landing = () => {
     >
       <div className="absolute top-0 left-0 right-0 z-40 w-full  ">
         <div className="flex flex-row justify-between  2xl:mx-16 xl:mx-[3.5rem] lg:mx-[3rem] mx-6 ">
-          <div className=" bg-tech-bg 2xl:w-auto    xl:w-[8rem] lg:w-[6rem]  w-[5rem]">
+          <div className=" LPICON  bg-tech-bg 2xl:w-auto bg-clip-padding border-dotted border-b-[6px] border-r-[6px] border-l-[6px] border-tech-bg   xl:w-[8rem] lg:w-[6rem]  w-[5rem]">
             <Image
               className=" w-full"
               src={"/landing/s_logo.png"}
@@ -37,9 +37,9 @@ export const Landing = () => {
               alt=""
             ></Image>
           </div>
-          <div className="bg-tech-bg 2xl:w-auto   xl:w-[8rem] lg:w-[6rem] w-[5rem]">
+          <div className=" LPICON cursor-pointer  bg-tech-bg 2xl:w-auto bg-clip-padding border-dotted border-b-[6px] border-r-[6px] border-l-[6px] border-tech-bg  xl:w-[8rem] lg:w-[6rem] w-[5rem]">
             <Image
-              className="w-full"
+              className="w-full hover:scale-110 transition-all duration-100 ease-in-out"
               src={"/landing/ham.png"}
               width={900}
               height={900}
