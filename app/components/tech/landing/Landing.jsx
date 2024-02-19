@@ -26,6 +26,29 @@ export const Landing = () => {
       className="text-[#E9F8E8] overflow-x-hidden  relative w-full min-h-screen"
       ref={landingRef}
     >
+      <div className="absolute top-0 left-0 right-0 z-40 w-full  ">
+        <div className="flex flex-row justify-between  2xl:mx-16 xl:mx-[3.5rem] lg:mx-[3rem] mx-6 ">
+          <div className=" bg-tech-bg 2xl:w-auto    xl:w-[8rem] lg:w-[6rem]  w-[5rem]">
+            <Image
+              className=" w-full"
+              src={"/landing/s_logo.png"}
+              width={800}
+              height={800}
+              alt=""
+            ></Image>
+          </div>
+          <div className="bg-tech-bg 2xl:w-auto   xl:w-[8rem] lg:w-[6rem] w-[5rem]">
+            <Image
+              className="w-full"
+              src={"/landing/ham.png"}
+              width={900}
+              height={900}
+              alt=""
+            ></Image>
+          </div>
+        </div>
+      </div>
+
       <div className="relative">
         <div className="HeroText absolute z-10 top-0 left-0 bg-no-repeat h-full w-full flex flex-col justify-center items-center">
           <Image
