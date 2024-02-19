@@ -28,7 +28,15 @@ export const Landing = () => {
     >
       <div className="absolute top-0 left-0 right-0 z-40 w-full  ">
         <div className="flex flex-row justify-between  2xl:mx-16 xl:mx-[3.5rem] lg:mx-[3rem] mx-6 ">
-          <div className=" LPICON  bg-tech-bg 2xl:w-auto bg-clip-padding border-dotted border-b-[6px] border-r-[6px] border-l-[6px] border-tech-bg   xl:w-[8rem] lg:w-[6rem]  w-[5rem]">
+          <div
+            className={` LPICON  bg-tech-bg 2xl:w-auto bg-clip-padding border
+          
+          xl:border-b-[8px] xl:border-r-[8px] xl:border-l-[8px] xl:border-t-0
+          lg:border-b-[5px] lg:border-r-[5px] lg:border-l-[5px] lg:border-t-0
+          border-b-[3px] border-r-[3px] border-l-[3px] border-t-0
+          
+          border-tech-bg   xl:w-[8rem] lg:w-[6rem]  w-[5rem]`}
+          >
             <Image
               className=" w-full"
               src={"/landing/s_logo.png"}
@@ -37,7 +45,14 @@ export const Landing = () => {
               alt=""
             ></Image>
           </div>
-          <div className=" LPICON cursor-pointer  bg-tech-bg 2xl:w-auto bg-clip-padding border-dotted border-b-[6px] border-r-[6px] border-l-[6px] border-tech-bg  xl:w-[8rem] lg:w-[6rem] w-[5rem]">
+          <div
+            className={` LPICON cursor-pointer bg-tech-bg 2xl:w-auto bg-clip-padding border
+           
+            
+            border-b-[8px] border-r-[8px] border-l-[8px] border-t-0
+          
+          border-tech-bg   xl:w-[8rem] lg:w-[6rem]  w-[5rem]`}
+          >
             <Image
               className="w-full hover:scale-110 transition-all duration-100 ease-in-out"
               src={"/landing/ham.png"}

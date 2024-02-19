@@ -45,3 +45,6 @@
   font-style: normal;
 }
 
+.LPICON{
+  border-image: url('/gallery/border.png') 20   ;
+}
