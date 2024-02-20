@@ -58,9 +58,6 @@
           to { opacity: 1; }
         }
 
-        @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap");
-
-
 button {
   cursor: pointer;
   color: inherit;
@@ -245,7 +242,7 @@ a {
   border: 1px solid #191a23;
   border-radius: 50%;
   position: relative;
-  transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+  transition: 0.5s cubic-bezier(0.4, 0.2, 0.6, 1);
 }
 @media (max-width: 479.98px) {
   .accordions__icon {

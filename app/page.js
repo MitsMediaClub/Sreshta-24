@@ -5,7 +5,7 @@ import Faq from "./components/tech/faq/Faq";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="Main">
       <Faq />
     </main>
   );

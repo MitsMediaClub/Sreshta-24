@@ -13,7 +13,6 @@ export default function Faq() {
       setOpenIndex(index);
     }
   };
-
   const faqs = [
     {
       question: "WHAT IS SHRESTA’24?",
@@ -57,7 +56,7 @@ export default function Faq() {
       <div className="container">
         <div className="faq-wrapper">
         <h1 className='title'>FAQ</h1>
-            <div class="process__intro intro">
+            <div className="process__intro intro">
             <div className="process__text text">Keep the questions coming, we’re here for you</div>
             </div>
           <div className="accordions">
@@ -92,7 +91,7 @@ export default function Faq() {
       <section className="section location">
         <br/><br/>
         <h2 className="section-title">How to get here?</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125748.46657650663!2d76.25601409726565!3d9.963914800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0874de563bc58b%3A0xde7ecbfa110cfbda!2sMuthoot%20Institute%20of%20Technology%20%26%20Science!5e0!3m2!1sen!2sin!4v1708221925095!5m2!1sen!2sin"  loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125748.46657650663!2d76.25601409726565!3d9.963914800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0874de563bc58b%3A0xde7ecbfa110cfbda!2sMuthoot%20Institute%20of%20Technology%20%26%20Science!5e0!3m2!1sen!2sin!4v1708221925095!5m2!1sen!2sin"  loading="eager" ></iframe>
       </section>
     </div>
   );
