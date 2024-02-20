@@ -22,17 +22,17 @@ export const Landing = () => {
     landingRef.current.addEventListener("mousemove", cursorset);
   }, []);
 
+  const ref = useRef();
+
   const hamburger = () => {
     document.getElementById("burger").style.display = "none";
     document.getElementById("close").style.display = "flex";
-    document.getElementById("nav-main").style.bottom = "0%";
-    console.log("HEYYEYYYEYYE")
-    console.log(document.getElementById("nav-main").style.bottom)
+    ref.current.style.bottom = "0%";
   };
   const navClose = () => {
     document.getElementById("burger").style.display = "flex";
     document.getElementById("close").style.display = "none";
-    document.getElementById("nav-main").style.bottom = "100%";
+    ref.current.style.bottom = "100%";
   };
 
   return (
@@ -41,6 +41,7 @@ export const Landing = () => {
     <div
         className="absolute bottom-[100%] z-40 bg-slate-200 duration-1000"
         id="nav-main"
+        ref={ref}
       >
         <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[70vh] pt-[15vw]">
           <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
