@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@font-face {
+  font-family: 'goodDogPlain';
+  src: url('/goodDogPlain.TTF');
+}
 
 
 
@@ -27,9 +31,10 @@
     
      .section-title {
       color: #000;
-      font-size: 24px;
+      font-size: 34px;
       margin-bottom: 10px;
       text-align: center;
+      font-family: "Bangers", system-ui;
     }
     
      .section-content {
@@ -116,13 +121,13 @@ a {
 
 
 .text {
-  font-size: 18px;
+  font-size: 28px;
   line-height: 127%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-family: 'GoodDog', sans-serif;
+  font-family: 'goodDogPlain', sans-serif;
 
   /* 23/18 */
 }
@@ -166,7 +171,8 @@ a {
 .accordions__item {
   background-color: #f3f3f3;
   border-radius: 2.8rem;
-  overflow: hidden;
+  will-change: height;
+  line-height: 1.5;
   transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
   box-shadow: 0px 0.3125rem 0px 0px #191a23;
   border: 0.0625rem solid #191a23;
@@ -287,14 +293,16 @@ a {
 
 .accordions__content {
   padding: 0 60px 0 60px;
-  max-height: 0;
-  overflow: hidden;
-  will-change: max-height;
-  transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+  max-height: 100%; /* Set the max-height to the height of the collapsed content */
+  overflow: hidden; /* Hide any content that overflows the max-height */
+  will-change: max-height; /* Tell the browser that the max-height property is going to change */
+  transition: 0.5s cubic-bezier(0.4, 0.2, 0.6, 1); /* Set the transition for the max-height property */
   box-sizing: content-box;
   position: relative;
   z-index: 5;
-  font-family: 'GoodDog', sans-serif;
+  font-size: 30px;
+  font-family: 'goodDogPlain', sans-serif;
+  color: #fff;
 }
 @media (max-width: 767.98px) {
   .accordions__content {
@@ -322,7 +330,8 @@ a {
 }
 
 .open {
-  background-color: #b9ff66;
+  background-color: #01A17B;
+  color:#fff;
 }
 
 .open .accordions__icon {
