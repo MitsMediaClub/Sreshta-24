@@ -48,3 +48,6 @@
 .LPICON{
   border-image: url('/gallery/border.png') 20   ;
 }
+.LPICON2{
+  border-image: url('/gallery/border.png') 10   ;
+}
