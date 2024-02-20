@@ -43,7 +43,7 @@ export const Landing = () => {
         id="nav-main"
         ref={ref}
       >
-        <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[70vh] pt-[15vw]">
+        <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] pt-[5vw]">
           <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
             Home
           </span>
@@ -56,15 +56,11 @@ export const Landing = () => {
           <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
             About
           </span>
-          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] mb-[13vh]">
             Contact
           </span>
         </div>
-
-        <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[30vh] pt-[7vw] rounded-[15px] shadow-2xl">
-          <span className="nav-items2">Tech Fest</span>
-          <span className="nav-items2">Art Fest</span>
-        </div>
+        <FloatButton />
       </div>
     </nav>
     <div
