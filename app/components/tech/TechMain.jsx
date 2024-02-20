@@ -2,6 +2,7 @@ import { Landing } from "./landing/Landing";
 import LandingMobile from "./landing/LandingMobile";
 import Main from "./gallery/Main";
 import EventsPreviewMain from "./eventsPreview/EventsPreviewMain";
+import AboutPreviewMain from "./aboutPreview/AboutPreviewMain";
 const TechMain = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const TechMain = () => {
       </div>
       <EventsPreviewMain />
       <Main />
+      <AboutPreviewMain />
     </div>
   );
 };
