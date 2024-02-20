@@ -1,6 +1,10 @@
+"use client";
+import { useRouter } from "next/navigation";
+
 const AboutPreviewMain = () => {
+  const router = useRouter();
   return (
-    <div>
+    <div className="pb-20">
       <div className="pt-12 flex justify-between items-center px-10">
         <img src="/about/AbtLandhed.png" alt="abthed" className="w-52" />
         <h1 className="text-5xl dog text-tech-primary">
@@ -25,6 +29,12 @@ const AboutPreviewMain = () => {
         <br />
         <br />
       </p>
+      <h1
+        onClick={() => router.push("/about")}
+        className="text-center text-5xl font-bold bangers hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer"
+      >
+        View
+      </h1>
     </div>
   );
 };
