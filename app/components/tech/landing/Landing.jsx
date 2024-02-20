@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import FloatButton from "../FloatButton";
+import "../../common/Navbar.css"
 
 export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
@@ -21,7 +22,50 @@ export const Landing = () => {
     landingRef.current.addEventListener("mousemove", cursorset);
   }, []);
 
+  const hamburger = () => {
+    document.getElementById("burger").style.display = "none";
+    document.getElementById("close").style.display = "flex";
+    document.getElementById("nav-main").style.bottom = "0%";
+    console.log("HEYYEYYYEYYE")
+    console.log(document.getElementById("nav-main").style.bottom)
+  };
+  const navClose = () => {
+    document.getElementById("burger").style.display = "flex";
+    document.getElementById("close").style.display = "none";
+    document.getElementById("nav-main").style.bottom = "100%";
+  };
+
   return (
+    <>
+    <nav>
+    <div
+        className="absolute bottom-[100%] z-40 bg-slate-200 duration-1000"
+        id="nav-main"
+      >
+        <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[70vh] pt-[15vw]">
+          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+            Home
+          </span>
+          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+            Events
+          </span>
+          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+            Gallery
+          </span>
+          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+            About
+          </span>
+          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+            Contact
+          </span>
+        </div>
+
+        <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[30vh] pt-[7vw] rounded-[15px] shadow-2xl">
+          <span className="nav-items2">Tech Fest</span>
+          <span className="nav-items2">Art Fest</span>
+        </div>
+      </div>
+    </nav>
     <div
       className="text-[#E9F8E8] overflow-x-hidden  relative w-full min-h-screen"
       ref={landingRef}
@@ -54,12 +98,19 @@ export const Landing = () => {
           border-tech-bg   xl:w-[8rem] lg:w-[6rem]  w-[5rem]`}
           >
             <Image
+              onClick={hamburger}
               className="w-full hover:scale-110 transition-all duration-100 ease-in-out"
+              id="burger"
               src={"/landing/ham.png"}
               width={900}
               height={900}
               alt=""
             ></Image>
+
+            <div>
+              <h1 className="hidden text-black text-[4vw] ml-[2vw]" id="close" onClick={navClose}>X</h1>
+            </div>
+
           </div>
         </div>
       </div>
@@ -120,5 +171,6 @@ export const Landing = () => {
       </div>
       {/* <FloatButton></FloatButton> */}
     </div>
+    </>
   );
 };
