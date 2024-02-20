@@ -5,8 +5,8 @@ import Faq from "./components/tech/faq/Faq";
 
 export default function Home() {
   return (
-    <main className="Main">
-      <Faq />
+    <main className="min-h-screen p-8">
+      <TechMain />
     </main>
   );
 }
