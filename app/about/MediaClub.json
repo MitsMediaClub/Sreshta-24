@@ -1,0 +1,83 @@
+{
+    "Members":[{
+        "name":"Aravind Vinu",
+        "designation":"Club Lead",
+        "image":"/about/mediaclub/Aravind.png"
+    },
+    {
+        "name":"Aleena Anna Robin",
+        "designation":"Club Lead",
+        "image":"/about/mediaclub/Aleena.png"
+    },
+    {
+        "name":"Aasher Paul",
+        "designation":"Club Co-Lead",
+        "image":"/about/mediaclub/Aasher.png"
+    },
+    {
+        "name":"Advaith Narayanan",
+        "designation":"Club Co-Lead",
+        "image":"/about/mediaclub/Advaith.png"
+    },
+    {
+        "name":"Harisankar A",
+        "designation":"Creative Lead",
+        "image":"/about/mediaclub/Harisankar.png"
+    },
+    {
+        "name":"Elvin Jacob Saji",
+        "designation":"Creative Lead",
+        "image":"/about/mediaclub/Elvin.png"
+    },
+    {
+        "name":"Sharun Raj",
+        "designation":"Tech Lead",
+        "image":"/about/mediaclub/Sharun.png"
+    },
+    {
+        "name":"Adrin Jose",
+        "designation":"Tech Co-Lead",
+        "image":"/about/mediaclub/Adrin.png"
+    },
+    {
+        "name":"Amal Babu",
+        "designation":"Design Lead",
+        "image":"/about/mediaclub/Amal.png"
+    },
+    {
+        "name":"Amalendu P",
+        "designation":"Content/Marketing Lead",
+        "image":"/about/mediaclub/Amalendu.png"
+    },
+    {
+        "name":"Sidharth Unnithan",
+        "designation":"Club Manager",
+        "image":"/about/mediaclub/Sidharth.png"
+    },
+    {
+        "name":"Kailasnath Niju",
+        "designation":"Social Media Lead",
+        "image":"/about/mediaclub/Kailasnath.png"
+    },
+    {
+        "name":"Neelameghan VT",
+        "designation":"Social Media Lead",
+        "image":"/about/mediaclub/Neelameghan.png"
+    },
+    {
+        "name":"Jaisankar J",
+        "designation":"Audio-Video Lead",
+        "image":"/about/mediaclub/Jaisankar.png"
+    },
+    {
+        "name":"Yadunand Pulliyulladathil",
+        "designation":"Audio-Video Lead",
+        "image":"/about/mediaclub/Yadunand.png"
+    },
+    {
+        "name":"Chinmai S Nath",
+        "designation":"Logo Designer",
+        "image":"/about/mediaclub/Chinmai.png"
+    }
+    ]
+}
