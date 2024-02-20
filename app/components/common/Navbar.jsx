@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import "./Navbar.css";
-import pic from "./Intersect.png";
+import "./Navbar.css"
 
 const Navbar = () => {
   const router = useRouter();
