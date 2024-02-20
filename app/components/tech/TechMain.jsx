@@ -1,3 +1,8 @@
+// @no-compile
+// @use client
+import Link from "next/link";
+import Faq from "./faq/Faq";
+
 import { Landing } from "./landing/Landing";
 import LandingMobile from "./landing/LandingMobile";
 import Main from "./gallery/Main";
