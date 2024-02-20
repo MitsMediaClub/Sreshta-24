@@ -47,13 +47,13 @@ const EventsMain = () => {
   return (
     <div className="pt-0">
       <div
-        className="hidden md:flex justify-center p-20 pb-72 bg-cover bg-center bg-no-repeat"
+        className="hidden lg:flex justify-center p-20 pb-72 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/common/bgDots.png')" }}
       >
         <Book width={600} height={800} portrait={false} pages={pages} />
       </div>
       <div
-        className="md:hidden flex justify-center pb-44 bg-cover bg-center bg-no-repeat"
+        className="lg:hidden flex justify-center pb-44 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/common/bgDots.png')" }}
       >
         <Book width={500} height={700} portrait={true} pages={pages} />
