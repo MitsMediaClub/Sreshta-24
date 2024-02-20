@@ -45,6 +45,19 @@
   font-style: normal;
 }
 
-.LPICON{
-  border-image: url('/gallery/border.png') 2   ;
+.LPICON {
+  border-image: url("/gallery/border.png") 2;
+}
+
+/* Hide Scrollbar */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

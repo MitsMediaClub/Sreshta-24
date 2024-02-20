@@ -1,6 +1,7 @@
 import { Landing } from "./landing/Landing";
 import LandingMobile from "./landing/LandingMobile";
 import Main from "./gallery/Main";
+import EventsPreviewMain from "./eventsPreview/EventsPreviewMain";
 const TechMain = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const TechMain = () => {
       <div className=" bg-tech-bg md:hidden">
         <LandingMobile />
       </div>
+      <EventsPreviewMain />
       <Main />
     </div>
   );

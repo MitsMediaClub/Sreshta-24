@@ -1,8 +1,7 @@
 "use client";
 import { gsap } from "gsap";
-import { easeInOut, easeOut, motion } from "framer-motion"
-import { useRef, useLayoutEffect, useState, useEffect } from "react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { motion } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import backgroundImage1 from "../../../../public/gallery/m1.png";
@@ -20,26 +19,47 @@ function Picture() {
   let custom_data = [
     {
       slide_img: "/gallery/s1.png",
-      main_img: ["/gallery/m1.png",'/gallery/img1.JPG','/gallery/img2.JPG','/gallery/img3.JPG','/gallery/img4.JPG','/gallery/img5.JPG'],
+      main_img: [
+        "/gallery/m1.png",
+        "/gallery/img1.JPG",
+        "/gallery/img2.JPG",
+        "/gallery/img3.JPG",
+        "/gallery/img4.JPG",
+        "/gallery/img5.JPG",
+      ],
       card_name: "Motor show",
       text: ["text1", "text1", "text1"],
-      bg:backgroundImage1.src,
+      bg: backgroundImage1.src,
     },
     {
       slide_img: "/gallery/s2.png",
-      main_img: ["/gallery/m2.png",'/gallery/img1.JPG','/gallery/img2.JPG','/gallery/img3.JPG','/gallery/img4.JPG','./gallery/img5.JPG'],
+      main_img: [
+        "/gallery/m2.png",
+        "/gallery/img1.JPG",
+        "/gallery/img2.JPG",
+        "/gallery/img3.JPG",
+        "/gallery/img4.JPG",
+        "./gallery/img5.JPG",
+      ],
       //without ./ there is a 404 error while switching the slide
       card_name: "bharati nattitam",
       text: ["text1", "text1", "text1"],
-      bg:backgroundImage2.src,
+      bg: backgroundImage2.src,
     },
     {
       // slide_img: "/gallery/s3.png",
       slide_img: "/gallery/s2.png",
-      main_img: ["/gallery/m3.png",'/gallery/img1.JPG','/gallery/img2.JPG','/gallery/img3.JPG','/gallery/img4.JPG','/gallery/img5.JPG'],
+      main_img: [
+        "/gallery/m3.png",
+        "/gallery/img1.JPG",
+        "/gallery/img2.JPG",
+        "/gallery/img3.JPG",
+        "/gallery/img4.JPG",
+        "/gallery/img5.JPG",
+      ],
       card_name: "mind games",
       text: ["text1", "text1", "text1"],
-      bg:backgroundImage3.src,
+      bg: backgroundImage3.src,
     },
   ];
 
@@ -47,41 +67,44 @@ function Picture() {
   const imageVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
-    exit: { opacity: 0,}, // Slide out effect
+    exit: { opacity: 0 }, // Slide out effect
   };
-  
-  const barVariants = {
-    hidden: { backgroundColor: 'rgba(17,22,21,0.5)' },
-    visible: { opacity: 1,backgroundColor:'rgba(0,0,0,1)',padding:'0.2rem' },
-    exit: { opacity: 1,padding:'0.1rem'}, // Slide out effect
-  };
-  const [imageList, setimageList] = useState(custom_data[0].main_img)
 
-  const [wind, setwind] = useState(5)
+  const barVariants = {
+    hidden: { backgroundColor: "rgba(17,22,21,0.5)" },
+    visible: {
+      opacity: 1,
+      backgroundColor: "rgba(0,0,0,1)",
+      padding: "0.2rem",
+    },
+    exit: { opacity: 1, padding: "0.1rem" }, // Slide out effect
+  };
+  const [imageList, setimageList] = useState(custom_data[0].main_img);
+
+  const [wind, setwind] = useState(5);
   const bigImg = useRef(null);
   const maincontainer = useRef(null);
   const swiperRef = useRef(null);
 
   useEffect(() => {
-    window.addEventListener("resize",()=>{
-      console.log("size changed",window.innerWidth)
-      if(window.innerWidth<=780){
-        setwind(2)
+    window.addEventListener("resize", () => {
+      console.log("size changed", window.innerWidth);
+      if (window.innerWidth <= 780) {
+        setwind(2);
+      } else {
+        setwind(5);
       }
-      else{
-        setwind(5)
-      }
-    })
+    });
     if (swiperRef.current.swiper) {
       console.log("swiper init");
     }
     const intervalId = setInterval(() => {
-      console.log(currentImageIndex)
+      console.log(currentImageIndex);
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageList.length);
     }, 5000);
 
     return () => clearInterval(intervalId);
-  },[]);
+  }, []);
 
   const detect = (e) => {
     // console.log("slide changed",Swiper.activeIndex)
@@ -89,7 +112,7 @@ function Picture() {
       console.log("slide changed", e);
       console.log(custom_data[e].slide_img);
       bigImg.current.src = custom_data[e].main_img;
-      setcbg(custom_data[e].bg)
+      setcbg(custom_data[e].bg);
     }
   };
 
@@ -99,9 +122,9 @@ function Picture() {
     // bigImg.current.src = e.slide_imgs
     // console.log('index',swiperRef.current.activeIndex = 1)
     swiperRef.current.swiper.slideTo(i, 400, false);
-    setCurrentImageIndex(0)
-    console.log(custom_data[i].main_img)
-    setimageList(custom_data[i].main_img)
+    setCurrentImageIndex(0);
+    console.log(custom_data[i].main_img);
+    setimageList(custom_data[i].main_img);
   };
 
   // gsap.registerPlugin(ScrollTrigger)
@@ -171,22 +194,19 @@ function Picture() {
                 mobile:opacity-0 mh:opacity-0 tw:opacity-0 ${styles.kivi_t}
                 `}
           >
-            <div className={`py-4 text-4xl`}>
-              0{currentImageIndex+1}
-              </div>
-            {
-              imageList.map((e,i)=>{
-                return(
-                  <motion.div key={i}
+            <div className={`py-4 text-4xl`}>0{currentImageIndex + 1}</div>
+            {imageList.map((e, i) => {
+              return (
+                <motion.div
+                  key={i}
                   variants={barVariants}
                   initial="hidden"
-                  animate={currentImageIndex === i ? 'visible' : 'exit'}
-                  transition={{ease:'linear',duration:0.5}}
-                  className="grow p-[0.1rem] hover:bg-black">
-                  </motion.div>
-                )
-              })
-            }
+                  animate={currentImageIndex === i ? "visible" : "exit"}
+                  transition={{ ease: "linear", duration: 0.5 }}
+                  className="grow p-[0.1rem] hover:bg-black"
+                ></motion.div>
+              );
+            })}
             <div className="py-4 text-4xl">0{imageList.length}</div>
           </div>
           <div
@@ -196,12 +216,11 @@ function Picture() {
             }}
           >
             <motion.div
-            style={
-              {
-                backgroundImage:`url(${border.src})`
-              }
-            }
-            className="mobile:p-1 p-2 bg-cover bg-no-repeat bg-center relative h-[100%] flex justify-center ">
+              style={{
+                backgroundImage: `url(${border.src})`,
+              }}
+              className="mobile:p-1 p-2 bg-cover bg-no-repeat bg-center relative h-[100%] flex justify-center "
+            >
               <Image
                 height={1000}
                 width={1000}
@@ -210,30 +229,27 @@ function Picture() {
                 alt="img"
               />
               <motion.img
-                      className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill mobile:object-cover w-[99%] h-[98%] mainImage"
-                      // src={custom_data[0].main_img}
-                      src={'./gallery/Solid_black.png'}
+                className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill mobile:object-cover w-[99%] h-[98%] mainImage"
+                // src={custom_data[0].main_img}
+                src={"./gallery/Solid_black.png"}
+              />
+              {imageList.map((path, i) => {
+                console.log("current index", currentImageIndex);
+                return (
+                  <motion.img
+                    key={i}
+                    ref={bigImg}
+                    className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill mobile:object-cover w-[99%] h-[98%] mainImage"
+                    // src={custom_data[0].main_img}
+                    src={path}
+                    alt="image"
+                    initial="hidden"
+                    animate={currentImageIndex === i ? "visible" : "exit"}
+                    variants={imageVariants}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
                   />
-              {
-                imageList.map((path,i)=>{
-                  console.log("current index",currentImageIndex)
-                  return (
-                    <motion.img
-                      key={i}
-                      ref={bigImg}
-                      className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill mobile:object-cover w-[99%] h-[98%] mainImage"
-                      // src={custom_data[0].main_img}
-                      src={path}
-                      alt="image"
-                      initial="hidden"
-                      animate={currentImageIndex === i ? 'visible' : 'exit'}
-                      variants={imageVariants}
-                      transition={{ duration: 0.5, ease: 'easeInOut' ,
-                    }}
-                    />
-                  )
-                })
-              }
+                );
+              })}
               <Image
                 height={1000}
                 width={1000}
@@ -244,19 +260,26 @@ function Picture() {
             </motion.div>
           </div>
           <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] tw:left-[7%] mh:bottom-[19%]">
-            <div className={`font-['kivi']  tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}>
+            <div
+              className={`font-['kivi']  tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}
+            >
               2 Mar 2023
             </div>
-            <div className={`text-9xl tracking-tighter leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}>
+            <div
+              className={`text-9xl tracking-tighter leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}
+            >
               Motor Show
             </div>
-            <div className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}>
-
+            <div
+              className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}
+            >
               The classics and the vintage, all in one garage.
             </div>
           </div>
-          <div className="z-20 text-white w-full mh:top-[85%] absolute -bottom-[10%] h-[25vh] bg-red- mobile:-bottom-[30%]
-          tw:h-[17vh] tw:-bottom-[15%] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
+          <div
+            className="z-20 text-white w-full mh:top-[85%] absolute -bottom-[10%] h-[25vh] bg-red- mobile:-bottom-[30%]
+          tw:h-[17vh] tw:-bottom-[15%] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]"
+          >
             <Swiper
               // onActiveIndexChange={detect}
               // onSlideChange={detect}
