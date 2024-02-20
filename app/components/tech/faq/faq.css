@@ -4,25 +4,21 @@
   src: url('/goodDogPlain.TTF');
 }
 
-
-
- body{
-  background-image: url(/Events.svg);
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- 
-  min-width: 320px;
-  font-size: 16px;
- }
  .faq{
-  width: 80%;
-  margin: 5% 10%;
-  border-radius: 20px;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url(/Events.svg);
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    min-width: 320px;
+    font-size: 16px;
 
      .section {
       margin-bottom: 20px;
@@ -115,7 +111,10 @@ a {
   }
 @media (max-width: 767.98px) {
   .title {
-    font-size: 36px;
+    font-size: 86px;
+  }
+  h1{
+    text-shadow: -5px 8px 0px #01A17B;
   }
 }
 
