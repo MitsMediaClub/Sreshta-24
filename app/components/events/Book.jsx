@@ -56,7 +56,7 @@ export default function Book(props) {
                 key={index}
                 className="bg-page-left text-[#375E5E] text-3xl p-20 w-full h-full"
               >
-                <h1 className="text-5xl md:text-8xl font-bold w-2/3 bangers">
+                <h1 className="text-5xl lg:text-8xl font-bold w-2/3 bangers">
                   {page.content}
                 </h1>
                 <h1 className="mt-5 font-medium text-2xl bangers">

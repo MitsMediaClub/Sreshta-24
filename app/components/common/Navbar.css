@@ -1,0 +1,13 @@
+
+@font-face {
+  font-family: nav-font;
+  src: url("./GoodDog\ Plain\ Regular.ttf");
+}
+.nav-items2:hover {
+  background-color: rgba(55, 94, 94, 1);
+  padding: 0.4vw 15vw;
+  border-radius: 30px;
+  background-image: url("./Intersect.png");
+  background-repeat: repeat;
+  background-size: cover;
+}

@@ -22,7 +22,8 @@
   mask-position: initial;
   background-color: rgba(202, 91, 91, 0);
   mask-repeat: no-repeat;
-  mask-size: 35rem;
+  mask-size: 1400px;
+  mask-position: -50% -50%;
   /* -webkit-mask-image: radial-gradient(circle, black 50%, transparent ); */
   /* mask-image: radial-gradient(circle, black , transparent); */
 }
@@ -39,7 +40,11 @@
 }
 
 .bangers {
-  font-family: "Bangers", system-ui;
+  font-family: "bangers", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+.LPICON{
+  border-image: url('/gallery/border.png') 2   ;
 }
