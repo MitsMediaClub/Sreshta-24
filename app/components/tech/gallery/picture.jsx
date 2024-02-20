@@ -55,7 +55,7 @@ function Picture() {
   const swiperRef = useRef(null);
 
   const setSliderW = ()=>{
-    console.log("size changed",window.innerWidth)
+    // console.log("size changed",window.innerWidth)
     if(window.innerWidth<=780){
       setwind(2)
     }
@@ -144,7 +144,7 @@ function Picture() {
                 alt="img"
               />
               <motion.img
-                      className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill mobile:object-cover h-full mainImage"
+                      className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill w-full mobile:object-cover h-full mainImage"
                       // src={custom_data[0].main_img}
                       src={'./gallery/Solid_black.png'}
                   />
@@ -177,7 +177,7 @@ function Picture() {
               />
             </motion.div>
           <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] tw:left-[7%] mh:bottom-[19%]">
-            <div className={`font-['kivi']  tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}>
+            <div className={`tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}>
               2 Mar 2023{
                 //put the text1 here
               }
