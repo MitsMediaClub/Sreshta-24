@@ -1,3 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.HeroTextMain {
+  text-shadow: 2px 2px 0 #e9f8e8, -2px 2px 0 #e9f8e8, -2px -2px 0 #e9f8e8,
+    2px -2px 0 #e9f8e8;
+}
+
+.customcursor {
+  backdrop-filter: grayscale();
+}
+
+.transition-webkit-mask-position {
+  transition: webkit-mask-position 0.3s ease;
+}
+
+.mask {
+  position: absolute;
+  mask-image: url("/tech/circle.svg");
+  mask-position: initial;
+  background-color: rgba(202, 91, 91, 0);
+  mask-repeat: no-repeat;
+  mask-size: 1400px;
+  mask-position: -50% -50%;
+  /* -webkit-mask-image: radial-gradient(circle, black 50%, transparent ); */
+  /* mask-image: radial-gradient(circle, black , transparent); */
+}
+
+@font-face {
+  font-family: "Good Dog Plain";
+  src: url("/fonts/goodDog.TTF") format("truetype");
+}
+
+.dog {
+  font-family: "Good Dog Plain", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bangers {
+  font-family: "bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.LPICON{
+  border-image: url('/gallery/border.png') 2   ;
+}
