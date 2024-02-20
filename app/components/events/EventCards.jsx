@@ -55,7 +55,7 @@ const EventCards = () => {
   return (
     <div className="p-5 md:p-20 pt-0">
       <Search search={search} changeSearch={changeSearch} />
-      <div className="flex flex-wrap gap-10 mt-10 items-center justify-center md:justify-start">
+      <div className="flex flex-wrap gap-10 mt-10 items-center justify-center">
         {events.map((event, index) => (
           <Image
             key={index}
