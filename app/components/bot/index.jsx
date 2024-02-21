@@ -7,6 +7,7 @@ const Bot = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowMessage(false);
+      setShowPopup(false);
     }, 1500);
 
     return () => clearTimeout(0.5);
@@ -62,15 +63,16 @@ const Bot = () => {
             }`}
             style={{
               opacity: showPopup ? 1 : 0,
-              transition: "opacity 0.5s, transform 0.5s",
+              transition: "opacity 0.5s, transform 0.5s, height 0.5s",
               transform: `translateY(${isMinimized ? "650px" : "0px"})`,
+              height: `${showPopup ? "700px" : "0px"}`,
             }}
           >
             <div className="flex gap-4 justify-end font-bold">
               <button onClick={handleMinimizeClick}>-</button>
               <button onClick={handleCloseClick}>x</button>
             </div>
-            <div className="flex text-bold items-center justify-center p-2">
+            <div className="flex text-xl font-bold items-center justify-center p-2">
               SHRESHTA CHATBOT
             </div>
           </div>
