@@ -18,7 +18,7 @@ const Bot = () => {
         src="/bot/boticon.png"
         className="h-40 w-40 transition-transform duration-300 hover:scale-110"
         alt=""
-        style={{ position: "fixed", top: 360, right: -60 }}
+        style={{ position: "fixed", bottom: 60, right: -60 }}
       />
       {showMessage && (
         <div className="fixed top-80">
@@ -26,7 +26,7 @@ const Bot = () => {
             src="/bot/text.png"
             className="h-30 w-40 transition-transform duration-500 scale-80 mx-10"
             alt=""
-            style={{ position: "fixed", top: 280, right: 0 }}
+            style={{ position: "fixed", bottom: 200, right: 0 }}
           />
         </div>
       )}
