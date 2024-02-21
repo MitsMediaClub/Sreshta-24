@@ -59,21 +59,37 @@ const Bot = () => {
         )}
         {showPopup && (
           <div
-            className={`fixed top-5 right-28 p-6 bg-white w-1/4 h-full border-black border-4 rounded-xl shadow z-[100] transition-all duration-500 
+            className={`fixed top-5 right-28 bg-[#E9F8E8] w-1/4 h-full rounded-xl shadow z-[100] transition-all duration-500
             }`}
             style={{
               opacity: showPopup ? 1 : 0,
-              transition: "opacity 0.5s, transform 0.5s, height 0.5s",
-              transform: `translateY(${isMinimized ? "650px" : "0px"})`,
-              height: `${showPopup ? "700px" : "0px"}`,
+              transition: "opacity 1s, transform 1s, height 1s",
+              transform: `translateY(${isMinimized ? "600px" : "0px"})`,
+              height: `${showPopup ? "650px" : "0px"}`,
             }}
           >
-            <div className="flex gap-4 justify-end font-bold">
-              <button onClick={handleMinimizeClick}>-</button>
-              <button onClick={handleCloseClick}>x</button>
+            <div className="bg-[#73AAA6]/90 rounded-t-xl">
+              <div className="flex justify-between font-bold p-6 text-white">
+                SHRESHTA CHATBOT
+                <div className="flex gap-4">
+                  <button onClick={handleMinimizeClick}>-</button>
+                  <button onClick={handleCloseClick}>x</button>
+                </div>
+              </div>
             </div>
-            <div className="flex text-xl font-bold items-center justify-center p-2">
-              SHRESHTA CHATBOT
+            <div className="flex w-full justify-center absolute inset-x-0 bottom-0 h-16 pb-6">
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  id=""
+                  className="text-sm rounded-lg bg-[#73AAA6]/90 py-4 px-8 text-white focus:outline-none placeholder:text-white"
+                  placeholder="Type your question here..."
+                  required
+                />
+                <button className="text-sm rounded-lg bg-[#73AAA6]/90 py-2 px-4 text-white">
+                  <img src="/bot/arrow.png" alt="" width={15} height={15} />
+                </button>
+              </div>
             </div>
           </div>
         )}
