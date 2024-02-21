@@ -70,14 +70,14 @@ export const Landing = () => {
         className="text-[#E9F8E8] overflow-x-hidden  relative w-full min-h-screen"
         ref={landingRef}
       >
-        <div className={` absolute top-0 left-0 right-0 z-40 w-full `}>
-          <div className="flex flex-row justify-between  2xl:mx-16 xl:mx-[3.5rem] lg:mx-[3rem] mx-6 ">
+        <div className={` absolute top-0 left-0 right-0 z-40 w-full  `}>
+          <div className="flex flex-row justify-between  2xl:mx-16 xl:mx-[3.5rem]  lg:mx-[3rem] mx-6 ">
             <div
-              className={` ${show?' bg-tech-bg 2xl:w-auto  bg-clip-padding border xl:border-b-[8px] xl:border-r-[8px] xl:border-l-[8px] xl:border-t-0 lg:border-b-[5px] lg:border-x-[5px] lg:border-t-0 border-b-[3px] border-x-[3px] border-t-0 border-tech-bg  ':''} LPICON  xl:w-[8rem] lg:w-[6rem]  w-[5rem] `}
+              className={`${show?'bg-tech-bg 2xl:w-auto bg-clip-padding border border-b-[8px] border-r-[8px] border-l-[8px] border-t-0 border-tech-bg LPICON  xl:w-[8rem] lg:w-[6rem] delay-700':''}  w-[5rem] flex justify-center items-center `}
             >
               
               <Image
-                className={` w-full `}
+                className={` w-full ${show?'visible delay-700':'invisible'} `}
                 src={"/landing/s_logo.png"}
                 width={800}
                 height={800}
