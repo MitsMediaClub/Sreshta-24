@@ -44,9 +44,11 @@
   font-weight: 400;
   font-style: normal;
 }
-
-.LPICON {
-  border-image: url("/gallery/border.png") 2;
+.LPICON{
+  border-image: url('/gallery/border.png') 20   ;
+}
+.LPICON2{
+  border-image: url('/gallery/border.png') 10   ;
 }
 
 /* Hide Scrollbar */
