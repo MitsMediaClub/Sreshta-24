@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const EventModal = ({ selectedEvent, selectEvent }) => {
   return (
-    <div className="w-screen h-screen fixed top-0 flex justify-center items-center">
+    <div className="w-screen h-screen fixed top-0 flex justify-center items-center z-30">
       <div
         className="absolute top-0 left-0 bg-black/60 w-full h-full"
         onClick={() => {
@@ -10,8 +10,8 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
           document.body.style.overflow = "auto";
         }}
       ></div>
-      <div className="w-[800px] h-[700px] bg-offWhite relative z-30">
-        <section className="bg-tech-green w-full dog p-10 py-5 h-[200px]   text-offWhite relative">
+      <div className="w-[800px] h-[800px] bg-offWhite relative z-30">
+        <section className="bg-tech-green w-full dog p-10 py-5 h-[300px] flex flex-col justify-center  text-offWhite relative">
           <h1 className="text-3xl text-offWhite">Event Detalis</h1>
           <hr className="h-[0.1rem] w-2/3 my-1 bg-offWhite" />
           <div className="flex justify-between">
