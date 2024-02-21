@@ -1,39 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
 
+import events from "../../events/events.json"
 const EventsPreviewMain = () => {
-  const events = [
-    {
-      imgLink: "/eventn1.png",
-      eventName: "Event 1",
-      link: "/event1",
-    },
-    {
-      imgLink: "/eventn1.png",
-      eventName: "Event 2",
-      link: "/event2",
-    },
-    {
-      imgLink: "/eventn1.png",
-      eventName: "Event 3",
-      link: "/event3",
-    },
-    {
-      imgLink: "/eventn1.png",
-      eventName: "Event 4",
-      link: "/event4",
-    },
-    {
-      imgLink: "/eventn1.png",
-      eventName: "Event 5",
-      link: "/event5",
-    },
-    {
-      imgLink: "/eventn1.png",
-      eventName: "Event 6",
-      link: "/event6",
-    },
-  ];
+  
   const router = useRouter();
   return (
     <div>

@@ -1,0 +1,92 @@
+[
+  {
+      "name": "Eneryia - Hackathon",
+      "date": "1 Mar 2023",
+      "time": "12 PM - 2 PM",
+      "cardImg": "/events/event1.png",
+      "regLink": "https://www.google.com",
+      "prize": [
+          "1st Prize: $1000",
+          "2nd Prize: $500",
+          "3rd Prize: $250"
+      ],
+      "desc": "Eneryia 2.0: Fueling Innovation in 24 Hours! Join us for an exhilarating hackathon hosted by the Computer Science Department in collaboration with ACM. Dive into a day-long coding marathon where participants will unleash their creativity, collaborate with peers, and tackle real-world challenges in the realm of technology. From groundbreaking software solutions to innovative hardware hacks, Eneryia 2.0 is the ultimate platform to push boundaries, showcase skills, and forge lasting connections in the tech community. Are you ready to power up your ideas and make a difference? Join us for Eneryia 2.0 and let's code the future together!",
+      "rules": [
+          "Rule 1: No cheating",
+          "Rule 2: Bring Notebook and Pen",
+          "Rule 3: Maintain discipline"
+      ]
+  },
+  {
+      "name": "Motor Sport 2",
+      "date": "2 Mar 2024",
+      "time": "10:00 AM - 5:00 PM",
+      "cardImg": "/events/event2.png",
+      "regLink": "https://www.google.com",
+      "prize": [
+          "1st Prize: $1000",
+          "2nd Prize: $500",
+          "3rd Prize: $250"
+      ],
+      "desc": "This is another proper description of the Motor Sport event. It is informative and engaging.",
+      "rules": [
+          "Rule 1: No cheating",
+          "Rule 2: Bring Notebook and Pen",
+          "Rule 3: Maintain discipline"
+      ]
+  },
+  {
+      "name": "BlindScript Coding Competition",
+      "date": "2 Mar 2024",
+      "time": "10:00 AM - 5:00 PM",
+      "cardImg": "/events/event1.png",
+      "regLink": "https://www.google.com",
+      "prize": [
+          "1st Prize: $1000",
+          "2nd Prize: $500",
+          "3rd Prize: $250"
+      ],
+      "desc": "This is another proper description of the Motor Sport event. It is informative and engaging.",
+      "rules": [
+          "Rule 1: No cheating",
+          "Rule 2: Bring Notebook and Pen",
+          "Rule 3: Maintain discipline"
+      ]
+  },
+  {
+      "name": "Motor Sport 4",
+      "date": "2 Mar 2024",
+      "time": "10:00 AM - 5:00 PM",
+      "cardImg": "/events/event2.png",
+      "regLink": "https://www.google.com",
+      "prize": [
+          "1st Prize: $1000",
+          "2nd Prize: $500",
+          "3rd Prize: $250"
+      ],
+      "desc": "This is another proper description of the Motor Sport event. It is informative and engaging.",
+      "rules": [
+          "Rule 1: No cheating",
+          "Rule 2: Bring Notebook and Pen",
+          "Rule 3: Maintain discipline"
+      ]
+  },
+  {
+      "name": "Motor Sport 5",
+      "date": "2 Mar 2024",
+      "time": "10:00 AM - 5:00 PM",
+      "cardImg": "/events/event1.png",
+      "regLink": "https://www.google.com",
+      "prize": [
+          "1st Prize: $1000",
+          "2nd Prize: $500",
+          "3rd Prize: $250"
+      ],
+      "desc": "This is another proper description of the Motor Sport event. It is informative and engaging.",
+      "rules": [
+          "Rule 1: No cheating",
+          "Rule 2: Bring Notebook and Pen",
+          "Rule 3: Maintain discipline"
+      ]
+  }
+]
