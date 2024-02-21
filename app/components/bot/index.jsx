@@ -31,7 +31,6 @@ const Bot = () => {
   const handleMinimizeClick = (event) => {
     event.stopPropagation();
     setIsMinimized(!isMinimized);
-    hideHim.current = false;
   };
 
   const [isMinimized, setIsMinimized] = useState(false);
@@ -57,21 +56,21 @@ const Bot = () => {
             />
           </div>
         )}
-        {showPopup && !isMinimized && (
+        {showPopup && (
           <div
-            className={`fixed top-5 right-28 p-8 bg-white w-1/4 border-black border-4 rounded-xl shadow z-[100] transition-all duration-500 ${
-              isMinimized ? "h-1/4" : "h-full"
+            className={`fixed top-5 right-28 p-6 bg-white w-1/4 h-full border-black border-4 rounded-xl shadow z-[100] transition-all duration-500 
             }`}
             style={{
-              transform: `scaleY(${isMinimized ? 0.25 : 1})`,
-              transition: "height 0.5s",
+              opacity: showPopup ? 1 : 0,
+              transition: "opacity 0.5s, transform 0.5s",
+              transform: `translateY(${isMinimized ? "650px" : "0px"})`,
             }}
           >
             <div className="flex gap-4 justify-end font-bold">
               <button onClick={handleMinimizeClick}>-</button>
               <button onClick={handleCloseClick}>x</button>
             </div>
-            <div className="flex text-bold items-center justify-center">
+            <div className="flex text-bold items-center justify-center p-2">
               SHRESHTA CHATBOT
             </div>
           </div>
