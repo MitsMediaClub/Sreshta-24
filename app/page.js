@@ -1,4 +1,3 @@
-// @no-compile
 // @use client
 import TechMain from "./components/tech/TechMain";
 import Faq from "./components/tech/faq/Faq";
