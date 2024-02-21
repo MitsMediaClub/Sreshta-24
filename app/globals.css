@@ -61,3 +61,11 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.tShadow {
+  text-shadow: -7px 6px rgba(0, 81, 62, 1);
+}
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Book from "./Book";
 import EventCards from "./EventCards";
+import EventModal from "./EventModal";
 
 const EventsMain = () => {
   const pages = [
@@ -44,22 +45,36 @@ const EventsMain = () => {
       bg: "/events/comic.png",
     },
   ];
+  const [selectedEvent, setSelectedEvent] = useState(null);
+  function selectEvent(value) {
+    setSelectedEvent(value);
+  }
   return (
-    <div className="pt-0">
-      <div
-        className="hidden lg:flex justify-center p-20 pb-72 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/common/bgDots.png')" }}
-      >
-        <Book width={600} height={800} portrait={false} pages={pages} />
+    <>
+      <div className="pt-0">
+        <div
+          className="hidden lg:flex justify-center p-20 pb-72 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/common/bgDots.png')" }}
+        >
+          <Book width={600} height={800} portrait={false} pages={pages} />
+        </div>
+        <div
+          className="lg:hidden flex justify-center pb-44 bg-cover bg-center  bg-no-repeat"
+          style={{ backgroundImage: "url('/common/bgDots.png')" }}
+        >
+          <Book width={400} height={700} portrait={true} pages={pages} />
+        </div>
+        <div className="relative">
+          <EventCards selectEvent={selectEvent} />
+          {selectedEvent && (
+            <EventModal
+              selectedEvent={selectedEvent}
+              selectEvent={selectEvent}
+            />
+          )}
+        </div>
       </div>
-      <div
-        className="lg:hidden flex justify-center pb-44 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/common/bgDots.png')" }}
-      >
-        <Book width={500} height={700} portrait={true} pages={pages} />
-      </div>
-      <EventCards />
-    </div>
+    </>
   );
 };
 
