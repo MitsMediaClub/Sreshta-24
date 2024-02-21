@@ -23,7 +23,7 @@ const EventCards = ({ selectEvent }) => {
       <div className="flex flex-wrap gap-10 mt-10 items-center justify-center">
         {events.map((event, index) => (
           <div className="relative cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 w-72">
-            <h1 className="absolute p-5 text-wrap text-white text-3xl font-bold z-5">{event.name}</h1>
+            <h1 className="absolute p-5 text-wrap text-white text-3xl font-bold z-10">{event.name}</h1>
           <Image
             key={index}
             width={1000}

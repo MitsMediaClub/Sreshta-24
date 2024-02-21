@@ -77,7 +77,7 @@
           "3rd Prize: Rs 2000"
       ],
       "desc2(after desc)": "Also join in the Cybersecurity fun by completing Beyond The Surface, an OSINT challenge, which is bound to widen your horizons.",
-      "desc": "Capture The Flag (CTF) is a cybersecurity competition that challenges participants to solve a variety of puzzles, tasks, and challenges to obtain "flags" hidden within a system. These flags may be in the form of strings, files, or other data, and participants must use their skills in hacking, programming, cryptography, and various other disciplines to uncover and capture them. CTFs are designed to simulate real-world scenarios, allowing participants to develop and showcase their cybersecurity expertise in a controlled environment.",
+      "desc": "Capture The Flag (CTF) is a cybersecurity competition that challenges participants to solve a variety of puzzles, tasks, and challenges to obtain \"flags\" hidden within a system. These flags may be in the form of strings, files, or other data, and participants must use their skills in hacking, programming, cryptography, and various other disciplines to uncover and capture them. CTFs are designed to simulate real-world scenarios, allowing participants to develop and showcase their cybersecurity expertise in a controlled environment.",
       "rules": [
           "Rule 1: Participants should bring personal laptops, personal tools are allowed",
           "Rule 2: Teams:2-4 members",
@@ -145,7 +145,7 @@
           "2nd Prize: $500",
           "3rd Prize: $250"
       ],
-      "desc": ""Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything." - Plato Music is not just heard; it is felt.Witness fierce competition as bands battle it out for supremacy on stage. The atmosphere will be electric, the tunes intense, and the energy unmatched. Join us for an epic clash of rhythms and melodies that will leave you on the edge of your seat. Bring your A-game, cheer for your favorite band, and let the battle of the beats begin! 🎶",
+      "desc": "\"Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.\" - Plato Music is not just heard; it is felt.Witness fierce competition as bands battle it out for supremacy on stage. The atmosphere will be electric, the tunes intense, and the energy unmatched. Join us for an epic clash of rhythms and melodies that will leave you on the edge of your seat. Bring your A-game, cheer for your favorite band, and let the battle of the beats begin! 🎶",
       "rules": [
           "Rule 1: Teams must consist of 6 to 10 members",
           "Rule 2: A college can have only one team under this category",
@@ -181,4 +181,5 @@
           "Rule 2: Bring Notebook and Pen",
           "Rule 3: Maintain discipline"
       ]
+    }
 ]

@@ -10,7 +10,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
           document.body.style.overflow = "auto";
         }}
       ></div>
-      <div className="w-[800px] h-[700px] bg-offWhite relative z-10">
+      <div className="w-[800px] h-[700px] bg-offWhite relative z-30">
         <section className="bg-tech-green w-full dog p-10 py-5 h-[200px]   text-offWhite relative">
           <h1 className="text-3xl text-offWhite">Event Detalis</h1>
           <hr className="h-[0.1rem] w-2/3 my-1 bg-offWhite" />
