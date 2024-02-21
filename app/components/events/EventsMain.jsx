@@ -7,42 +7,39 @@ import EventModal from "./EventModal";
 const EventsMain = () => {
   const pages = [
     {
-      content: "Motor Sports",
-      date: "2 Mar 2023",
+      content: "Band Wars",
       desc: `
-          The tech fest has always been a wonderful event to be through.
-          It's mesmerising, traumatising and a beautiful experience to go
-          through. The team behind the website has worked tirelessly to
-          ensure you get access to everything you wish for. This text is
-          a placeholder, for god sake do not use this. Dhanyawadh
-          Instead of copy-pasting the above, I'm writing this so that
-          the uniqueness of each text makes it seem like something
-          serious is going on here. Most people skim over, but if you
-          did read, you will understand that nothing's going on here.
-          Happy to waste your time.
+      Imagine the electrifying clash of college bands, a musical battleground where passion resonates, talents collide, and prizes await the victors. It's not just a competition; it's a symphony of shared love for music, a vibrant celebration of skill and connection. Welcome to Band Wars, where bands collide in an electrifying musical showdown! From rock to jazz, each performance is a thrilling display of talent and passion. Audiences are captivated as bands compete for the ultimate title. With every riff and rhythm, tensions rise until the stage erupts in a crescendo of musical glory. Get ready to witness the battle of the bands like never before!
+      `,
+    },
+    {
+      bg: "/events/book/bandwars.webp",
+    },
+    {
+      content: "Theme Show",
+      desc: `
+          A fun, creative spin off induced with the theme given, participants are allowed to be creative sticking to the theme,to have exemplary modelling skills to showcase the attitude, outfit and background score to create the magic of fashion meeting creativity, adhering to the theme given to them prior to the event.Prepare for an unforgettable journey into a world of endless fun and excitement at our vibrant theme show! With a lineup packed full of energetic performances, interactive games, and surprises around every corner, there's never a dull moment. Whether you're a thrill-seeker, a music lover, our dynamic show promises to keep you entertained from start to finish. Join us as we turn up the fun factor and make memories that will last a lifetime!
+        `
+    },
+    {
+      bg: "/events/book/themeshow.webp",
+    },
+    {
+      content: "Eneryia Hackathon",
+      desc: `
+      Eneryia 2.0: Fueling Innovation in 24 Hours! Join us for an exhilarating 
+      hackathon hosted by the Computer Science Department in collaboration with ACM. 
+      Dive into a day-long coding marathon where participants will unleash their 
+      creativity, collaborate with peers, and tackle real-world challenges in the 
+      realm of technology. From groundbreaking software solutions to innovative 
+      hardware hacks, Eneryia 2.0 is the ultimate platform to push boundaries, 
+      showcase skills, and forge lasting connections in the tech community. Are 
+      you ready to power up your ideas and make a difference? Join us for Eneryia 
+      2.0 and let's code the future together!
         `,
     },
     {
-      bg: "/events/comic.png",
-    },
-    {
-      content: "Motor Sport",
-      date: "2 Mar 2024",
-      desc: `
-          The tech fest has always been a wonderful event to be through.
-          It's mesmerising, traumatising and a beautiful experience to go
-          through. The team behind the website has worked tirelessly to
-          ensure you get access to everything you wish for. This text is
-          a placeholder, for god sake do not use this. Dhanyawadh
-          Instead of copy-pasting the above, I'm writing this so that
-          the uniqueness of each text makes it seem like something
-          serious is going on here. Most people skim over, but if you
-          did read, you will understand that nothing's going on here.
-          Happy to waste your time.
-        `,
-    },
-    {
-      bg: "/events/comic.png",
+      bg: "/events/book/eneriya.webp",
     },
   ];
   const [selectedEvent, setSelectedEvent] = useState(null);

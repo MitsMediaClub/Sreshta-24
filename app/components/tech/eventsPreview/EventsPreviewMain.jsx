@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 
-import events from "../../events/events.json";
+import events from "../../events/highlight-events.json";
 import Image from "next/image";
 const EventsPreviewMain = () => {
   const router = useRouter();

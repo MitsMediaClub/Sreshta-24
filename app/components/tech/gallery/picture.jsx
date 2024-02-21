@@ -254,7 +254,7 @@ function Picture() {
                 height={1000}
                 width={1000}
                 className="absolute object-cover bottom-2 mobile:bottom-1 w-[99%] bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
-                src="/gallery/Vector.png"
+                src="/common/dotpatgre.webp"
                 alt="image"
               />
             </motion.div>
