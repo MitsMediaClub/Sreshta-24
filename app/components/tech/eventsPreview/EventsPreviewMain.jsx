@@ -8,13 +8,13 @@ const EventsPreviewMain = () => {
   return (
     <div>
       <div className="pt-12 flex justify-between items-center px-10">
-        <img src="/eventsheader.png" alt="events" className="w-52" />
+        <img src="/eventsheader.webp" alt="events" className="w-52" />
         <h1 className="text-5xl dog text-tech-primary">
           More than 100 <br />
           events to conquer
         </h1>
         <hr className="w-1/3 h-1 bg-tech-primary" />
-        <img src="/headernum1.png" alt="load" className="w-32" />
+        <img src="/headernum1.webp" alt="load" className="w-32" />
       </div>
 
       <div className="w-full overflow-x-scroll scrollbar overflow-y-hidden flex items-center mt-8 gap-5 ">

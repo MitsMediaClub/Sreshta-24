@@ -9,7 +9,7 @@ const LandingMobile = () => {
           <div className="HeroText px-10 absolute z-10 top-0 left-0 bg-no-repeat h-full w-full flex flex-col justify-center items-center">
             <Image
               className=" animate-wiggle"
-              src={"/tech/Titles.png"}
+              src={"/tech/Titles.webp"}
               width={800}
               height={800}
             ></Image>
@@ -20,7 +20,7 @@ const LandingMobile = () => {
               <Image
                 width={10000}
                 height={10000}
-                src="/tech/Background(M).png"
+                src="/tech/Background(M).webp"
                 alt="Meh"
                 className="w-screen h-full"
               />
