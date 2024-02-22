@@ -32,12 +32,12 @@ const EventsPreviewMain = () => {
 
       <div className="w-full overflow-x-scroll scrollbar overflow-y-hidden flex items-center mt-8 gap-5 ">
         {events.map((event, index) => (
-          <div className="relative cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 shrink-0">
+            
+          <div key={index} className="relative cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 shrink-0">
             <h1 className="absolute p-5 text-wrap text-white text-4xl font-bold z-10 bangers top-0 left-0">
               {event.name}
             </h1>
             <Image
-              key={index}
               width={1000}
               height={1000}
               src={event.cardImg}
