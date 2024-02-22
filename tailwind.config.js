@@ -38,8 +38,16 @@ module.exports = {
         },
       },
       backgroundImage: {
+        "texture": "url('/assets/about/bg-texture.png')",
+        "overlay": "url('/assets/about/bg-overlay.png')",
         "page-left": "url('/events/bg-left.png')",
         "page-right": "url('/events/bg-right.png')",
+      },
+      fontSize: {
+        "xxxl": "224px",
+      },
+      dropShadow: {
+        'title': "-14px 17px 0px rgba(0, 164, 120, 1)",
       },
     },
   },
