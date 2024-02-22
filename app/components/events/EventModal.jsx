@@ -19,7 +19,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
               document.body.style.overflow = "auto";
             }}
           >
-            *
+            x
           </h1>
           <h1 className="text-3xl text-offWhite">Event Detalis</h1>
           <hr className="h-[0.1rem] w-2/3 my-1 bg-offWhite" />
