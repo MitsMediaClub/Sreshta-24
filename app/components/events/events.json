@@ -1,5 +1,48 @@
 [
   {
+    "name": "Band Wars",
+    "date": "2 Mar 2024",
+    "time": "5:30 PM - 7:30 PM",
+    "venue": "Admission Room, M George Block",
+    "reg": ["general: 500₹"],
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdujlH_pWgcrxRc6tDMyDi0-sLKMHjjhZ23z82iOJExwquYQg/viewform?usp=sf_link",
+    "prize": ["80,000₹"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdujlH_pWgcrxRc6tDMyDi0-sLKMHjjhZ23z82iOJExwquYQg/viewform?usp=sf_link",
+    "prize": ["80,000₹"],
+    "desc": "\"Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.\" - Plato Music is not just heard; it is felt.Witness fierce competition as bands battle it out for supremacy on stage. The atmosphere will be electric, the tunes intense, and the energy unmatched. Join us for an epic clash of rhythms and melodies that will leave you on the edge of your seat. Bring your A-game, cheer for your favorite band, and let the battle of the beats begin! 🎶",
+    "rules": [
+      "Rule 1: Teams must consist of 6 to 10 members",
+      "Rule 2: A college can have only one team under this category",
+      "Rule 3: The maximum number of teams allowed for the event is 8",
+      "Rule 4: Cross-college teams are not permitted",
+      "Rule 5: A minimum of one vocalist should be there from the team",
+      "Rule 6: The time limit for the performance is 15 minutes with an extra 10 minutes for setup (the maximum empty-to-empty time frame allowed is 30 minutes)",
+      "Rule 7: No restrictions on the language or genre of music",
+      "Rule 8: Only a drum kit will be provided by the college",
+      "Rule 9: Use of samples or pre-recorded sound on stage is not permitted; all music should be performed live on stage",
+      "Rule 10: Judgement will be based on originality, creativity, overall tone, musicianship, professionalism and interaction",
+      "Rule 11: The decisions of the judges will be final and binding",
+      "Rule 12: Participants must register via the website on or before 27th February. Only one person per team needs to register"
+    ]
+  },
+  {
+    "name": "Theme Show",
+    "date": "2 Mar 2024",
+    "time": "4:00 PM - 5:30 PM",
+    "venue": "Vikram Sarabhai Auditorium",
+    "reg": ["general: 500₹"],
+    "cardImg": "https://i.imgur.com/rBJ4htE.jpeg",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSe0Ot8uzDS_yHLQSaRbHsJmRPAUD_X4bOtv7Ryo1BYzhsPx7g/viewform?usp=sf_link",
+    "prize": ["80,000₹"],
+    "desc": "A theme show is a type of presentation or exhibition of a specific theme or topic serving as the central focus,it can encompass various forms of visual art,music,dance or theatre, exploring a particular idea, concept or narrative. It involves a series of performances or plays to explore a common thene, providing creative perspectives and interpretations through the medium of performance.Participants are given the theme prior to the event (1 week),to prepare the costumes adhering to the theme,no vulgarity of presentation is allowed.A team can have minimum of 8 and maximum of 10 participants.Background score should be prepared prior and be handed over to the coordinator.Total duration of 10 minutes.",
+    "rules": [
+      "Rule 1: No cheating",
+      "Rule 2: Bring Notebook and Pen",
+      "Rule 3: Maintain discipline"
+    ]
+  },
+  {
     "name": "Eneryia - Hackathon",
     "date": "1 Mar 2024",
     "time": "12 PM - 2 PM",
@@ -53,7 +96,7 @@
     "time": "10:00 AM - 2:00 PM",
     "venue": "FOSS Lab, Ramanujan Block",
     "reg": ["mitsian: 50₹", "non-mitsian: 100₹"],
-    "cardImg": "/events/event2.png",
+    "cardImg": "https://i.imgur.com/gUZJHXi.jpeg",
     "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdOefkZ3EKoWgKzL_OlP3Edq-wCg7kb3ogHIF2JAp5qb6gydw/viewform?usp=sf_link",
     "prize": ["15,000₹"],
     "desc2(after desc)": "Also join in the Cybersecurity fun by completing Beyond The Surface, an OSINT challenge, which is bound to widen your horizons.",
@@ -96,48 +139,6 @@
     "prize": ["N/A"],
     "desc": "Impulse, trigger,manifest immerses participants in the cutting-edge field of BCI technology, where the boundaries between mind and machine blur. Through a series of practical exercises and demonstrations, attendees will learn about the principles behind BCI systems, experiment with various neurofeedback techniques, and even build simple brain-controlled applications. This workshop is ideal for anyone curious about the intersection of neuroscience and technology, offering a hands-on experience that will inspire innovation and creativity.",
     "rules": ["N/A"]
-  },
-  {
-    "name": "Band Wars",
-    "date": "2 Mar 2024",
-    "time": "5:30 PM - 7:30 PM",
-    "venue": "Admission Room, M George Block",
-    "reg": ["general: 500₹"],
-    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdujlH_pWgcrxRc6tDMyDi0-sLKMHjjhZ23z82iOJExwquYQg/viewform?usp=sf_link",
-    "prize": ["80,000₹"],
-    "cardImg": "/events/event1.png",
-    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdujlH_pWgcrxRc6tDMyDi0-sLKMHjjhZ23z82iOJExwquYQg/viewform?usp=sf_link",
-    "prize": ["80,000₹"],
-    "desc": "\"Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.\" - Plato Music is not just heard; it is felt.Witness fierce competition as bands battle it out for supremacy on stage. The atmosphere will be electric, the tunes intense, and the energy unmatched. Join us for an epic clash of rhythms and melodies that will leave you on the edge of your seat. Bring your A-game, cheer for your favorite band, and let the battle of the beats begin! 🎶",
-    "rules": [
-      "Rule 1: Teams must consist of 6 to 10 members",
-      "Rule 2: A college can have only one team under this category",
-      "Rule 3: The maximum number of teams allowed for the event is 8",
-      "Rule 4: Cross-college teams are not permitted",
-      "Rule 5: A minimum of one vocalist should be there from the team",
-      "Rule 6: The time limit for the performance is 15 minutes with an extra 10 minutes for setup (the maximum empty-to-empty time frame allowed is 30 minutes)",
-      "Rule 7: No restrictions on the language or genre of music",
-      "Rule 8: Only a drum kit will be provided by the college",
-      "Rule 9: Use of samples or pre-recorded sound on stage is not permitted; all music should be performed live on stage",
-      "Rule 10: Judgement will be based on originality, creativity, overall tone, musicianship, professionalism and interaction",
-      "Rule 11: The decisions of the judges will be final and binding",
-      "Rule 12: Participants must register via the website on or before 27th February. Only one person per team needs to register"
-    ]
-  },
-  {
-    "name": "Theme Show",
-    "date": "2 Mar 2024",
-    "time": "4:00 PM - 5:30 PM",
-    "venue": "Vikram Sarabhai Auditorium",
-    "reg": ["general: 500₹"],
-    "cardImg": "/events/event1.png",
-    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSe0Ot8uzDS_yHLQSaRbHsJmRPAUD_X4bOtv7Ryo1BYzhsPx7g/viewform?usp=sf_link",
-    "prize": ["80,000₹"],
-    "desc": "A theme show is a type of presentation or exhibition of a specific theme or topic serving as the central focus,it can encompass various forms of visual art,music,dance or theatre, exploring a particular idea, concept or narrative. It involves a series of performances or plays to explore a common thene, providing creative perspectives and interpretations through the medium of performance.Participants are given the theme prior to the event (1 week),to prepare the costumes adhering to the theme,no vulgarity of presentation is allowed.A team can have minimum of 8 and maximum of 10 participants.Background score should be prepared prior and be handed over to the coordinator.Total duration of 10 minutes.",
-    "rules": [
-      "Rule 1: No cheating",
-      "Rule 2: Bring Notebook and Pen",
-      "Rule 3: Maintain discipline"
-    ]
   }
+  
 ]

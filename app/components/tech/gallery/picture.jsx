@@ -187,7 +187,7 @@ function Picture() {
               height={1000}
               width={1000}
               className="absolute bottom-0 w-full bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
-              src="/gallery/Vector.png"
+              src="/gallery/pattern.png"
               alt="image"
             />
           </motion.div>

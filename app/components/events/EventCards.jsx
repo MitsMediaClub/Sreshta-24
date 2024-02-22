@@ -22,8 +22,8 @@ const EventCards = ({ selectEvent }) => {
       <Search search={search} changeSearch={changeSearch} />
       <div className="flex flex-wrap gap-10 mt-10 items-center justify-center">
         {events.map((event, index) => (
-          <div className="relative cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 w-72">
-            <h1 className="absolute p-5 text-wrap text-white text-4xl font-bold z-10 bangers">
+            <div key={index} className="relative cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 w-72">
+            <h1 key={index} className="absolute p-5 text-wrap text-white text-4xl font-bold z-10 bangers">
               {event.name}
             </h1>
             <Image
