@@ -35,7 +35,7 @@ const EventCards = ({ selectEvent }) => {
                 backgroundImage: `url(${event.cardImg})`,
               }}
               alt="Event"
-              className="brightness-50 z-0 bg-cover bg-center w-96 h-[40rem] hover:scale-105 transition-all ease-in-out duration-300"
+              className="brightness-50 z-0 bg-cover bg-center w-80 md:w-96 h-[40rem] hover:scale-105 transition-all ease-in-out duration-300"
               onClick={() => {
                 selectEvent(event);
                 document.body.style.overflow = "hidden";

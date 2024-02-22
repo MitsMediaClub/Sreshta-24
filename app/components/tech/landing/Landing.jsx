@@ -47,30 +47,47 @@ export const Landing = () => {
     <>
       <nav>
         <div
-          className="fixed bottom-[100%] z-40 bg-slate-200 duration-1000"
+          className="fixed bottom-[100%] z-40 bg-slate-200 ease-in-out duration-1000"
           id="nav-main"
           ref={ref}
         >
           <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] pt-[5vw]">
             <span
-              onClick={() => router.push("/")}
+              onClick={() => {
+                router.push("/");
+                navClose();
+              }}
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
               Home
             </span>
             <span
-              onClick={() => router.push("/events")}
+              onClick={() => {
+                router.push("/events");
+                navClose();
+              }}
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
               Events
             </span>
             <span
-              onClick={() => router.push("/about")}
+              onClick={() => {
+                router.push("/about");
+                navClose();
+              }}
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
               About
             </span>
-
+            <span
+              onClick={() => {
+                router.push("/faq");
+                navClose();
+              }}
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
+              Faq
+            </span>
             <span
               onClick={() =>
                 (window.location.href = "mailto:example@example.com")
@@ -89,22 +106,23 @@ export const Landing = () => {
       >
         <div className={` absolute top-0 left-0 right-0 z-40 w-full  `}>
           <div className="flex flex-row justify-between  2xl:mx-16 xl:mx-[3.5rem]  lg:mx-[3rem] mx-6 ">
-            <div
-              className={`${
-                show
-                  ? "bg-tech-bg 2xl:w-auto bg-clip-padding border-[8px] border-t-0 LPICON  xl:w-[8rem] lg:w-[6rem] delay-700"
-                  : ""
-              }  w-[5rem] flex justify-center items-center `}
-            >
-              <Image
-                className={` w-full ${
-                  show ? "visible delay-700" : "invisible"
-                } `}
-                src={"/landing/s_logo.png"}
-                width={800}
-                height={800}
-                alt=""
-              ></Image>
+            <div className="relative">
+              <div className="absolute top-0 left-0  bg-clip-padding w-full h-full LPICON"></div>
+              <div
+                className={`${
+                  show
+                    ? "bg-tech-bg 2xl:w-auto border-[8px] LPICON border-t-0 border-tech-bg bg-clip-padding xl:w-[8rem] lg:w-[6rem] "
+                    : ""
+                }  w-[5rem] flex justify-center items-center relative p-2`}
+              >
+                <Image
+                  className={` w-full ${show ? "visible" : "invisible"} `}
+                  src={"/landing/s_logo.png"}
+                  width={800}
+                  height={800}
+                  alt=""
+                ></Image>
+              </div>
             </div>
             <div
               className={` LPICON cursor-pointer ${

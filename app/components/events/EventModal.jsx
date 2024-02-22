@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const EventModal = ({ selectedEvent, selectEvent }) => {
   return (
-    <div className="w-screen h-screen fixed top-0 flex justify-center items-center z-30">
+    <div className="w-screen h-screen fixed top-0 flex justify-center items-center z-50">
       <div
         className="absolute top-0 left-0 bg-black/60 w-full h-full"
         onClick={() => {
@@ -10,8 +10,8 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
           document.body.style.overflow = "auto";
         }}
       ></div>
-      <div className="w-[800px] h-[800px] bg-offWhite relative z-30">
-        <section className="bg-tech-green w-full dog p-10 py-5 h-[300px] flex flex-col justify-center  text-offWhite relative">
+      <div className="w-screen h-screen lg:w-[800px] lg:h-[800px] bg-offWhite relative z-50">
+        <section className="bg-tech-green w-full dog p-10 py-5 lg:h-[300px] flex flex-col justify-center  text-offWhite relative">
           <h1
             className="text-xl absolute top-10 right-10 cursor-pointer"
             onClick={() => {
@@ -23,7 +23,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
           </h1>
           <h1 className="text-3xl text-offWhite">Event Detalis</h1>
           <hr className="h-[0.1rem] w-2/3 my-1 bg-offWhite" />
-          <div className="flex justify-between">
+          <div className="flex flex-col lg:flex-row justify-between items-center">
             <div>
               <h1 className="bangers text-6xl tShadow mt-5">
                 {selectedEvent.name}
@@ -38,7 +38,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
               height={150}
               src="/events/register.png"
               alt="Event Registration"
-              className="hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer"
+              className="hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer w-44"
             />
           </div>
         </section>

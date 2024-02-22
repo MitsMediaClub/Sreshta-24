@@ -53,7 +53,7 @@
 }
 
 .LPICON {
-  border-image: url("/gallery/border.png") 20;
+  border-image: url("/gallery/border.png") 5;
 }
 .LPICON2 {
   border-image: url("/gallery/border.png") 10;

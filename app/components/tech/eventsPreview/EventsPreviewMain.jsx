@@ -34,10 +34,10 @@ const EventsPreviewMain = () => {
         <Image
           src="https://i.imgur.com/sITtd91.jpeg"
           alt="View More Events"
-          width={1000} // Adjust this value based on your needs
-          height={1000} // Adjust this value based on your needs
+          width={1000}
+          height={1000}
           onClick={() => router.push("/events")}
-          className="object-cover object-center w-96 h-[40rem] mr-4 lg:hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer"
+          className="w-96 h-[40rem] mr-4 lg:hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer"
         />
         {events.map((event, index) => (
           <div
