@@ -1,0 +1,33 @@
+{
+    "Leads":[{
+            "name":"Andron Ajai",
+            "designation":"Chairperson",
+            "image":"/about/studentcouncil/andron.png"
+        },
+        {
+            "name":"Chandralekha M R",
+            "designation":"Vice Chairperson",
+            "image":"/about/studentcouncil/chandralekha.png"
+        },
+        {
+            "name":"Akash Ajith",
+            "designation":"Tech Fest Coordinator",
+            "image":"/about/studentcouncil/Aakash.png"
+        },
+        {
+            "name":"Balakrishnan K S",
+            "designation":"General Secretary",
+            "image":"/about/studentcouncil/Balan.png" 
+        },
+        {
+            "name":"Tomin V J",
+            "designation":"Arts Secretary",
+            "image":"/about/studentcouncil/tomin.png" 
+        },
+        {
+            "name":"Salman Rawther P M",
+            "designation":"Sports Secretary",
+            "image":"/about/studentcouncil/salman.png" 
+        }
+    ]
+}

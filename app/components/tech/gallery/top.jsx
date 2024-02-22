@@ -9,7 +9,7 @@ const Top = () => {
             <Image
               width={500}
               height={500}
-              src="/gallery/topL.png"
+              src="/galleryheader.webp"
               alt="Meh"
               className="w-56 mobile:w-28"
             />
@@ -20,7 +20,7 @@ const Top = () => {
             <Image
               width={500}
               height={500}
-              src="/gallery/topR.png"
+              src="/headernum2.webp"
               alt="Meh"
               className="w-32 mobile:w-14 mh:w-24"
             />

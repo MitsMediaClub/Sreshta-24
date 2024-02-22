@@ -1,8 +1,7 @@
 "use client";
 import { gsap } from "gsap";
-import { easeInOut, easeOut, motion } from "framer-motion"
-import { useRef, useLayoutEffect, useState, useEffect } from "react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { motion } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
@@ -15,13 +14,27 @@ function Picture() {
   let custom_data = [
     {
       slide_img: "/gallery/s1.png",
-      main_img: ["/gallery/m1.png",'/gallery/img1.JPG','/gallery/img2.JPG','/gallery/img3.JPG','/gallery/img4.JPG','/gallery/img5.JPG'],
+      main_img: [
+        "/gallery/m1.png",
+        "/gallery/img1.JPG",
+        "/gallery/img2.JPG",
+        "/gallery/img3.JPG",
+        "/gallery/img4.JPG",
+        "/gallery/img5.JPG",
+      ],
       card_name: "Motor show",
       text: ["text1", "text1", "text1"],
     },
     {
       slide_img: "/gallery/s2.png",
-      main_img: ["/gallery/m2.png",'/gallery/img1.JPG','/gallery/img2.JPG','/gallery/img3.JPG','/gallery/img4.JPG','./gallery/img5.JPG'],
+      main_img: [
+        "/gallery/m2.png",
+        "/gallery/img1.JPG",
+        "/gallery/img2.JPG",
+        "/gallery/img3.JPG",
+        "/gallery/img4.JPG",
+        "./gallery/img5.JPG",
+      ],
       //without ./ there is a 404 error while switching the slide
       card_name: "bharati nattitam",
       text: ["text1", "text1", "text1"],
@@ -29,7 +42,14 @@ function Picture() {
     {
       // slide_img: "/gallery/s3.png", //the size of the image s3.png was not proper
       slide_img: "/gallery/s2.png",
-      main_img: ["/gallery/m3.png",'/gallery/img1.JPG','/gallery/img2.JPG','/gallery/img3.JPG','/gallery/img4.JPG','/gallery/img5.JPG'],
+      main_img: [
+        "/gallery/m3.png",
+        "/gallery/img1.JPG",
+        "/gallery/img2.JPG",
+        "/gallery/img3.JPG",
+        "/gallery/img4.JPG",
+        "/gallery/img5.JPG",
+      ],
       card_name: "mind games",
       text: ["text1", "text1", "text1"],
     },
@@ -39,21 +59,21 @@ function Picture() {
   const imageVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
-    exit: { opacity: 0,}, // Slide out effect
+    exit: { opacity: 0 }, // Slide out effect
   };
-  
+
   const barVariants = {
     hidden: { backgroundColor: 'rgba(17,22,21,0.5)' },
     visible: { opacity: 1,backgroundColor:'rgba(0,0,0,1)',padding:'0.2rem' },
     exit: { opacity: 1,padding:'0.1rem'}, //  animation for side bar
   };
-  const [imageList, setimageList] = useState(custom_data[0].main_img)
+  const [imageList, setimageList] = useState(custom_data[0].main_img);
 
-  const [wind, setwind] = useState(5)
+  const [wind, setwind] = useState(5);
   const bigImg = useRef(null);
   const maincontainer = useRef(null);
   const swiperRef = useRef(null);
-
+  
   const setSliderW = ()=>{
     // console.log("size changed",window.innerWidth)
     if(window.innerWidth<=780){
@@ -71,12 +91,13 @@ function Picture() {
       // console.log("swiper init");
     }
     const intervalId = setInterval(() => {
+
       // console.log(currentImageIndex)
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageList.length);//for updating the index to show the picture
     }, 5000);
 
     return () => clearInterval(intervalId);
-  },[]);
+  }, []);
 
   const detect = (e) => {//code for change the image when auto slide
     // console.log("slide changed",Swiper.activeIndex)
@@ -114,22 +135,19 @@ function Picture() {
                 mobile:opacity-0 mh:opacity-0 tw:opacity-0 ${styles.kivi_t}
                 `}
           >
-            <div className={`py-4 text-4xl`}>
-              0{currentImageIndex+1}
-              </div>
-            {
-              imageList.map((e,i)=>{
-                return(
-                  <motion.div key={i}
+            <div className={`py-4 text-4xl`}>0{currentImageIndex + 1}</div>
+            {imageList.map((e, i) => {
+              return (
+                <motion.div
+                  key={i}
                   variants={barVariants}
                   initial="hidden"
-                  animate={currentImageIndex === i ? 'visible' : 'exit'}
-                  transition={{ease:'linear',duration:0.5}}
-                  className="grow p-[0.1rem] hover:bg-black">
-                  </motion.div>
-                )
-              })
-            }
+                  animate={currentImageIndex === i ? "visible" : "exit"}
+                  transition={{ ease: "linear", duration: 0.5 }}
+                  className="grow p-[0.1rem] hover:bg-black"
+                ></motion.div>
+              );
+            })}
             <div className="py-4 text-4xl">0{imageList.length}</div>
           </div>
             <motion.div className="bg-cover bg-no-repeat bg-center relative h-[100%] w-[85%] mobile:w-[97%] mh:w-[80%] tw:w-[90%] -z-0 flex justify-center ">
@@ -193,8 +211,10 @@ function Picture() {
               }
             </div>
           </div>
-          <div className="z-20 text-white w-full mh:top-[85%] absolute -bottom-[10%] h-[25vh] bg-red- mobile:-bottom-[30%]
-          tw:h-[17vh] tw:-bottom-[15%] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]">
+          <div
+            className="z-20 text-white w-full mh:top-[85%] absolute -bottom-[10%] h-[25vh] bg-red- mobile:-bottom-[30%]
+          tw:h-[17vh] tw:-bottom-[15%] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]"
+          >
             <Swiper
               // onActiveIndexChange={detect} // for activating autoplay
               // onSlideChange={detect}

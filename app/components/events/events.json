@@ -1,0 +1,141 @@
+[
+  {
+    "name": "Eneryia - Hackathon",
+    "date": "1 Mar 2024",
+    "time": "12 PM - 2 PM",
+    "venue": "Steve Jobs Hall, Ramanujan Block",
+    "reg": ["mitsian: 150₹", "non-mitsian: 250₹"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSe5KHmLOog2MliOYGDerX9cQQ8XRCXRiloOFfzUaqblA6L5OA/viewform?usp=sf_link",
+    "prize": ["75,000₹"],
+    "desc": "Eneryia 2.0: Fueling Innovation in 24 Hours! Join us for an exhilarating hackathon hosted by the Computer Science Department in collaboration with ACM. Dive into a day-long coding marathon where participants will unleash their creativity, collaborate with peers, and tackle real-world challenges in the realm of technology. From groundbreaking software solutions to innovative hardware hacks, Eneryia 2.0 is the ultimate platform to push boundaries, showcase skills, and forge lasting connections in the tech community. Are you ready to power up your ideas and make a difference? Join us for Eneryia 2.0 and let's code the future together!",
+    "rules": [
+      "Rule 1: No cheating",
+      "Rule 2: Bring Notebook and Pen",
+      "Rule 3: Maintain discipline"
+    ]
+  },
+  {
+    "name": "BridgeX 2.0",
+    "date": "1 Mar 2024",
+    "time": "10:00 AM - 5:00 PM",
+    "venue": "CAD Drawing Lab, Dept. of Mechanical Engineering, M George Block",
+    "reg": ["general: 150₹"],
+    "cardImg": "/events/event2.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSch7ep44jh6CXUSLDYeHtKepU-rANIYRMKt2mCEYBoXPW3VVA/viewform?usp=sf_link",
+    "prize": ["15,000₹"],
+    "desc": "BridgeX 2.0 will test the particpants to use computer-aided design (CAD) software or a 3D modeling tool to create a detailed virtual representation of the bridge. Include all relevant structural and design elements, such as supports, beams, and decking. Once the virtual bridge design is finalized, we select appropriate materials for the physical model. And test the model on factors like strength, flexibility, and weight.",
+    "rules": [
+      "Rule 1: No cheating",
+      "Rule 2: Bring Notebook and Pen",
+      "Rule 3: Maintain discipline"
+    ]
+  },
+  {
+    "name": "BlindScript Coding Competition",
+    "date": "2 Mar 2024",
+    "time": "10:00 AM - 5:00 PM",
+    "venue": "Codd Base Lab, Ramanujan Block",
+    "reg": ["general: free"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSd9mCnmqJqMI17sViF9UTQ1h-pG6w7z2CpwmJ6QicF1hEtqbg/viewform?usp=sf_link",
+    "prize": ["20,000₹"],
+    "desc": "BLIND SCRIPT Coding Challenge is a pioneering competition where participants code without visual aid, relying solely on memory and intuition. This event challenges coding enthusiasts to showcase their mental agility and adaptability by solving coding problems without screens. With a limited participant capacity, the event promises an exhilarating experience where coding meets the ultimate test of ingenuity. Registration is free, and participants have the chance to win cash rewards and recognition.",
+    "rules": [
+      "Rule 1: No cheating",
+      "Rule 2: Bring Notebook and Pen",
+      "Rule 3: Maintain discipline"
+    ]
+  },
+  {
+    "name": "Freshman Firewall(CTF)",
+    "date": "1 Mar 2024",
+    "time": "10:00 AM - 2:00 PM",
+    "venue": "FOSS Lab, Ramanujan Block",
+    "reg": ["mitsian: 50₹", "non-mitsian: 100₹"],
+    "cardImg": "/events/event2.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdOefkZ3EKoWgKzL_OlP3Edq-wCg7kb3ogHIF2JAp5qb6gydw/viewform?usp=sf_link",
+    "prize": ["15,000₹"],
+    "desc2(after desc)": "Also join in the Cybersecurity fun by completing Beyond The Surface, an OSINT challenge, which is bound to widen your horizons.",
+    "desc": "Capture The Flag (CTF) is a cybersecurity competition that challenges participants to solve a variety of puzzles, tasks, and challenges to obtain \"flags\" hidden within a system. These flags may be in the form of strings, files, or other data, and participants must use their skills in hacking, programming, cryptography, and various other disciplines to uncover and capture them. CTFs are designed to simulate real-world scenarios, allowing participants to develop and showcase their cybersecurity expertise in a controlled environment.",
+    "rules": [
+      "Rule 1: Participants should bring personal laptops, personal tools are allowed",
+      "Rule 2: Teams:2-4 members",
+      "Rule 3: Judges' decisions are considered final",
+      "Rule 4: Participants must stick to timeframe",
+      "Rule 5: Malpractices not tolerated",
+      "Rule 6: Non-refundable registration fees, no refunds under any circumstances"
+    ]
+  },
+  {
+    "name": "TechnoPark",
+    "date": "2 Mar 2024",
+    "time": "9:30 AM - 4:30 PM",
+    "venue": "Admission Room, M George Block",
+    "reg": ["general: free"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://www.google.com",
+    "prize": ["N/A"],
+    "desc": "Get ready for an exhilarating journey into the realms of technology at TECHNOPARK, a groundbreaking event by TinkerHub MITS on March 2nd, 2024. Offering students a hands-on experience with cutting-edge tools provided by Tinkerspace, including a 3D printer, VR goggles, and an intriguing voice-activated Ouija board with an AI model, the event promises to delve into the world of Augmented Reality (AR), Virtual Reality (VR), and innovative technologies. The fusion of AR/VR thrills and 5-6 Arduino/Raspberry Pi projects ensures a day filled with mind-bending experiences and jaw-dropping inventions. Hosted by TinkerHub's tech wizards, TECHNOPARK invites participants to unleash their creativity, discover, and be amazed in a day packed with innovation, laughter, and unadulterated fun. Join us for an epic adventure where imagination meets technology, and boundaries are redefined at TECHNOPARK!",
+    "rules": [
+      "Rule 1: Participants must handle equipment responsibly;damages incur a fine.",
+      "Rule 2:  WebD competitions permit teams of 2; spot registration is available",
+      "Rule 3: Laptops are mandatory for 3D printing, Linux Parties, and competitions; participants must bring their own.",
+      "Rule 4:  malpractices are strictly prohibited in WebD; decisions of judges will be final.",
+      "Rule 5: All events are free of charge."
+    ]
+  },
+  {
+    "name": "Brain.io",
+    "date": "2 Mar 2024",
+    "time": "9:00 AM - 4:30 PM",
+    "venue": "John McCarthy Lab, Ramanujan Block",
+    "reg": ["IEEE: 199", "NON-IEEE: 249"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://bit.ly/brain_io",
+    "prize": ["N/A"],
+    "desc": "Impulse, trigger,manifest immerses participants in the cutting-edge field of BCI technology, where the boundaries between mind and machine blur. Through a series of practical exercises and demonstrations, attendees will learn about the principles behind BCI systems, experiment with various neurofeedback techniques, and even build simple brain-controlled applications. This workshop is ideal for anyone curious about the intersection of neuroscience and technology, offering a hands-on experience that will inspire innovation and creativity.",
+    "rules": ["N/A"]
+  },
+  {
+    "name": "Band Wars",
+    "date": "2 Mar 2024",
+    "time": "5:30 PM - 7:30 PM",
+    "venue": "Admission Room, M George Block",
+    "reg": ["general: free"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdujlH_pWgcrxRc6tDMyDi0-sLKMHjjhZ23z82iOJExwquYQg/viewform?usp=sf_link",
+    "prize": ["80,000₹"],
+    "desc": "\"Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.\" - Plato Music is not just heard; it is felt.Witness fierce competition as bands battle it out for supremacy on stage. The atmosphere will be electric, the tunes intense, and the energy unmatched. Join us for an epic clash of rhythms and melodies that will leave you on the edge of your seat. Bring your A-game, cheer for your favorite band, and let the battle of the beats begin! 🎶",
+    "rules": [
+      "Rule 1: Teams must consist of 6 to 10 members",
+      "Rule 2: A college can have only one team under this category",
+      "Rule 3: The maximum number of teams allowed for the event is 8",
+      "Rule 4: Cross-college teams are not permitted",
+      "Rule 5: A minimum of one vocalist should be there from the team",
+      "Rule 6: The time limit for the performance is 15 minutes with an extra 10 minutes for setup (the maximum empty-to-empty time frame allowed is 30 minutes)",
+      "Rule 7: No restrictions on the language or genre of music",
+      "Rule 8: Only a drum kit will be provided by the college",
+      "Rule 9: Use of samples or pre-recorded sound on stage is not permitted; all music should be performed live on stage",
+      "Rule 10: Judgement will be based on originality, creativity, overall tone, musicianship, professionalism and interaction",
+      "Rule 11: The decisions of the judges will be final and binding",
+      "Rule 12: Participants must register via the website on or before 27th February. Only one person per team needs to register"
+    ]
+  },
+  {
+    "name": "Theme Show",
+    "date": "2 Mar 2024",
+    "time": "4:00 PM - 5:30 PM",
+    "venue": "Vikram Sarabhai Auditorium",
+    "reg": ["mitsian: 500₹", "non-mitsian: 500₹"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSe0Ot8uzDS_yHLQSaRbHsJmRPAUD_X4bOtv7Ryo1BYzhsPx7g/viewform?usp=sf_link",
+    "prize": ["80,000₹"],
+    "desc": "A theme show is a type of presentation or exhibition of a specific theme or topic serving as the central focus,it can encompass various forms of visual art,music,dance or theatre, exploring a particular idea, concept or narrative. It involves a series of performances or plays to explore a common thene, providing creative perspectives and interpretations through the medium of performance.Participants are given the theme prior to the event (1 week),to prepare the costumes adhering to the theme,no vulgarity of presentation is allowed.A team can have minimum of 8 and maximum of 10 participants.Background score should be prepared prior and be handed over to the coordinator.Total duration of 10 minutes.",
+    "rules": [
+      "Rule 1: No cheating",
+      "Rule 2: Bring Notebook and Pen",
+      "Rule 3: Maintain discipline"
+    ]
+  }
+]

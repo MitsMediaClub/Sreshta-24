@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Eneryia - Hackathon",
+    "date": "1 Mar 2024",
+    "time": "12 PM - 2 PM",
+    "venue": "Steve Jobs Hall, Ramanujan Block",
+    "reg": ["mitsian: 150₹", "non-mitsian: 250₹"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSe5KHmLOog2MliOYGDerX9cQQ8XRCXRiloOFfzUaqblA6L5OA/viewform?usp=sf_link",
+    "prize": ["75,000₹"],
+    "desc": "Eneryia 2.0: Fueling Innovation in 24 Hours! Join us for an exhilarating hackathon hosted by the Computer Science Department in collaboration with ACM. Dive into a day-long coding marathon where participants will unleash their creativity, collaborate with peers, and tackle real-world challenges in the realm of technology. From groundbreaking software solutions to innovative hardware hacks, Eneryia 2.0 is the ultimate platform to push boundaries, showcase skills, and forge lasting connections in the tech community. Are you ready to power up your ideas and make a difference? Join us for Eneryia 2.0 and let's code the future together!",
+    "rules": [
+      "Rule 1: No cheating",
+      "Rule 2: Bring Notebook and Pen",
+      "Rule 3: Maintain discipline"
+    ]
+  },
+  {
+    "name": "Band Wars",
+    "date": "2 Mar 2024",
+    "time": "5:30 PM - 7:30 PM",
+    "venue": "Admission Room, M George Block",
+    "reg": ["general: free"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdujlH_pWgcrxRc6tDMyDi0-sLKMHjjhZ23z82iOJExwquYQg/viewform?usp=sf_link",
+    "prize": ["80,000₹"],
+    "desc": "\"Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.\" - Plato Music is not just heard; it is felt.Witness fierce competition as bands battle it out for supremacy on stage. The atmosphere will be electric, the tunes intense, and the energy unmatched. Join us for an epic clash of rhythms and melodies that will leave you on the edge of your seat. Bring your A-game, cheer for your favorite band, and let the battle of the beats begin! 🎶",
+    "rules": [
+      "Rule 1: Teams must consist of 6 to 10 members",
+      "Rule 2: A college can have only one team under this category",
+      "Rule 3: The maximum number of teams allowed for the event is 8",
+      "Rule 4: Cross-college teams are not permitted",
+      "Rule 5: A minimum of one vocalist should be there from the team",
+      "Rule 6: The time limit for the performance is 15 minutes with an extra 10 minutes for setup (the maximum empty-to-empty time frame allowed is 30 minutes)",
+      "Rule 7: No restrictions on the language or genre of music",
+      "Rule 8: Only a drum kit will be provided by the college",
+      "Rule 9: Use of samples or pre-recorded sound on stage is not permitted; all music should be performed live on stage",
+      "Rule 10: Judgement will be based on originality, creativity, overall tone, musicianship, professionalism and interaction",
+      "Rule 11: The decisions of the judges will be final and binding",
+      "Rule 12: Participants must register via the website on or before 27th February. Only one person per team needs to register"
+    ]
+  },
+  {
+    "name": "Theme Show",
+    "date": "2 Mar 2024",
+    "time": "4:00 PM - 5:30 PM",
+    "venue": "Vikram Sarabhai Auditorium",
+    "reg": ["mitsian: 500₹", "non-mitsian: 500₹"],
+    "cardImg": "/events/event1.png",
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSe0Ot8uzDS_yHLQSaRbHsJmRPAUD_X4bOtv7Ryo1BYzhsPx7g/viewform?usp=sf_link",
+    "prize": ["80,000₹"],
+    "desc": "A theme show is a type of presentation or exhibition of a specific theme or topic serving as the central focus,it can encompass various forms of visual art,music,dance or theatre, exploring a particular idea, concept or narrative. It involves a series of performances or plays to explore a common thene, providing creative perspectives and interpretations through the medium of performance.Participants are given the theme prior to the event (1 week),to prepare the costumes adhering to the theme,no vulgarity of presentation is allowed.A team can have minimum of 8 and maximum of 10 participants.Background score should be prepared prior and be handed over to the coordinator.Total duration of 10 minutes.",
+    "rules": [
+      "Rule 1: No cheating",
+      "Rule 2: Bring Notebook and Pen",
+      "Rule 3: Maintain discipline"
+    ]
+  }
+]

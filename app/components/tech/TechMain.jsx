@@ -1,11 +1,8 @@
-// @no-compile
-// @use client
-import Link from "next/link";
-import Faq from "./faq/Faq";
-
 import { Landing } from "./landing/Landing";
 import LandingMobile from "./landing/LandingMobile";
 import Main from "./gallery/Main";
+import EventsPreviewMain from "./eventsPreview/EventsPreviewMain";
+import AboutPreviewMain from "./aboutPreview/AboutPreviewMain";
 const TechMain = () => {
   return (
     <div>
@@ -15,7 +12,9 @@ const TechMain = () => {
       <div className=" bg-tech-bg md:hidden">
         <LandingMobile />
       </div>
+      <EventsPreviewMain />
       <Main />
+      <AboutPreviewMain />
     </div>
   );
 };
