@@ -15,6 +15,7 @@ const Navbar = () => {
     document.getElementById("nav-cross").style.display = "none";
     document.getElementById("nav-burger").style.display = "flex";
     document.getElementById("nav-items-main").style.bottom = "100%";
+    document.body.style.overflow = "auto";
   };
 
   return (
