@@ -22,17 +22,20 @@ const EventCards = ({ selectEvent }) => {
       <Search search={search} changeSearch={changeSearch} />
       <div className="flex flex-wrap gap-10 mt-10 items-center justify-center">
         {events.map((event, index) => (
-          <div className="relative cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 w-72">
-            <h1 className="absolute p-5 text-wrap text-white text-4xl font-bold z-10 bangers">
+          <div key={index} className="relative cursor-pointer ">
+            <h1
+              key={index}
+              className="absolute p-5 text-wrap text-white text-4xl font-bold z-10 bangers"
+            >
               {event.name}
             </h1>
-            <Image
+            <div
               key={index}
-              width={1000}
-              height={1000}
-              src={event.cardImg}
+              style={{
+                backgroundImage: `url(${event.cardImg})`,
+              }}
               alt="Event"
-              className="brightness-50 z-0"
+              className="brightness-50 z-0 bg-cover bg-center w-80 md:w-96 h-[40rem] hover:scale-105 transition-all ease-in-out duration-300"
               onClick={() => {
                 selectEvent(event);
                 document.body.style.overflow = "hidden";

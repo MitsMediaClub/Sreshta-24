@@ -4,7 +4,7 @@ import "./styles.module.css";
 function Main() {
   return (
     <>
-      <div className="min-h-screen">
+      <div className="">
         <Top />
         <Picture />
       </div>
