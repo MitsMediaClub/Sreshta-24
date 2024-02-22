@@ -32,12 +32,14 @@ export const Landing = () => {
     document.getElementById("burger").style.display = "none";
     document.getElementById("close").style.display = "flex";
     ref.current.style.bottom = "0%";
+    document.body.style.overflow = "hidden";
     setShow(false);
   };
   const navClose = () => {
     document.getElementById("burger").style.display = "flex";
     document.getElementById("close").style.display = "none";
     ref.current.style.bottom = "100%";
+    document.body.style.overflow = "auto";
     setShow(true);
   };
 
@@ -45,7 +47,7 @@ export const Landing = () => {
     <>
       <nav>
         <div
-          className="absolute bottom-[100%] z-40 bg-slate-200 duration-1000"
+          className="fixed bottom-[100%] z-40 bg-slate-200 duration-1000"
           id="nav-main"
           ref={ref}
         >
@@ -90,7 +92,7 @@ export const Landing = () => {
             <div
               className={`${
                 show
-                  ? "bg-tech-bg 2xl:w-auto bg-clip-padding border border-b-[8px] border-r-[8px] border-l-[8px] border-t-0 border-tech-bg LPICON  xl:w-[8rem] lg:w-[6rem] delay-700"
+                  ? "bg-tech-bg 2xl:w-auto bg-clip-padding border-[8px] border-t-0 LPICON  xl:w-[8rem] lg:w-[6rem] delay-700"
                   : ""
               }  w-[5rem] flex justify-center items-center `}
             >
