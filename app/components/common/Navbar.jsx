@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import "./Navbar.css"
+import "./Navbar.css";
 
 const Navbar = () => {
   const router = useRouter();
@@ -18,8 +18,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="nav-main" className="flex md:hidden mb-20">
-      {/* <div
+    <nav id="nav-main" className="flex md:hidden mb-24">
+      <div
         className="flex min-w-[100vw] fixed justify-between items-center z-50 bg-[#daebec9e]"
         id="nav-part1"
       >
@@ -48,7 +48,7 @@ const Navbar = () => {
         >
           <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
         </svg>
-      </div> */}
+      </div>
       <div
         className="fixed bottom-full z-40 bg-slate-200 duration-1000"
         id="nav-items-main"

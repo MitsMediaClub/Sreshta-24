@@ -12,6 +12,15 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
       ></div>
       <div className="w-[800px] h-[800px] bg-offWhite relative z-30">
         <section className="bg-tech-green w-full dog p-10 py-5 h-[300px] flex flex-col justify-center  text-offWhite relative">
+          <h1
+            className="text-xl absolute top-10 right-10 cursor-pointer"
+            onClick={() => {
+              selectEvent(null);
+              document.body.style.overflow = "auto";
+            }}
+          >
+            *
+          </h1>
           <h1 className="text-3xl text-offWhite">Event Detalis</h1>
           <hr className="h-[0.1rem] w-2/3 my-1 bg-offWhite" />
           <div className="flex justify-between">

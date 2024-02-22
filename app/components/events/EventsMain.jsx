@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Book from "./Book";
 import EventCards from "./EventCards";
 import EventModal from "./EventModal";
@@ -19,7 +19,7 @@ const EventsMain = () => {
       content: "Theme Show",
       desc: `
           A fun, creative spin off induced with the theme given, participants are allowed to be creative sticking to the theme,to have exemplary modelling skills to showcase the attitude, outfit and background score to create the magic of fashion meeting creativity, adhering to the theme given to them prior to the event.Prepare for an unforgettable journey into a world of endless fun and excitement at our vibrant theme show! With a lineup packed full of energetic performances, interactive games, and surprises around every corner, there's never a dull moment. Whether you're a thrill-seeker, a music lover, our dynamic show promises to keep you entertained from start to finish. Join us as we turn up the fun factor and make memories that will last a lifetime!
-        `
+        `,
     },
     {
       bg: "/events/book/themeshow.webp",
@@ -42,6 +42,14 @@ const EventsMain = () => {
       bg: "/events/book/eneriya.webp",
     },
   ];
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    setDimensions({
+      width: window.innerWidth / 3,
+      height: window.innerHeight,
+    });
+  }, []);
   const [selectedEvent, setSelectedEvent] = useState(null);
   function selectEvent(value) {
     setSelectedEvent(value);
@@ -50,16 +58,21 @@ const EventsMain = () => {
     <>
       <div className="pt-0">
         <div
-          className="hidden lg:flex justify-center p-20 pb-72 bg-cover bg-center bg-no-repeat"
+          className="hidden lg:flex justify-center p-20 pt-0 pb-44 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/common/bgDots.png')" }}
         >
-          <Book width={600} height={800} portrait={false} pages={pages} />
+          <Book
+            width={dimensions.width}
+            height={dimensions.height}
+            portrait={false}
+            pages={pages}
+          />
         </div>
         <div
           className="lg:hidden flex justify-center pb-44 bg-cover bg-center  bg-no-repeat"
           style={{ backgroundImage: "url('/common/bgDots.png')" }}
         >
-          <Book width={400} height={700} portrait={true} pages={pages} />
+          <Book width={400} height={900} portrait={true} pages={pages} />
         </div>
         <div className="relative">
           <EventCards selectEvent={selectEvent} />

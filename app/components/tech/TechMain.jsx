@@ -14,7 +14,7 @@ const TechMain = () => {
       </div>
       <EventsPreviewMain />
       <Main />
-      {/* <AboutPreviewMain /> */}
+      <AboutPreviewMain />
     </div>
   );
 };

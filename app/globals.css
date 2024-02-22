@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -44,11 +45,18 @@
   font-weight: 400;
   font-style: normal;
 }
-.LPICON{
-  border-image: url('/gallery/border.png') 20   ;
+
+.acme {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.LPICON2{
-  border-image: url('/gallery/border.png') 10   ;
+
+.LPICON {
+  border-image: url("/gallery/border.png") 20;
+}
+.LPICON2 {
+  border-image: url("/gallery/border.png") 10;
 }
 
 /* Hide Scrollbar */
