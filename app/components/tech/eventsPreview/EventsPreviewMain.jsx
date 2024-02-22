@@ -6,7 +6,7 @@ import Image from "next/image";
 const EventsPreviewMain = () => {
   const router = useRouter();
   return (
-    <div>
+    <div className="lg:p-24">
       <div className="flex justify-between items-center gap-10 mobile:gap-1 p-5 mobile:p-4 mh:gap-4 mh:p-4">
         <Image
           width={500}
