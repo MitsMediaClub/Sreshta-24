@@ -33,7 +33,7 @@ const EventsPreviewMain = () => {
       <div className="w-full overflow-x-scroll scrollbar overflow-y-hidden flex items-center mt-8 gap-5 ">
         <img
           onClick={() => router.push("/events")}
-          src="/events/viewMoreEvents.png"
+          src="https://i.imgur.com/sITtd91.jpeg"
           alt="View More Events"
           className="w-[32rem] mr-4 hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer"
         />
