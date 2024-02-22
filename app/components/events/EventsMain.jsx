@@ -72,7 +72,7 @@ const EventsMain = () => {
           className="lg:hidden flex justify-center pb-44 bg-cover bg-center  bg-no-repeat"
           style={{ backgroundImage: "url('/common/bgDots.png')" }}
         >
-          <Book width={400} height={900} portrait={true} pages={pages} />
+          {/* <Book width={400} height={900} portrait={true} pages={pages} /> */}
         </div>
         <div className="relative">
           <EventCards selectEvent={selectEvent} />
