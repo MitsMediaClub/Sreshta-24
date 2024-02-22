@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import FloatButton from "../FloatButton";
 import "../../common/Navbar.css";
+import { useRouter } from "next/navigation";
 
 export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
@@ -22,6 +23,8 @@ export const Landing = () => {
     };
     landingRef.current.addEventListener("mousemove", cursorset);
   }, []);
+
+  const router = useRouter();
 
   const ref = useRef();
 
@@ -47,23 +50,35 @@ export const Landing = () => {
           ref={ref}
         >
           <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] pt-[5vw]">
-            <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+            <span
+              onClick={() => router.push("/")}
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
               Home
             </span>
-            <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+            <span
+              onClick={() => router.push("/events")}
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
               Events
             </span>
-            <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
-              Gallery
-            </span>
-            <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+            <span
+              onClick={() => router.push("/about")}
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
               About
             </span>
-            <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] mb-[13vh]">
+
+            <span
+              onClick={() =>
+                (window.location.href = "mailto:example@example.com")
+              }
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
+            >
               Contact
             </span>
           </div>
-          <FloatButton />
+          {/* <FloatButton /> */}
         </div>
       </nav>
       <div
