@@ -1,7 +1,7 @@
 "use client";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useLayoutEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
@@ -10,7 +10,6 @@ import styles from "./styles.module.css";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 
 function Picture() {
-
   let custom_data = [
     {
       slide_img: "/gallery/s1.png",
@@ -63,9 +62,13 @@ function Picture() {
   };
 
   const barVariants = {
-    hidden: { backgroundColor: 'rgba(17,22,21,0.5)' },
-    visible: { opacity: 1,backgroundColor:'rgba(0,0,0,1)',padding:'0.2rem' },
-    exit: { opacity: 1,padding:'0.1rem'}, //  animation for side bar
+    hidden: { backgroundColor: "rgba(17,22,21,0.5)" },
+    visible: {
+      opacity: 1,
+      backgroundColor: "rgba(0,0,0,1)",
+      padding: "0.2rem",
+    },
+    exit: { opacity: 1, padding: "0.1rem" }, //  animation for side bar
   };
   const [imageList, setimageList] = useState(custom_data[0].main_img);
 
@@ -73,33 +76,32 @@ function Picture() {
   const bigImg = useRef(null);
   const maincontainer = useRef(null);
   const swiperRef = useRef(null);
-  
-  const setSliderW = ()=>{
+
+  const setSliderW = () => {
     // console.log("size changed",window.innerWidth)
-    if(window.innerWidth<=780){
-      setwind(2)
+    if (window.innerWidth <= 780) {
+      setwind(2);
+    } else {
+      setwind(5);
     }
-    else{
-      setwind(5)
-    }
-  }
+  };
 
   useLayoutEffect(() => {
-    setSliderW()
-    window.addEventListener("resize",setSliderW)
+    setSliderW();
+    window.addEventListener("resize", setSliderW);
     if (swiperRef.current.swiper) {
       // console.log("swiper init");
     }
     const intervalId = setInterval(() => {
-
       // console.log(currentImageIndex)
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageList.length);//for updating the index to show the picture
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageList.length); //for updating the index to show the picture
     }, 5000);
 
     return () => clearInterval(intervalId);
   }, []);
 
-  const detect = (e) => {//code for change the image when auto slide
+  const detect = (e) => {
+    //code for change the image when auto slide
     // console.log("slide changed",Swiper.activeIndex)
     if (undefined != custom_data[e]) {
       // console.log("slide changed", e);
@@ -114,9 +116,9 @@ function Picture() {
     // bigImg.current.src = e.slide_imgs
     // console.log('index',swiperRef.current.activeIndex = 1)
     swiperRef.current.swiper.slideTo(i, 400, false);
-    setCurrentImageIndex(0)
+    setCurrentImageIndex(0);
     // console.log(custom_data[i].main_img)
-    setimageList(custom_data[i].main_img)
+    setimageList(custom_data[i].main_img);
   };
 
   return (
@@ -125,7 +127,7 @@ function Picture() {
         ref={maincontainer}
         className="h-[110vh] mobile:pt-4 mh:pt-4 mobile:h-[80vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center"
       >
-        {/*h-[110vh] to make the slider visible*/ }
+        {/*h-[110vh] to make the slider visible*/}
         <div
           className="relative h-[94vh] w-full flex justify-center  mobile:h-[60vh]
             mh:h-[97vh]"
@@ -150,63 +152,67 @@ function Picture() {
             })}
             <div className="py-4 text-4xl">0{imageList.length}</div>
           </div>
-            <motion.div className="bg-cover bg-no-repeat bg-center relative h-[100%] w-[85%] mobile:w-[97%] mh:w-[80%] tw:w-[90%] -z-0 flex justify-center ">
-              <div className="h-full w-full LPICON2 border-[0.5rem] absolute z-50">
-
-              </div>
-              <Image
-                height={1000}
-                width={1000}
-                className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20"
-                src="/gallery/filter1.png"
-                alt="img"
-              />
-              <motion.img
-                      className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill w-full mobile:object-cover h-full mainImage"
-                      // src={custom_data[0].main_img}
-                      src={'./gallery/Solid_black.png'}
-                  />
-              {
-                imageList.map((path,i)=>{
-                  // console.log("current index",currentImageIndex)
-                  return (
-                    <motion.img
-                      key={i}
-                      ref={bigImg}
-                      className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill mobile:object-cover w-full h-full mainImage"
-                      // src={custom_data[0].main_img}
-                      src={path}
-                      alt="image"
-                      initial="hidden"
-                      animate={currentImageIndex === i ? 'visible' : 'exit'}
-                      variants={imageVariants}
-                      transition={{ duration: 0.5, ease: 'easeInOut' ,
-                    }}
-                    />
-                  )
-                })
-              }
-              <Image
-                height={1000}
-                width={1000}
-                className="absolute bottom-0 w-full bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
-                src="/gallery/Vector.png"
-                alt="image"
-              />
-            </motion.div>
+          <motion.div className="bg-cover bg-no-repeat bg-center relative h-[100%] w-[85%] mobile:w-[97%] mh:w-[80%] tw:w-[90%] -z-0 flex justify-center ">
+            <div className="h-full w-full LPICON2 border-[0.5rem] absolute z-50"></div>
+            <Image
+              height={1000}
+              width={1000}
+              className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20"
+              src="/gallery/filter1.png"
+              alt="img"
+            />
+            <motion.img
+              className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill w-full mobile:object-cover h-full mainImage"
+              // src={custom_data[0].main_img}
+              src={"./gallery/Solid_black.png"}
+            />
+            {imageList.map((path, i) => {
+              // console.log("current index",currentImageIndex)
+              return (
+                <motion.img
+                  key={i}
+                  ref={bigImg}
+                  className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill mobile:object-cover w-full h-full mainImage"
+                  // src={custom_data[0].main_img}
+                  src={path}
+                  alt="image"
+                  initial="hidden"
+                  animate={currentImageIndex === i ? "visible" : "exit"}
+                  variants={imageVariants}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                />
+              );
+            })}
+            <Image
+              height={1000}
+              width={1000}
+              className="absolute bottom-0 w-full bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
+              src="/gallery/Vector.png"
+              alt="image"
+            />
+          </motion.div>
           <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] tw:left-[7%] mh:bottom-[19%]">
-            <div className={`tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}>
-              2 Mar 2023{
+            <div
+              className={`tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}
+            >
+              2 Mar 2023
+              {
                 //put the text1 here
               }
             </div>
-            <div className={`text-9xl tracking-tighter leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}>
-              Motor Show{
+            <div
+              className={`text-9xl tracking-tighter leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}
+            >
+              Motor Show
+              {
                 //put text2 here
               }
             </div>
-            <div className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}>
-              The classics and the vintage, all in one garage.{
+            <div
+              className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}
+            >
+              The classics and the vintage, all in one garage.
+              {
                 //put text3 here
               }
             </div>
