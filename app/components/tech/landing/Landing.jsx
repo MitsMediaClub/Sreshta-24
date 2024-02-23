@@ -158,7 +158,7 @@ export const Landing = () => {
           <div className="HeroText absolute z-10 top-0 left-0 bg-no-repeat h-full w-full flex flex-col justify-center items-center">
             <Image
               className=" animate-wiggle xl:w-auto xl:h-auto w-[50vw] h-auto"
-              src={"/tech/Titles.webp"}
+              src={"/tech/Titles.png"}
               width={800}
               height={800}
               alt="Main Comic"
