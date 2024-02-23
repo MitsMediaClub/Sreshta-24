@@ -72,6 +72,7 @@ const Bot = () => {
                 </div>
               </div>
             </div>
+            <img src="/bot/back.png"></img>
             <div className="flex w-full justify-center absolute bottom-0 h-16 pb-6">
               <div className="flex gap-2">
                 <input
