@@ -4,11 +4,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import FloatButton from "../FloatButton";
 import "../../common/Navbar.css";
-<<<<<<< HEAD
-import Link from "next/link";
-=======
 import { useRouter } from "next/navigation";
->>>>>>> origin/main
 
 export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
@@ -56,21 +52,6 @@ export const Landing = () => {
           ref={ref}
         >
           <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] pt-[5vw]">
-<<<<<<< HEAD
-          <Link href="/" className='hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]'>
-                Home
-            </Link>
-            <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
-              Events
-            </span>
-            <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
-              Gallery
-            </span>
-            <Link href="/about" className='hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]'>
-                About
-            </Link>
-            <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] mb-[13vh]">
-=======
             <span
               onClick={() => {
                 router.push("/");
@@ -113,7 +94,6 @@ export const Landing = () => {
               }
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
             >
->>>>>>> origin/main
               Contact
             </span>
           </div>
@@ -121,14 +101,9 @@ export const Landing = () => {
         </div>
       </nav>
       <div
-<<<<<<< HEAD
-        className="text-[#E9F8E8] overflow-x-hidden  relative w-full min-h-screen"
-        ref={landingRef}>
-=======
         className="text-[#E9F8E8] overflow-x-hidden  relative w-full "
         ref={landingRef}
       >
->>>>>>> origin/main
         <div className={` absolute top-0 left-0 right-0 z-40 w-full  `}>
           <div className="flex flex-row justify-between  2xl:mx-16 xl:mx-[3.5rem]  lg:mx-[3rem] mx-6 ">
             <div className="relative">
