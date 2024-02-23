@@ -60,19 +60,21 @@ const EventsMain = () => {
         <div
           className="hidden lg:flex justify-center p-20 pt-0 pb-44 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/common/bgDots.png')" }}
-        >
+          >
           <Book
             width={dimensions.width}
             height={dimensions.height}
             portrait={false}
             pages={pages}
-          />
+            />
         </div>
         <div
           className="lg:hidden flex justify-center pb-44 bg-cover bg-center  bg-no-repeat"
           style={{ backgroundImage: "url('/common/bgDots.png')" }}
-        >
-          {/* <Book width={400} height={900} portrait={true} pages={pages} /> */}
+          >
+          <h1 className="text-6xl bangers text-tech-primary">Events</h1>
+
+          {/* <Book className="hidden" width={400} height={900} portrait={true} pages={pages} /> */}
         </div>
         <div className="relative">
           <EventCards selectEvent={selectEvent} />
