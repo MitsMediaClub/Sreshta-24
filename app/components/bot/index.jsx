@@ -54,7 +54,7 @@ const Bot = () => {
         )}
         {showPopup && (
           <div
-            className={`fixed bottom-4 right-28 bg-[#E9F8E8] w-1/4 h-full rounded-xl shadow z-[100] transition-all duration-500
+            className={`fixed bottom-4 right-28 bg-[#E9F8E8] sm:w-screen sm:h-screen md:w-1/4 md:h-full rounded-xl shadow z-[100] transition-all duration-500
             }`}
             style={{
               opacity: showPopup ? 1 : 0,
