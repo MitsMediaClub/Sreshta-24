@@ -42,7 +42,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
             />
           </div>
         </section>
-        <div className="overflow-y-scroll h-[500px]">
+        <div className="overflow-y-scroll h-[450px] lg:h-[450px] scrollbar">
           <section className="p-10 py-5">
             <div className="py-5">
               <h1 className="bangers text-black/90 text-3xl">Reg Fees</h1>
