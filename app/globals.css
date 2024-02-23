@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -46,9 +47,11 @@
   font-weight: 400;
   font-style: normal;
 }
-
-.LPICON {
-  border-image: url("/gallery/border.png") 2;
+.LPICON{
+  border-image: url('/gallery/border.png') 20   ;
+}
+.LPICON2{
+  border-image: url('/gallery/border.png') 10   ;
 }
 
 /* Hide Scrollbar */

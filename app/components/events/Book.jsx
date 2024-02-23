@@ -62,9 +62,7 @@ export default function Book(props) {
                 <h1 className="mt-5 font-medium text-2xl bangers">
                   {page.date}
                 </h1>
-                <p className="text-lg lg:text-2xl font-medium mt-5 dog">
-                  {page.desc}
-                </p>
+                <p className="text-lg font-medium mt-5 acme">{page.desc}</p>
               </div>
             );
           })}
