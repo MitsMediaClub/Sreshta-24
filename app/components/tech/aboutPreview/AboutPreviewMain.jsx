@@ -31,13 +31,21 @@ const AboutPreviewMain = () => {
       </div>
 
       <p className="dog px-5 lg:px-20 text-xl lg:text-3xl mt-5 lg:mt-20 text-wrap text-tech-primary ">
-      Shreshta is an exhilarating showcase of innovation and creativity, bringing together students, industry experts, and tech enthusiasts. Featuring a diverse range of events, workshops, and competitions, it serves as a platform to explore cutting-edge technologies, exchange ideas, and foster a passion for innovation. From hackathons to cybersecurity challenges, the tech fest is a dynamic hub that celebrates the spirit of technological advancement, encouraging collaboration and pushing the boundaries of knowledge. Join us for an immersive experience that bridges academia with the ever-evolving world of technology.
+        Shreshta is an exhilarating showcase of innovation and creativity,
+        bringing together students, industry experts, and tech enthusiasts.
+        Featuring a diverse range of events, workshops, and competitions, it
+        serves as a platform to explore cutting-edge technologies, exchange
+        ideas, and foster a passion for innovation. From hackathons to
+        cybersecurity challenges, the tech fest is a dynamic hub that celebrates
+        the spirit of technological advancement, encouraging collaboration and
+        pushing the boundaries of knowledge. Join us for an immersive experience
+        that bridges academia with the ever-evolving world of technology.
       </p>
       <h1
         onClick={() => router.push("/about")}
-        className="text-center text-5xl font-bold bangers hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer pb-10"
+        className="text-center text-5xl font-bold bangers hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer py-10"
       >
-        View
+        About Us
       </h1>
     </div>
   );

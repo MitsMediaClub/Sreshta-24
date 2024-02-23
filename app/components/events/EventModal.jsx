@@ -21,7 +21,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
           >
             x
           </h1>
-          <h1 className="text-3xl text-offWhite">Event Detalis</h1>
+          <h1 className="text-3xl text-offWhite">Event Details</h1>
           <hr className="h-[0.1rem] w-2/3 my-1 bg-offWhite" />
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div>
