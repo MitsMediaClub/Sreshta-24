@@ -9,6 +9,9 @@ import studentCouncil from "./data/studentCouncil.json";
 import webTeam from "./data/leadwebTeam.json";
 import juniorwebTeam from "./data/subweb.json";
 import Link from "next/link";
+import Footer from "../components/common/Footer";
+import Specials from "./Specials";
+import specialsX from "./data/specials.json";
 
 export default function AboutPage() {
   const ref = useRef();
@@ -131,6 +134,13 @@ export default function AboutPage() {
       </div>
       {/* Cards Call*/}
       <div className="">
+      <div className="pt-12">
+          <div className="w-full h-1/5 bangers text-6xl self-center text-center text-[#285F5F]">
+            WEB TEAM
+          </div>
+          <Cards data={webTeam} />
+          <Cards data={juniorwebTeam} />
+        </div>
         <div className="pt-12">
           <div className="w-full h-1/5 bangers text-6xl self-center text-center text-[#285F5F]">
             STUDENT COUNCIL
@@ -143,15 +153,13 @@ export default function AboutPage() {
           </div>
           <Cards data={mediaClub} />
         </div>
-        <div className="pt-12">
-          <div className="w-full h-1/5 bangers text-6xl self-center text-center text-[#285F5F]">
-            WEB TEAM
-          </div>
-          <Cards data={webTeam} />
-          <Cards data={juniorwebTeam} />
-        </div>
       </div>
-
+      {/*<div className=" mx-12 pt-12 flex gap-12">
+          <div className=" h-1/5 bangers whitespace-nowrap text-3xl self-center text-[#285F5F]">
+            Special Mention
+          </div>
+          <Specials data={specialsX} />
+            </div>*/}
       {/*Footer :- For the Sake of the Aesthetics */}
       {/* <div className='flex items-center justify-between p-16'>
                 <div className='flex items-center'>
@@ -164,6 +172,7 @@ export default function AboutPage() {
                 </div>
                 <div className='gooddog text-4xl text-[#285F5F]'>© 2024 MITS. All rights reserved.</div>
             </div> */}
+            
     </main>
   );
 }
