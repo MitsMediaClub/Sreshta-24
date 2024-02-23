@@ -19,7 +19,6 @@ const Bot = () => {
 
   const handleIconClick = () => {
     setShowPopup(true);
-    setIsMinimized(false);
     hideHim.current = !hideHim.current;
   };
 
@@ -28,8 +27,6 @@ const Bot = () => {
     setShowPopup(false);
     hideHim.current = false;
   };
-
-  const [isMinimized, setIsMinimized] = useState(false);
 
   return (
     <div className="h-screen w-screen relative flex justify-end">
@@ -54,7 +51,7 @@ const Bot = () => {
         )}
         {showPopup && (
           <div
-            className={`fixed bottom-4 right-28 bg-[#E9F8E8] sm:w-screen sm:h-screen md:w-1/4 md:h-full rounded-xl shadow z-[100] transition-all duration-500
+            className={`fixed sm:bottom-0 sm:right-0 md:bottom-4 md:right-28 bg-[#E9F8E8] sm:w-screen sm:h-screen md:w-1/4 md:h-full sm:rounded-0 md:rounded-xl shadow z-[100] transition-all duration-500
             }`}
             style={{
               opacity: showPopup ? 1 : 0,
@@ -63,7 +60,7 @@ const Bot = () => {
             }}
           >
             <div className="bg-[#73AAA6]/90 rounded-t-xl">
-              <div className="flex justify-between text-xl font-bold p-6 text-white bangers">
+              <div className="flex justify-between md:text-xl font-bold p-6 text-white bangers">
                 SHRESHTA CHATBOT
                 <div className="flex gap-4">
                   <button onClick={handleCloseClick}>
@@ -73,16 +70,30 @@ const Bot = () => {
               </div>
             </div>
             <img src="/bot/back.png"></img>
-            <div className="flex w-full justify-center absolute bottom-0 h-16 pb-6">
+            <style jsx>{`
+              @media (max-width: 640px) {
+                .fixed {
+                  font-size: 2rem !important;
+                  rounded-0 !important;
+                  top: 0 !important;
+                  right: 0 !important;
+                  bottom: 0 !important;
+                  left: 0 !important;
+                  height: ${showPopup ? "100%" : "0"} !important;
+                  transform: none !important;
+                }
+              }
+            `}</style>
+            <div className="flex w-full sm:h-full justify-center absolute bottom-0 md:h-16 pb-10">
               <div className="flex gap-2">
                 <input
                   type="text"
                   id=""
-                  className="text-xl rounded-lg bg-[#73AAA6]/90 py-4 px-4 text-white focus:outline-none placeholder:text-white dog"
+                  className="sm:text-2xl md:text-xl rounded-lg bg-[#73AAA6]/90 px-8 md:py-4 md:px-4 text-white focus:outline-none placeholder:text-white dog"
                   placeholder="Type your question here..."
                   required
                 />
-                <button className="text-sm rounded-lg bg-[#73AAA6]/90 py-2 px-4 text-white">
+                <button className="flex items-center text-sm rounded-lg bg-[#73AAA6]/90 py-4 px-4 text-white">
                   <img src="/bot/arrow.png" alt="" width={15} height={15} />
                 </button>
               </div>
