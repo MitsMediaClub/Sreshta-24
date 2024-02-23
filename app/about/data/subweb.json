@@ -1,50 +1,50 @@
 [
-    {
-        "name": "Andrew C Anil",
-        "role": "",
-        "link": "https://www.linkedin.com/in/andrewcanil04/",
-        "img": "/assets/about/team/subteam/Andrew.png"
-      },
-      {
-        "name": "Jibina Babu",
-        "role": "",
-        "link": "https://www.linkedin.com/in/jibina-babu-208154250/",
-        "img": "/assets/about/team/subteam/Jibina.png"
-      },
-      {
-        "name": "Lakshmi Rajesh",
-        "role": "",
-        "link": "",
-        "img": "/assets/about/team/subteam/Lakshmi.png"
-      },
-      {
-        "name": "Amalekh Biju",
-        "role": "",
-        "link": "",
-        "img": "/assets/about/team/subteam/Amalekh.png"
-      },
-      {
-        "name": "Aaron ",
-        "role": "",
-        "link": "",
-        "img": "/assets/about/team/subteam/Aaron.png"
-      },
-      {
-        "name": "Abdul Rahman",
-        "role": "",
-        "link": "",
-        "img": "/assets/about/team/subteam/Abdu.png"
-      },
-      {
-        "name": "Vaishakh S Nair",
-        "role": "",
-        "link": "",
-        "img": "/assets/about/team/subteam/Vaishakh.png"
-      },
-      {
-        "name": "Merin Johnson",
-        "role": "",
-        "link": "",
-        "img": "/assets/about/team/subteam/Merin.png"
-      }
+  {
+    "name": "Andrew C Anil",
+    "role": "",
+    "link": "https://www.linkedin.com/in/andrewcanil04",
+    "img": "/assets/about/team/subteam/Andrew.png"
+  },
+  {
+    "name": "Jibina Babu",
+    "role": "",
+    "link": "https://www.linkedin.com/in/jibina-babu-208154250/",
+    "img": "/assets/about/team/subteam/Jibina.png"
+  },
+  {
+    "name": "Lakshmi Rajesh",
+    "role": "",
+    "link": "",
+    "img": "/assets/about/team/subteam/Lakshmi.png"
+  },
+  {
+    "name": "Amalekh Biju",
+    "role": "",
+    "link": "https://www.linkedin.com/in/amalekh-biju/",
+    "img": "/assets/about/team/subteam/Amalekh.png"
+  },
+  {
+    "name": "Aaron J Pulikkottil",
+    "role": "",
+    "link": "https://www.linkedin.com/in/aaron-pulikkottil-b65361250/",
+    "img": "/assets/about/team/subteam/Aaron.png"
+  },
+  {
+    "name": "Abdul Rahman",
+    "role": "",
+    "link": "https://www.linkedin.com/in/abdul-rahman-26b2b6262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "img": "/assets/about/team/subteam/Abdu.png"
+  },
+  {
+    "name": "Vaishakh S Nair",
+    "role": "",
+    "link": "",
+    "img": "/assets/about/team/subteam/Vaishakh.png"
+  },
+  {
+    "name": "Merin Johnson",
+    "role": "",
+    "link": "https://www.linkedin.com/in/merin-johnson-46643a250/",
+    "img": "/assets/about/team/subteam/Merin.png"
+  }
 ]

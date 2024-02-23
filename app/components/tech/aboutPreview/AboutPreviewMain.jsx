@@ -1,6 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import webTeam from "../../../about/data/leadwebTeam.json";
+import subWeb from "../../../about/data/subweb.json";
+import Marquee from "react-fast-marquee";
 
 const AboutPreviewMain = () => {
   const router = useRouter();
@@ -41,11 +44,49 @@ const AboutPreviewMain = () => {
         pushing the boundaries of knowledge. Join us for an immersive experience
         that bridges academia with the ever-evolving world of technology.
       </p>
+      <div className="my-10">
+        <Marquee autoFill>
+          <div className="w-full flex mt  -5">
+            {webTeam.map((value, index) => (
+              <a key={index} href={value.link} className="">
+                <div className="relative group rounded-xl bg-no-repeat bg-cover bg-center w-[300px] h-[300px] md:w-[350px] md:h-[350px] p-4 flex flex-col justify-end hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer items-center ">
+                  <img src={value.img} className="absolute pb-4 top-0 h-full" />
+                  <div className="px-5 py-3">
+                    <h1 className="font-bold text-xl psans text-white whitespace-nowrap relative z-30">
+                      {value.name}
+                    </h1>
+                    <h1 className="font-light text-md psans text-white whitespace-nowrap relative z-30">
+                      {value.role}
+                    </h1>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+          <div className="w-full flex mt-5">
+            {subWeb.map((value, index) => (
+              <a key={index} href={value.link} className="">
+                <div className="relative group rounded-xl bg-no-repeat bg-cover bg-center w-[300px] h-[300px] md:w-[350px] md:h-[350px] p-4 flex flex-col justify-end hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer items-center ">
+                  <img src={value.img} className="absolute pb-4 top-0 h-full" />
+                  <div className="px-5 py-3">
+                    <h1 className="font-bold text-xl psans text-white whitespace-nowrap relative z-30">
+                      {value.name}
+                    </h1>
+                    <h1 className="font-light text-md psans text-white whitespace-nowrap relative z-30">
+                      {value.role}
+                    </h1>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </Marquee>
+      </div>
       <h1
         onClick={() => router.push("/about")}
-        className="text-center text-5xl font-bold bangers hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer py-10"
+        className="text-center text-5xl font-bold bangers hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer pt-10"
       >
-        About Us
+        View All
       </h1>
     </div>
   );
