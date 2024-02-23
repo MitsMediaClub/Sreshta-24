@@ -3,6 +3,7 @@ import LandingMobile from "./landing/LandingMobile";
 import Main from "./gallery/Main";
 import EventsPreviewMain from "./eventsPreview/EventsPreviewMain";
 import AboutPreviewMain from "./aboutPreview/AboutPreviewMain";
+import Bot from "../bot/index";
 const TechMain = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const TechMain = () => {
         <LandingMobile />
       </div>
       <EventsPreviewMain />
+      <Bot />
       <Main />
       {/* <AboutPreviewMain /> */}
     </div>
