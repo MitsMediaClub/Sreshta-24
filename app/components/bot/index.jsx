@@ -29,11 +29,6 @@ const Bot = () => {
     hideHim.current = false;
   };
 
-  const handleMinimizeClick = (event) => {
-    event.stopPropagation();
-    setIsMinimized(!isMinimized);
-  };
-
   const [isMinimized, setIsMinimized] = useState(false);
 
   return (
@@ -59,30 +54,30 @@ const Bot = () => {
         )}
         {showPopup && (
           <div
-            className={`fixed top-5 right-28 bg-[#E9F8E8] w-1/4 h-full rounded-xl shadow z-[100] transition-all duration-500
+            className={`fixed bottom-4 right-28 bg-[#E9F8E8] w-1/4 h-full rounded-xl shadow z-[100] transition-all duration-500
             }`}
             style={{
               opacity: showPopup ? 1 : 0,
-              transition: "opacity 1s, transform 1s, height 1s",
-              transform: `translateY(${isMinimized ? "600px" : "0px"})`,
+              transition: "opacity 1s, transform 1s",
               height: `${showPopup ? "650px" : "0px"}`,
             }}
           >
             <div className="bg-[#73AAA6]/90 rounded-t-xl">
-              <div className="flex justify-between font-bold p-6 text-white">
+              <div className="flex justify-between text-xl font-bold p-6 text-white bangers">
                 SHRESHTA CHATBOT
                 <div className="flex gap-4">
-                  <button onClick={handleMinimizeClick}>-</button>
-                  <button onClick={handleCloseClick}>x</button>
+                  <button onClick={handleCloseClick}>
+                    <img src="/bot/hide.png" className="w-4"></img>
+                  </button>
                 </div>
               </div>
             </div>
-            <div className="flex w-full justify-center absolute inset-x-0 bottom-0 h-16 pb-6">
+            <div className="flex w-full justify-center absolute bottom-0 h-16 pb-6">
               <div className="flex gap-2">
                 <input
                   type="text"
                   id=""
-                  className="text-sm rounded-lg bg-[#73AAA6]/90 py-4 px-8 text-white focus:outline-none placeholder:text-white"
+                  className="text-xl rounded-lg bg-[#73AAA6]/90 py-4 px-4 text-white focus:outline-none placeholder:text-white dog"
                   placeholder="Type your question here..."
                   required
                 />
