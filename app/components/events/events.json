@@ -48,7 +48,7 @@
     "time": "12 PM - 2 PM",
     "venue": "Steve Jobs Hall, Ramanujan Block",
     "reg": ["mitsian: 150₹", "non-mitsian: 250₹"],
-    "cardImg": "/events/event1.png",
+    "cardImg": "https://i.imgur.com/mwkVJdQ.png",
     "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSe5KHmLOog2MliOYGDerX9cQQ8XRCXRiloOFfzUaqblA6L5OA/viewform?usp=sf_link",
     "prize": ["75,000₹"],
     "desc": "Eneryia 2.0: Fueling Innovation in 24 Hours! Join us for an exhilarating hackathon hosted by the Computer Science Department in collaboration with ACM. Dive into a day-long coding marathon where participants will unleash their creativity, collaborate with peers, and tackle real-world challenges in the realm of technology. From groundbreaking software solutions to innovative hardware hacks, Eneryia 2.0 is the ultimate platform to push boundaries, showcase skills, and forge lasting connections in the tech community. Are you ready to power up your ideas and make a difference? Join us for Eneryia 2.0 and let's code the future together!",
