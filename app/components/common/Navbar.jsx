@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import "./Navbar.css"
+import Link from "next/link";
 
 const Navbar = () => {
   const router = useRouter();
@@ -63,9 +64,9 @@ const Navbar = () => {
           <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
             Gallery
           </span>
-          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
-            About
-          </span>
+          <Link href="/about" className='hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]'>
+                About
+            </Link>
           <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
             Contact
           </span>

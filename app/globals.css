@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -71,3 +73,59 @@
 .no-scroll {
   overflow: hidden;
 }
+
+@font-face{
+  font-family: "GoodDog";
+  src: url("https://db.onlinewebfonts.com/t/5f6a1d84be9da8671205d7505c9fad01.eot");
+  src: url("https://db.onlinewebfonts.com/t/5f6a1d84be9da8671205d7505c9fad01.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/5f6a1d84be9da8671205d7505c9fad01.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/5f6a1d84be9da8671205d7505c9fad01.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/5f6a1d84be9da8671205d7505c9fad01.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/5f6a1d84be9da8671205d7505c9fad01.svg#GoodDog")format("svg");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
+
+@font-face {
+  font-family: "Bangers";
+  src: url("/fonts/Bangers.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+.gooddog{
+  font-family: "GoodDog", system-ui;
+}
+
+.bangers{
+  font-family: "Bangers", system-ui;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Google Sans Regular'), local(GoogleSans-Regular), url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
+  }
+   
+  /* latin */
+  @font-face {
+  font-family: 'Google Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Google Sans Medium'), local('GoogleSans-Medium'), url(https://fonts.gstatic.com/s/googlesans/v11/4UabrENHsxJlGDuGo1OIlLU94YtzCwY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  .psans{
+    font-family: 'Google Sans';
+  }
+
+  .geo {
+  font-family: "Geologica", sans-serif;
+}
+
+.open {
+  font-family: "Open Sans", sans-serif;
+} 

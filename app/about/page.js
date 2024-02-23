@@ -1,4 +1,3 @@
-// Import any required modules or dependencies here
 import AboutPage from "./About";
 
 export default function About() {

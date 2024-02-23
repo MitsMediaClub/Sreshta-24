@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Joshua Varghese",
+        "role": "UI/UX Engineer",
+        "link": "",
+        "img": "/assets/about/team/webteam/Joshua.png"
+    },
+    {
+        "name": "Adrin Jose CT",
+        "role": "Full Stack Developer",
+        "link": "",
+        "img": "/assets/about/team/webteam/Adrin.png"
+    },
+    {
+        "name": "Rovan Thomas John",
+        "role": "Full Stack Developer",
+        "link": "",
+        "img": "/assets/about/team/webteam/Rovn.png"
+    },
+    {
+        "name": "Vyshnav D Kumar",
+        "role": "Full Stack Developer",
+        "link": "",
+        "img": "/assets/about/team/webteam/Vyshnav.png"
+    },
+    {
+        "name": "Athul Krishna S",
+        "role": "ML Engineer",
+        "link": "",
+        "img": "/assets/about/team/webteam/Athul.png"
+    }
+]
