@@ -52,6 +52,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
                 ))}
               </div>
             </div>
+           
             <div className="py-5">
               <h1 className="bangers text-black/90 text-3xl">Prize Pool</h1>
               <div className="flex gap-10 bangers text-2xl text-tech-primary">
@@ -60,6 +61,16 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
                 ))}
               </div>
             </div>
+
+            <div className="py-5">
+              <h1 className="bangers text-black/90 text-3xl">Coordinator</h1>
+              <div className="flex gap-10 bangers text-2xl text-tech-primary">
+                {selectedEvent.cord.map((prize, index) => (
+                  <h1 key={index}>{prize}</h1>
+                ))}
+              </div>
+            </div>
+
           </section>
           <hr className="h-[0.1rem] w-[90%] mx-auto bg-black/20" />
           <section className="p-10 py-5">

@@ -4,7 +4,6 @@ import Search from "./Search";
 import { useState } from "react";
 
 import eventsTemp from "./events.json";
-
 const EventCards = ({ selectEvent }) => {
   const [events, setEvents] = useState(eventsTemp);
   const [search, setSearch] = useState("");
