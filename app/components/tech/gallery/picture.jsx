@@ -14,44 +14,55 @@ function Picture() {
     {
       slide_img: "/gallery/s1.png",
       main_img: [
-        "/gallery/m1.png",
-        "/gallery/img1.JPG",
-        "/gallery/img2.JPG",
-        "/gallery/img3.JPG",
-        "/gallery/img4.JPG",
-        "/gallery/img5.JPG",
+        "/gallery/Masala_cofee/img1.webp",
+        "/gallery/Masala_cofee/img2.webp",
+        "/gallery/Masala_cofee/img3.webp",
+        "/gallery/Masala_cofee/img4.webp",
+        "/gallery/Masala_cofee/img5.webp",
+        "/gallery/Masala_cofee/img6.webp",
+        "/gallery/Masala_cofee/img7.webp",
+        "/gallery/Masala_cofee/img8.webp",
       ],
-      card_name: "Motor show",
+      card_name: "Masala Cofee",
       text: ["text1", "text1", "text1"],
     },
     {
       slide_img: "/gallery/s2.png",
       main_img: [
-        "/gallery/m2.png",
-        "/gallery/img1.JPG",
-        "/gallery/img2.JPG",
-        "/gallery/img3.JPG",
-        "/gallery/img4.JPG",
-        "./gallery/img5.JPG",
+        "/gallery/Nexus_gaming/img1.webp",
+        "/gallery/Nexus_gaming/img2.webp",
+        "/gallery/Nexus_gaming/img3.webp",
+        "/gallery/Nexus_gaming/img4.webp",
       ],
       //without ./ there is a 404 error while switching the slide
-      card_name: "bharati nattitam",
+      card_name: "Nexus gaming",
       text: ["text1", "text1", "text1"],
     },
     {
       // slide_img: "/gallery/s3.png", //the size of the image s3.png was not proper
       slide_img: "/gallery/s2.png",
       main_img: [
-        "/gallery/m3.png",
-        "/gallery/img1.JPG",
-        "/gallery/img2.JPG",
-        "/gallery/img3.JPG",
-        "/gallery/img4.JPG",
-        "/gallery/img5.JPG",
+        "/gallery/Sunburn/img1.webp",
+        "/gallery/Sunburn/img2.webp",
+        "/gallery/Sunburn/img3.webp",
+        "/gallery/Sunburn/img4.webp",
+        "/gallery/Sunburn/img5.webp",
+        "/gallery/Sunburn/img6.webp",
       ],
-      card_name: "mind games",
+      card_name: "Sunburn",
       text: ["text1", "text1", "text1"],
     },
+    {
+      slide_img: "/gallery/s2.png",
+      main_img: [
+        "/gallery/Hackathon/img1.webp",
+        "/gallery/Hackathon/img2.webp",
+        "/gallery/Hackathon/img3.webp",
+      ],
+      card_name: "Hackathon",
+      text: ["text1", "text1", "text1"],
+    },
+
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -98,7 +109,7 @@ function Picture() {
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [imageList]);
 
   const detect = (e) => {
     //code for change the image when auto slide
@@ -153,7 +164,7 @@ function Picture() {
             <div className="py-4 text-4xl">0{imageList.length}</div>
           </div>
           <motion.div className="bg-cover bg-no-repeat bg-center relative h-[100%] w-[85%] mobile:w-[97%] mh:w-[80%] tw:w-[90%] -z-0 flex justify-center ">
-            <div className="h-full w-full LPICON2 border-[0.5rem] absolute z-50"></div>
+            <div className="h-full w-full LPICON2 border-[0.5rem] mobile:border-[0.3rem] absolute z-50"></div>
             <Image
               height={1000}
               width={1000}
