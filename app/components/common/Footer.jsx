@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="dog md:text-4xl text-l md:p-4 text-[#285F5F]">
           © 2024 MITS. All rights reserved.
         </div>
-        <div className="p-0 md:p-4 text-[#285F5F] gap-10 flex flex-row ">
+        <div className="p-0 md:p-4 text-[#285F5F] lg:gap-10 flex flex-row lg:justify-center ">
           <a href="https://www.instagram.com/shreshtamits/">
             <Instagram className="scale-50 md:scale-100" />
           </a>
