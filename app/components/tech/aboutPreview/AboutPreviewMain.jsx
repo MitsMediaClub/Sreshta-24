@@ -46,7 +46,7 @@ const AboutPreviewMain = () => {
       </p>
       <div className="my-10">
         <Marquee autoFill>
-          <div className="w-full flex mt  -5">
+          <div className="w-full flex mt-5">
             {webTeam.map((value, index) => (
               <a key={index} href={value.link} className="">
                 <div className="relative group rounded-xl bg-no-repeat bg-cover bg-center w-[300px] h-[300px] md:w-[350px] md:h-[350px] p-4 flex flex-col justify-end hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer items-center ">
@@ -62,6 +62,21 @@ const AboutPreviewMain = () => {
                 </div>
               </a>
             ))}
+          </div>
+          <div className="w-full flex mt-5">
+          <a href="https://www.linkedin.com/in/glitchy/" className="">
+                <div className="relative group rounded-xl bg-no-repeat bg-cover bg-center w-[300px] h-[300px] md:w-[350px] md:h-[350px] p-4 flex flex-col justify-end hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer items-center ">
+                  <img src="/assets/about/team/mediaclub/Advaith.png" className="absolute pb-4 top-0 h-full" />
+                  <div className="px-5 py-3">
+                    <h1 className="font-bold text-xl psans text-white whitespace-nowrap relative z-30">
+                      Advaith Narayanan
+                    </h1>
+                    <h1 className="font-light text-md psans text-white whitespace-nowrap relative z-30">
+                      DevOps Engineer
+                    </h1>
+                  </div>
+                </div>
+              </a>
           </div>
           <div className="w-full flex mt-5">
             {subWeb.map((value, index) => (

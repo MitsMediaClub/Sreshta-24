@@ -30,6 +30,9 @@ const Navbar = () => {
           height={50}
           src="/common/shreshtaLogo.svg"
           alt="MITS Logo"
+          onClick={() => {
+            router.push("/");
+          }}
         />
         <svg
           onClick={hamburger}
