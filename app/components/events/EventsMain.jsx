@@ -4,8 +4,6 @@ import Book from "./Book";
 import EventCards from "./EventCards";
 import EventModal from "./EventModal";
 import NavbarNew from "../common/NavbarNew";
-import Image from "next/image";
-
 const EventsMain = () => {
   const pages = [
     {
