@@ -42,7 +42,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
             />
           </div>
         </section>
-        <div className="overflow-y-scroll h-[300px] md:h-[400px] lg:h-[450px] scrollbar">
+        <div className="overflow-y-scroll h-[350px] md:min-h-[400px] lg:h-[450px] scrollbar">
           <section className="p-10 py-5">
             <div className="py-5">
               <h1 className="bangers text-black/90 text-3xl">Reg Fees</h1>
@@ -52,7 +52,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
                 ))}
               </div>
             </div>
-           
+
             <div className="py-5">
               <h1 className="bangers text-black/90 text-3xl">Prize Pool</h1>
               <div className="flex gap-10 bangers text-2xl text-tech-primary">
@@ -70,7 +70,6 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
                 ))}
               </div>
             </div>
-
           </section>
           <hr className="h-[0.1rem] w-[90%] mx-auto bg-black/20" />
           <section className="p-10 py-5">
