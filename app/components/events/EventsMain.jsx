@@ -58,9 +58,9 @@ const EventsMain = () => {
   }
   return (
     <>
-    <div className="bg-texture bg-no-repeat snap-center w-screen md:min-h-screen">
-    <NavbarNew/>
-    <div className="pt-32 pb-16">
+      <div className="bg-texture bg-no-repeat snap-center w-screen md:min-h-screen">
+        <NavbarNew />
+        <div className="pt-32 pb-16">
           <p className="w-full text-white h-1/2 bangers font-normal md:text-xxxl text-9xl items-center drop-shadow-title text-center self-center md:p-24">
             EVENTS
           </p>
@@ -68,35 +68,30 @@ const EventsMain = () => {
             New Year, New Events
           </p>
         </div>
-      <div className="pt-0">
-        <div
-          className="hidden lg:flex justify-center p-20 pt-0 pb-44 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/common/bgDots.png')" }}
-        >
-          <Book
-            width={dimensions.width}
-            height={dimensions.height}
-            portrait={false}
-            pages={pages}
-          />
-        </div>
-        <div
-          className="lg:hidden flex justify-center pb-44 bg-cover bg-center  bg-no-repeat pt-10"
-          style={{ backgroundImage: "url('/common/bgDots.png')" }}
-        >
-          <h1 className="text-6xl bangers text-tech-primary">Events</h1>
-        </div>
-        <div className="relative">
-          <EventCards selectEvent={selectEvent} />
-          {selectedEvent && (
-            <EventModal
-              selectedEvent={selectedEvent}
-              selectEvent={selectEvent}
+        <div className="pt-0">
+          <div
+            className="hidden lg:flex justify-center p-20 pt-0 pb-44 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/common/bgDots.png')" }}
+          >
+            <Book
+              width={dimensions.width}
+              height={dimensions.height}
+              portrait={false}
+              pages={pages}
             />
-          )}
+          </div>
+
+          <div className="relative">
+            <EventCards selectEvent={selectEvent} />
+            {selectedEvent && (
+              <EventModal
+                selectedEvent={selectedEvent}
+                selectEvent={selectEvent}
+              />
+            )}
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };
