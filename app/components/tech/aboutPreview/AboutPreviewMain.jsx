@@ -64,19 +64,22 @@ const AboutPreviewMain = () => {
             ))}
           </div>
           <div className="w-full flex mt-5">
-          <a href="https://www.linkedin.com/in/glitchy/" className="">
-                <div className="relative group rounded-xl bg-no-repeat bg-cover bg-center w-[300px] h-[300px] md:w-[350px] md:h-[350px] p-4 flex flex-col justify-end hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer items-center ">
-                  <img src="/assets/about/team/mediaclub/Advaith.png" className="absolute pb-4 top-0 h-full" />
-                  <div className="px-5 py-3">
-                    <h1 className="font-bold text-xl psans text-white whitespace-nowrap relative z-30">
-                      Advaith Narayanan
-                    </h1>
-                    <h1 className="font-light text-md psans text-white whitespace-nowrap relative z-30">
-                      DevOps Engineer
-                    </h1>
-                  </div>
+            <a href="https://www.linkedin.com/in/glitchy/" className="">
+              <div className="relative group rounded-xl bg-no-repeat bg-cover bg-center w-[300px] h-[300px] md:w-[350px] md:h-[350px] p-4 flex flex-col justify-end hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer items-center ">
+                <img
+                  src="/assets/about/team/mediaclub/Advaith.png"
+                  className="absolute pb-4 top-0 h-full"
+                />
+                <div className="px-5 py-3">
+                  <h1 className="font-bold text-xl psans text-white whitespace-nowrap relative z-30">
+                    Advaith Narayanan
+                  </h1>
+                  <h1 className="font-light text-md psans text-white whitespace-nowrap relative z-30">
+                    DevOps Engineer
+                  </h1>
                 </div>
-              </a>
+              </div>
+            </a>
           </div>
           <div className="w-full flex mt-5">
             {subWeb.map((value, index) => (
@@ -101,7 +104,7 @@ const AboutPreviewMain = () => {
         onClick={() => router.push("/about")}
         className="text-center text-5xl font-bold bangers hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer pt-10"
       >
-        View All
+        View All <span className="text-6xl">→</span>
       </h1>
     </div>
   );
