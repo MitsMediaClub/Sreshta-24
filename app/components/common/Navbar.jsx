@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import "./Navbar.css"
+import "./Navbar.css";
+import Link from "next/link";
 
 const Navbar = () => {
   const router = useRouter();
@@ -18,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="nav-main" className="flex md:hidden mb-20">
+    <nav id="nav-main" className="flex md:hidden mb-24">
       <div
         className="flex min-w-[100vw] fixed justify-between items-center z-50 bg-[#daebec9e]"
         id="nav-part1"
@@ -29,6 +30,9 @@ const Navbar = () => {
           height={50}
           src="/common/shreshtaLogo.svg"
           alt="MITS Logo"
+          onClick={() => {
+            router.push("/");
+          }}
         />
         <svg
           onClick={hamburger}
@@ -50,30 +54,54 @@ const Navbar = () => {
         </svg>
       </div>
       <div
-        className="fixed bottom-full z-40 bg-slate-200 duration-1000"
+        className="fixed bottom-full z-40 bg-slate-200 duration-1000 pt-10"
         id="nav-items-main"
       >
-        <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[70vh] pt-[15vw]">
-          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+        <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-screen pt-[15vw]">
+          <span
+            onClick={() => {
+              router.push("/");
+              navClose();
+            }}
+            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+          >
             Home
           </span>
-          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+          <span
+            onClick={() => {
+              router.push("/events");
+              navClose();
+            }}
+            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+          >
             Events
           </span>
-          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
-            Gallery
-          </span>
-          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+          <span
+            onClick={() => {
+              router.push("/about");
+              navClose();
+            }}
+            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+          >
             About
           </span>
-          <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+          <span
+            onClick={() => {
+              router.push("/faq");
+              navClose();
+            }}
+            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+          >
+            Faq
+          </span>
+          <span
+            onClick={() =>
+              (window.location.href = "mailto:example@example.com")
+            }
+            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
+          >
             Contact
           </span>
-        </div>
-
-        <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[30vh] pt-[7vw] rounded-[15px] shadow-2xl">
-          <span className="nav-items2">Tech Fest</span>
-          <span className="nav-items2">Art Fest</span>
         </div>
       </div>
     </nav>

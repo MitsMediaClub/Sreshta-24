@@ -89,11 +89,11 @@ const Bot = () => {
                 <input
                   type="text"
                   id=""
-                  className="sm:text-2xl md:text-xl rounded-lg bg-[#73AAA6]/90 px-8 md:py-4 md:px-4 text-white focus:outline-none placeholder:text-white dog"
+                  className="text-xl rounded-lg bg-[#73AAA6]/90 py-4 px-4 text-white focus:outline-none placeholder:text-white dog"
                   placeholder="Type your question here..."
                   required
                 />
-                <button className="flex items-center text-sm rounded-lg bg-[#73AAA6]/90 py-4 px-4 text-white">
+                <button className="text-sm rounded-lg bg-[#73AAA6]/90 py-2 px-4 text-white">
                   <img src="/bot/arrow.png" alt="" width={15} height={15} />
                 </button>
               </div>

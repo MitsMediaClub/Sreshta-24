@@ -4,7 +4,7 @@ import React from "react";
 const LandingMobile = () => {
   return (
     <div className=" text-black px-1">
-      <div className="text-[#E9F8E8] overflow-x-hidden  relative w-full min-h-screen">
+      <div className="text-[#E9F8E8] overflow-x-hidden  relative w-full ">
         <div className="relative">
           <div className="HeroText px-10 absolute z-10 top-0 left-0 bg-no-repeat h-full w-full flex flex-col justify-center items-center">
             <Image
@@ -20,7 +20,7 @@ const LandingMobile = () => {
               <Image
                 width={10000}
                 height={10000}
-                src="/tech/Background(M).png"
+                src="/tech/Background(M).webp"
                 alt="Meh"
                 className="w-screen h-full"
               />
