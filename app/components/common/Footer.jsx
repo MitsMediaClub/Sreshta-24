@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
       </div>
       <div>
-        <div className="gooddog md:text-4xl text-l md:p-4 text-[#285F5F]">
+        <div className="dog md:text-4xl text-l md:p-4 text-[#285F5F]">
           © 2024 MITS. All rights reserved.
         </div>
         <div className="p-0 md:p-4 text-[#285F5F] gap-10 flex flex-row ">
