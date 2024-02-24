@@ -33,14 +33,14 @@ const Bot = () => {
       <div onClick={handleIconClick} className="cursor-pointer">
         <img
           src="/bot/boticon.png"
-          className={`h-40 w-40 transition-all duration-500 hover:scale-110 z-[100] ${
+          className={`h-40 w-40 transition-all duration-500 hover:scale-110 z-[30] ${
             hideHim.current ? "translate-x-[50px]" : ""
           }`}
           alt=""
           style={{ position: "fixed", bottom: 60, right: -60 }}
         />
         {showMessage && (
-          <div className="fixed top-80 z-[100]">
+          <div className="fixed top-80 z-[30]">
             <img
               src="/bot/text.png"
               className="h-30 w-40 transition-all duration-500 scale-80 mx-10"
@@ -59,17 +59,25 @@ const Bot = () => {
               height: `${showPopup ? "650px" : "0px"}`,
             }}
           >
-            <div className="bg-[#73AAA6]/90 rounded-t-xl">
-              <div className="flex justify-between md:text-xl font-bold p-6 text-white bangers">
-                SHRESHTA CHATBOT
-                <div className="flex gap-4">
-                  <button onClick={handleCloseClick}>
-                    <img src="/bot/hide.png" className="w-4"></img>
-                  </button>
+            <div className="overflow-hidden rounded-xl relative h-full w-full">
+              <div className="bg-[#73AAA6]/90 relative z-20">
+                <div className="flex justify-between md:text-xl font-bold p-6 text-white bangers">
+                  SHRESHTA CHATBOT
+                  <div className="flex gap-4">
+                    <button onClick={handleCloseClick}>
+                      <img src="/bot/hide.png" className="w-4"></img>
+                    </button>
+                  </div>
                 </div>
               </div>
+              <div className="absolute top-0 left-0 h-full w-full">
+                <img
+                  src="/bot/back.png"
+                  alt="Background"
+                  className="h-full w-full"
+                />
+              </div>
             </div>
-            <img src="/bot/back.png"></img>
             <style jsx>{`
               @media (max-width: 640px) {
                 .fixed {
@@ -89,7 +97,7 @@ const Bot = () => {
                 <input
                   type="text"
                   id=""
-                  className="text-xl rounded-lg bg-[#73AAA6]/90 py-4 px-4 text-white focus:outline-none placeholder:text-white dog"
+                  className="md:text-xl rounded-lg bg-[#73AAA6]/90 md:py-4 px-4 sm:py-2 text-white focus:outline-none placeholder:text-white dog"
                   placeholder="Type your question here..."
                   required
                 />
