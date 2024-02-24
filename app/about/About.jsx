@@ -40,30 +40,38 @@ export default function AboutPage() {
             id="nav-main"
             ref={ref}
           >
-            <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] pt-[5vw]">
+            <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] ">
               <Link
                 href="/"
                 className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
               >
                 Home
               </Link>
-              <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+              <Link
+                href="/events"
+                className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
+              >
                 Events
-              </span>
-              <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]">
+              </Link>
+              <Link
+                href="/gallery"
+                className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
+              >
                 Gallery
-              </span>
+              </Link>
               <Link
                 href="/about"
                 className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
               >
                 About
               </Link>
-              <span className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] mb-[13vh]">
-                Contact
-              </span>
+              <Link
+                href="/faq"
+                className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
+              >
+                FAQ
+              </Link>
             </div>
-            <FloatButton />
           </div>
         </nav>
         <div
