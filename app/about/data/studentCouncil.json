@@ -30,9 +30,21 @@
       "img": "/assets/about/team/studentcouncil/Tomin.png"
     },
     {
-        "name": "Salman Rawther P M",
-        "role": "Sports Secretary",
-        "link": "",
-        "img": "/assets/about/team/studentcouncil/Salman.png"
-      }
+      "name": "Salman Rawther P M",
+      "role": "Sports Secretary",
+      "link": "",
+      "img": "/assets/about/team/studentcouncil/Salman.png"
+    },
+    {
+      "name": "Antony Maliakkal",
+      "role": "Program Committee",
+      "link": "https://www.linkedin.com/in/antonymaliakkal/",
+      "img": "/assets/about/team/studentcouncil/Antony.png"
+    },
+    {
+      "name": "S Abhijith",
+      "role": "Program Committee",
+      "link": "https://www.linkedin.com/in/abhijith-s-b9354b211/",
+      "img": "/assets/about/team/studentcouncil/Abhijith.png"
+    }
   ]
