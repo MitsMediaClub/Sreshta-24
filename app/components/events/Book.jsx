@@ -24,6 +24,8 @@ export default function Book(props) {
         width={width}
         height={height}
         // useMouseEvents={false}
+        autoPlay
+        interval={20}
         usePortrait={portrait}
         drawShadow={false}
       >
