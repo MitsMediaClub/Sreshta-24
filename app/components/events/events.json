@@ -35,9 +35,17 @@
     "prize": ["50,000₹"],
     "desc": "A theme show is a type of presentation or exhibition of a specific theme or topic serving as the central focus,it can encompass various forms of visual art,music,dance or theatre, exploring a particular idea, concept or narrative. It involves a series of performances or plays to explore a common thene, providing creative perspectives and interpretations through the medium of performance.Participants are given the theme prior to the event (1 week),to prepare the costumes adhering to the theme,no vulgarity of presentation is allowed.A team can have minimum of 8 and maximum of 10 participants.Background score should be prepared prior and be handed over to the coordinator.Total duration of 10 minutes.",
     "rules": [
-      "Rule 1: No cheating",
-      "Rule 2: Bring Notebook and Pen",
-      "Rule 3: Maintain discipline"
+      "Rule 1: Teams must consist of 8 to 10 models.",
+      "Rule 2: Maximum number of teams permitted for the event is 10.",
+      "Rule 3: Cross-college teams are not permitted.",
+      "Rule 4: A college can have only one team under this category.",
+      "Rule 5: Each performance is allotted a time limit of 10 minutes, empty to empty stage. Exceeding this time limit may result in disqualification.",
+      "Rule 6: Presenting banners, posters, or other materials directly displaying the theme is prohibited. ",
+      "Rule 7: Any form of vulgarity or obscenity is strictly prohibited and any such behaviour on or off stage will call for immediate disqualification of the team or participant.",
+      "Rule 8: Background music should be cross checked with the event coordinator one day prior to the event. ",
+      "Rule 9: Teams will be judged based on costumes, theme, walking stance and attitude. ",
+      "Rule 10: Decisions of the judges will be final and binding. ",
+      "Rule 11: Participants must register via the website on or before 25th March. Only one person per team needs to register."
     ]
   },
   {
@@ -51,9 +59,16 @@
     "prize": ["75,000₹"],
     "desc": "Eneryia 2.0: Fueling Innovation in 24 Hours! Join us for an exhilarating hackathon hosted by the Computer Science Department in collaboration with ACM. Dive into a day-long coding marathon where participants will unleash their creativity, collaborate with peers, and tackle real-world challenges in the realm of technology. From groundbreaking software solutions to innovative hardware hacks, Eneryia 2.0 is the ultimate platform to push boundaries, showcase skills, and forge lasting connections in the tech community. Are you ready to power up your ideas and make a difference? Join us for Eneryia 2.0 and let's code the future together!",
     "rules": [
-      "Rule 1: No cheating",
-      "Rule 2: Bring Notebook and Pen",
-      "Rule 3: Maintain discipline"
+      "Rule 1: The hackathon is a team event with maximum 4 people in a team.",
+      "Rule 2: A participant is only allowed to be part of only a single team.",
+      "Rule 3: The event is open to all students currently enrolled in any Undergraduate course.",
+      "Rule 4: 10 teams will be shortlisted for the main event.",
+      "Rule 5: Each team while registering for the event must submit their GitHub profiles and LinkedIn profiles along with an abstract they prepared on any of the problem statements listed below. The shortlisting will be on the basis of these submitted documents and profiles.",
+      "Rule 6: The final problem statements for the event shall be revealed 3 hours prior to the commencement of the event. ",
+      "Rule 7: An internal round of evaluation prior to the final evaluation shall be conducted after 6 hours after the commencement of the event.",
+      "Rule 8: The final evaluation shall be done by expertised judges after the 24 hour time frame. ",
+      "Rule 9: Registration fee for the event shall be Rs 250 for a Non - Mitsian and Rs 150 for a Mitsian.",
+      "Rule 10: The fee should only be paid if shortlisted for the hackathon."
     ]
   },
   {
