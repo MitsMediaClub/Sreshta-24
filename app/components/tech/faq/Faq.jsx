@@ -43,7 +43,7 @@ export default function Faq() {
     {
       question: "WHAT CAN YOU GLEAN FROM SHRESHTA’24?",
       answer:
-        "Shreshta’24 aims at discovering cut-edging technologies and how they are shaping the future as well as gain insights into industry trends from experts. Look forward to participate in workshops and hands-on activities. Most importantly connect with professionals, researchers, and other enthusiasts in the tech industry.",
+        "Shreshta’24 aims at discovering cutting-edge technologies and how they are shaping the future as well as gain insights into industry trends from experts. Look forward to participate in workshops and hands-on activities. Most importantly connect with professionals, researchers, and other enthusiasts in the tech industry.",
     },
     {
       question: "ROUTE TO SHRESHTA’24",
@@ -53,53 +53,58 @@ export default function Faq() {
   ];
 
   return (
-    <><NavbarNew/><div className="faq p-32">
-      <div className="container">
-        <div className="faq-wrapper">
-          <h1 className="title">FAQ</h1>
-          <div className="process__intro intro">
-            <div className="process__text text">
-              Keep the questions coming, we’re here for you
+    <>
+      <NavbarNew />
+      <div className="faq p-32">
+        <div className="container">
+          <div className="faq-wrapper">
+            <h1 className="title">FAQ</h1>
+            <div className="process__intro intro">
+              <div className="process__text text">
+                Keep the questions coming, we’re here for you
+              </div>
+            </div>
+            <div className="accordions">
+              <ul className="accordions__list">
+                {faqs.map(({ question, answer }, index) => (
+                  <li
+                    className={`accordions__item ${
+                      openIndex === index ? "open" : ""
+                    }`}
+                    key={index}
+                  >
+                    <button
+                      className="accordions__control"
+                      aria-expanded={openIndex === index}
+                      onClick={() => toggleAccordion(index)}
+                    >
+                      <span className="accordions__number">{index + 1}</span>
+                      <span className="accordions__title">{question}</span>
+                      <span className="accordions__icon"></span>
+                    </button>
+                    <div
+                      className="accordions__content"
+                      aria-hidden={openIndex !== index}
+                      style={{ maxHeight: openIndex === index ? "none" : "0" }}
+                    >
+                      <p>{answer}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-          <div className="accordions">
-            <ul className="accordions__list">
-              {faqs.map(({ question, answer }, index) => (
-                <li
-                  className={`accordions__item ${openIndex === index ? "open" : ""}`}
-                  key={index}
-                >
-                  <button
-                    className="accordions__control"
-                    aria-expanded={openIndex === index}
-                    onClick={() => toggleAccordion(index)}
-                  >
-                    <span className="accordions__number">{index + 1}</span>
-                    <span className="accordions__title">{question}</span>
-                    <span className="accordions__icon"></span>
-                  </button>
-                  <div
-                    className="accordions__content"
-                    aria-hidden={openIndex !== index}
-                    style={{ maxHeight: openIndex === index ? "none" : "0" }}
-                  >
-                    <p>{answer}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
+        <section className="section location">
+          <br />
+          <br />
+          <h2 className="section-title">How to get here?</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125748.46657650663!2d76.25601409726565!3d9.963914800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0874de563bc58b%3A0xde7ecbfa110cfbda!2sMuthoot%20Institute%20of%20Technology%20%26%20Science!5e0!3m2!1sen!2sin!4v1708221925095!5m2!1sen!2sin"
+            loading="eager"
+          ></iframe>
+        </section>
       </div>
-      <section className="section location">
-        <br />
-        <br />
-        <h2 className="section-title">How to get here?</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125748.46657650663!2d76.25601409726565!3d9.963914800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0874de563bc58b%3A0xde7ecbfa110cfbda!2sMuthoot%20Institute%20of%20Technology%20%26%20Science!5e0!3m2!1sen!2sin!4v1708221925095!5m2!1sen!2sin"
-          loading="eager"
-        ></iframe>
-      </section>
-    </div></>
+    </>
   );
 }
