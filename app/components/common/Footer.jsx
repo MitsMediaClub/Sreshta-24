@@ -6,7 +6,7 @@ import { Instagram, Github, Youtube, Linkedin } from "lucide-react";
 export default function Footer() {
   return (
     <div className="flex items-center justify-between md:pt-16 md:pr-8 md:pl-8 md:pb-6 pb-4 pt-6">
-      <div className="flex items-center">
+      <div className="flex items-center ">
         <Image
           src="/assets/nav/Shreshta.png"
           width={100}
@@ -26,10 +26,10 @@ export default function Footer() {
         </div>
       </div>
       <div>
-        <div className="gooddog md:text-4xl text-l p-4 text-[#285F5F]">
+        <div className="gooddog md:text-4xl text-l md:p-4 text-[#285F5F]">
           © 2024 MITS. All rights reserved.
         </div>
-        <div className="gooddog md:text-4xl text-l p-4 text-[#285F5F] gap-10 flex flex-row">
+        <div className="scale-75 md:scale-100 p-0 md:p-4 text-[#285F5F] gap-10 flex flex-row ">
           <a href="">
             <Instagram />
           </a>

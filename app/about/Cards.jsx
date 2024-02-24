@@ -10,10 +10,10 @@ export default function Cards( { data } ){
                   className="absolute pb-4 top-0 h-full"
                 />
                 <div className="px-5 py-3">
-                <h1 className="font-bold text-sm md:text-xl psans text-white whitespace-nowrap relative z-30">
+                <h1 className="font-bold text-sm text-wrap md:text-xl psans text-white whitespace-nowrap relative z-30">
                   {value.name}
                 </h1>
-                <h1 className="font-light text-sm md:text-md psans text-white whitespace-nowrap relative z-30">
+                <h1 className="font-light text-sm text-wrap md:text-md psans text-white whitespace-nowrap relative z-30">
                   {value.role}
                 </h1>
                 </div>
