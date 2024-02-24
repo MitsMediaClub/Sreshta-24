@@ -83,7 +83,7 @@ export default function AboutPage() {
                 show
                   ? " 2xl:w-auto bg-clip-padding  border-tech-bg  xl:w-[8rem] lg:w-[6rem] delay-700"
                   : ""
-                }  w-[5rem] flex justify-center items-center `}
+              }  w-[5rem] flex justify-center items-center `}
             >
               <Link href="/">
                 <Image
@@ -124,7 +124,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-          {/* <Navbar /> */}
+        {/* <Navbar /> */}
         <div>
           <p className="w-full text-white h-1/2 bangers font-normal md:text-xxxl text-9xl items-center drop-shadow-title text-center self-center p-24">
             OUR TEAM
@@ -142,18 +142,18 @@ export default function AboutPage() {
       </div>
       {/* Cards Call*/}
       <div className="">
-      <div className="pt-12">
-          <div className="w-full h-1/5 bangers text-6xl self-center text-center text-[#285F5F]">
-            WEB TEAM
-          </div>
-          <Cards data={webTeam} />
-          <Cards data={juniorwebTeam} />
-        </div>
         <div className="pt-12">
           <div className="w-full h-1/5 bangers text-6xl self-center text-center text-[#285F5F]">
             STUDENT COUNCIL
           </div>
           <Cards data={studentCouncil} />
+        </div>
+        <div className="pt-12">
+          <div className="w-full h-1/5 bangers text-6xl self-center text-center text-[#285F5F]">
+            WEB TEAM
+          </div>
+          <Cards data={webTeam} />
+          <Cards data={juniorwebTeam} />
         </div>
         <div className="pt-12">
           <div className="w-full h-1/5 bangers text-6xl self-center text-center text-[#285F5F]">
@@ -168,19 +168,6 @@ export default function AboutPage() {
           </div>
           <Specials data={specialsX} />
             </div>*/}
-      {/*Footer :- For the Sake of the Aesthetics */}
-      {/* <div className='flex items-center justify-between p-16'>
-                <div className='flex items-center'>
-                    <Image
-                        src='/assets/nav/Shreshta.png'
-                        width={100}
-                        height={100}
-                        alt='Shreshta Logo' />
-                    <div className='bangers text-6xl text-[#285F5F]'>SHRESHTA</div>
-                </div>
-                <div className='gooddog text-4xl text-[#285F5F]'>© 2024 MITS. All rights reserved.</div>
-            </div> */}
-            
     </main>
   );
 }
