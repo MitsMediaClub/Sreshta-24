@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import Book from "./Book";
 import EventCards from "./EventCards";
 import EventModal from "./EventModal";
+import NavbarNew from "../common/NavbarNew";
+import Image from "next/image";
 
 const EventsMain = () => {
   const pages = [
@@ -56,6 +58,16 @@ const EventsMain = () => {
   }
   return (
     <>
+    <div className="bg-texture bg-no-repeat snap-center w-screen md:min-h-screen">
+    <NavbarNew/>
+    <div className="pt-32 pb-16">
+          <p className="w-full text-white h-1/2 bangers font-normal md:text-xxxl text-9xl items-center drop-shadow-title text-center self-center md:p-24">
+            EVENTS
+          </p>
+          <p className="w-full h-1/4 gooddog text-black self-center text-3xl text-center">
+            New Year, New Events
+          </p>
+        </div>
       <div className="pt-0">
         <div
           className="hidden lg:flex justify-center p-20 pt-0 pb-44 bg-cover bg-center bg-no-repeat"
@@ -84,6 +96,7 @@ const EventsMain = () => {
           )}
         </div>
       </div>
+    </div>
     </>
   );
 };
