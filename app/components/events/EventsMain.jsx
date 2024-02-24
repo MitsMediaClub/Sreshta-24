@@ -64,7 +64,7 @@ const EventsMain = () => {
           <p className="w-full text-white h-1/2 bangers font-normal md:text-xxxl text-9xl items-center drop-shadow-title text-center self-center md:p-24">
             EVENTS
           </p>
-          <p className="w-full h-1/4 gooddog text-black self-center text-3xl text-center">
+          <p className="w-full h-1/4 dog text-black self-center text-3xl text-center">
             New Year, New Events
           </p>
         </div>
