@@ -47,7 +47,7 @@ export const Landing = () => {
     <>
       <nav>
         <div
-          className="fixed bottom-[100%] z-40 bg-slate-200 ease-in-out duration-1000"
+          className="fixed bottom-[100%] z-40 bg-slate-200 ease-in-out duration-1000 transition-all"
           id="nav-main"
           ref={ref}
         >
