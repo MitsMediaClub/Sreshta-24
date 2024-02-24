@@ -72,8 +72,11 @@ const EventsMain = () => {
             style={{ backgroundImage: "url('/common/bgDots.png')" }}
           >
             <Book
+              size={"stretch"}
               width={dimensions.width}
               height={dimensions.height}
+              minWidth={500}
+              minHeight={600}
               portrait={false}
               pages={pages}
             />
