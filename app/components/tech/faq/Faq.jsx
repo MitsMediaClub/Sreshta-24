@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import "./faq.css";
+import NavbarNew from "../../common/NavbarNew";
 
 export default function Faq() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -52,7 +53,7 @@ export default function Faq() {
   ];
 
   return (
-    <div className="faq">
+    <><NavbarNew/><div className="faq p-32">
       <div className="container">
         <div className="faq-wrapper">
           <h1 className="title">FAQ</h1>
@@ -65,9 +66,7 @@ export default function Faq() {
             <ul className="accordions__list">
               {faqs.map(({ question, answer }, index) => (
                 <li
-                  className={`accordions__item ${
-                    openIndex === index ? "open" : ""
-                  }`}
+                  className={`accordions__item ${openIndex === index ? "open" : ""}`}
                   key={index}
                 >
                   <button
@@ -101,6 +100,6 @@ export default function Faq() {
           loading="eager"
         ></iframe>
       </section>
-    </div>
+    </div></>
   );
 }
