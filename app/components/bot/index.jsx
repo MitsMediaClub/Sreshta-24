@@ -89,7 +89,7 @@ const Bot = () => {
       <div className="cursor-pointer">
         <img
         onClick={hideHim.current === true ? handleCloseClick : handleIconClick } 
-          src="/bot/boticon.png"
+          src="/bot/boticon.webp"
           className={`h-40 w-40 transition-all duration-500 hover:scale-110 z-[30] ${
             hideHim.current ? "translate-x-[50px]" : ""
           }`}
@@ -99,7 +99,7 @@ const Bot = () => {
         {showMessage && (
           <div className="fixed top-80 z-[30]">
             <img
-              src="/bot/text.png"
+              src="/bot/text.webp"
               className="h-30 w-40 transition-all duration-500 scale-80 mx-10"
               alt=""
               style={{ position: "fixed", bottom: 200, right: 0 }}
@@ -122,14 +122,14 @@ const Bot = () => {
                   SHRESHTA CHATBOT
                   <div className="flex gap-4">
                     <button onClick={handleCloseClick}>
-                      <img src="/bot/hide.png" className="w-4"></img>
+                      <img src="/bot/hide.webp" className="w-4"></img>
                     </button>
                   </div>
                 </div>
               </div>
               <div className="absolute top-0 left-0 h-full w-full">
                 <img
-                  src="/bot/back.png"
+                  src="/bot/back.webp"
                   alt="Background"
                   className="h-full w-full"
                 />
@@ -209,7 +209,7 @@ const Bot = () => {
                         ></path>
                       </svg>
                     ) : (
-                      <img src="/bot/arrow.png" alt="" width={15} height={15} />
+                      <img src="/bot/arrow.webp" alt="" width={15} height={15} />
                     )}
                   </button>
                 </div>
