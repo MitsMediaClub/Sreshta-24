@@ -8,6 +8,11 @@ const Bot = () => {
   const [userMessage, setUserMessage] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const hideHim = useRef(false);
+  const messagesEndRef = useRef(null);
+
+  useEffect(() => {
+    scrollToBottom();
+  }, []);
 
   useEffect(() => {
     fetchMessages();
@@ -21,6 +26,10 @@ const Bot = () => {
 
     return () => clearTimeout(0.5);
   }, []);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const fetchMessages = () => {
     const queryData = { query: userMessage };
@@ -120,7 +129,7 @@ const Bot = () => {
                   className="h-full w-full"
                 />
               </div>
-              <div className="relative p-4 dog h-[79%] md:h-[78%] flex flex-col overflow-hidden scrollbar overflow-y-auto">
+              <div className="relative p-4 dog h-[79%] md:h-[78%] flex flex-col overflow-hidden scrollbar overflow-y-auto overscroll-y-auto">
                 {messages.map((message, index) => (
                   <ChatBubble
                     key={index}
@@ -128,6 +137,7 @@ const Bot = () => {
                     sender={message.sender}
                   />
                 ))}
+                <div ref={messagesEndRef} />
               </div>
             </div>
             <style jsx>
