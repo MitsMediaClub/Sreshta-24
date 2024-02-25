@@ -1,7 +1,8 @@
 "use client";
 import { gsap } from "gsap";
+// import { useGSAP } from "@gsap/react";
 import { motion } from "framer-motion";
-import { useRef, useState, useEffect, useLayoutEffect } from "react";
+import { useRef, useState, useEffect,useLayoutEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
@@ -12,7 +13,7 @@ import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 function Picture() {
   let custom_data = [
     {
-      slide_img: "/gallery/Masala_cofee/img1.webp",
+      slide_img: "/gallery/Masala_cofee/img3.webp",
       main_img: [
         "/gallery/Masala_cofee/img1.webp",
         "/gallery/Masala_cofee/img2.webp",
@@ -24,7 +25,7 @@ function Picture() {
         "/gallery/Masala_cofee/img8.webp",
       ],
       card_name: "Masala Cofee",
-      text: ["text1", "Masala Cofee", "text1"],
+      text: ["text1", "Masala Cofee", "Indulged in an unforgettable musical journey with the renowned band Masala Coffee at our electrifying concert!"],
     },
     {
       slide_img: "/gallery/Nexus_gaming/img1.webp",
@@ -36,10 +37,9 @@ function Picture() {
       ],
       //without ./ there is a 404 error while switching the slide
       card_name: "Nexus gaming",
-      text: ["text1", "Nexus gaming", "text1"],
+      text: ["text1", "Nexus gaming", "Where gaming dreams come to life in an electrifying battle of pixels and strategy!"],
     },
     {
-      // slide_img: "/gallery/s3.png", //the size of the image s3.png was not proper
       slide_img: "/gallery/Sunburn/img1.webp",
       main_img: [
         "/gallery/Sunburn/img1.webp",
@@ -98,7 +98,9 @@ function Picture() {
     }
   };
 
-  useLayoutEffect(() => {
+
+
+  useEffect(() => {
     setSliderW();
     window.addEventListener("resize", setSliderW);
     if (swiperRef.current.swiper) {
@@ -111,6 +113,21 @@ function Picture() {
 
     return () => clearInterval(intervalId);
   }, [imageList]);
+
+  const textDiv = useRef()
+
+  useLayoutEffect(() => {
+    gsap.fromTo(textDiv.current,{
+      x:200,
+      opacity:0,
+      ease:"none",
+    },
+    {
+      x:0,
+      opacity:1,
+      ease:"none",
+    })
+  }, [content])
 
   const detect = (e) => {
     //code for change the image when auto slide
@@ -204,7 +221,7 @@ function Picture() {
               alt="image"
             />
           </motion.div>
-          <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] tw:left-[7%] mh:bottom-[19%]">
+          <div ref={textDiv} className="absolute bottom-[20%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] tw:left-[7%] mh:bottom-[19%]">
             <div
               className={`tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}
             >
@@ -223,11 +240,11 @@ function Picture() {
               }
             </div>
             <div
-              className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}
+              className={`tracking-tighter leading-none ${styles.dg_text} w-3/4 text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}
             >
-              The classics and the vintage, all in one garage.
               {
                 //put text3 here
+                content[2]
               }
             </div>
           </div>
@@ -270,7 +287,7 @@ function Picture() {
                         <div>{`0${i + 1}`}</div>
                         <div>{e.card_name}</div>
                       </div>
-                      <div className="h-full w-full LPICON3 border-[0.4rem] absolute z-50"></div>
+                      <div className="h-full w-full LPICON3 mobile:border-t-[0.4rem] mobile:border-b-[0.4rem] border-t-[0.6rem] border-b-[0.6rem] border-[0.4rem] mobile:border-[0.2rem] absolute z-50"></div>
                       <Image
                         height={1000}
                         width={1000}
