@@ -134,7 +134,7 @@ const Bot = () => {
                   className="h-full w-full"
                 />
               </div>
-              <div className="relative p-4 acme h-[79%] md:h-[78%] flex flex-col overflow-hidden scrollbar overflow-y-auto overscroll-y-auto">
+              <div className="relative p-4 acme h-[74%] md:h-[78%] flex flex-col overflow-hidden scrollbar overflow-y-auto overscroll-y-auto">
                 {messages.map((message, index) => (
                   <ChatBubble
                     key={index}
