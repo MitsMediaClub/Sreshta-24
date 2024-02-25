@@ -60,6 +60,9 @@
 .LPICON2 {
   border-image: url("/gallery/border.png") 10;
 }
+.LPICON3 {
+  border-image: url("/gallery/border.png") 30;
+}
 
 /* Hide Scrollbar */
 

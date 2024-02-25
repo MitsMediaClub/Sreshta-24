@@ -12,7 +12,7 @@ import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 function Picture() {
   let custom_data = [
     {
-      slide_img: "/gallery/s1.png",
+      slide_img: "/gallery/Masala_cofee/img1.webp",
       main_img: [
         "/gallery/Masala_cofee/img1.webp",
         "/gallery/Masala_cofee/img2.webp",
@@ -24,10 +24,10 @@ function Picture() {
         "/gallery/Masala_cofee/img8.webp",
       ],
       card_name: "Masala Cofee",
-      text: ["text1", "text1", "text1"],
+      text: ["text1", "Masala Cofee", "text1"],
     },
     {
-      slide_img: "/gallery/s2.png",
+      slide_img: "/gallery/Nexus_gaming/img1.webp",
       main_img: [
         "/gallery/Nexus_gaming/img1.webp",
         "/gallery/Nexus_gaming/img2.webp",
@@ -36,11 +36,11 @@ function Picture() {
       ],
       //without ./ there is a 404 error while switching the slide
       card_name: "Nexus gaming",
-      text: ["text1", "text1", "text1"],
+      text: ["text1", "Nexus gaming", "text1"],
     },
     {
       // slide_img: "/gallery/s3.png", //the size of the image s3.png was not proper
-      slide_img: "/gallery/s2.png",
+      slide_img: "/gallery/Sunburn/img1.webp",
       main_img: [
         "/gallery/Sunburn/img1.webp",
         "/gallery/Sunburn/img2.webp",
@@ -50,17 +50,17 @@ function Picture() {
         "/gallery/Sunburn/img6.webp",
       ],
       card_name: "Sunburn",
-      text: ["text1", "text1", "text1"],
+      text: ["text1", "Sunburn", "text1"],
     },
     {
-      slide_img: "/gallery/s2.png",
+      slide_img: "/gallery/Hackathon/img1.webp",
       main_img: [
         "/gallery/Hackathon/img1.webp",
         "/gallery/Hackathon/img2.webp",
         "/gallery/Hackathon/img3.webp",
       ],
       card_name: "Hackathon",
-      text: ["text1", "text1", "text1"],
+      text: ["text1", "Hackathon", "text1"],
     },
 
   ];
@@ -82,6 +82,7 @@ function Picture() {
     exit: { opacity: 1, padding: "0.1rem" }, //  animation for side bar
   };
   const [imageList, setimageList] = useState(custom_data[0].main_img);
+  const [content, setcontent] = useState(custom_data[0].text)
 
   const [wind, setwind] = useState(5);
   const bigImg = useRef(null);
@@ -130,13 +131,14 @@ function Picture() {
     setCurrentImageIndex(0);
     // console.log(custom_data[i].main_img)
     setimageList(custom_data[i].main_img);
+    setcontent(custom_data[i].text)
   };
 
   return (
     <>
       <div
         ref={maincontainer}
-        className="h-[110vh] mobile:pt-4 mh:pt-4 mobile:h-[80vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center"
+        className="h-[120vh] mobile:pt-4 mh:pt-4 mobile:h-[80vh] w-full overflow-hidden peat-round pt-14 relative flex justify-center"
       >
         {/*h-[110vh] to make the slider visible*/}
         <div
@@ -169,7 +171,7 @@ function Picture() {
               height={1000}
               width={1000}
               className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20"
-              src="/gallery/filter1.png"
+              src="/gallery/filters/filter1.webp"
               alt="img"
             />
             <motion.img
@@ -198,7 +200,7 @@ function Picture() {
               height={1000}
               width={1000}
               className="absolute bottom-0 w-full bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
-              src="/gallery/pattern.png"
+              src="/gallery/filters/pattern.webp"
               alt="image"
             />
           </motion.div>
@@ -212,11 +214,12 @@ function Picture() {
               }
             </div>
             <div
-              className={`text-9xl tracking-tighter leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}
+              className={`text-9xl tracking-tight leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}
             >
-              Motor Show
               {
+              //Motor Show
                 //put text2 here
+                content[1]
               }
             </div>
             <div
@@ -229,7 +232,7 @@ function Picture() {
             </div>
           </div>
           <div
-            className="z-20 text-white w-full mh:top-[85%] absolute -bottom-[10%] h-[25vh] bg-red- mobile:-bottom-[30%]
+            className="z-20 text-white w-full mh:top-[85%] absolute -bottom-[10%] h-[24vh] bg-red- mobile:-bottom-[30%]
           tw:h-[17vh] tw:-bottom-[15%] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]"
           >
             <Swiper
@@ -263,9 +266,11 @@ function Picture() {
                         className={`text-3xl mobile:text-xl mh:text-xs tw:text-sm mobile:tracking-wide mobile:left-1 mobile:bottom-1 mh:left-1 mh:bottom-4  tw:left-2 tw:bottom-4
                                              text-[rgba(255,255,255,1)] text-left font-semibold left-7 bottom-7 absolute z-50 text-white  ${styles.Banger} tracking-widest`}
                       >
+
                         <div>{`0${i + 1}`}</div>
                         <div>{e.card_name}</div>
                       </div>
+                      <div className="h-full w-full LPICON3 border-[0.4rem] absolute z-50"></div>
                       <Image
                         height={1000}
                         width={1000}
