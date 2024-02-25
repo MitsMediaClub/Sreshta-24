@@ -29,8 +29,16 @@ const Bot = () => {
   };
 
   const fetchMessage = () => {
+    setMessages((prevMessages) => [
+      ...prevMessages,
+      { message: userMessage, sender: "user" },
+    ]);
+    setUserMessage("");
     const queryData = { query: userMessage };
-    console.log("fetch mssg");
+    setMessages((prevMessages) => [
+      ...prevMessages,
+      { message: "", sender: "loading" },
+    ]);
 
     fetch("https://chat.shreshta.tech/api/shreshta_bot", {
       method: "POST",
@@ -48,9 +56,10 @@ const Bot = () => {
       .then((data) => {
         console.log("Success:", data["answer"]);
         setMessages((prevMessages) => [
-          ...prevMessages,
+          ...prevMessages.filter((message) => message.sender !== "loading"),
           { message: data["answer"], sender: "bot" },
         ]);
+        
         console.log([...messages, { message: data["answer"], sender: "bot" }]);
         setLoading(false);
       })
@@ -66,11 +75,11 @@ const Bot = () => {
 
   const handleUserMessageSubmit = (event) => {
     event.preventDefault();
-    setMessages((prevMessages) => [
-      ...prevMessages,
-      { message: userMessage, sender: "user" },
-    ]);
-    setUserMessage("");
+    // setMessages((prevMessages) => [
+    //   ...prevMessages,
+    //   { message: userMessage, sender: "user" },
+    // ]);
+    // setUserMessage("");
   };
 
   const handleIconClick = () => {
@@ -186,27 +195,9 @@ const Bot = () => {
                     }`}
                   >
                     {loading ? (
-                      <svg
-                        class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        height="20px"
-                        width="20px"
-                        viewBox="0 0 24 24"
-                      >
-                        <circle
-                          class="opacity-25"
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          stroke="currentColor"
-                          stroke-width="4"
-                        ></circle>
-                        <path
-                          class="opacity-75"
-                          fill="currentColor"
-                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                        ></path>
+                      <svg class="animate-spin text-white" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="text-white/30" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
                     ) : (
                       <img src="/bot/arrow.webp" alt="" width={15} height={15} />
