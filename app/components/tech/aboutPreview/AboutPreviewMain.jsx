@@ -13,7 +13,7 @@ const AboutPreviewMain = () => {
         <Image
           width={500}
           height={500}
-          src="/about/AbtLandhed.png"
+          src="/Aboutheader.png"
           alt="Meh"
           className="w-56 mobile:w-28"
         />
@@ -27,7 +27,7 @@ const AboutPreviewMain = () => {
         <Image
           width={500}
           height={500}
-          src="/about/num3.png"
+          src="/headernum3.png"
           alt="Meh"
           className="w-32 mobile:w-14 mh:w-24"
         />
