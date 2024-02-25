@@ -22,7 +22,7 @@ export default function Footer() {
           className="block md:hidden"
         />
         <div className="bangers md:text-6xl text-2xl text-[#285F5F]">
-          SHRESHTA
+          SHRESHTA '24
         </div>
       </div>
       <div>

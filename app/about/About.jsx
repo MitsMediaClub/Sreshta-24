@@ -73,12 +73,12 @@ export default function AboutPage() {
           <Cards data={mediaClub} />
         </div>
       </div>
-      {/*<div className=" mx-12 pt-12 flex gap-12">
+      <div className=" mx-12 pt-12 md:flex gap-12 hidden">
           <div className=" h-1/5 bangers whitespace-nowrap text-3xl self-center text-[#285F5F]">
-            Special Mention
+            Special Mentions
           </div>
           <Specials data={specialsX} />
-            </div>*/}
+            </div>
             
     </main>
   );
