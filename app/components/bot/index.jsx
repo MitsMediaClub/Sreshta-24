@@ -85,7 +85,7 @@ const Bot = () => {
   };
 
   return (
-    <div className="h-screen w-screen relative flex justify-end">
+    <div className="w-screen relative flex justify-end">
       <div onClick={handleIconClick} className="cursor-pointer">
         <img
           src="/bot/boticon.png"
