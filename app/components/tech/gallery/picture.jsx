@@ -25,7 +25,7 @@ function Picture() {
         "/gallery/Masala_cofee/img8.webp",
       ],
       card_name: "Masala Cofee",
-      text: ["text1", "Masala Cofee", "Indulged in an unforgettable musical journey with the renowned band Masala Coffee at our electrifying concert!"],
+      text: ["2 Mar 2023", "Masala Cofee", "Indulged in an unforgettable musical journey with the renowned band Masala Coffee at our electrifying concert!"],
     },
     {
       slide_img: "/gallery/Nexus_gaming/img1.webp",
@@ -35,9 +35,8 @@ function Picture() {
         "/gallery/Nexus_gaming/img3.webp",
         "/gallery/Nexus_gaming/img4.webp",
       ],
-      //without ./ there is a 404 error while switching the slide
       card_name: "Nexus gaming",
-      text: ["text1", "Nexus gaming", "Where gaming dreams come to life in an electrifying battle of pixels and strategy!"],
+      text: ["2 Mar 2023", "Nexus gaming", "Where gaming dreams come to life in an electrifying battle of pixels and strategy!"],
     },
     {
       slide_img: "/gallery/Sunburn/img1.webp",
@@ -50,7 +49,7 @@ function Picture() {
         "/gallery/Sunburn/img6.webp",
       ],
       card_name: "Sunburn",
-      text: ["text1", "Sunburn", "text1"],
+      text: ["2 Mar 2023", "Sunburn", ""],
     },
     {
       slide_img: "/gallery/Hackathon/img1.webp",
@@ -60,7 +59,7 @@ function Picture() {
         "/gallery/Hackathon/img3.webp",
       ],
       card_name: "Hackathon",
-      text: ["text1", "Hackathon", "text1"],
+      text: ["2 Mar 2023", "Hackathon", ""],
     },
 
   ];
@@ -117,15 +116,16 @@ function Picture() {
   const textDiv = useRef()
 
   useLayoutEffect(() => {
-    gsap.fromTo(textDiv.current,{
+    gsap.fromTo('.divtext',{
       x:200,
       opacity:0,
-      ease:"none",
     },
     {
       x:0,
       opacity:1,
-      ease:"none",
+      delay:0.2,
+      stagger:0.1,
+      ease:"none"
     })
   }, [content])
 
@@ -194,7 +194,8 @@ function Picture() {
             <motion.img
               className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill w-full mobile:object-cover h-full mainImage"
               // src={custom_data[0].main_img}
-              src={"./gallery/Solid_black.png"}
+              src={"/gallery/filters/Solid_black.webp"}
+              alt="img"
             />
             {imageList.map((path, i) => {
               // console.log("current index",currentImageIndex)
@@ -223,15 +224,15 @@ function Picture() {
           </motion.div>
           <div ref={textDiv} className="absolute bottom-[20%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] tw:left-[7%] mh:bottom-[19%]">
             <div
-              className={`tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}
+              className={`tracking-tighter divtext leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}
             >
-              2 Mar 2023
               {
                 //put the text1 here
+                content[0]
               }
             </div>
             <div
-              className={`text-9xl tracking-tight leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}
+              className={`text-9xl tracking-tight divtext leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}
             >
               {
               //Motor Show
@@ -240,7 +241,7 @@ function Picture() {
               }
             </div>
             <div
-              className={`tracking-tighter leading-none ${styles.dg_text} w-3/4 text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}
+              className={`tracking-tighter divtext leading-none ${styles.dg_text} w-3/4 text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}
             >
               {
                 //put text3 here
@@ -260,7 +261,7 @@ function Picture() {
               // onRealIndexChange={(e) =>
               //   console.log(swiperRef.current, detect(e.activeIndex))
               // } //for autoplay animation
-              spaceBetween={0}
+              spaceBetween={1}
               centeredSlides={true}
               slidesPerView={wind}
               freeMode={true}
@@ -287,7 +288,7 @@ function Picture() {
                         <div>{`0${i + 1}`}</div>
                         <div>{e.card_name}</div>
                       </div>
-                      <div className="h-full w-full LPICON3 mobile:border-t-[0.4rem] mobile:border-b-[0.4rem] border-t-[0.6rem] border-b-[0.6rem] border-[0.4rem] mobile:border-[0.2rem] absolute z-50"></div>
+                      <div className="h-full w-full LPICON3 mobile:border-t-[0.3rem] mobile:border-b-[0.3rem] border-t-[0.4rem] border-b-[0.4rem] border-[0.3rem] mobile:border-[0.2rem] absolute z-50"></div>
                       <Image
                         height={1000}
                         width={1000}
