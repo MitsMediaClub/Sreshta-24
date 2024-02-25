@@ -9,6 +9,7 @@ const Bot = () => {
   const [showPopup, setShowPopup] = useState(false);
   const hideHim = useRef(false);
   const messagesEndRef = useRef(null);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     scrollToBottom();
@@ -51,6 +52,7 @@ const Bot = () => {
           { message: data["answer"], sender: "bot" },
         ]);
         console.log([...messages, { message: data["answer"], sender: "bot" }]);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -173,11 +175,41 @@ const Bot = () => {
                   <button
                     onClick={() => {
                       fetchMessage();
+                      setLoading(true);
                     }}
                     type="submit"
-                    className="flex rounded-lg bg-[#73AAA6]/90 py-4 items-center px-4 text-white"
+                    className={`flex rounded-lg bg-[#73AAA6]/90 py-4 items-center px-4 text-white ${
+                      loading === true
+                        ? "cursor-not-allowed, pointer-events-none"
+                        : ""
+                    }`}
                   >
-                    <img src="/bot/arrow.png" alt="" width={15} height={15} />
+                    {loading ? (
+                      <svg
+                        class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        height="20px"
+                        width="20px"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          class="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          stroke-width="4"
+                        ></circle>
+                        <path
+                          class="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                    ) : (
+                      <img src="/bot/arrow.png" alt="" width={15} height={15} />
+                    )}
                   </button>
                 </div>
               </form>
