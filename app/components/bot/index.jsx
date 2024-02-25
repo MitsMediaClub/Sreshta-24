@@ -32,7 +32,7 @@ const Bot = () => {
     const queryData = { query: userMessage };
     console.log("fetch mssg");
 
-    fetch("http://3.221.139.70:5000/api/shreshta_bot", {
+    fetch("https://chat.shreshta.tech/api/shreshta_bot", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
