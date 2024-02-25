@@ -86,8 +86,9 @@ const Bot = () => {
 
   return (
     <div className="w-screen relative flex justify-end">
-      <div onClick={handleIconClick} className="cursor-pointer">
+      <div className="cursor-pointer">
         <img
+        onClick={hideHim.current === true ? handleCloseClick : handleIconClick } 
           src="/bot/boticon.png"
           className={`h-40 w-40 transition-all duration-500 hover:scale-110 z-[30] ${
             hideHim.current ? "translate-x-[50px]" : ""
