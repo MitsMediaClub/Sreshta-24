@@ -1,5 +1,23 @@
 [
   {
+    "name": "Andrew C Anil",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/andrewcanil04",
+    "img": "/assets/about/team/subteam/Andrew.webp"
+  },
+  {
+    "name": "Abdul Rahman",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/abdul-rahman-26b2b6262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "img": "/assets/about/team/subteam/Abdu.webp"
+  },
+  {
+    "name": "Vaishakh S Nair",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/vaishakh-s-nair-090511139/",
+    "img": "/assets/about/team/subteam/Vaishakh.webp"
+  },
+  {
     "name": "Akshhay K M",
     "role": "Frontend Developer",
     "link": "https://www.linkedin.com/in/akshhay-km-7b636a291/",
@@ -52,23 +70,5 @@
     "role": "Frontend Developer",
     "link": "https://www.linkedin.com/in/sudheesh-s-pai-36ab8a290/",
     "img": "/assets/about/team/subteam/Sudheesh.webp"
-  },
-  {
-    "name": "Andrew C Anil",
-    "role": "Frontend Developer",
-    "link": "https://www.linkedin.com/in/andrewcanil04",
-    "img": "/assets/about/team/subteam/Andrew.webp"
-  },
-  {
-    "name": "Abdul Rahman",
-    "role": "Frontend Developer",
-    "link": "https://www.linkedin.com/in/abdul-rahman-26b2b6262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "img": "/assets/about/team/subteam/Abdu.webp"
-  },
-  {
-    "name": "Vaishakh S Nair",
-    "role": "Frontend Developer",
-    "link": "https://www.linkedin.com/in/vaishakh-s-nair-090511139/",
-    "img": "/assets/about/team/subteam/Vaishakh.webp"
   }
 ]
