@@ -1,16 +1,12 @@
 function ChatBubble({ message, sender }) {
   return (
-    <div
-      className="my-0.5"
-      style={{ textAlign: sender === "bot" ? "left" : "right" }}
-    >
+    <div className={`my-0.5 ${sender === "bot" ? 'text-left pr-4' : 'text-right pl-4'}`}>
       <div
-        className="max-w-full h-full"
+        className={`max-w-full h-full rounded-[10px] ${sender === "bot" ? 'rounded-tl-none' : 'rounded-br-none'}`}
         style={{
           display: "inline-block",
           padding: "8px",
           wordBreak: "break-word",
-          borderRadius: "5px",
           backgroundColor: sender === "bot" ? "#0E8CB7" : "#56C6EC",
           color: sender === "bot" ? "white" : "white",
         }}

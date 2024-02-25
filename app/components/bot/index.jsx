@@ -107,7 +107,7 @@ const Bot = () => {
         )}
         {showPopup && (
           <div
-            className={`fixed sm:bottom-0 sm:right-0 md:bottom-4 md:right-24 bg-[#E9F8E8] sm:w-screen sm:h-screen md:w-1/4 md:h-full sm:rounded-0 md:rounded-xl shadow z-[100] transition-all duration-500
+            className={`fixed sm:bottom-0 sm:right-0 md:bottom-4 md:right-24 bg-[#E9F8E8] sm:w-screen sm:h-screen md:w-[400px] md:h-full sm:rounded-0 md:rounded-xl shadow z-[100] transition-all duration-500
             }`}
             style={{
               opacity: showPopup ? 1 : 0,
@@ -160,15 +160,15 @@ const Bot = () => {
               }
             `}
             </style>
-            <div className="flex w-full sm:h-full justify-center absolute bottom-0 md:h-16 pb-10">
-              <form onSubmit={handleUserMessageSubmit}>
-                <div className="flex gap-2">
+            <div className="flex w-full px-4 sm:h-full justify-center absolute bottom-0 md:h-16 pb-10">
+              <form className="w-full" onSubmit={handleUserMessageSubmit}>
+                <div className="flex gap-2 w-full">
                   <input
                     type="text"
                     value={userMessage}
                     onChange={handleUserMessageChange}
                     id=""
-                    className="md:text-lg text-2xl rounded-lg bg-[#73AAA6]/90 md:py-2 px-4 sm:py-2 text-white focus:outline-none placeholder:text-white acme"
+                    className="flex-1 md:text-lg text-2xl rounded-lg bg-[#73AAA6]/90 md:py-2 px-4 sm:py-2 text-white focus:outline-none placeholder:text-white acme"
                     placeholder="Type your question here..."
                     required
                   />
