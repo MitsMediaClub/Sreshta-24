@@ -11,11 +11,11 @@ function ChatBubble({ message, sender }) {
           padding: "8px",
           wordBreak: "break-word",
           borderRadius: "5px",
-          backgroundColor: sender === "bot" ? "#843680" : "#209c42",
-          color: sender === "bot" ? "black" : "white",
+          backgroundColor: sender === "bot" ? "#0E8CB7" : "#56C6EC",
+          color: sender === "bot" ? "white" : "white",
         }}
       >
-        <p className="flex flex-wrap max-w-max text-lg tracking-wide">
+        <p className="flex flex-wrap max-w-max sm:text-xs text-xl tracking-wide">
           {message}
         </p>
       </div>

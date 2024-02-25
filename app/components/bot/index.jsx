@@ -15,10 +15,6 @@ const Bot = () => {
   }, []);
 
   useEffect(() => {
-    fetchMessages();
-  }, []);
-
-  useEffect(() => {
     setTimeout(() => {
       setShowMessage(false);
       setShowPopup(false);
@@ -31,10 +27,11 @@ const Bot = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const fetchMessages = () => {
+  const fetchMessage = () => {
     const queryData = { query: userMessage };
+    console.log("fetch mssg");
 
-    fetch("http://ip/api/shreshta_bot", {
+    fetch("http://3.221.139.70:5000/api/shreshta_bot", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -48,7 +45,12 @@ const Bot = () => {
         return response.json();
       })
       .then((data) => {
-        setMessages((prevMessages) => [...prevMessages, ...data]);
+        console.log("Success:", data["answer"]);
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          { message: data["answer"], sender: "bot" },
+        ]);
+        console.log([...messages, { message: data["answer"], sender: "bot" }]);
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -57,6 +59,7 @@ const Bot = () => {
 
   const handleUserMessageChange = (event) => {
     setUserMessage(event.target.value);
+    scrollToBottom();
   };
 
   const handleUserMessageSubmit = (event) => {
@@ -65,7 +68,6 @@ const Bot = () => {
       ...prevMessages,
       { message: userMessage, sender: "user" },
     ]);
-    fetchMessages();
     setUserMessage("");
   };
 
@@ -129,7 +131,7 @@ const Bot = () => {
                   className="h-full w-full"
                 />
               </div>
-              <div className="relative p-4 dog h-[79%] md:h-[78%] flex flex-col overflow-hidden scrollbar overflow-y-auto overscroll-y-auto">
+              <div className="relative p-4 acme h-[79%] md:h-[78%] flex flex-col overflow-hidden scrollbar overflow-y-auto overscroll-y-auto">
                 {messages.map((message, index) => (
                   <ChatBubble
                     key={index}
@@ -164,13 +166,16 @@ const Bot = () => {
                     value={userMessage}
                     onChange={handleUserMessageChange}
                     id=""
-                    className="md:text-xl rounded-lg bg-[#73AAA6]/90 md:py-2 px-4 sm:py-2 text-white focus:outline-none placeholder:text-white dog"
+                    className="md:text-lg text-2xl rounded-lg bg-[#73AAA6]/90 md:py-2 px-4 sm:py-2 text-white focus:outline-none placeholder:text-white acme"
                     placeholder="Type your question here..."
                     required
                   />
                   <button
+                    onClick={() => {
+                      fetchMessage();
+                    }}
                     type="submit"
-                    className="flex text-sm rounded-lg bg-[#73AAA6]/90 py-4 items-center px-4 text-white"
+                    className="flex rounded-lg bg-[#73AAA6]/90 py-4 items-center px-4 text-white"
                   >
                     <img src="/bot/arrow.png" alt="" width={15} height={15} />
                   </button>
