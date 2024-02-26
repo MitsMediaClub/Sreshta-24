@@ -168,5 +168,26 @@
     "prize": ["N/A"],
     "desc": "Impulse, trigger,manifest immerses participants in the cutting-edge field of BCI technology, where the boundaries between mind and machine blur. Through a series of practical exercises and demonstrations, attendees will learn about the principles behind BCI systems, experiment with various neurofeedback techniques, and even build simple brain-controlled applications. This workshop is ideal for anyone curious about the intersection of neuroscience and technology, offering a hands-on experience that will inspire innovation and creativity.",
     "rules": ["N/A"]
-  }
+  },
+  {
+    "name": "Murder Mystery",
+    "date": "2nd March 2024",
+    "time": "11:00 PM - 2:30 PM",
+    "venue": "Room 404 (Ramanujan Block)",
+    "reg": ["Free"],
+    "cardImg": "https://i.imgur.com/a1YtR1s.jpeg",
+    "cord": ["Adish S (S6 CSE) 9645800065"],
+    "regLink": "https://forms.gle/2G7QxeV4ZpiKPDst6",
+    "prize": ["Title of Murder Maestro"],
+    "desc": "This years murder mystery brings a sophisticated string of mysteries before you to solve. The trail of evidence, statements and suspects have been left to investigate. Teams of 4 are pitted against each other in a race to unravel these knots of mysteries. The clock is ticking, will you be the one to succeed and put an end to this year's murder mystery?.",
+    "rules": [
+    "Rule 1: Teams must consist of 1 to 4 investigators.",
+    "Rule 2: Maximum number of teams permitted for the event is 4.",
+    "Rule 3: Cross-college teams are not permitted.",
+    "Rule 4: Teams should be always be together during the event and not split up.",
+    "Rule 5: Participants must not share deductions and clues.",
+    "Rule 6: The decisions of the judges will be final and binding.",
+    "Rule 7: Participants must register via the website on or before 27th February. Only one person per team needs to register."
+    ]
+    }
 ]
