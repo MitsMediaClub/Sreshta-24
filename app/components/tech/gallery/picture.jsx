@@ -1,7 +1,8 @@
 "use client";
 import { gsap } from "gsap";
+// import { useGSAP } from "@gsap/react";
 import { motion } from "framer-motion";
-import { useRef, useState, useEffect, useLayoutEffect } from "react";
+import { useRef, useState, useEffect,useLayoutEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
@@ -12,46 +13,55 @@ import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 function Picture() {
   let custom_data = [
     {
-      slide_img: "/gallery/s1.png",
+      slide_img: "/gallery/Masala_cofee/img3.webp",
       main_img: [
-        "/gallery/m1.png",
-        "/gallery/img1.JPG",
-        "/gallery/img2.JPG",
-        "/gallery/img3.JPG",
-        "/gallery/img4.JPG",
-        "/gallery/img5.JPG",
+        "/gallery/Masala_cofee/img1.webp",
+        "/gallery/Masala_cofee/img2.webp",
+        "/gallery/Masala_cofee/img3.webp",
+        "/gallery/Masala_cofee/img4.webp",
+        "/gallery/Masala_cofee/img5.webp",
+        "/gallery/Masala_cofee/img6.webp",
+        "/gallery/Masala_cofee/img7.webp",
+        "/gallery/Masala_cofee/img8.webp",
       ],
-      card_name: "Motor show",
-      text: ["text1", "text1", "text1"],
+      card_name: "Masala Cofee",
+      text: ["2 Mar 2023", "Masala Cofee", "Indulged in an unforgettable musical journey with the renowned band Masala Coffee at our electrifying concert!"],
     },
     {
-      slide_img: "/gallery/s2.png",
+      slide_img: "/gallery/Nexus_gaming/img1.webp",
       main_img: [
-        "/gallery/m2.png",
-        "/gallery/img1.JPG",
-        "/gallery/img2.JPG",
-        "/gallery/img3.JPG",
-        "/gallery/img4.JPG",
-        "./gallery/img5.JPG",
+        "/gallery/Nexus_gaming/img1.webp",
+        "/gallery/Nexus_gaming/img2.webp",
+        "/gallery/Nexus_gaming/img3.webp",
+        "/gallery/Nexus_gaming/img4.webp",
       ],
-      //without ./ there is a 404 error while switching the slide
-      card_name: "bharati nattitam",
-      text: ["text1", "text1", "text1"],
+      card_name: "Nexus gaming",
+      text: ["2 Mar 2023", "Nexus gaming", "Where gaming dreams come to life in an electrifying battle of pixels and strategy!"],
     },
     {
-      // slide_img: "/gallery/s3.png", //the size of the image s3.png was not proper
-      slide_img: "/gallery/s2.png",
+      slide_img: "/gallery/Sunburn/img1.webp",
       main_img: [
-        "/gallery/m3.png",
-        "/gallery/img1.JPG",
-        "/gallery/img2.JPG",
-        "/gallery/img3.JPG",
-        "/gallery/img4.JPG",
-        "/gallery/img5.JPG",
+        "/gallery/Sunburn/img1.webp",
+        "/gallery/Sunburn/img2.webp",
+        "/gallery/Sunburn/img3.webp",
+        "/gallery/Sunburn/img4.webp",
+        "/gallery/Sunburn/img5.webp",
+        "/gallery/Sunburn/img6.webp",
       ],
-      card_name: "mind games",
-      text: ["text1", "text1", "text1"],
+      card_name: "Sunburn",
+      text: ["2 Mar 2023", "Sunburn", ""],
     },
+    {
+      slide_img: "/gallery/Hackathon/img1.webp",
+      main_img: [
+        "/gallery/Hackathon/img1.webp",
+        "/gallery/Hackathon/img2.webp",
+        "/gallery/Hackathon/img3.webp",
+      ],
+      card_name: "Hackathon",
+      text: ["2 Mar 2023", "Hackathon", ""],
+    },
+
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -71,6 +81,7 @@ function Picture() {
     exit: { opacity: 1, padding: "0.1rem" }, //  animation for side bar
   };
   const [imageList, setimageList] = useState(custom_data[0].main_img);
+  const [content, setcontent] = useState(custom_data[0].text)
 
   const [wind, setwind] = useState(5);
   const bigImg = useRef(null);
@@ -86,7 +97,9 @@ function Picture() {
     }
   };
 
-  useLayoutEffect(() => {
+
+
+  useEffect(() => {
     setSliderW();
     window.addEventListener("resize", setSliderW);
     if (swiperRef.current.swiper) {
@@ -98,7 +111,23 @@ function Picture() {
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [imageList]);
+
+  const textDiv = useRef()
+
+  useLayoutEffect(() => {
+    gsap.fromTo('.divtext',{
+      x:200,
+      opacity:0,
+    },
+    {
+      x:0,
+      opacity:1,
+      delay:0.2,
+      stagger:0.1,
+      ease:"none"
+    })
+  }, [content])
 
   const detect = (e) => {
     //code for change the image when auto slide
@@ -119,13 +148,14 @@ function Picture() {
     setCurrentImageIndex(0);
     // console.log(custom_data[i].main_img)
     setimageList(custom_data[i].main_img);
+    setcontent(custom_data[i].text)
   };
 
   return (
     <>
       <div
         ref={maincontainer}
-        className="h-[110vh] mobile:pt-4 mh:pt-4 mobile:h-[80vh] w-full overflow-hidden peat-round pt-20 relative flex justify-center"
+        className="h-[120vh] mobile:pt-4 mh:pt-4 mobile:h-[80vh] w-full overflow-hidden peat-round pt-14 relative flex justify-center"
       >
         {/*h-[110vh] to make the slider visible*/}
         <div
@@ -153,18 +183,19 @@ function Picture() {
             <div className="py-4 text-4xl">0{imageList.length}</div>
           </div>
           <motion.div className="bg-cover bg-no-repeat bg-center relative h-[100%] w-[85%] mobile:w-[97%] mh:w-[80%] tw:w-[90%] -z-0 flex justify-center ">
-            <div className="h-full w-full LPICON2 border-[0.5rem] absolute z-50"></div>
+            <div className="h-full w-full LPICON2 border-[0.5rem] mobile:border-[0.3rem] absolute z-50"></div>
             <Image
               height={1000}
               width={1000}
               className="absolute top-0 w-[100%] h-[100%] object-cover mix-blend-multiply z-20"
-              src="/gallery/filter1.png"
+              src="/gallery/filters/filter1.webp"
               alt="img"
             />
             <motion.img
               className="z-10 object-cover object-center absolute tw:object-cover mh:object-fill w-full mobile:object-cover h-full mainImage"
               // src={custom_data[0].main_img}
-              src={"./gallery/Solid_black.png"}
+              src={"/gallery/filters/Solid_black.webp"}
+              alt="img"
             />
             {imageList.map((path, i) => {
               // console.log("current index",currentImageIndex)
@@ -187,38 +218,39 @@ function Picture() {
               height={1000}
               width={1000}
               className="absolute bottom-0 w-full bg-gradient-to-t from-[rgba(67,88,86,0.75)] from-10% to-[rgba(67,88,86,0)] h-[60%] z-30"
-              src="/gallery/pattern.png"
+              src="/gallery/filters/pattern.webp"
               alt="image"
             />
           </motion.div>
-          <div className="absolute bottom-[25%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] tw:left-[7%] mh:bottom-[19%]">
+          <div ref={textDiv} className="absolute bottom-[20%] left-[12%] text-[#E9F8E8] mobile:left-[4%] mobile:bottom-[15%] mh:left-[14%] tw:left-[7%] mh:bottom-[19%]">
             <div
-              className={`tracking-tighter leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}
+              className={`tracking-tighter divtext leading-none ${styles.Banger} text-4xl pl-10 mobile:text-sm tw:text-3xl mh:text-sm mobile:pl-2 mh:pl-2`}
             >
-              2 Mar 2023
               {
                 //put the text1 here
+                content[0]
               }
             </div>
             <div
-              className={`text-9xl tracking-tighter leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}
+              className={`text-9xl tracking-tight divtext leading-none  ${styles.Banger} mobile:text-5xl mh:text-5xl tw:3xl`}
             >
-              Motor Show
               {
+              //Motor Show
                 //put text2 here
+                content[1]
               }
             </div>
             <div
-              className={`tracking-tighter leading-nonel ${styles.dg_text} text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}
+              className={`tracking-tighter divtext leading-none ${styles.dg_text} w-3/4 text-6xl mobile:text-3xl mh:text-3xl tw:text-5xl`}
             >
-              The classics and the vintage, all in one garage.
               {
                 //put text3 here
+                content[2]
               }
             </div>
           </div>
           <div
-            className="z-20 text-white w-full mh:top-[85%] absolute -bottom-[10%] h-[25vh] bg-red- mobile:-bottom-[30%]
+            className="z-20 text-white w-full mh:top-[85%] absolute -bottom-[10%] h-[24vh] bg-red- mobile:-bottom-[30%]
           tw:h-[17vh] tw:-bottom-[15%] drop-shadow-[0_4rem_4rem_rgba(0,0,0,0.3)]"
           >
             <Swiper
@@ -229,7 +261,7 @@ function Picture() {
               // onRealIndexChange={(e) =>
               //   console.log(swiperRef.current, detect(e.activeIndex))
               // } //for autoplay animation
-              spaceBetween={0}
+              spaceBetween={1}
               centeredSlides={true}
               slidesPerView={wind}
               freeMode={true}
@@ -252,9 +284,11 @@ function Picture() {
                         className={`text-3xl mobile:text-xl mh:text-xs tw:text-sm mobile:tracking-wide mobile:left-1 mobile:bottom-1 mh:left-1 mh:bottom-4  tw:left-2 tw:bottom-4
                                              text-[rgba(255,255,255,1)] text-left font-semibold left-7 bottom-7 absolute z-50 text-white  ${styles.Banger} tracking-widest`}
                       >
+
                         <div>{`0${i + 1}`}</div>
                         <div>{e.card_name}</div>
                       </div>
+                      <div className="h-full w-full LPICON3 mobile:border-t-[0.3rem] mobile:border-b-[0.3rem] border-t-[0.4rem] border-b-[0.4rem] border-[0.3rem] mobile:border-[0.2rem] absolute z-50"></div>
                       <Image
                         height={1000}
                         width={1000}

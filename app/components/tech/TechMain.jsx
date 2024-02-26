@@ -14,8 +14,8 @@ const TechMain = () => {
         <LandingMobile />
       </div>
       <EventsPreviewMain />
-      <Bot />
-      {/* <Main /> */}
+      {/* <Bot /> */}
+      <Main />
       <AboutPreviewMain />
     </div>
   );

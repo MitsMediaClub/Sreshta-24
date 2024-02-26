@@ -58,7 +58,10 @@
   border-image: url("/gallery/border.png") 5;
 }
 .LPICON2 {
-  border-image: url("/gallery/border.png") 10;
+  border-image: url("/gallery/filters/border.png") 10;
+}
+.LPICON3 {
+  border-image: url("/gallery/filters/border.png") 10;
 }
 
 /* Hide Scrollbar */

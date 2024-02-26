@@ -16,7 +16,8 @@ const Top = () => {
         <h1
           className={`${styles.dg_text} text-6xl mh:text-3xl mobile:text-lg text-tech-primary`}
         >
-          More than 100 <br /> events to conquer
+          Is past isn’t proof,<br />
+           what else could be?
         </h1>
         <hr className="w-1/2 mh:w-1/4 mobile:w-1/6 h-1 bg-tech-primary" />
         <Image
