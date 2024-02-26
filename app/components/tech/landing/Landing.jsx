@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 export const Landing = () => {
   const [techOrArts, settechOrArts] = useState(0);
   const [show, setShow] = useState(true);
-  const size = 1400;
+  const size = 1000;
   const cursor = useRef();
   const landingRef = useRef(null);
   useEffect(() => {
@@ -29,17 +29,17 @@ export const Landing = () => {
   const ref = useRef();
 
   const hamburger = () => {
-    document.getElementById("burger").style.display = "none";
-    document.getElementById("close").style.display = "flex";
+    // document.getElementById("burger").style.display = "none";
+    // document.getElementById("close").style.display = "flex";
     ref.current.style.bottom = "0%";
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
     setShow(false);
   };
   const navClose = () => {
-    document.getElementById("burger").style.display = "flex";
-    document.getElementById("close").style.display = "none";
+    // document.getElementById("burger").style.display = "flex";
+    // document.getElementById("close").style.display = "none";
     ref.current.style.bottom = "100%";
-    document.body.style.overflow = "auto";
+    // document.body.style.overflow = "auto";
     setShow(true);
   };
 
@@ -106,14 +106,9 @@ export const Landing = () => {
       >
         <div className={` absolute top-0 left-0 right-0 z-40 w-full  `}>
           <div className="flex flex-row justify-between  2xl:mx-16 xl:mx-[3.5rem]  lg:mx-[3rem] mx-6 ">
-            <div className="relative">
-              <div className="absolute top-0 left-0  bg-clip-padding w-full h-full LPICON"></div>
+            <div className={`relative px-1.5 pb-1.5 LPICON3 bg-[length:600%] ${show ? 'delay-500' : 'opacity-0'}`}>
               <div
-                className={`${
-                  show
-                    ? "bg-tech-bg 2xl:w-auto border-[8px] LPICON border-t-0 border-tech-bg bg-clip-padding xl:w-[8rem] lg:w-[6rem] "
-                    : ""
-                }  w-[5rem] flex justify-center items-center relative p-2`}
+                className={`bg-tech-bg 2xl:w-auto xl:w-[8rem] lg:w-[6rem] w-[5rem] flex justify-center items-center relative p-2`}
               >
                 <Image
                   className={` w-full ${show ? "visible" : "invisible"} `}
@@ -124,32 +119,19 @@ export const Landing = () => {
                 ></Image>
               </div>
             </div>
+            <div className={`relative px-1.5 pb-1.5 before:bg-[length:600%] before:z-[-1] before:bg-border before:left-0 before:top-0 before:h-full before:w-full before:absolute ${show ? 'before:delay-500' : 'before:opacity-0'}`}>
             <div
-              className={` LPICON cursor-pointer ${
-                show
-                  ? "bg-tech-bg 2xl:w-auto bg-clip-padding border border-b-[8px] border-r-[8px] border-l-[8px] border-t-0 border-tech-bg"
-                  : ""
-              }   xl:w-[8rem] lg:w-[6rem]  w-[5rem]`}
+              className={` h-full cursor-pointer xl:w-[8rem] lg:w-[6rem] w-[5rem] items-center flex justify-center ${!show ? '' : 'bg-tech-bg delay-500'}`}
             >
-              <Image
-                onClick={hamburger}
-                className="w-full hover:scale-110 transition-all duration-100 ease-in-out"
+              <div
+                onClick={show ? hamburger : navClose}
                 id="burger"
-                src={"/landing/ham.png"}
-                width={900}
-                height={900}
-                alt=""
-              ></Image>
-
-              <div>
-                <h1
-                  className="hidden text-black text-[4vw] ml-[2vw]"
-                  id="close"
-                  onClick={navClose}
-                >
-                  X
-                </h1>
+                className="hover:scale-110 transition-all duration-100 ease-in-out flex flex-col gap-1.5 w-fit">
+                <div className={`w-11 h-[7px] bg-[#375E5E] transition-all duration-500 rounded-full ${show ? '' : 'rotate-45 translate-y-1.5'}`}></div>
+                <div className={`w-11 h-[7px] bg-[#375E5E] transition-all duration-500 rounded-full ${show ? '' : 'hidden'}`}></div>
+                <div className={`w-11 h-[7px] bg-[#375E5E] transition-all duration-500 rounded-full ${show ? '' : '-rotate-45 -translate-y-1.5'}`}></div>
               </div>
+            </div>
             </div>
           </div>
         </div>
