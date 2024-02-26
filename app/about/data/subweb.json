@@ -1,50 +1,74 @@
 [
-    {
-        "name": "Andrew C Anil",
-        "role": "Frontend Developer",
-        "link": "https://www.linkedin.com/in/andrewcanil04/",
-        "img": "/assets/about/team/subteam/Andrew.png"
-      },
-      {
-        "name": "Jibina Babu",
-        "role": "Frontend Developer",
-        "link": "https://www.linkedin.com/in/jibina-babu-208154250/",
-        "img": "/assets/about/team/subteam/Jibina.png"
-      },
-      {
-        "name": "Lakshmi Rajesh",
-        "role": "Frontend Developer",
-        "link": "https://www.linkedin.com/in/jibina-babu-208154250/",
-        "img": "/assets/about/team/subteam/Lakshmi.png"
-      },
-      {
-        "name": "Amalekh Biju",
-        "role": "Frontend Developer",
-        "link": "",
-        "img": "/assets/about/team/subteam/Amalekh.png"
-      },
-      {
-        "name": "Aaron ",
-        "role": "Frontend Developer",
-        "link": "",
-        "img": "/assets/about/team/subteam/Aaron.png"
-      },
-      {
-        "name": "Abdul Rahman",
-        "role": "Frontend Developer",
-        "link": "",
-        "img": "/assets/about/team/subteam/Abdu.png"
-      },
-      {
-        "name": "Vaishakh",
-        "role": "Frontend Developer",
-        "link": "",
-        "img": "/assets/about/team/subteam/Vaishakh.png"
-      },
-      {
-        "name": "Merin",
-        "role": "Frontend Developer",
-        "link": "",
-        "img": "/assets/about/team/subteam/Merin.png"
-      }
+  {
+    "name": "Andrew C Anil",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/andrewcanil04",
+    "img": "/assets/about/team/subteam/Andrew.webp"
+  },
+  {
+    "name": "Abdul Rahman",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/abdul-rahman-26b2b6262?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "img": "/assets/about/team/subteam/Abdu.webp"
+  },
+  {
+    "name": "Vaishakh S Nair",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/vaishakh-s-nair-090511139/",
+    "img": "/assets/about/team/subteam/Vaishakh.webp"
+  },
+  {
+    "name": "Akshhay K M",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/akshhay-km-7b636a291/",
+    "img": "/assets/about/team/subteam/Akkshay.webp"
+  },
+  {
+    "name": "Alan Francis",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/alan-francis-santhosh-92811b298/",
+    "img": "/assets/about/team/subteam/Alan.webp"
+  },
+  {
+    "name": "Amalekh Biju",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/amalekh-biju/",
+    "img": "/assets/about/team/subteam/Amalekh.webp"
+  },
+  {
+    "name": "Jibina Babu",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/jibina-babu-208154250/",
+    "img": "/assets/about/team/subteam/Jibina.webp"
+  },
+  {
+    "name": "Lakshmi Rajesh",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/lakshmi-rajesh-74a154250/",
+    "img": "/assets/about/team/subteam/Lakshmi.webp"
+  },
+  {
+    "name": "Aaron J Pulikkottil",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/aaron-pulikkottil-b65361250/",
+    "img": "/assets/about/team/subteam/Aaron.webp"
+  },
+  {
+    "name": "Merin Johnson",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/merin-johnson-46643a250/",
+    "img": "/assets/about/team/subteam/Merin.webp"
+  },
+  {
+    "name": "Nitin K M",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/nitin-km/",
+    "img": "/assets/about/team/subteam/Nitin.webp"
+  },
+  {
+    "name": "Sudheesh S Pai",
+    "role": "Frontend Developer",
+    "link": "https://www.linkedin.com/in/sudheesh-s-pai-36ab8a290/",
+    "img": "/assets/about/team/subteam/Sudheesh.webp"
+  }
 ]
