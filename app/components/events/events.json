@@ -170,6 +170,26 @@
     "rules": ["N/A"]
   },
   {
+    "name": "Gear Up!",
+    "date": "2nd March 2024",
+    "time": "",
+    "venue": "Measurements Lab, (Ramanujan Block)",
+    "reg": ["INR 1500/- per team"],
+    "cardImg": "https://i.imgur.com/iEpaf1w.png",
+    "cord": ["Milan Eldho Babu [9847611144]","Maria Mathew [6235586230]","Winston Antony Robert [8089891361]"],
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdI0PKJDsOwT5BLX6er3nAqXzJK9B_80XkWZcTe4HardHfCMg/viewform?usp=sf_link",
+    "prize": ["The winning team will take home the RC car they built during the workshop!","Plus Activity points, exciting goodies and certificates for all participants!"],
+    "desc": "Rev up your engines and prepare for an adrenaline-fueled adventure at the Offroad RC Car Workshop, a highlight of this year's Shreshta Tech Fest! Hosted on March 2 ,at MITS.",
+    "rules": [
+    "Rule 1: Each team must contain 3-5 members",
+    "Rule 2: Each team should have a laptop.",
+    "Rule 3: Participants must register on or before 28th February",
+    "Rule 4: The team winning the race held at the end would get the RC car they built and an additional certificate.",
+    "Rule 5: One member from each team need only register.",
+    "Rule 6: The registration fee is non refundable at any circumstance."
+    ]
+  },
+  {
     "name": "Murder Mystery",
     "date": "2nd March 2024",
     "time": "11:00 PM - 2:30 PM",
@@ -189,5 +209,5 @@
     "Rule 6: The decisions of the judges will be final and binding.",
     "Rule 7: Participants must register via the website on or before 27th February. Only one person per team needs to register."
     ]
-    }
+  }
 ]
