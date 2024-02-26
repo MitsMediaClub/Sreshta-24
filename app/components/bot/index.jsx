@@ -15,7 +15,6 @@ const Bot = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowMessage(false);
-      setShowPopup(false);
     }, 1500);
 
     return () => clearTimeout(0.5);
