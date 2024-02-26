@@ -11,9 +11,6 @@ const Bot = () => {
   const messagesEndRef = useRef(null);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    scrollToBottom();
-  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -186,6 +183,7 @@ const Bot = () => {
                     onClick={() => {
                       fetchMessage();
                       setLoading(true);
+                      scrollToBottom();
                     }}
                     type="submit"
                     className={`flex rounded-lg bg-[#73AAA6]/90 py-4 items-center px-4 text-white ${
