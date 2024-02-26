@@ -1,6 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import webTeam from "../../../about/data/leadwebTeam.json";
+import subWeb from "../../../about/data/subweb.json";
+import Marquee from "react-fast-marquee";
 
 const AboutPreviewMain = () => {
   const router = useRouter();
@@ -10,7 +13,7 @@ const AboutPreviewMain = () => {
         <Image
           width={500}
           height={500}
-          src="/about/AbtLandhed.png"
+          src="/Aboutheader.png"
           alt="Meh"
           className="w-56 mobile:w-28"
         />
@@ -24,7 +27,7 @@ const AboutPreviewMain = () => {
         <Image
           width={500}
           height={500}
-          src="/about/num3.png"
+          src="/headernum3.png"
           alt="Meh"
           className="w-32 mobile:w-14 mh:w-24"
         />
@@ -41,11 +44,67 @@ const AboutPreviewMain = () => {
         pushing the boundaries of knowledge. Join us for an immersive experience
         that bridges academia with the ever-evolving world of technology.
       </p>
+      <div className="my-10">
+        <Marquee autoFill>
+          <div className="w-full flex mt-5">
+            {webTeam.map((value, index) => (
+              <a key={index} href={value.link} className="">
+                <div className="relative group rounded-xl bg-no-repeat bg-cover bg-center w-[300px] h-[300px] md:w-[350px] md:h-[350px] p-4 flex flex-col justify-end hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer items-center ">
+                  <img src={value.img} className="absolute pb-4 top-0 h-full" />
+                  <div className="px-5 py-3">
+                    <h1 className="font-bold text-xl psans text-white whitespace-nowrap relative z-30">
+                      {value.name}
+                    </h1>
+                    <h1 className="font-light text-md psans text-white whitespace-nowrap relative z-30">
+                      {value.role}
+                    </h1>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+          <div className="w-full flex mt-5">
+            <a href="https://www.linkedin.com/in/glitchy/" className="">
+              <div className="relative group rounded-xl bg-no-repeat bg-cover bg-center w-[300px] h-[300px] md:w-[350px] md:h-[350px] p-4 flex flex-col justify-end hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer items-center ">
+                <img
+                  src="/assets/about/team/mediaclub/Advaith.png"
+                  className="absolute pb-4 top-0 h-full"
+                />
+                <div className="px-5 py-3">
+                  <h1 className="font-bold text-xl psans text-white whitespace-nowrap relative z-30">
+                    Advaith Narayanan
+                  </h1>
+                  <h1 className="font-light text-md psans text-white whitespace-nowrap relative z-30">
+                    DevOps Engineer
+                  </h1>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="w-full flex mt-5">
+            {subWeb.map((value, index) => (
+              <a key={index} href={value.link} className="">
+                <div className="relative group rounded-xl bg-no-repeat bg-cover bg-center w-[300px] h-[300px] md:w-[350px] md:h-[350px] p-4 flex flex-col justify-end hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer items-center ">
+                  <img src={value.img} className="absolute pb-4 top-0 h-full" />
+                  <div className="px-5 py-3">
+                    <h1 className="font-bold text-xl psans text-white whitespace-nowrap relative z-30">
+                      {value.name}
+                    </h1>
+                    <h1 className="font-light text-md psans text-white whitespace-nowrap relative z-30">
+                      {value.role}
+                    </h1>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </Marquee>
+      </div>
       <h1
         onClick={() => router.push("/about")}
-        className="text-center text-5xl font-bold bangers hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer py-10"
+        className="text-center text-5xl font-bold bangers hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer pt-10"
       >
-        About Us
+        View All <span className="text-6xl">→</span>
       </h1>
     </div>
   );

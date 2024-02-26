@@ -6,6 +6,10 @@
     "venue": "Admission Room, M George Block",
     "reg": ["general: 500₹"],
     "cardImg": "https://i.imgur.com/c8tS50n.png",
+    "cord": [
+      "Abhimanyu (S8 CSE AI) 9778377240",
+      "Alias (S8 CSE AI) 9037563633"
+    ],
     "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdujlH_pWgcrxRc6tDMyDi0-sLKMHjjhZ23z82iOJExwquYQg/viewform?usp=sf_link",
     "prize": ["80,000₹"],
     "desc": "\"Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.\" - Plato Music is not just heard; it is felt.Witness fierce competition as bands battle it out for supremacy on stage. The atmosphere will be electric, the tunes intense, and the energy unmatched. Join us for an epic clash of rhythms and melodies that will leave you on the edge of your seat. Bring your A-game, cheer for your favorite band, and let the battle of the beats begin! 🎶",
@@ -31,13 +35,21 @@
     "venue": "Vikram Sarabhai Auditorium",
     "reg": ["general: 500₹"],
     "cardImg": "https://i.imgur.com/rBJ4htE.jpeg",
+    "cord": ["Abhijith (S6 CSE AI DS 9746634054"],
     "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSe0Ot8uzDS_yHLQSaRbHsJmRPAUD_X4bOtv7Ryo1BYzhsPx7g/viewform?usp=sf_link",
     "prize": ["50,000₹"],
-    "desc": "A theme show is a type of presentation or exhibition of a specific theme or topic serving as the central focus,it can encompass various forms of visual art,music,dance or theatre, exploring a particular idea, concept or narrative. It involves a series of performances or plays to explore a common thene, providing creative perspectives and interpretations through the medium of performance.Participants are given the theme prior to the event (1 week),to prepare the costumes adhering to the theme,no vulgarity of presentation is allowed.A team can have minimum of 8 and maximum of 10 participants.Background score should be prepared prior and be handed over to the coordinator.Total duration of 10 minutes.",
+    "desc": "A theme show is a type of presentation or exhibition of a specific theme or topic serving as the central focus,it can encompass various forms of visual art,music,dance or theatre, exploring a particular idea, concept or narrative. A team can have minimum of 8 and maximum of 10 participants.Background score should be prepared prior and be handed over to the coordinator.Total duration of 10 minutes.",
     "rules": [
-      "Rule 1: No cheating",
-      "Rule 2: Bring Notebook and Pen",
-      "Rule 3: Maintain discipline"
+      "Rule 1: Teams must consist of 8 to 10 models.",
+      "Rule 2: Maximum number of teams permitted for the event is 10.",
+      "Rule 3: Cross-college teams are not permitted.",
+      "Rule 4: A college can have only one team under this category.",
+      "Rule 5: Each performance is allotted a time limit of 10 minutes, empty to empty stage.",
+      "Rule 6: Exceeding this time limit may result in disqualification. Presenting banners, posters, or other materials directly displaying the theme is prohibited.",
+      "Rule 7: Background music should be cross-checked with the event coordinator one day before the event.",
+      "Rule 8: Teams will be judged based on costumes, theme, walking stance and attitude.",
+      "Rule 9: The decisions of the judges will be final and binding.",
+      "Rule 10: Participants must register via the website on or before 27th February. Only one person per team needs to register."
     ]
   },
   {
@@ -47,13 +59,21 @@
     "venue": "Steve Jobs Hall, Ramanujan Block",
     "reg": ["mitsian: 150₹", "non-mitsian: 250₹"],
     "cardImg": "https://i.imgur.com/mwkVJdQ.png",
+    "cord": ["Sebin Kuriakose (S8 CSE A) 9847824162"],
     "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSe5KHmLOog2MliOYGDerX9cQQ8XRCXRiloOFfzUaqblA6L5OA/viewform?usp=sf_link",
     "prize": ["75,000₹"],
     "desc": "Eneryia 2.0: Fueling Innovation in 24 Hours! Join us for an exhilarating hackathon hosted by the Computer Science Department in collaboration with ACM. Dive into a day-long coding marathon where participants will unleash their creativity, collaborate with peers, and tackle real-world challenges in the realm of technology. From groundbreaking software solutions to innovative hardware hacks, Eneryia 2.0 is the ultimate platform to push boundaries, showcase skills, and forge lasting connections in the tech community. Are you ready to power up your ideas and make a difference? Join us for Eneryia 2.0 and let's code the future together!",
     "rules": [
-      "Rule 1: No cheating",
-      "Rule 2: Bring Notebook and Pen",
-      "Rule 3: Maintain discipline"
+      "Rule 1: The hackathon is a team event with maximum 4 people in a team.",
+      "Rule 2: A participant is only allowed to be part of only a single team.",
+      "Rule 3: The event is open to all students currently enrolled in any Undergraduate course.",
+      "Rule 4: 10 teams will be shortlisted for the main event.",
+      "Rule 5: Each team while registering for the event must submit their GitHub profiles and LinkedIn profiles along with an abstract they prepared on any of the problem statements listed below. The shortlisting will be on the basis of these submitted documents and profiles.",
+      "Rule 6: The final problem statements for the event shall be revealed 3 hours prior to the commencement of the event. ",
+      "Rule 7: An internal round of evaluation prior to the final evaluation shall be conducted after 6 hours after the commencement of the event.",
+      "Rule 8: The final evaluation shall be done by expertised judges after the 24 hour time frame. ",
+      "Rule 9: Registration fee for the event shall be Rs 250 for a Non - Mitsian and Rs 150 for a Mitsian.",
+      "Rule 10: The fee should only be paid if shortlisted for the hackathon."
     ]
   },
   {
@@ -63,6 +83,7 @@
     "venue": "CAD Drawing Lab, Dept. of Mechanical Engineering, M George Block",
     "reg": ["general: 150₹"],
     "cardImg": "https://i.imgur.com/37J1uzK.png",
+    "cord": ["Aditya S(S6 ME) 9400238120"],
     "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSch7ep44jh6CXUSLDYeHtKepU-rANIYRMKt2mCEYBoXPW3VVA/viewform?usp=sf_link",
     "prize": ["15,000₹"],
     "desc": "BridgeX 2.0 will test the particpants to use computer-aided design (CAD) software or a 3D modeling tool to create a detailed virtual representation of the bridge. Include all relevant structural and design elements, such as supports, beams, and decking. Once the virtual bridge design is finalized, we select appropriate materials for the physical model. And test the model on factors like strength, flexibility, and weight.",
@@ -74,11 +95,12 @@
   },
   {
     "name": "BlindScript Coding Competition",
-    "date": "2 Mar 2024",
-    "time": "10:00 AM - 5:00 PM",
+    "date": "1 Mar 2024",
+    "time": "10:00 AM - 2:00 PM",
     "venue": "Codd Base Lab, Ramanujan Block",
     "reg": ["general: free"],
     "cardImg": "https://i.imgur.com/m4I1RC2.png",
+    "cord": ["Rohit George (S6 CSE B) 7247478565"],
     "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSd9mCnmqJqMI17sViF9UTQ1h-pG6w7z2CpwmJ6QicF1hEtqbg/viewform?usp=sf_link",
     "prize": ["20,000₹"],
     "desc": "BLIND SCRIPT Coding Challenge is a pioneering competition where participants code without visual aid, relying solely on memory and intuition. This event challenges coding enthusiasts to showcase their mental agility and adaptability by solving coding problems without screens. With a limited participant capacity, the event promises an exhilarating experience where coding meets the ultimate test of ingenuity. Registration is free, and participants have the chance to win cash rewards and recognition.",
@@ -95,6 +117,7 @@
     "venue": "FOSS Lab, Ramanujan Block",
     "reg": ["mitsian: 50₹", "non-mitsian: 100₹"],
     "cardImg": "https://i.imgur.com/gUZJHXi.jpeg",
+    "cord": ["Ragesh (MTech) 9497276184", "Andrew (S4 Cyber) 8129712145"],
     "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdOefkZ3EKoWgKzL_OlP3Edq-wCg7kb3ogHIF2JAp5qb6gydw/viewform?usp=sf_link",
     "prize": ["14,000₹"],
     "desc2(after desc)": "Also join in the Cybersecurity fun by completing Beyond The Surface, an OSINT challenge, which is bound to widen your horizons.",
@@ -115,7 +138,11 @@
     "venue": "Admission Room, M George Block",
     "reg": ["general: free"],
     "cardImg": "https://i.imgur.com/tto58R5.jpeg",
-    "regLink": "https://www.google.com",
+    "cord": [
+      "Swathi ( S6 CSE AI DS ) 8714239834",
+      "Zanha ( S6 CSE AI DS ) 7907563870"
+    ],
+    "regLink": "https://forms.gle/Ypqmeae6es7JYJnj9",
     "prize": ["6600₹"],
     "desc": "Get ready for an exhilarating journey into the realms of technology at TECHNOPARK, a groundbreaking event by TinkerHub MITS on March 2nd, 2024. Offering students a hands-on experience with cutting-edge tools provided by Tinkerspace, including a 3D printer, VR goggles, and an intriguing voice-activated Ouija board with an AI model, the event promises to delve into the world of Augmented Reality (AR), Virtual Reality (VR), and innovative technologies. The fusion of AR/VR thrills and 5-6 Arduino/Raspberry Pi projects ensures a day filled with mind-bending experiences and jaw-dropping inventions. Hosted by TinkerHub's tech wizards, TECHNOPARK invites participants to unleash their creativity, discover, and be amazed in a day packed with innovation, laughter, and unadulterated fun. Join us for an epic adventure where imagination meets technology, and boundaries are redefined at TECHNOPARK!",
     "rules": [
@@ -133,9 +160,34 @@
     "venue": "John McCarthy Lab, Ramanujan Block",
     "reg": ["IEEE: 150", "NON-IEEE: 200"],
     "cardImg": "https://i.imgur.com/4uYJID1.jpeg",
+    "cord": [
+      "Karthik U (S6 ECE) 8281628198",
+      "Joanna Merine Noble ( S6 CSE AI ) 8137042277"
+    ],
     "regLink": "https://bit.ly/brain_io",
     "prize": ["N/A"],
     "desc": "Impulse, trigger,manifest immerses participants in the cutting-edge field of BCI technology, where the boundaries between mind and machine blur. Through a series of practical exercises and demonstrations, attendees will learn about the principles behind BCI systems, experiment with various neurofeedback techniques, and even build simple brain-controlled applications. This workshop is ideal for anyone curious about the intersection of neuroscience and technology, offering a hands-on experience that will inspire innovation and creativity.",
     "rules": ["N/A"]
-  }
+  },
+  {
+    "name": "Murder Mystery",
+    "date": "2nd March 2024",
+    "time": "11:00 PM - 2:30 PM",
+    "venue": "Room 404 (Ramanujan Block)",
+    "reg": ["Free"],
+    "cardImg": "https://i.imgur.com/a1YtR1s.jpeg",
+    "cord": ["Adish S (S6 CSE) 9645800065"],
+    "regLink": "https://forms.gle/2G7QxeV4ZpiKPDst6",
+    "prize": ["Certificate","Goodies","Title of Murder Maestro"],
+    "desc": "This years murder mystery brings a sophisticated string of mysteries before you to solve. The trail of evidence, statements and suspects have been left to investigate. Teams of 4 are pitted against each other in a race to unravel these knots of mysteries. The clock is ticking, will you be the one to succeed and put an end to this year's murder mystery?.",
+    "rules": [
+    "Rule 1: Teams must consist of 1 to 4 investigators.",
+    "Rule 2: Maximum number of teams permitted for the event is 4.",
+    "Rule 3: Cross-college teams are not permitted.",
+    "Rule 4: Teams should be always be together during the event and not split up.",
+    "Rule 5: Participants must not share deductions and clues.",
+    "Rule 6: The decisions of the judges will be final and binding.",
+    "Rule 7: Participants must register via the website on or before 27th February. Only one person per team needs to register."
+    ]
+    }
 ]

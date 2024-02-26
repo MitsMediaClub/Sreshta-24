@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Book from "./Book";
 import EventCards from "./EventCards";
 import EventModal from "./EventModal";
-
+import NavbarNew from "../common/NavbarNew";
 const EventsMain = () => {
   const pages = [
     {
@@ -56,34 +56,41 @@ const EventsMain = () => {
   }
   return (
     <>
-      <div className="pt-0">
-        <div
-          className="hidden lg:flex justify-center p-20 pt-0 pb-44 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/common/bgDots.png')" }}
-          >
-          <Book
-            width={dimensions.width}
-            height={dimensions.height}
-            portrait={false}
-            pages={pages}
-            />
+      <div className="bg-texture bg-no-repeat snap-center w-screen md:min-h-screen">
+        <NavbarNew />
+        <div className="pt-32 pb-16">
+          <p className="w-full text-white h-1/2 bangers font-normal md:text-xxxl text-9xl items-center drop-shadow-title text-center self-center md:p-24">
+            EVENTS
+          </p>
+          <p className="w-full h-1/4 dog text-black self-center text-3xl text-center">
+            New Year, New Events
+          </p>
         </div>
-        <div
-          className="lg:hidden flex justify-center pb-44 bg-cover bg-center  bg-no-repeat"
-          style={{ backgroundImage: "url('/common/bgDots.png')" }}
+        <div className="pt-0">
+          <div
+            className="hidden lg:flex justify-center p-20 pt-0 pb-44 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/common/bgDots.png')" }}
           >
-          <h1 className="text-6xl bangers text-tech-primary">Events</h1>
+            <Book
+              size={"stretch"}
+              width={dimensions.width}
+              height={dimensions.height}
+              minWidth={500}
+              minHeight={600}
+              portrait={false}
+              pages={pages}
+            />
+          </div>
 
-          {/* <Book className="hidden" width={400} height={900} portrait={true} pages={pages} /> */}
-        </div>
-        <div className="relative">
-          <EventCards selectEvent={selectEvent} />
-          {selectedEvent && (
-            <EventModal
-              selectedEvent={selectedEvent}
-              selectEvent={selectEvent}
-            />
-          )}
+          <div className="relative">
+            <EventCards selectEvent={selectEvent} />
+            {selectedEvent && (
+              <EventModal
+                selectedEvent={selectedEvent}
+                selectEvent={selectEvent}
+              />
+            )}
+          </div>
         </div>
       </div>
     </>
