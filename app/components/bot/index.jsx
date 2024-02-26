@@ -17,7 +17,7 @@ const Bot = () => {
       setShowMessage(false);
     }, 1500);
 
-    return () => clearTimeout(0.5);
+    return () => clearTimeout(1.5);
   }, []);
 
   const scrollToBottom = () => {
