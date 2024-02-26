@@ -66,7 +66,6 @@ const Bot = () => {
 
   const handleUserMessageChange = (event) => {
     setUserMessage(event.target.value);
-    scrollToBottom();
   };
 
   const handleUserMessageSubmit = (event) => {
@@ -176,7 +175,7 @@ const Bot = () => {
                     id=""
                     className="flex-1 md:text-lg text-2xl rounded-lg bg-[#73AAA6]/90 md:py-2 px-4 sm:py-2 text-white focus:outline-none placeholder:text-white acme"
                     placeholder="Type your question here..."
-                    required
+                    
                   />
                   <button
                     onClick={() => {
