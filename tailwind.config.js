@@ -43,6 +43,7 @@ module.exports = {
         overlay: "url('/assets/about/bg-overlay.png')",
         "page-left": "url('/events/bg-left.png')",
         "page-right": "url('/events/bg-right.png')",
+        "border": 'url("/gallery/border.png")',
       },
       fontSize: {
         xxxl: "224px",
