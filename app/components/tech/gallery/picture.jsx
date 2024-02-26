@@ -24,8 +24,8 @@ function Picture() {
         "/gallery/Masala_cofee/img7.webp",
         "/gallery/Masala_cofee/img8.webp",
       ],
-      card_name: "Masala Cofee",
-      text: ["2 Mar 2023", "Masala Cofee", "Indulged in an unforgettable musical journey with the renowned band Masala Coffee at our electrifying concert!"],
+      card_name: "Masala Coffee",
+      text: ["2 Apr 2023", "Masala Coffee", "Indulged in an unforgettable musical journey with the renowned band Masala Coffee at our electrifying concert!"],
     },
     {
       slide_img: "/gallery/Nexus_gaming/img1.webp",
@@ -36,7 +36,7 @@ function Picture() {
         "/gallery/Nexus_gaming/img4.webp",
       ],
       card_name: "Nexus gaming",
-      text: ["2 Mar 2023", "Nexus gaming", "Where gaming dreams come to life in an electrifying battle of pixels and strategy!"],
+      text: ["2 Apr 2023", "Nexus gaming", "Where gaming dreams come to life in an electrifying battle of pixels and strategy!"],
     },
     {
       slide_img: "/gallery/Sunburn/img1.webp",
@@ -49,7 +49,7 @@ function Picture() {
         "/gallery/Sunburn/img6.webp",
       ],
       card_name: "Sunburn",
-      text: ["2 Mar 2023", "Sunburn", ""],
+      text: ["2 Apr 2023", "Sunburn", ""],
     },
     {
       slide_img: "/gallery/Hackathon/img1.webp",
@@ -59,7 +59,7 @@ function Picture() {
         "/gallery/Hackathon/img3.webp",
       ],
       card_name: "Hackathon",
-      text: ["2 Mar 2023", "Hackathon", ""],
+      text: ["2 Apr 2023", "Hackathon", ""],
     },
 
   ];
