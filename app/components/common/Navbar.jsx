@@ -1,39 +1,57 @@
 "use client";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import "./Navbar.css";
 import Link from "next/link";
 
 const Navbar = () => {
   const router = useRouter();
-
+  const pathname = usePathname();
   const hamburger = () => {
     document.getElementById("nav-burger").style.display = "none";
     document.getElementById("nav-cross").style.display = "flex";
     document.getElementById("nav-items-main").style.bottom = "0%";
+    document.body.style.overflow = "hidden";
   };
   const navClose = () => {
     document.getElementById("nav-cross").style.display = "none";
     document.getElementById("nav-burger").style.display = "flex";
     document.getElementById("nav-items-main").style.bottom = "100%";
+    document.body.style.overflow = "auto";
   };
 
   return (
     <nav id="nav-main" className="flex md:hidden mb-24">
       <div
-        className="flex min-w-[100vw] fixed justify-between items-center z-50 bg-[#daebec9e]"
+        className={`flex min-w-[100vw] fixed justify-between items-center z-50 ${
+          pathname.includes("/varnam") ? " bg-[#FFFDF6]" : " bg-[#daebec9e]"
+        }`}
         id="nav-part1"
       >
-        <Image
-          className="ml-6 mb-2 mt-4"
-          width={50}
-          height={50}
-          src="/common/shreshtaLogo.svg"
-          alt="MITS Logo"
-          onClick={() => {
-            router.push("/");
-          }}
-        />
+        {pathname.includes("/varnam") ? (
+          <Image
+            className="ml-6 mb-2 mt-4"
+            width={50}
+            height={50}
+            src="/varnam/footer/varnamLogo.svg"
+            alt="MITS Logo"
+            onClick={() => {
+              router.push("/varnam");
+            }}
+          />
+        ) : (
+          <Image
+            className="ml-6 mb-2 mt-4"
+            width={50}
+            height={50}
+            src="/common/shreshtaLogo.svg"
+            alt="MITS Logo"
+            onClick={() => {
+              router.push("/");
+            }}
+          />
+        )}
+
         <svg
           onClick={hamburger}
           className="flex h-10 w-10 mr-6 mb-2 mt-4"
@@ -54,7 +72,9 @@ const Navbar = () => {
         </svg>
       </div>
       <div
-        className="fixed bottom-full z-40 bg-slate-200 duration-1000 pt-10"
+        className={`fixed bottom-full z-40 ${
+          pathname.includes("/varnam") ? " bg-[#FFFDF6]" : " bg-[#daebec9e]"
+        } duration-1000 pt-10`}
         id="nav-items-main"
       >
         <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-screen pt-[15vw]">
