@@ -191,7 +191,7 @@
     "Rule 8: Organizers can disqualify violators.",
     "Rule 9: Respectful conduct toward organizers and participants is mandatory."
     ]
-    },
+  },
   {
     "name": "Murder Mystery",
     "date": "2nd March 2024",
@@ -212,5 +212,61 @@
     "Rule 6: The decisions of the judges will be final and binding.",
     "Rule 7: Participants must register via the website on or before 27th February. Only one person per team needs to register."
     ]
-    }
+  },
+  {
+    "name": "Treasure Hunt",
+    "date": "1st March 2024",
+    "time": "",
+    "venue": "College Premises",
+    "reg": ["INR 50/-"],
+    "cardImg": "https://i.imgur.com/otkN1co.png",
+    "cord": ["Reeba Philip 8848912726","Abhinav M P 8086813197"],
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSf-3LRjegn8T-GBP09M_Fg5W5u7r0lNnOd2ONRz5cvMtLnQDQ/viewform",
+    "prize": ["INR 4,000/-"],
+    "desc": "Embark on an adventure of a lifetime as you join the Quest for the Lost Treasure! Gather together for a thrilling journey filled with puzzles, clues, and challenges that will test your wit and courage. Follow the  map, solve riddles from deciphering cryptic messages to navigating through hidden passages, every step brings you closer to the ultimate prize. But beware, for the path is fraught with obstacles or must we say imposters who will stop at nothing to claim the treasure for themselves. Only the most cunning and resourceful will emerge victorious. Are you ready to accept the challenge and become a legend? Join us on the Quest for ELDORADO and let the adventure begin!",
+    "rules": [
+      "Rule 1 : Each team must contain 4 to 6 members.",
+      "Rule 2 : Use of mobile phones during the quest is prohibited .",
+      "Rule 3 : Teams that collect the given list of items and photographs in the given amount of time that is 30 mins will move on to the final round.",
+      "Rule 4 : Hints and trails that will eventually lead you to the treasure will be placed in different parts of the college campus.",
+      "Rule 4 : The time allocated for the final round will be 90 mins"
+    ]
+  },
+  {
+    "name": "Nexus ex : eFootball",
+    "date": "1st March 2024",
+    "time": "7:00 PM",
+    "venue": "Online",
+    "reg": ["INR 50/-"],
+    "cardImg": "https://i.imgur.com/C1G0I9H.png",
+    "cord": ["Siddarth Anil (S6 CSE b) +91 85939 93860", "Bhavan S (S6 CSE B) +91 9188106460"],
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSdjv4oS45UtDJGzpSrW1RLFZKdYPcVU0td9j9ka1VGu0mHigw/viewform",
+    "prize": ["First: 1000/- ","Second: 750/- ","Third: 250/-"],
+    "desc": "Experience the thrill of virtual football as players compete in our PES Tournament. With precise passes, strategic plays, and heart-pounding moments, this event will showcase the skills of the best virtual footballers on campus.",
+    "rules": [
+      "Rule 1 : No Emulators are allowed.",
+      "Rule 2 : Cheating is prohibited",
+      "Rule 3 : Any substitutions should be notified before-hand.",
+      "Rule 4 : Network and power will not be provided unless necessary."
+    ]
+  },
+  {
+    "name": "Nexus ex : BGMI",
+    "date": "1st March 2024",
+    "time": "7:00 PM",
+    "venue": "Online",
+    "reg": ["INR 50/-"],
+    "cardImg": "https://i.imgur.com/5pR9Vfl.png",
+    "cord": ["Siddarth Anil (S6 CSE b) +91 85939 93860", "Bhavan S (S6 CSE B) +91 9188106460"],
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLScPBuDZ_d25OYu4tiheh7lc31lkOKGama3B9aqeZ1PZNQjCig/viewform",
+    "prize": ["First: 1000/- ","Second: 750/- ","Third: 250/-"],
+    "desc": "Gear up for intense battles and fierce competition in our BGMI Championship. Teams will fight for survival, strategizing their moves and outwitting opponents in the ultimate test of skill and strategy.",
+    "rules": [
+      "Rule 1 : No Emulators are allowed.",
+      "Rule 2 : Cheating is prohibited",
+      "Rule 3 : Any substitutions should be notified before-hand.",
+      "Rule 4 : Network and power will not be provided unless necessary.",
+      "Rule 5 : 2-4 members are allowed."
+    ]
+  }
 ]
