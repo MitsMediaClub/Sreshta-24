@@ -214,6 +214,22 @@
     ]
   },
   {
+    "name": "Stargazing",
+    "date": "1st March 2024",
+    "time": "8:00 PM onwards",
+    "venue": "Infront CIDRIE",
+    "reg": ["INR 30/-"],
+    "cardImg": "https://i.imgur.com/397JDvV.jpeg",
+    "cord": ["Afnan - 7025729311","Roshan +91 97780 48743"],
+    "regLink": "https://docs.google.com/forms/d/e/1FAIpQLSeKdrlKvxFrTG4dkg6g1dzvvAGU2RK6eAY5xEf9RzJt-XLGcg/viewform",
+    "prize": ["NIL"],
+    "desc": "Immerse yourself in the wonders of the universe with our advanced telescopes🔭, providing an unparalleled sky-watching experience. Witness the cosmos come to life as we explore the mysteries that sparkle above.💫",
+    "rules": [
+      "Rule 1 : No spot registration available",
+      "Rule 2 :  Mandatory for hostellers to request for permission"
+    ]
+  },
+  {
     "name": "Treasure Hunt",
     "date": "1st March 2024",
     "time": "",
