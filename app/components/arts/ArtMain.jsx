@@ -1,7 +1,11 @@
+import LandingVarnam from "./LandingVarnam";
+import ScoreBoard from "./ScoreBoard";
+
 const ArtMain = () => {
   return (
-    <div>
-      <h2>Art</h2>
+    <div className="w-full bg-[#FFFDF6]">
+      <LandingVarnam />
+      <ScoreBoard />
     </div>
   );
 };

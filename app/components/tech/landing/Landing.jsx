@@ -32,14 +32,14 @@ export const Landing = () => {
     // document.getElementById("burger").style.display = "none";
     // document.getElementById("close").style.display = "flex";
     ref.current.style.bottom = "0%";
-    // document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
     setShow(false);
   };
   const navClose = () => {
     // document.getElementById("burger").style.display = "flex";
     // document.getElementById("close").style.display = "none";
     ref.current.style.bottom = "100%";
-    // document.body.style.overflow = "auto";
+    document.body.style.overflow = "auto";
     setShow(true);
   };
 
@@ -106,7 +106,11 @@ export const Landing = () => {
       >
         <div className={` absolute top-0 left-0 right-0 z-40 w-full  `}>
           <div className="flex flex-row justify-between  2xl:mx-16 xl:mx-[3.5rem]  lg:mx-[3rem] mx-6 ">
-            <div className={`relative px-1.5 pb-1.5 LPICON3 bg-[length:600%] ${show ? 'delay-500' : 'opacity-0'}`}>
+            <div
+              className={`relative px-1.5 pb-1.5 LPICON3 bg-[length:600%] ${
+                show ? "delay-500" : "opacity-0"
+              }`}
+            >
               <div
                 className={`bg-tech-bg 2xl:w-auto xl:w-[8rem] lg:w-[6rem] w-[5rem] flex justify-center items-center relative p-2`}
               >
@@ -119,19 +123,38 @@ export const Landing = () => {
                 ></Image>
               </div>
             </div>
-            <div className={`relative px-1.5 pb-1.5 before:bg-[length:600%] before:z-[-1] before:bg-border before:left-0 before:top-0 before:h-full before:w-full before:absolute ${show ? 'before:delay-500' : 'before:opacity-0'}`}>
             <div
-              className={` h-full cursor-pointer xl:w-[8rem] lg:w-[6rem] w-[5rem] items-center flex justify-center ${!show ? '' : 'bg-tech-bg delay-500'}`}
+              className={`relative px-1.5 pb-1.5 before:bg-[length:600%] before:z-[-1] before:bg-border before:left-0 before:top-0 before:h-full before:w-full before:absolute ${
+                show ? "before:delay-500" : "before:opacity-0"
+              }`}
             >
               <div
-                onClick={show ? hamburger : navClose}
-                id="burger"
-                className="hover:scale-110 transition-all duration-100 ease-in-out flex flex-col gap-1.5 w-fit">
-                <div className={`w-11 h-[7px] bg-[#375E5E] transition-all duration-500 rounded-full ${show ? '' : 'rotate-45 translate-y-1.5'}`}></div>
-                <div className={`w-11 h-[7px] bg-[#375E5E] transition-all duration-500 rounded-full ${show ? '' : 'hidden'}`}></div>
-                <div className={`w-11 h-[7px] bg-[#375E5E] transition-all duration-500 rounded-full ${show ? '' : '-rotate-45 -translate-y-1.5'}`}></div>
+                className={` h-full cursor-pointer xl:w-[8rem] lg:w-[6rem] w-[5rem] items-center flex justify-center ${
+                  !show ? "" : "bg-tech-bg delay-500"
+                }`}
+              >
+                <div
+                  onClick={show ? hamburger : navClose}
+                  id="burger"
+                  className="hover:scale-110 transition-all duration-100 ease-in-out flex flex-col gap-1.5 w-fit"
+                >
+                  <div
+                    className={`w-11 h-[7px] bg-[#375E5E] transition-all duration-500 rounded-full ${
+                      show ? "" : "rotate-45 translate-y-1.5"
+                    }`}
+                  ></div>
+                  <div
+                    className={`w-11 h-[7px] bg-[#375E5E] transition-all duration-500 rounded-full ${
+                      show ? "" : "hidden"
+                    }`}
+                  ></div>
+                  <div
+                    className={`w-11 h-[7px] bg-[#375E5E] transition-all duration-500 rounded-full ${
+                      show ? "" : "-rotate-45 -translate-y-1.5"
+                    }`}
+                  ></div>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
