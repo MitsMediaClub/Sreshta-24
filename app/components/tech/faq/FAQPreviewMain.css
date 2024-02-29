@@ -1,0 +1,180 @@
+.accordions__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  
+  @media (max-width: 479.98px) {
+    .accordions__list {
+      gap: 1.25rem;
+    }
+  }
+  .accordions__item {
+    background-color: #f3f3f3;
+    border-radius: 2.8rem;
+    will-change: height;
+    line-height: 1.5;
+    transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
+    box-shadow: 0px 0.3125rem 0px 0px #191a23;
+    border: 0.0625rem solid #191a23;
+  }
+  @media (max-width: 479.98px) {
+    .accordions__item {
+      border-radius: 1.5rem;
+    }
+  }
+  
+  .accordions__control {
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    width: 100%;
+    position: relative;
+  }
+  
+  @media (max-width: 767.98px) {
+    .accordions__control {
+      padding: 30px;
+    }
+  }
+  @media (max-width: 479.98px) {
+    .accordions__control {
+      padding: 20px;
+    }
+  }
+  .accordions__number {
+    font-size: 60px;
+    font-family: "Bangers", system-ui;
+    padding-right: 1.5625rem;
+    font-weight: 500;
+  }
+  @media (max-width: 767.98px) {
+    .accordions__number {
+      font-size: 40px;
+      padding-right: 0.625rem;
+    }
+  }
+  @media (max-width: 479.98px) {
+    .accordions__number {
+      font-size: 20px;
+    }
+  }
+  
+  .accordions__title {
+    font-family: "Bangers", system-ui;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    flex: 1 1 auto;
+    display: flex;
+    line-height: 120%;
+    padding-right: 1.25rem;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  @media (max-width: 767.98px) {
+    .accordions__title {
+      font-size: 20px;
+    }
+  }
+  
+  .accordions__icon {
+    flex: 0 0 58px;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    background-color: #f3f3f3;
+    border: 1px solid #191a23;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.4, 0.2, 0.6, 1);
+  }
+  @media (max-width: 479.98px) {
+    .accordions__icon {
+      flex: 0 0 32px;
+      display: flex;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  .accordions__icon::before {
+    content: "";
+    width: 1.5625rem;
+    height: 0.3125rem;
+    background-color: #191a23;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media (max-width: 479.98px) {
+    .accordions__icon::before {
+      width: 15px;
+      height: 2px;
+    }
+  }
+  
+  .accordions__icon::after {
+    content: "";
+    width: 1.5625rem;
+    height: 0.3125rem;
+    background-color: #191a23;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  @media (max-width: 479.98px) {
+    .accordions__icon::after {
+      width: 15px;
+      height: 2px;
+    }
+  }
+  
+  .accordions__content {
+    padding: 0 60px 0 60px;
+    max-height: 100%; /* Set the max-height to the height of the collapsed content */
+    overflow: hidden; /* Hide any content that overflows the max-height */
+    will-change: max-height; /* Tell the browser that the max-height property is going to change */
+    transition: 0.5s cubic-bezier(0.4, 0.2, 0.6, 1); /* Set the transition for the max-height property */
+    box-sizing: content-box;
+    position: relative;
+    z-index: 5;
+    font-size: 30px;
+    font-family: 'goodDogPlain', sans-serif;
+    color: #fff;
+  }
+  @media (max-width: 767.98px) {
+    .accordions__content {
+      padding: 0 30px 0 30px;
+    }
+  }
+  @media (max-width: 479.98px) {
+    .accordions__content {
+      padding: 0 20px 0 20px;
+    }
+  }
+  
+  .open .accordions__content {
+    padding: 20px 60px 40px 60px;
+  }
+  @media (max-width: 767.98px) {
+    .open .accordions__content {
+      padding: 20px 30px;
+    }
+  }
+  @media (max-width: 479.98px) {
+    .open .accordions__content {
+      padding: 0px 20px 20px 20px;
+    }
+  }
+  
+  .open {
+    background-color: #01A17B;
+    color:#fff;
+  }
+  
+  .open .accordions__icon {
+    transform: rotate(225deg);
+  }

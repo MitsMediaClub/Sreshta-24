@@ -21,7 +21,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
           >
             x
           </h1>
-          <h1 className="text-3xl text-offWhite">Event Detalis</h1>
+          <h1 className="text-3xl text-offWhite">Event Details</h1>
           <hr className="h-[0.1rem] w-2/3 my-1 bg-offWhite" />
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div>
@@ -42,7 +42,7 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
             />
           </div>
         </section>
-        <div className="overflow-y-scroll h-[500px]">
+        <div className="overflow-y-scroll h-[350px] md:min-h-[400px] lg:h-[450px] scrollbar">
           <section className="p-10 py-5">
             <div className="py-5">
               <h1 className="bangers text-black/90 text-3xl">Reg Fees</h1>
@@ -52,10 +52,20 @@ const EventModal = ({ selectedEvent, selectEvent }) => {
                 ))}
               </div>
             </div>
+
             <div className="py-5">
               <h1 className="bangers text-black/90 text-3xl">Prize Pool</h1>
               <div className="flex gap-10 bangers text-2xl text-tech-primary">
                 {selectedEvent.prize.map((prize, index) => (
+                  <h1 key={index}>{prize}</h1>
+                ))}
+              </div>
+            </div>
+
+            <div className="py-5">
+              <h1 className="bangers text-black/90 text-3xl">Coordinator</h1>
+              <div className="flex gap-10 bangers text-2xl text-tech-primary">
+                {selectedEvent.cord.map((prize, index) => (
                   <h1 key={index}>{prize}</h1>
                 ))}
               </div>

@@ -1,21 +1,21 @@
 "use client";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 
 export default function Book(props) {
   const { width, height, portrait, pages } = props;
   const book = useRef(null);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     console.log("This will run every 3 seconds!");
-  //     book.current.pageFlip().flipNext();
-  //   }, 3000); // 3000 milliseconds = 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      console.log("This will run every 3 seconds!");
+      book.current.pageFlip().flipNext();
+    }, 5000); // 3000 milliseconds = 3 seconds
 
-  //   // Clear interval on component unmount
-  //   return () => clearInterval(interval);
-  // }, []);
+    // Clear interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="relative select-none">
@@ -24,6 +24,8 @@ export default function Book(props) {
         width={width}
         height={height}
         // useMouseEvents={false}
+        autoPlay
+        interval={20}
         usePortrait={portrait}
         drawShadow={false}
       >
@@ -56,7 +58,7 @@ export default function Book(props) {
                 key={index}
                 className="bg-page-left text-[#375E5E] text-3xl p-20 w-full h-full"
               >
-                <h1 className="text-5xl lg:text-8xl font-bold w-2/3 bangers">
+                <h1 className="text-5xl lg:text-6xl font-bold w-2/3 bangers">
                   {page.content}
                 </h1>
                 <h1 className="mt-5 font-medium text-2xl bangers">

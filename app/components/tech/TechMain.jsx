@@ -4,6 +4,7 @@ import Main from "./gallery/Main";
 import EventsPreviewMain from "./eventsPreview/EventsPreviewMain";
 import AboutPreviewMain from "./aboutPreview/AboutPreviewMain";
 import Bot from "../bot/index";
+import FAQPreviewMain from "./faq/FAQPreviewMain";
 const TechMain = () => {
   return (
     <div>
@@ -15,8 +16,9 @@ const TechMain = () => {
       </div>
       <EventsPreviewMain />
       <Bot />
-      <Main />
-      {/* <AboutPreviewMain /> */}
+      {/* <Main /> */}
+      <AboutPreviewMain />
+      <FAQPreviewMain />
     </div>
   );
 };
