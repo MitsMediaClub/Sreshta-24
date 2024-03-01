@@ -93,7 +93,7 @@ const ScoreBoard = () => {
           Four teams, one trophy. The competition is fair and sqaure so that the
           win is deserved.
         </p>
-        <div className="mt-5 flex flex-col gap-8 items-center h-96 overflow-y-scroll">
+        <div className="mt-5 flex gap-8 items-center h-96 overflow-y-scroll scrollbar flex-col-reverse">
           {scores &&
             scores.map((score, index) => (
               <div
