@@ -58,15 +58,6 @@ const LandingNavbar = () => {
         <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] pt-[5vw]">
           <span
             onClick={() => {
-              router.push("/");
-              navToggle();
-            }}
-            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
-          >
-            Shreshta
-          </span>
-          <span
-            onClick={() => {
               router.push("/events");
               navToggle();
             }}
@@ -99,6 +90,15 @@ const LandingNavbar = () => {
             className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
           >
             Contact
+          </span>
+          <span
+            onClick={() => {
+              router.push("/");
+              navToggle();
+            }}
+            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+          >
+            Shreshta
           </span>
           <span
             onClick={() => {

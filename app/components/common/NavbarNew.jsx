@@ -33,12 +33,6 @@ export default function AboutPage() {
         >
           <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] ">
             <Link
-              href="/"
-              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
-            >
-              Shreshta
-            </Link>
-            <Link
               href="/events"
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
@@ -57,6 +51,12 @@ export default function AboutPage() {
               FAQ
             </Link>
             <Link
+              href="/"
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
+              Shreshta
+            </Link>
+            <Link
               href="/varnam"
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
@@ -67,12 +67,6 @@ export default function AboutPage() {
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
               Contact
-            </Link>
-            <Link
-              href="/varnam"
-              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
-            >
-              Varnam
             </Link>
           </div>
         </div>

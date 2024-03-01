@@ -54,15 +54,6 @@ export const Landing = () => {
           <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] pt-[5vw]">
             <span
               onClick={() => {
-                router.push("/");
-                navClose();
-              }}
-              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
-            >
-              Shreshta
-            </span>
-            <span
-              onClick={() => {
                 router.push("/events");
                 navClose();
               }}
@@ -90,6 +81,15 @@ export const Landing = () => {
             </span>
             <span
               onClick={() => {
+                router.push("/");
+                navClose();
+              }}
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
+              Shreshta
+            </span>
+            <span
+              onClick={() => {
                 router.push("/varnam");
                 navClose();
               }}
@@ -104,15 +104,6 @@ export const Landing = () => {
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
             >
               Contact
-            </span>
-            <span
-              onClick={() => {
-                router.push("/varnam");
-                navClose();
-              }}
-              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
-            >
-              Varnam
             </span>
           </div>
           {/* <FloatButton /> */}

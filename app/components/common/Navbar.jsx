@@ -80,15 +80,6 @@ const Navbar = () => {
         <div className="text-3xl font-[nav-font] flex flex-col items-center justify-evenly w-screen h-screen pt-[15vw]">
           <span
             onClick={() => {
-              router.push("/");
-              navClose();
-            }}
-            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
-          >
-            Shreshta
-          </span>
-          <span
-            onClick={() => {
               router.push("/events");
               navClose();
             }}
@@ -115,6 +106,15 @@ const Navbar = () => {
             Faq
           </span>
           <span
+            onClick={() => {
+              router.push("/");
+              navClose();
+            }}
+            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+          >
+            Shreshta
+          </span>
+          <span
             onClick={() =>{
               router.push("/varnam");
               navClose();
@@ -131,15 +131,6 @@ const Navbar = () => {
             className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
           >
             Contact
-          </span>
-          <span
-            onClick={() =>{
-              router.push("/varnam");
-              navClose();
-            }}
-            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
-          >
-            Varnam
           </span>
         </div>
       </div>
