@@ -7,7 +7,7 @@ import Bot from "../bot/index";
 import FAQPreviewMain from "./faq/FAQPreviewMain";
 const TechMain = () => {
   return (
-    <div>
+    <div className="bg-tech-bg">
       <div className="md:block hidden bg-tech-bg p-8">
         <Landing />
       </div>

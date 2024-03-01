@@ -11,6 +11,7 @@ export default function AboutPage() {
     document.getElementById("burger").style.display = "none";
     document.getElementById("close").style.display = "flex";
     ref.current.style.bottom = "0%";
+    document.body.style.overflow = "hidden";
     setShow(false);
   };
 
@@ -18,6 +19,7 @@ export default function AboutPage() {
     document.getElementById("burger").style.display = "flex";
     document.getElementById("close").style.display = "none";
     ref.current.style.bottom = "100%";
+    document.body.style.overflow = "auto";
     setShow(true);
   };
 
@@ -30,12 +32,6 @@ export default function AboutPage() {
           ref={ref}
         >
           <div className="text-[3rem] font-[nav-font] flex flex-col items-center justify-evenly w-screen h-[100vh] ">
-            <Link
-              href="/"
-              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
-            >
-              Home
-            </Link>
             <Link
               href="/events"
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
@@ -53,7 +49,20 @@ export default function AboutPage() {
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
               FAQ
-            </Link><Link
+            </Link>
+            <Link
+              href="/"
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
+              Shreshta
+            </Link>
+            <Link
+              href="/varnam"
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
+              Varnam
+            </Link>
+            <Link
               href="/"
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
