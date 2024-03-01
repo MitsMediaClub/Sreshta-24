@@ -74,10 +74,10 @@ const ScoreBoard = () => {
             scores.map((score, index) => (
               <div
                 key={index}
-                className="w-[21rem] lg:w-[38.5rem] h-16 relative flex justify-center items-center p-5"
+                className="w-[21rem] lg:w-[38.5rem] h-6 lg:h-16 relative flex justify-center items-center p-5"
               >
                 <EventLog colorLog={colorSpaces[score.house]} />
-                <h1 className="relative z-10 text-2xl lg:text-3xl dog ">
+                <h1 className="relative z-10 text-base lg:text-3xl dog ">
                   <span className="text-white">
                     {toTitleCase(score.house)} House
                   </span>{" "}
