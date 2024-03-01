@@ -59,7 +59,7 @@ export const Landing = () => {
               }}
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
-              Home
+              Shreshta
             </span>
             <span
               onClick={() => {
@@ -87,6 +87,15 @@ export const Landing = () => {
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
               Faq
+            </span>
+            <span
+              onClick={() => {
+                router.push("/varnam");
+                navClose();
+              }}
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
+              Varnam
             </span>
             <span
               onClick={() =>

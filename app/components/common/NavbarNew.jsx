@@ -36,7 +36,7 @@ export default function AboutPage() {
               href="/"
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
-              Home
+              Shreshta
             </Link>
             <Link
               href="/events"
@@ -55,6 +55,12 @@ export default function AboutPage() {
               className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
             >
               FAQ
+            </Link>
+            <Link
+              href="/varnam"
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
+              Varnam
             </Link>
             <Link
               href="/"
