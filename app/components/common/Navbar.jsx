@@ -122,6 +122,15 @@ const Navbar = () => {
           >
             Contact
           </span>
+          <span
+            onClick={() =>{
+              router.push("/varnam");
+              navClose();
+            }}
+            className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px]"
+          >
+            Varnam
+          </span>
         </div>
       </div>
     </nav>

@@ -67,12 +67,12 @@ const ScoreBoard = () => {
       .join(" ");
   }
   return (
-    <div className="flex p-8">
-      <div className="w-1/2 pt-10 px-10">
+    <div className="flex p-8 md:flex-row flex-col">
+      <div className="w-1/2 pt-10 md:px-10">
         <h1 className="text-7xl tracking-wider bangers text-[#FFE179] HeroTextMainTwo">
           Score board
         </h1>
-        <p className="dog text-tech-primary text-3xl">
+        <p className="dog text-tech-primary text-3xl hidden md:block">
           Four teams, one trophy. The competition is <br /> fair and sqaure so
           that the win is deserved.
         </p>
@@ -80,10 +80,13 @@ const ScoreBoard = () => {
           {tempScores.map((score, index) => (
             <div
               key={index}
-              className="w-[38.5rem] h-14 relative flex justify-center items-center p-5"
+              className="w-[38.5rem] h-14 relative justify-center items-center p-5 md:flex hidden"
             >
-              <EventLog colorLog={colorSpaces[score.house]} />
-              <h1 className="relative z-10 text-4xl dog ">
+              <EventLog
+                colorLog={colorSpaces[score.house]}
+                className="size-1"
+              />
+              <h1 className="relative z-10 md:text-4xl text-xl dog ">
                 <span className="text-white">
                   {toTitleCase(score.house)} House
                 </span>{" "}
@@ -95,7 +98,7 @@ const ScoreBoard = () => {
           ))}
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 md:block hidden">
         <div className="relative flex justify-center items-center flex-col">
           <div className="flex gap-20">
             <div className="relative">
@@ -141,7 +144,7 @@ const ScoreBoard = () => {
             </div>
             <div className="relative">
               <Image
-                src={"/varnam/score/Yellow.png"}
+                src={"/varnam/score/yellow.png"}
                 width={500}
                 height={500}
                 alt="Red score board"
@@ -154,6 +157,33 @@ const ScoreBoard = () => {
                 {calculatePoints("yellow")}
               </h1>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-wrap gap-8">
+        <div className="w-2/5 md:hidden">
+          <div className="p-5 bg-yellow-200 rounded-xl ">
+            <h1 className="text-4xl bangers text-yellow-400">Yellow House</h1>
+            <h1 className="text-2xl bangers">{calculatePoints("yellow")}</h1>
+          </div>
+        </div>
+        <div className="w-2/5 md:hidden">
+          <div className="p-5 bg-red-200 rounded-xl ">
+            <h1 className="text-4xl bangers text-red-400">red House</h1>
+            <h1 className="text-2xl bangers">{calculatePoints("red")}</h1>
+          </div>
+        </div>
+      
+        <div className="w-2/5 md:hidden">
+          <div className="p-5 bg-green-200 rounded-xl ">
+            <h1 className="text-4xl bangers text-green-400">green House</h1>
+            <h1 className="text-2xl bangers">{calculatePoints("green")}</h1>
+          </div>
+        </div>
+        <div className="w-2/5 md:hidden">
+          <div className="p-5 bg-blue-200 rounded-xl ">
+            <h1 className="text-4xl bangers text-blue-400">blue House</h1>
+            <h1 className="text-2xl bangers">{calculatePoints("blue")}</h1>
           </div>
         </div>
       </div>

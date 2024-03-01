@@ -62,6 +62,12 @@ export default function AboutPage() {
             >
               Contact
             </Link>
+            <Link
+              href="/varnam"
+              className="hover:bg-[#375e5edd] py-[0.4vw] px-[5vw] rounded-[30px] cursor-pointer hover:font-bold transition-all ease-in-out duration-300"
+            >
+              Varnam
+            </Link>
           </div>
         </div>
       </nav>
