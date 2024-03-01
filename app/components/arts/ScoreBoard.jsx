@@ -27,32 +27,7 @@ const ScoreBoard = () => {
         "fill:#9DB37A;fill:color(display-p3 0.616 0.702 0.478);fill-opacity:1;",
     },
   };
-  const tempScores = [
-    {
-      house: "green",
-      position: "2st",
-      event: "Music Mania",
-      points: "250",
-    },
-    {
-      house: "yellow",
-      position: "1st",
-      event: "Music Mania",
-      points: "150",
-    },
-    {
-      house: "red",
-      position: "1st",
-      event: "Music Mania",
-      points: "50",
-    },
-    {
-      house: "blue",
-      position: "1st",
-      event: "Music Mania",
-      points: "350",
-    },
-  ];
+
 
   const [scores, setScores] = useState(null);
 
@@ -70,6 +45,7 @@ const ScoreBoard = () => {
 
   function calculatePoints(house) {
     let points = 0;
+    if (scores === null) return 0;
     scores.forEach((score) => {
       if (score.house === house) {
         points += Number(score.points);
@@ -180,33 +156,6 @@ const ScoreBoard = () => {
                 </h1>
               )}
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-wrap gap-8">
-        <div className="w-2/5 md:hidden">
-          <div className="p-5 bg-yellow-200 rounded-xl ">
-            <h1 className="text-4xl bangers text-yellow-400">Yellow House</h1>
-            <h1 className="text-2xl bangers">{calculatePoints("yellow")}</h1>
-          </div>
-        </div>
-        <div className="w-2/5 md:hidden">
-          <div className="p-5 bg-red-200 rounded-xl ">
-            <h1 className="text-4xl bangers text-red-400">red House</h1>
-            <h1 className="text-2xl bangers">{calculatePoints("red")}</h1>
-          </div>
-        </div>
-      
-        <div className="w-2/5 md:hidden">
-          <div className="p-5 bg-green-200 rounded-xl ">
-            <h1 className="text-4xl bangers text-green-400">green House</h1>
-            <h1 className="text-2xl bangers">{calculatePoints("green")}</h1>
-          </div>
-        </div>
-        <div className="w-2/5 md:hidden">
-          <div className="p-5 bg-blue-200 rounded-xl ">
-            <h1 className="text-4xl bangers text-blue-400">blue House</h1>
-            <h1 className="text-2xl bangers">{calculatePoints("blue")}</h1>
           </div>
         </div>
       </div>
