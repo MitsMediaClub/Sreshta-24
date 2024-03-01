@@ -165,7 +165,7 @@ const ScoreBoard = () => {
             </div>
             <div className="relative">
               <Image
-                src={"/varnam/score/Yellow.png"}
+                src={"/varnam/score/yellow.png"}
                 width={500}
                 height={500}
                 alt="Red score board"
@@ -180,6 +180,33 @@ const ScoreBoard = () => {
                 </h1>
               )}
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-wrap gap-8">
+        <div className="w-2/5 md:hidden">
+          <div className="p-5 bg-yellow-200 rounded-xl ">
+            <h1 className="text-4xl bangers text-yellow-400">Yellow House</h1>
+            <h1 className="text-2xl bangers">{calculatePoints("yellow")}</h1>
+          </div>
+        </div>
+        <div className="w-2/5 md:hidden">
+          <div className="p-5 bg-red-200 rounded-xl ">
+            <h1 className="text-4xl bangers text-red-400">red House</h1>
+            <h1 className="text-2xl bangers">{calculatePoints("red")}</h1>
+          </div>
+        </div>
+      
+        <div className="w-2/5 md:hidden">
+          <div className="p-5 bg-green-200 rounded-xl ">
+            <h1 className="text-4xl bangers text-green-400">green House</h1>
+            <h1 className="text-2xl bangers">{calculatePoints("green")}</h1>
+          </div>
+        </div>
+        <div className="w-2/5 md:hidden">
+          <div className="p-5 bg-blue-200 rounded-xl ">
+            <h1 className="text-4xl bangers text-blue-400">blue House</h1>
+            <h1 className="text-2xl bangers">{calculatePoints("blue")}</h1>
           </div>
         </div>
       </div>
