@@ -31,27 +31,31 @@ const ScoreBoard = () => {
 
   const [scores, setScores] = useState(null);
 
+  
+  
   useEffect(() => {
     const fetchScores = async () => {
-      let { data: Scores, error } = await supabase.from("Scores").select("*");
-      if (error) console.log("error", error);
-      else {
-        setScores(Scores);
-        console.log(Scores);
+      try {
+        const response = await fetch('https://raw.githubusercontent.com/MitsMediaClub/Varnam-24-Score/main/score.csv');
+        const csvData = await response.text();
+        const rows = csvData.split('\n');
+        const secondRow = rows[1].split(',');
+        const values = rows[0].split(",").reduce((obj, key, index) => {
+          obj[key] = secondRow[index];
+          return obj;
+        }, {});
+        setScores(values);
+        console.log(values, scores);
+      } catch (error) {
+        console.error('Error:', error);
       }
     };
     fetchScores();
   }, []);
 
   function calculatePoints(house) {
-    let points = 0;
-    if (scores === null) return 0;
-    scores.forEach((score) => {
-      if (score.house === house) {
-        points += Number(score.points);
-      }
-    });
-    return points;
+    if (!scores) return 0;
+    return scores[house]  || 0;
   }
   function toTitleCase(str) {
     return str
@@ -70,7 +74,7 @@ const ScoreBoard = () => {
           win is deserved.
         </p>
         <div className="mt-5 flex gap-8 items-center h-96 overflow-y-scroll scrollbar flex-col-reverse">
-          {scores &&
+          {/* {scores &&
             scores.map((score, index) => (
               <div
                 key={index}
@@ -86,7 +90,7 @@ const ScoreBoard = () => {
                   <span className="text-white">+{score.points} pts</span>
                 </h1>
               </div>
-            ))}
+            ))} */}
         </div>
       </div>
       <div className="xl:w-1/2 mt-5">
@@ -102,7 +106,7 @@ const ScoreBoard = () => {
               />
               <h1 className="text-3xl bangers py-5 text-center">Red House</h1>
               {scores && (
-                <h1 className="text-5xl bangers absolute top-28 left-14">
+                <h1 className="text-7xl  dog absolute top-20 left-14">
                   {calculatePoints("red")}
                 </h1>
               )}
@@ -117,7 +121,7 @@ const ScoreBoard = () => {
               />
               <h1 className="text-3xl bangers py-5 text-center">Green House</h1>
               {scores && (
-                <h1 className="text-5xl bangers absolute top-32 left-14">
+                <h1 className="text-7xl  dog absolute top-28 left-14">
                   {calculatePoints("green")}
                 </h1>
               )}
@@ -134,7 +138,7 @@ const ScoreBoard = () => {
               />
               <h1 className="text-3xl bangers py-5 text-center">Blue House</h1>
               {scores && (
-                <h1 className="text-5xl bangers absolute top-28 right-10">
+                <h1 className="text-7xl  dog absolute top-20 right-10">
                   {calculatePoints("blue")}
                 </h1>
               )}
@@ -151,7 +155,7 @@ const ScoreBoard = () => {
                 Yellow House
               </h1>
               {scores && (
-                <h1 className="text-5xl bangers absolute top-24 right-10">
+                <h1 className="text-7xl  dog absolute top-16 right-14">
                   {calculatePoints("yellow")}
                 </h1>
               )}
